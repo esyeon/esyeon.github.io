@@ -6,7 +6,7 @@ $sub-color : #555;
 $white : #fff;
 $bg-color : #e5e5e5;
 
-/*layout*/
+/*header*/
 $header-padding: 3rem;
 $header-height: 7rem;
 
@@ -16,25 +16,38 @@ $header-height: 7rem;
 html{
   font-size: 62.5%;
 }
+body{
+  position: relative;
+  min-height: 100%
+}
+.wrap{
+  min-height: 100%
+}
 header{
   position: fixed;
-  padding: 0 $header-padding;
+  padding: 1rem $header-padding;
   width: 100%;
   height: $header-height;
-  background-color: $main-color;
+  background-color: $white;
   box-sizing: border-box;
   z-index: 10;
-  h1{
-    position: absolute;
-    top : 50%;
-    left: $header-padding;
-    transform: translate(0, -50%);
+  .logo{
+    float: left;
+    transition: all .2s ease-in-out;
+    width: 13rem;
+    height: 100%;
+    background: url('../image/lsy_logo.png') no-repeat;
+    background-size: 100% 100%;
+    &:hover{
+      transform: scale(1.2)
+    }
     a{
-      font-size: 3rem;
-      color: $white;
-      font-weight: 700;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
     }
   }
+
   .btn_mobile{
     display: none;
     position: absolute;
@@ -50,10 +63,12 @@ header{
 
 }
 nav{
-  line-height: $header-height;
+  width: calc(100% - 13rem);
+  line-height: 4rem;
   text-align: center;
   ul{
-    font-size: 0;
+    font-size: 19px;
+    background: $white;
     li{
       margin: 0 2rem 0 0;
       display: inline-block;
@@ -63,13 +78,13 @@ nav{
       }
       &.active{
         a{
-          font-weight: 700;
-          border-bottom: .2rem solid $white;
+          font-weight: 500;
+          border-bottom: .2rem solid $main-color;
         }
       }
       a{
         font-size: 1.5rem;
-        color: $white;
+        color: $main-color;
       }
     }
   }
@@ -78,19 +93,24 @@ section{
   padding: $header-height 0 0 0;
   overflow-x: hidden;
 }
-article{position: relative;}
+article{position: relative; height: 100%}
 
 footer{
-  padding: 1rem 5rem;
+  position: absolute;
+  bottom: 0;
+  padding: 0 5rem;
   box-sizing: border-box;
   width: 100%;
   height: 5rem;
   line-height: 5rem;
   text-align: center;
-  background-color: $main-color;
+  background-color: $white;
   cite , p{
-    font-size: 1.4rem;
-    color : #ddd;
+    font-size: 1.2rem;
+    color : $sub-color;
+  }
+  cite{
+    line-height: 5rem;
   }
   p{
     padding: 0 0 1rem 0;
@@ -187,9 +207,47 @@ article h2{
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-//content: firstSection
-.first{
-  height: 60rem;
+
+.btn_top{
+  position: fixed;
+  right: $header-padding;
+  bottom: 8rem;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background: url('../image/top_btn.png') no-repeat;
+  cursor: pointer;
+  outline: none;
+}
+.btn_down{
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  display: inline-block;
+  width: 4.2rem;
+  height: 1.8rem;
+  background: url('../image/arrow_up.png') no-repeat;
+  transform: rotate(-180deg);
+  cursor: pointer;
+  outline: none;
+}
+//content
+.main{
+  height: 64rem;
+  background: #f4f4f4 url('../image/bg_01.png') left bottom no-repeat;
+  background-size: cover;
+  .greeting{
+    position: absolute;
+    top: 17rem;
+    right: 30%;
+    display: inline-block;
+    h2{
+      font-size: 7rem;
+    }
+    p{
+      font-size: 3.5rem;
+    }
+  }
 }
 .second{
   height: 60rem;
