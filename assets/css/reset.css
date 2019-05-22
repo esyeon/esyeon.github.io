@@ -3,9 +3,9 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -53,4 +53,8 @@ a{
 button{
     border: none;
     background: none;
+}
+
+strong{
+    font-weight: 700;
 }
