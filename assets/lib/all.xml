@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pjGroup sub-title="전체">
+    <pjList>
+        <siteUrl>https://dazzling-shirley-87454c.netlify.com/</siteUrl>
+        <pjthumb>lg_ssg_webos.png</pjthumb>
+        <pjName>LG SSG-webos</pjName>
+        <pjDate>2019.03 ~ 2019.04</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/SASS/JQUERY/반응형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl>http://www.oksusu.com/</siteUrl>
+        <pjthumb>skb_oksusu.png</pjthumb>
+        <pjName>SKB-OKSUSU</pjName>
+        <pjDate>2018.01 ~ 2019.05</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl>http://www.naver.com</siteUrl>
+        <pjthumb>hyundai_e_cat.png</pjthumb>
+        <pjName>HYUNDAI-ECAT(현대자동차상시학습 e-cat)</pjName>
+        <pjDate>2019.2 ~ 2019.03</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl>http://www.naver.com</siteUrl>
+        <pjthumb>hyundai_idp.png</pjthumb>
+        <pjName>HYUNDAI-IDP(현대자동차상시학습)</pjName>
+        <pjDate>2018.11 ~ 2019.03</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl>http://www.naver.com</siteUrl>
+        <pjthumb>kt_brokering.png</pjthumb>
+        <pjName>KT Brokering</pjName>
+        <pjDate>2018.08 ~ 2019.01</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl></siteUrl>
+        <pjthumb></pjthumb>
+        <pjName>LG 모바일 교육</pjName>
+        <pjDate>2018.05 ~ 2018.06</pjDate>
+        <pjWork>퍼블리싱/구축/부트스트랩/HTML/CSS/JQUERY/반응형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl></siteUrl>
+        <pjthumb></pjthumb>
+        <pjName>LG전자 solar</pjName>
+        <pjDate>2017.06 ~ 2018.01</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형,Mobile형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl></siteUrl>
+        <pjthumb></pjthumb>
+        <pjName>LG전자 ess프로젝트</pjName>
+        <pjDate>2017.05 ~ 2017.07</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl>https://muzine.museum.go.kr/2017/70th/main.jsp</siteUrl>
+        <pjthumb>muzine.png</pjthumb>
+        <pjName>국립중앙박물관</pjName>
+        <pjDate>2016년 12월, 2017년 2월 , 4월 , 11월</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/반응형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl></siteUrl>
+        <pjthumb></pjthumb>
+        <pjName>LGU+해외송금</pjName>
+        <pjDate>2016.11 ~ 2017.05</pjDate>
+        <pjWork>퍼블리싱/구축/HTML/SCSS/JQUERY/Mobile형</pjWork>
+    </pjList>
+    <pjList>
+        <siteUrl></siteUrl>
+        <pjthumb></pjthumb>
+        <pjName>ETC (한달 단기간 f/w및 추가작업)</pjName>
+        <pjDate>Galaxy store admin 2016.10 //
+            skb oksusu 라이브스트리밍 어드민관리자 2017.07 //
+            newKT프로젝트 2018.09 //
+            LG AI admin 2018.11 //
+            LG thin client f/w 2019.01 // </pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY</pjWork>
+    </pjList>
+</pjGroup>
