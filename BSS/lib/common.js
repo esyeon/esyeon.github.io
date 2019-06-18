@@ -25,16 +25,17 @@ $(document).ready(function() {
         dots:true,
     });
 
-    // $('.slick-center-album').slick({
-    //     centerMode: true,
-    //     infinite: true,
-    //     speed: 300,
-    //     centerPadding: '60px',
-    //     slidesToShow: 3,
-    //     variableWidth: false,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    // });
+    $('.slick-center-album').slick({
+        centerMode: true,
+        slidesToShow: 5,
+        speed: 1500,
+        index: 1,
+        focusOnSelect:true,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        arrows: false,
+
+    });
 
     $('.m-menu').on('click',function(){
         $(this).addClass('open');

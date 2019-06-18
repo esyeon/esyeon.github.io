@@ -45,77 +45,101 @@ a{color: #333;}
     .main-section .slick-dots li button{padding: 0; width: 12px; height: 12px; border-radius: 100%; background-color: #dedede; text-indent: -9999px;}
     .main-section .slick-dots .slick-active button{width: 55px; background-color: #d0e00a; border-radius: 8px;}
 
-    .second-section article
-    .second-section .info-txt-wrap
-    .second-section .info-txt-wrap h2
-    .second-section .info-txt-wrap .txt
-    .second-section .slick-album
-    .second-section .slick-album .slick-slider
-    .second-section .slick-album .slick-slider a
-    .second-section .slick-album .slick-slider a img
-    .second-section .slick-album .slick-dots
-    .second-section .slick-album .slick-dots li
-    .second-section .slick-album .slick-dots li button
+    /*.second-section{padding: 0 30px;}*/
+    .second-section .info-txt-wrap{position: relative; padding: 0 33px; background: url('../img/m_second_section_bg.png') no-repeat; background-size: 100% 100%;}
+    .second-section .info-txt-wrap:before{content:''; display: inline-block; width: 3px; height: 100%;  background-color: #f1f6b5; }
+    .second-section .info-txt-wrap h2{font-size: 24px; font-weight: 400; color: #333;}
+    .second-section .info-txt-wrap .txt{}
+    .second-section .info-txt-wrap .txt li{position: relative; padding-left: 15px;}
+    .second-section .info-txt-wrap .txt li:before{content:''; position: absolute; top: 0; left: 0; display: inline-block; width: 10px; height: 10px; border-radius: 100%; background-color: #ed6c0b;}
+    .second-section .slick-album{}
+    .second-section .slick-slider .slick-slide{}
+    .second-section .slick-album .slick-slide a{display: inline-block; width: 136px; height: 136px;}
+    .second-section .slick-album .slick-slide a img{width: 136px; height: 136px;}
+    .second-section .slick-dots{position: absolute; left: 50%; bottom: 0; transform: translate(-50%,-50%); font-size: 0;}
+    .second-section .slick-dots li{margin: 4px; display: inline-block; vertical-align: middle;}
+    .second-section .slick-dots li button{padding: 0; width: 12px; height: 12px; border-radius: 100%; background-color: #dedede; text-indent: -9999px;}
+    .second-section .slick-dots .slick-active button{width: 55px; background-color: #d0e00a; border-radius: 8px;}
+    .second-section .right-cnt{padding: 0 30px; background-color: #e6007f}
+    .second-section .right-cnt h3{font-size: 20px; color: #fff; font-weight: 700;}
 
-    .third-section article
-    .third-section h2
-    .third-section .slick-center-album
-    .third-section .slick-center-album .album-info
-    .third-section .slick-center-album .album-info .title-name
-    .third-section .slick-center-album .album-info .singer-name
-    .third-section .slick-center-album .album-info .right-icon
-    .third-section .slick-center-album .album-info .right-icon .icon-wrap
-    .third-section .slick-center-album .album-info .right-icon .icon-wrap li
-    .third-section .slick-center-album .album-info .right-icon .icon-wrap li a
-    .third-section .slick-center-album .album-info .icon-wrap
-    .third-section .slick-center-album .album-info .icon-wrap li
-    .third-section .slick-center-album .album-info .icon-wrap li a
-    .third-section .slick-center-album .slick-slider
-    .third-section .slick-center-album .slick-slider a
-    .third-section .slick-center-album .slick-slider a img
-    .third-section .slick-center-album .album-info .btn-block
-    .third-section .slick-center-album .album-info .btn-block span
+    .third-section{ height: 236px; background-color: #ededed; overflow: hidden;}
+    .third-section article{}
+    .third-section h2{}
+    .third-section .slick-center-album{}
+    .third-section .slick-center-album .slick-slide{position: relative;  margin: 0 15px; display: inline-block; vertical-align: middle;}
+    .third-section .slick-center-album .shape{position: relative; display: flex; align-items: center; width: 110px; height: 110px; border-radius: 100%; background-color: #fff;}
+    .third-section .slick-center-album .shape:before{content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: inline-block; width: 32px; height: 32px; border-radius: 100%; background-color: #fff;}
+    .third-section .slick-center-album .shape:after{content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: inline-block; width: 25px; height: 25px; border-radius: 100%; background-color: #ededed;}
+    .third-section .slick-center-album .shape img{margin: auto; display: inline-block; width: 100px; height: 100px; border-radius: 100%;}
+    .third-section .slick-center-album .slick-center .shape{width: 160px; height: 160px; box-shadow: 0 0 15px rgba(0,0,0,0.3);}
+    .third-section .slick-center-album .slick-center .shape:before{width: 50px; height: 50px;}
+    .third-section .slick-center-album .slick-center .shape:after{width: 45px; height: 45px;}
+    .third-section .slick-center-album .slick-center .shape img{width: 150px; height: 150px;}
+    /*.third-section .slick-center-album .slick-list{overflow: visible;}*/
+    /*.third-section .slick-center-album .slick-list .slick-slide{margin: 0 15px; width: 110px !important;}*/
+    /*.third-section .slick-center-album .slick-list .slick-slide.slick-center {width: 160px !important;}*/
 
-    .fourth-section
-    .fourth-section article
-    .fourth-section .left-cnt
-    .fourth-section .right-cnt
 
-    .question-section
-    .question-section article
-    .question-section .accordion_list
-    .question-section .accordion_list .title
-    .question-section .accordion_list .title .q_txt
-    .question-section .accordion_list .title span
-    .question-section .accordion_list .answer_cnt
-    .question-section .accordion_list .answer_cnt .a_txt
-    .question-section .accordion_list .answer_cnt span
+    .third-section .slick-center-album .album-info{width: 100px; background-color: #fff; border-radius: 4px;}
+    .third-section .slick-center-album .album-info .title-name{}
+    .third-section .slick-center-album .album-info .singer-name{}
+    .third-section .slick-center-album .album-info .right-icon{}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap{}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap li{}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap li a{}
+    .third-section .slick-center-album .album-info .icon-wrap{}
+    .third-section .slick-center-album .album-info .icon-wrap li{}
+    .third-section .slick-center-album .album-info .icon-wrap li a{}
+    .third-section .slick-center-album .slick-slider{}
+    .third-section .slick-center-album .slick-slider a{}
+    .third-section .slick-center-album .slick-slider a img{}
+    .third-section .slick-center-album .album-info .btn-block{}
+    .third-section .slick-center-album .album-info .btn-block span{}
 
-    .consulting-section article
-    .consulting-section h2
-    .consulting-section h2 strong
-    .consulting-section p
-    .consulting-section .input-list
-    .consulting-section .input-list tr th
-    .consulting-section .input-list tr td
-    .consulting-section .input-list tr td input
-    .consulting-section .input-list tr td .btn_txt
+    .fourth-section{background: url(../img/fourth_section_bg.png) no-repeat; background-size: 100%;}
+    .fourth-section article{font-size: 0;}
+    .fourth-section .left-cnt , .fourth-section .right-cnt{width: 152px; height: 150px; display: inline-block; vertical-align: middle;}
+    .fourth-section .left-cnt img , .fourth-section .right-cnt img{width: 100%; height: 100%;}
+    .fourth-section .right-cnt{}
 
-    footer
-    footer .logo
-    footer .sns-wrap
-    footer .sns-wrap li
-    footer .sns-wrap li a
-    footer .sns-wrap li .youtube
-    footer .sns-wrap li .facebook
-    footer .sns-wrap li .instargram
-    footer .sns-wrap li .b_icon
-    footer .company_info
-    footer .company_info ul
-    footer .company_info ul li
-    footer .company_info ul li a
-    footer .company_info p
-    footer cite
+    .question-section{}
+    .question-section article{}
+    .question-section article h2{color: #b1bf00;}
+    .question-section article p{color: #b1bf00;}
+    .question-section .accordion_list{}
+    .question-section .accordion_list .title{}
+    .question-section .accordion_list .title .q_txt{}
+    .question-section .accordion_list .title span{}
+    .question-section .accordion_list .answer_cnt{}
+    .question-section .accordion_list .answer_cnt .a_txt{}
+    .question-section .accordion_list .answer_cnt span{}
+
+    .consulting-section article{}
+    .consulting-section h2{}
+    .consulting-section h2 strong{}
+    .consulting-section p{}
+    .consulting-section .input-list{}
+    .consulting-section .input-list tr th{}
+    .consulting-section .input-list tr td{}
+    .consulting-section .input-list tr td input{}
+    .consulting-section .input-list tr td .btn_txt{}
+
+    footer{}
+    footer .logo{}
+    footer .sns-wrap{}
+    footer .sns-wrap li{}
+    footer .sns-wrap li a{}
+    footer .sns-wrap li .youtube{}
+    footer .sns-wrap li .facebook{}
+    footer .sns-wrap li .instargram{}
+    footer .sns-wrap li .b_icon{}
+    footer .company_info{}
+    footer .company_info ul{}
+    footer .company_info ul li{}
+    footer .company_info ul li a{}
+    footer .company_info p{}
+    footer cite{}
 
 }
 /*태블릿 device*/
