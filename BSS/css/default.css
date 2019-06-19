@@ -9,7 +9,7 @@ select:focus {outline: none;}
 input:focus {outline: none;}
 button{cursor: pointer}
 a{color: #333;}
-.btn_block{}
+
 
 /*모바일 device*/
 @media screen and (min-width: 320px){
@@ -27,6 +27,8 @@ a{color: #333;}
     nav .menu_list{}
     nav .menu_list li{height: 56px; line-height: 56px; border-bottom: 1px solid #454545; text-align: center;}
     nav .menu_list li a{display: inline-block; width: 100%; height: 100%; font-size: 20px; font-weight: 300; color: #333;}
+    nav .menu_list li a:active{color: #d0e00a;}
+
     nav .company_info{padding: 26px 0 26px 20px;margin-top: auto; height: 120px; background-color: #1c282d; box-sizing: border-box;}
     nav .company_info th{color: #fefefe; text-align: left; width: 73px;}
     nav .company_info td{color: #999;}
@@ -37,7 +39,7 @@ a{color: #333;}
     .main-section .slick-slider .slick-list{height: 100%;}
     /*.main-section img{position: relative; width: 100%; height: 307px;}*/
     .main-section .slick-slider a{display: inline-block; width: 100%; height: 307px;}
-    .main-section .slick-slider .btn-more{position: absolute; left: 50%; bottom: 30px; margin-left: -73.5px; width: 147px; height: 34px; line-height: 34px; font-size: 14px; font-weight: 700; color: #fff; text-align: center; background: url(../img/btn_line_2.png) no-repeat; background-size: contain;}
+    .main-section .slick-slider .btn-more{position: absolute; left: 50%; bottom: 30px; margin-left: -73.5px; width: 147px; height: 34px; line-height: 34px; font-size: 14px; font-weight: 700; color: #fff; text-align: center; background: url(../img/btn_line_1.png) no-repeat; background-size: contain;}
     /*.main-section .slick-slider .btn-more .arrow-right{display: inline-block; margin-left: 20px; width: 9px; height: 10px; background: url(../img/arr_right.png) no-repeat right; background-size: contain;}*/
     .main-section .slick-slider img{display: inline-block; width: 100%; height: 307px;}
     .main-section .slick-dots{position: absolute; left: 50%; bottom: 0; transform: translate(-50%,-50%); font-size: 0;}
@@ -66,7 +68,7 @@ a{color: #333;}
     .third-section{ height: 236px; background-color: #ededed; overflow: hidden;}
     .third-section article{}
     .third-section h2{}
-    .third-section .slick-center-album{}
+    .third-section .slick-center-album li{display: inline-block; vertical-align: middle;}
     .third-section .slick-center-album .slick-slide{position: relative;  margin: 0 15px; display: inline-block; vertical-align: middle;}
     .third-section .slick-center-album .shape{position: relative; display: flex; align-items: center; width: 110px; height: 110px; border-radius: 100%; background-color: #fff;}
     .third-section .slick-center-album .shape:before{content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: inline-block; width: 32px; height: 32px; border-radius: 100%; background-color: #fff;}
@@ -85,17 +87,23 @@ a{color: #333;}
     .third-section .slick-center-album .album-info .title-name{}
     .third-section .slick-center-album .album-info .singer-name{}
     .third-section .slick-center-album .album-info .right-icon{}
-    .third-section .slick-center-album .album-info .right-icon .icon-wrap{}
-    .third-section .slick-center-album .album-info .right-icon .icon-wrap li{}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap{font-size: 0;}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap li{display: inline-block; vertical-align: middle;}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap .share{display: inline-block; width: 19px; height: 19px; background: url(../img/share.png) no-repeat;}
+    .third-section .slick-center-album .album-info .right-icon .icon-wrap .like{display: inline-block; width: 25px; height: 19px; background: url(../img/liek.png) no-repeat;}
     .third-section .slick-center-album .album-info .right-icon .icon-wrap li a{}
-    .third-section .slick-center-album .album-info .icon-wrap{}
-    .third-section .slick-center-album .album-info .icon-wrap li{}
+    .third-section .slick-center-album .album-info .icon-wrap{font-size: 0;}
+    .third-section .slick-center-album .album-info .icon-wrap li{display: inline-block; vertical-align: middle;}
     .third-section .slick-center-album .album-info .icon-wrap li a{}
+    .third-section .slick-center-album .album-info .icon-wrap .melon{width: 11px; height: 9px; background: url(../img/melon.png) center no-repeat; background-size: contain;}
+    .third-section .slick-center-album .album-info .icon-wrap .bugs{width: 11px; height: 9px; background: url(../img/bugs.png) center no-repeat; background-size: contain;}
+    .third-section .slick-center-album .album-info .icon-wrap .mnet{width: 11px; height: 9px; background: url(../img/mnet.png) center no-repeat; background-size: contain;}
+    .third-section .slick-center-album .album-info .icon-wrap .google{width: 11px; height: 9px; background: url(../img/google.png) center no-repeat; background-size: contain;}
+    .third-section .slick-center-album .album-info .icon-wrap .youtube{width: 11px; height: 9px; background: url(../img/youtube.png) center no-repeat; background-size: contain;}
     .third-section .slick-center-album .slick-slider{}
     .third-section .slick-center-album .slick-slider a{}
     .third-section .slick-center-album .slick-slider a img{}
-    .third-section .slick-center-album .album-info .btn-block{}
-    .third-section .slick-center-album .album-info .btn-block span{}
+    .third-section .slick-center-album .album-info .btn-block{display: inline-block; width: 60px; height: 16px; background: url(../img/btn_line_2.png) no-repeat; background-size: contain; font-size: 6px; color: #f66d05; text-align: center;}
 
     .fourth-section{background: url(../img/fourth_section_bg.png) no-repeat; background-size: 100%;}
     .fourth-section article{font-size: 0;}
@@ -103,20 +111,21 @@ a{color: #333;}
     .fourth-section .left-cnt img , .fourth-section .right-cnt img{width: 100%; height: 100%;}
     .fourth-section .right-cnt{}
 
-    .question-section{}
+    .question-section{background-color: #f8f7f3;}
     .question-section article{}
     .question-section article h2{color: #b1bf00;}
     .question-section article p{color: #b1bf00;}
-    .question-section .accordion_list{}
-    .question-section .accordion_list .title{}
-    .question-section .accordion_list .title .q_txt{}
-    .question-section .accordion_list .title span{}
-    .question-section .accordion_list .answer_cnt{}
-    .question-section .accordion_list .answer_cnt .a_txt{}
+    .question-section .accordion_list{font-size: 0;}
+    .question-section .accordion_list .title{height: 40px; font-weight: 700; font-size: 0; border-bottom: 1px solid #f8f7f3; cursor: pointer; background-color: #fff;}
+    .question-section .accordion_list .title .q_txt{width: 40px; line-height: 36px; font-size: 16px; color: #333; font-weight: 700; background-color: #ffec4a; text-align: center; }
+    .question-section .accordion_list .title span{display: inline-block; width: calc(100% - 40px); height: 100%; vertical-align: middle; font-size: 16px;}
+    .question-section .accordion_list .answer_cnt{font-size: 16px;}
+    .question-section .accordion_list .answer_cnt .a_txt{display: inline-block; width: 30px; height: 30px; line-height: 30px; color: #333; font-size: 16px; font-weight: 700; border-radius: 100%; background-color: #ffec4a; text-align: center;}
     .question-section .accordion_list .answer_cnt span{}
 
-    .consulting-section article{}
-    .consulting-section h2{}
+    .consulting-section{background: url("../img/consulting_bg.png") no-repeat; background-size: cover;}
+    .consulting-section article{color: #fff;}
+    .consulting-section h2{color: #fff;}
     .consulting-section h2 strong{}
     .consulting-section p{}
     .consulting-section .input-list{}
@@ -125,21 +134,39 @@ a{color: #333;}
     .consulting-section .input-list tr td input{}
     .consulting-section .input-list tr td .btn_txt{}
 
-    footer{}
-    footer .logo{}
+    /*음반제작 css*/
+    .production-top{background: url('../img/sub_top_bg_01.png') no-repeat; background-size: cover;}
+    .production-top article{color: #fff;}
+    .production-top article h2{}
+    .production-top article .line{display: inline-block; width: 150px; height: 2px; background-color: #fff;}
+    .production-top article p{}
+
+    .production-order{}
+    .production-order article{}
+    .production-order .list-wrap{}
+    .production-order .list-wrap li{}
+    .production-order .list-wrap li .number{font-weight: 700; font-size: 37px; color: #333;}
+    .production-order .list-wrap li .content{position: relative; width: 100%; height: 110px; background: url('../img/card_line_bg.png') no-repeat;}
+    .production-order .list-wrap li .content .info-box{position: absolute; top: 10px; left: 10px; height: calc(100% - 10px); background-color: #fff;}
+    .production-order .list-wrap li .title{display: inline-block; border-top: 1px solid #333; font-size: 20px; color: #333; letter-spacing: -1px;}
+    .production-order .list-wrap li .txt{}
+
+
+    footer{background-color: #1c282d; text-align: center;}
+    footer .logo{margin: 0 auto; width: 120px; height: 52px; background: url('../img/footer_logo.png') no-repeat; background-size: 100%;}
     footer .sns-wrap{}
     footer .sns-wrap li{}
-    footer .sns-wrap li a{}
-    footer .sns-wrap li .youtube{}
-    footer .sns-wrap li .facebook{}
-    footer .sns-wrap li .instargram{}
-    footer .sns-wrap li .b_icon{}
+    footer .sns-wrap li a{display: inline-block}
+    footer .sns-wrap li .youtube{width: 17px; height: 17px; background: url('../img/sns_icon_01.png') no-repeat; background-size: 100%;}
+    footer .sns-wrap li .facebook{width: 17px; height: 17px; background: url('../img/sns_icon_02.png') no-repeat; background-size: 100%;}
+    footer .sns-wrap li .instargram{width: 17px; height: 17px; background: url('../img/sns_icon_03.png') no-repeat; background-size: 100%;}
+    footer .sns-wrap li .b_icon{width: 17px; height: 17px; background: url('../img/sns_icon_04.png') no-repeat; background-size: 100%;}
     footer .company_info{}
     footer .company_info ul{}
     footer .company_info ul li{}
-    footer .company_info ul li a{}
-    footer .company_info p{}
-    footer cite{}
+    footer .company_info ul li a{color: #fff;}
+    footer .company_info p{color: #999;}
+    cite{color: #999; font-style: normal;}
 
 }
 /*태블릿 device*/

@@ -25,17 +25,17 @@ $(document).ready(function() {
         dots:true,
     });
 
-    $('.slick-center-album').slick({
-        centerMode: true,
-        slidesToShow: 5,
-        speed: 1500,
-        index: 1,
-        focusOnSelect:true,
-        autoplay: false,
-        autoplaySpeed: 1000,
-        arrows: false,
-
-    });
+    // $('.slick-center-album').slick({
+    //     centerMode: true,
+    //     slidesToShow: 5,
+    //     speed: 1500,
+    //     index: 1,
+    //     focusOnSelect:true,
+    //     autoplay: false,
+    //     autoplaySpeed: 1000,
+    //     arrows: false,
+    //
+    // });
 
     $('.m-menu').on('click',function(){
         $(this).addClass('open');
@@ -49,6 +49,9 @@ $(document).ready(function() {
         $('.m-menu').removeClass('open');
 
     })
+
+
+
 })
 
 
