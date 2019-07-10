@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    $('a').on('click', function (e) {
-        e.preventDefault();
-    })
+    // $('a').on('click', function (e) {
+    //     e.preventDefault();
+    // })
 
     $('.menu_list > li').on('click', function () {
         var $this = $(this);
