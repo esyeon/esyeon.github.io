@@ -3,7 +3,7 @@
 <pjGroup sub-title="전체">
     <pjList>
         <siteUrl>../portfolio/BSS/index.html</siteUrl>
-        <pjthumb>bss.png</pjthumb>
+        <pjthumb>../thumb/bss.png</pjthumb>
         <pjName>BSS</pjName>
         <pjDate>2019.06 ~ 2019.06</pjDate>
         <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/반응형</pjWork>
