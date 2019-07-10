@@ -66,7 +66,7 @@ $(document).ready(function () {
     })
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
         mapOption = {
-            center: new kakao.maps.LatLng(37.590622, 127.035805), // 지도의 중심좌표
+            center: new kakao.maps.LatLng(37.203118, 127.057757), // 지도의 중심좌표
             level: 4 // 지도의 확대 레벨
         };
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
     var geocoder = new kakao.maps.services.Geocoder();
 
     // 주소로 좌표를 검색합니다
-    geocoder.addressSearch('고려대역', function(result, status) {
+    geocoder.addressSearch('경기 화성시 동탄공원로 21-12', function(result, status) {
 
         // 정상적으로 검색이 완료됐으면
         if (status === kakao.maps.services.Status.OK) {
