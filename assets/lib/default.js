@@ -2,6 +2,9 @@ $(document).ready(function () {
     var $windowScrollTop = $(window).scrollTop();
     var $headerHeight = $('header').outerHeight();
 
+    $('a').on('click',function(e){
+        e.preventDefault()
+    })
     $('.btn_top').on('click',function(){
         $('html,body').stop().animate({
             scrollTop : 0
@@ -34,10 +37,11 @@ $(document).ready(function () {
 
             if ($calcHeight <= $(window).scrollTop()) {
                 $li.eq(idx).addClass('active').siblings().removeClass('active');
-            }else if($sectionFirstTop >= $(window).scrollTop()){
+            }else if($sectionFirstTop > $(window).scrollTop()){
                 $li.removeClass('active');
             }
         })
+
 
         if ( $(this).scrollTop() > 200 ) {
             $( '.btn_top' ).fadeIn();
@@ -50,23 +54,21 @@ $(document).ready(function () {
         var $this = $(this);
         var $header = $this.parent();
 
-        $header.toggleClass('mini')
-        return false;
+        $header.toggleClass('mini');
+
     })
 
+    $('.dim_mobile').on('click',function(){
+        var $this = $(this);
+        var $header = $this.parent();
+        $header.removeClass('mini');
+
+    })
 
 
 
 });
 
-function addElement(){
-    var newImg = document.createElement('img');
-    var srcNode = document.createAttribute('src');
-    srcNode.value = "../assets/image/lsy_logo.png";
-    var heightNode= document.createAttribute('height');
-    heightNode.value = '100';
-    newImg.setAttributeNode(srcNode);
-    newImg.setAttributeNode(heightNode);
-    document.getElementById('main').appendChild(newImg);
-}
+
+
 

@@ -13,15 +13,21 @@ var APP = {
                 var $pjDate = $pjList.find('pjDate').text();
                 var $pjWork = $pjList.find('pjWork').text();
 
-                var listObj = '<a href="' + $siteUrl + '" class="default">';
+
+
                 if($siteUrl == ""){
+                    var listObj = '<a href="' + $siteUrl + '" class="default">';
                     listObj += '<p>내부 사이트이므로 링크없음</p>';
+
                 }else{
                     listObj = '<a href="' + $siteUrl + '" class="thumb" target="_blank" title="새창 열림">';
+
                 }
-                listObj += '<img src="../assets/image/thumb/' + $pjthumb + '"/>';
                 if($pjthumb == ""){
                     $('.default').find('img').remove();
+
+                }else{
+                    listObj += '<img src="../assets/image/thumb/' + $pjthumb + '"/>';
                 }
                 listObj += '<div class="detail_wrap">';
                 listObj += '<div class="detail">';

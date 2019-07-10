@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../assets/image/favicon/favicon.png">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/default.css">
+
 </head>
 <body>
 <div class="wrap">
@@ -22,7 +23,7 @@
             <ul>
                 <li class=""><a href="#">PORTFOLIO</a></li>
                 <li class=""><a href="#">Contact</a></li>
-                <li class=""><a href="#">Menu3</a></li>
+<!--                <li class=""><a href="#">Menu3</a></li>-->
             </ul>
         </nav>
     </header>
@@ -43,7 +44,7 @@
     </section>
     <!--main section end-->
     <!--portfolio section start-->
-    <section class="portfolio_wrap scroll" style="height: 1000px;">
+    <section class="portfolio_wrap scroll">
         <article>
             <div class="block-info">
                 <h2>My portfolio</h2>
@@ -53,9 +54,9 @@
             <div class="portfolio_list">
                 <!-- xml 호출 -->
             </div>
-            <div class="block-more">
-                <a href="#">load more work</a>
-            </div>
+<!--            <div class="block-more">-->
+<!--                <a href="#">load more work</a>-->
+<!--            </div>-->
         </article>
     </section>
     <!--portfolio section end-->
@@ -69,36 +70,54 @@
                     <p><strong>Name :</strong>이승연</p>
                     <p><strong>Age :</strong>26세</p>
                     <p><strong>Gender :</strong>여</p>
-                    <p><strong>Career :</strong>28개월</p>
+                    <p><strong>Career :</strong>29개월</p>
                     <p><strong>Phone :</strong> 010 7339 2398</p>
                     <p><strong>Email :</strong> tmddusdl55@naver.com</p>
                     <p><strong>Address :</strong> 서울 성북구 종암동 (고려대역)</p>
                 </div>
+            </div>
+            <div class="map-area" style="height: 500px">
+                <div id="map" style="width:500px;height:400px;"></div>
             </div>
         </article>
     </section>
     <!--Contact section end-->
 
     <!--Menu3 section start-->
-    <section class="scroll" style="height: 1000px;">
-        <article>
-            <div class="block-info no_data">
-                <p>데이터가없습니다</p></div>
-        </article>
-    </section>
+<!--    <section class="scroll" style="height: 850px;">-->
+<!--        <article>-->
+<!--            <div class="block-info no_data">-->
+<!--                <p>데이터가없습니다</p></div>-->
+<!--        </article>-->
+<!--    </section>-->
     <!--Menu3 section end-->
-    <button type="button" class="btn_top"></button>
 
+    <!--footer-->
+    <footer>
+        <cite>COPYRIGHT© 2019 | LeeSeungYeon. ALL RIGHTS RESERVED. </cite>
+    </footer>
+    <!--footer-->
+
+    <button type="button" class="btn_top">TOP</button>
 </div>
 
-<!--footer-->
-<footer>
-    <cite>COPYRIGHT© 2019 | LeeSeungYeon. ALL RIGHTS RESERVED. </cite>
-</footer>
-<!--footer-->
 </body>
-
-<script type="text/javascript" src="../assets/lib/jquery-1.12.4.min.js"></script>
-<!--<script type="text/javascript" src="../assets/lib/xmlload.js"></script>-->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=52e2e867550c61e766c2149a41293f15"></script>
+<script type="text/javascript" src="../assets/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../assets/lib/xmlload.js"></script>
 <script type="text/javascript" src="../assets/lib/default.js"></script>
+
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+</script>
+
+
+
 </html>

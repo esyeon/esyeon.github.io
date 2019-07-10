@@ -558,6 +558,7 @@ article h2 {
           margin: 0;
           display: block;
           text-align: left;
+          transition: none;
           a {
             font-size: 1.4rem;
           }
@@ -601,7 +602,6 @@ article h2 {
     }
   }
 }
-
 //mobile x-small devices iphone5
 @media screen and (max-width: 320px) {
 
