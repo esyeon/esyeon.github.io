@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KT_Brokering</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+<body>
+<div class="wrap">
+    <header class="header">
+        <!--<div class="logo mini"> 추가클래스 하면 줄어듬-->
+        <div class="logo mini"><a href="#"><h1><img src="../img/kt_bom_logo_small.png" alt="kt_bom로고"></h1></a></div>
+    </header>
+    <!--nav start-->
+    <!-- <nav class="mini"> 추가클래스 하면 줄어듬-->
+    <nav class="mini">
+        <div class="scroll">
+            <!--<button type="button" class="btn_lnb open"></button>-->
+            <button type="button" class="btn_lnb"></button>
+
+            <div class="user_info">
+                <p class="user_name"><strong>홍길동</strong><span>님의 서비스 그룹</span></p>
+                <img src="../img/lnb_dummy_user.png.png" alt="유저 더미 이미지" class="user_img">
+                <div class="selectbox company_group">
+                    <div class="selected_option"><a href="#a">㈜ 나스미디어 웨딩그룹</a></div>
+                    <ul>
+                        <li><a href="#" id="current">㈜ 나스미디어 웨딩그룹</a></li>
+                        <li><a href="#">미디어포스 쇼핑그룹</a></li>
+                        <li><a href="#">미디어포스 뷰티</a></li>
+                        <!-- 사업자 추가, 회사가 등록 안 된 경우 -->
+                        <li class="add_company"><a href="#">사업자 추가</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="#" class="dashboard"><span>대시보드</span></a>
+                </li>
+                <!--li class="active"이면 <ul class="second_depth">이 활성화모드로 됨-->
+                <li class="">
+                    <a href="#" class="service"><span>서비스 관리</span></a>
+                    <ul class="second_depth">
+                        <!--li class="on"이면 <ul class="third_depth">이 활성화모드로 됨-->
+                        <li class="">
+                            <a href="#"><img src="../img/lnb_second_icon01.png" alt="서비스관리 아이콘"><span>서비스관리</span></a>
+                            <ul class="third_depth">
+                                <!--li class="active"이면 활성화모드로 됨-->
+                                <li class=""><a href="#"><span>캠페인캠페인캠페인캠페인캠페인캠페인</span></a></li>
+                                <li class=""><a href="#"><span>#채널LIVE</span></a></li>
+                                <li class=""><a href="#"><span>#채널</span></a></li>
+                                <li class=""><a href="#"><span>#포털</span></a></li>
+                                <li class=""><a href="#"><span>위젯</span></a></li>
+                                <li class=""><a href="#"><span>PCI</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="report"><img src="../img/lnb_second_icon02.png"
+                                                            alt="서비스관리 아이콘"><span>보고서</span></a>
+                            <ul class="third_depth">
+                                <!--li class="active"이면 활성화모드로 됨-->
+                                <li class=""><a href="#"><span>캠페인</span></a></li>
+                                <li class=""><a href="#"><span>#채널LIVE</span></a></li>
+                                <li class=""><a href="#"><span>#채널</span></a></li>
+                                <li class=""><a href="#"><span>#포털</span></a></li>
+                                <li class=""><a href="#"><span>위젯</span></a></li>
+                                <li class=""><a href="#"><span>PCI</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="only">
+                            <a href="#" class="template"><img src="../img/lnb_second_icon03.png" alt="서비스관리 아이콘"><span>탬플릿 관리</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="calculate"><span>정산</span></a>
+                    <ul class="second_depth">
+                        <li class="only">
+                            <a href="#"><span>정산 관리</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="setting"><span>설정</span></a>
+                    <ul class="second_depth">
+                        <li class="only"><a href="#"><span>멤버 관리</span></a></li>
+                        <li class="only"><a href="#"><span>권한/그룹관리</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav_bottom_info">
+                <ul class="links">
+                    <li>
+                        <a href="#"><img src="../img/lnb_center.png" alt="고객센터 아이콘"><span>고객센터</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/lnb_bom.png" alt="소개 페이지 아이콘"><span>소개 페이지</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/lnb_logout.png" alt="로그아웃 아이콘"><span>로그아웃</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--nav end-->
+
+    <section>
+        <article class="content_wrap dashboard_page">
+            <h2 class="title">대시보드</h2>
+
+            <div class="dashboard_area">
+
+                <div class="info_condition">
+
+                    <div class="card campaign">
+                        <h3><span>캠페인</span></h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>승인 대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행 중</dt>
+                            <dd class="grey_circle">14</dd>
+                        </dl>
+                    </div>
+
+                    <div class="card channel">
+                        <h3><span>#채널</span></h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">132</dd>
+                        </dl>
+                        <dl>
+                            <dt>승인 대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행 중</dt>
+                            <dd class="grey_circle">4</dd>
+                        </dl>
+                    </div>
+
+                    <div class="card channel_live">
+                        <h3><span>#채널LIVE</span></h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>승인 대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행 중</dt>
+                            <dd class="grey_circle">4</dd>
+                        </dl>
+                    </div>
+                    <div class="card portal">
+                        <h3><span>#포털</h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>승인 대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행 중</dt>
+                            <dd class="grey_circle">4</dd>
+                        </dl>
+                    </div>
+
+                    <div class="card widget">
+                        <h3><span>위젯</span></h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>승인 대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행 중</dt>
+                            <dd class="grey_circle">4</dd>
+                        </dl>
+                    </div>
+
+                    <!--
+                    <div class="card pci">
+                        <h3><span>PCI</span></h3>
+                        <dl>
+                            <dt>임시</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>승인대기</dt>
+                            <dd class="grey_circle">2</dd>
+                        </dl>
+                        <dl>
+                            <dt>반려</dt>
+                            <dd class="grey_circle">0</dd>
+                        </dl>
+                        <dl>
+                            <dt>진행중</dt>
+                            <dd class="grey_circle">4</dd>
+                        </dl>
+                    </div>
+                        -->
+                </div>
+                <!-- // info_condition  -->
+
+
+                <div class="info_statistics">
+
+                    <div class="card campaign"><!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                        <h3><span>캠페인</span></h3>
+                        <span class="card_tit">소니 알파 A5100 이벤트</span>
+                        <div class="num_info_main"><!-- 차트 영역 -->
+                            <img src="../img/dummy04.png" alt="차트 넣는 곳" width="118px" height="118px"/>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>노출 수</dt>
+                                <dd>4,234,111 회</dd>
+                            </dl>
+                            <dl>
+                                <dt>청약수</dt>
+                                <dd>4,234,111 건</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <div class="card channel">                            <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+
+                        <h3><span>#채널</span></h3>
+                        <span class="card_tit">스노우보드 동호회</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>이용자 수</dt>
+                                <dd>823,568 명</dd>
+                            </dl>
+                            <dl>
+                                <dt>이용 횟수</dt>
+                                <dd>34,111 회</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card portal">
+                        <h3><span>#포털</span></h3>
+                        <span class="card_tit">대학로 연극포털</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>판매수</dt>
+                                <dd>3,234 건</dd>
+                            </dl>
+                            <dl>
+                                <dt>팬매금액(만원)</dt>
+                                <dd>83,354 원</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card widget">
+                        <h3><span>#위젯</span></h3>
+                        <span class="card_tit">삼성전자 노트9 홍보</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>노출 수</dt>
+                                <dd>503,823,568 건</dd>
+                            </dl>
+                            <dl>
+                                <dt>반응 수</dt>
+                                <dd>3,025,732 회</dd>
+                            </dl>
+                            <dl>
+                                <dt>반응률</dt>
+                                <dd>20%</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card portal">
+                        <h3><span>#포털</span></h3>
+                        <span class="card_tit">대학로 연극포털</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>판매 수</dt>
+                                <dd>3,234 건</dd>
+                            </dl>
+                            <dl>
+                                <dt>팬매 금액(만원)</dt>
+                                <dd>83,354 원</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card widget">
+                        <h3><span>#위젯</span></h3>
+                        <span class="card_tit">삼성전자 노트9 홍보</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>노출 수</dt>
+                                <dd>503,823,568 건</dd>
+                            </dl>
+                            <dl>
+                                <dt>반응 수</dt>
+                                <dd>3,025,732 회</dd>
+                            </dl>
+                            <dl>
+                                <dt>반응률</dt>
+                                <dd>20%</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card channel">
+                        <h3><span>#채널</span></h3>
+                        <span class="card_tit">스노우보드 동호회</span>
+                        <div class="num_info_main">
+                            <span>전일 방문자 수</span>
+                            <p class="num_red">824,568<span>명</span></p>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>노출 수</dt>
+                                <dd>4,234,111 건</dd>
+                            </dl>
+                            <dl>
+                                <dt>방문자 수</dt>
+                                <dd>4,234,111 명</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <!-- 클릭하면 해당 서비스 보고서 팝업 호출 -->
+                    <div class="card campaign">
+                        <h3>캠페인</h3>
+                        <span class="card_tit">나이키 여름 홍보 이벤트</span>
+                        <div class="num_info_main"><!-- 차트 영역 -->
+                            <img src="../img/dummy04.png" alt="차트 넣는 곳" width="120px" height="120px"/>
+                        </div>
+                        <div class="num_info_list">
+                            <dl>
+                                <dt>노출 수</dt>
+                                <dd>4,234,111 회</dd>
+                            </dl>
+                            <dl>
+                                <dt>청약 수</dt>
+                                <dd>4,567,000 건</dd>
+                            </dl>
+                        </div>
+                        <span class="grey_circle period">기간 : 2018.07.01~2018.08.31</span>
+                    </div>
+
+                    <div class="button_wrap">
+                        <button class="btn btn_border more_view">더보기</button>
+                    </div>
+                </div>
+
+                <!-- 하단 내용 없을 때 -->
+                <div class="no_content">
+                    <div class="notice_msg">
+                        <p>진행 중인 청약 내용이 없습니다.</p>
+                        <p>좌측 메뉴를 이용하여 청약을 진행해 주세요.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- e dashboard_area -->
+        </article>
+    </section>
+
+    <footer class="mini">
+
+
+        <div class="group">
+            <div class="footer">
+                <div class="inner">
+                    <div class="group">
+                        <ul class="link bar">
+                            <li><a href="https://corp.kt.com/" target="_blank" title="이용약관">회사소개</a></li>
+                            <li><a href="https://corp.kt.com/eng/" target="_blank" title="이용약관">About KT</a></li>
+                            <li><a href="https://corp.kt.com/html/etc/agreement_01.html" target="_blank" title="이용약관">이용약관</a>
+                            </li>
+                            <li><a href="https://corp.kt.com/html/etc/legal.html" target="_blank" title="이용약관">법적고지</a>
+                            </li>
+                            <li><a href="https://inside.kt.com/html/privacy/privacy12.html" target="_blank"
+                                   title="이용약관">개인정보처리방침</a></li>
+                            <li><a href="https://inside.kt.com/html/privacy/privacy19.html" target="_blank"
+                                   title="이용약관"><strong>개인정보 이용내역</strong></a></li>
+                            <li><a href="https://corp.kt.com/html/etc/agreement_05.html" target="_blank" title="이용약관">청소년
+                                보호정책</a></li>
+                            <li><a href="https://corp.kt.com/html/etc/contact.html" target="_blank"
+                                   title="이용약관">문의/안내처</a></li>
+                        </ul>
+                        <!--
+                        <ul class="link dot">
+                            <li><a href="https://my.kt.com/cancelpay/CancelPayInfo.do">미환급금 조회/환불</a></li>
+                            <li><a href="http://wiseuser.go.kr/jsp/commList.do?bcode=515&hcode=515&vcode=2755">청소년 유해차단 안내</a></li>
+                            <li><a href="https://inside.kt.com/html/privacy/privacy01.html">이용자피해예방 가이드</a></li>
+                            <li><a href="http://www.cleanict.or.kr/">불공정행위 신고센터</a></li>
+                            <li><a href="https://www.notm.or.kr/index">개인정보보호 자율감시센터</a></li>
+                            <li><a href="https://corp.kt.com/html/sustain/transparent/ethics_03.html">윤리위반신고</a></li>
+                        </ul>
+                    -->
+                        <div class="right-box">
+                            <div class="family">
+                                <button type="button">Family Site</button>
+                                <div>
+                                    <ul class="scrollbar">
+                                        <li><a href="https://biz.kt.com/">KT 기업</a></li>
+                                        <li><a href="https://shop.kt.com/">KT Shop</a></li>
+                                        <li><a href="https://corp.kt.com/">KT 회사소개 국문</a></li>
+                                        <li><a href="#https://corp.kt.com/eng/">KT 회사소개 영문</a></li>
+                                        <li><a href="#a">평창 2018</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#a" class="family-intro">그룹사 소개</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner group">
+                    <div class="address">
+                        (주)케이티 대표이사 황창규 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90
+                        (정자동 206번지)
+                        <a href="#a">사업자정보확인</a><br>
+                        고객센터 : [모바일] 휴대폰+114(무료), 1588-0010(유료)&nbsp;[인터넷/TV/전화] 유선전화(국번없이) 100, 휴대폰(지역번호)+100&nbsp;
+                    </div>
+                    <p class="copyright">Copyright© 2018 kt corp. All rights reserved.</p>
+
+                </div>
+            </div>
+            <!-- //footer -->
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>

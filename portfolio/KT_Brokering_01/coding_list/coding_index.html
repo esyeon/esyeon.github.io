@@ -1,0 +1,3063 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KT_Brokering_coding_list</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<style type="text/css">
+		#wrap {
+
+			min-width: 1280px;
+		}
+		#header {
+			background: #f6f6f6;
+			color: #000;
+			font-size: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			height: 60px;
+			line-height: 60px;
+		}
+		#container {
+			height: 100%;
+		}
+		#container > .contents {
+			margin: 2% 0;
+		}
+		#container > .contents table {
+			width: 90%;
+			border-collapse: collapse;
+			text-align: center;
+			margin: 0 auto;
+		}
+		#container > .contents table thead {
+			border-top: 2px solid #333;
+			border-bottom: 1px solid #ddd;
+		}
+		#container > .contents table thead tr th {
+			background: #f6f6f6;
+			height: 50px;
+			vertical-align: middle;
+			font-size: 1em;
+			font-weight: 700;
+			color: #333;
+		}
+		#container > .contents table tbody tr td {
+			height: 50px;
+			vertical-align: middle;
+			font-size: 1em;
+			border-bottom: 1px solid #ddd;
+			color: #333;
+		}
+		#container > .contents table tbody tr .nt03,
+		#container > .contents table tbody tr .nt04,
+		#container > .contents table tbody tr .nt05 {
+			text-align: left;
+			padding: 0 1em;
+		}
+		.process_circle span {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 35px;
+			font-size: .8em;
+			background: #9a64d4;
+			color: #fff;
+		}
+		.info_msg {
+			color: #fc6e2e;
+			font-size: .7em;
+			padding-left: 1em;
+		}
+		.ok {
+			background-color: #079c26 !important;
+			color: #fff !important;
+		}
+		.ok:before {
+			content: '완료'
+		}
+		.chg {
+			background-color: blue !important;
+			color: #fff !important;
+		}
+		#tabs ul:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		#tabs ul {
+			width: 90%;
+			margin: 0 auto;
+		}
+		#tabs ul li {
+			float: left;
+			margin-left: 10px;
+		}
+		#tabs ul li:first-child {
+			margin-left: 0;
+		}
+		.btn_set {
+			width: 120px;
+			height: 50px;
+			line-height: 50px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #ffb9ab;
+		}
+		.btn_set.on {
+			background-color: #ff2121;
+		}
+		.first_line {
+			border-top: 2px solid #333;
+		}
+		.top_btn {
+			opacity: 0;
+			transition: all 0.5s ease;
+			position: fixed;
+			right: 25px;
+			bottom: 10px;
+			height: 50px;
+			color: white;
+			border: none;
+			background: black;
+			cursor: pointer;
+		}
+		.top_btn.show {
+			opacity: 1;
+		}
+		.tab_content {
+			display: none;
+		}
+		.tab_content.on {
+			display: block;
+		}
+		.nt05 a {
+			display: inline-block;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+		}
+		p.add_text {
+			padding: 5px 0;
+			margin-left: -10px;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 20px;
+			color: #fc6e2e;
+		}
+		p.add_text:nth-child(2) {
+			color: #9758da;
+		}
+		p.add_text:nth-child(3) {
+			color: #079c26
+		}
+		.dim{
+			z-index: 10;
+			position: absolute;
+			top: 200px;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 55%;
+			height: 437px;
+			background-color: rgba(0, 0, 0, 0.41);
+		}
+		.dim:before{
+			content:'내부용사이트이므로 샘플 페이지만 링크 연결';
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+
+		}
+	</style>
+
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<div id="header">
+		<div class="header_in"><h1><span>KT_brokering_coding_list</span></h1></div>
+	</div>
+
+	<div id="container">
+
+		<div class="contents">
+			<div id="tabs">
+				<ul>
+					<li class="btn_set on" data-tab="tab_1">CMS</li>
+					<li class="btn_set" data-tab="tab_2">Admin</li>
+
+				</ul>
+
+				<div class="tab_content on" id="tab_1">
+					<table class="coding_list_table">
+						<colgroup>
+							<col width="5%"/>
+							<col width="5%"/>
+							<col width="10%"/>
+							<col width="40%"/>
+							<col width="*"/>
+							<col width="5%"/>
+							<col width="5%"/>
+						</colgroup>
+						<thead>
+						<th class="first">NUM</th>
+						<th scope="col">화면 ID</th>
+						<th scope="col">카테고리</th>
+						<th scope="col">설명</th>
+						<th scope="col">링크<span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
+						<th scope="col">진행</th>
+						<th scope="col">수정</th>
+						</thead>
+						<tbody>
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>소개 페이지</td>
+							<td class="nt04"><p class="add_text">
+								- 상단 gnb 클래스, 앵커 수정<br/>
+								- 스크립트 추가
+							</p>
+							<p class="add_text">
+									- 푸터영역 링크 수정
+								</p>
+							</td>
+							<td class="nt05"><a href="../html/intro_page.html" target="_blank">intro_page.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">19.01.22</td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>LNB</td>
+							<td class="nt04">
+								<p class="add_text">- 사업자추가 text 앞 i 태그 추가<br/>- 메뉴 리스트 순서 변경<br/>- 상단 프로필 사진 제거</p>
+								<p class="add_text"></p>
+								<p class="add_text">- 메뉴 순서 변경</p>
+								<p class="add_text">- 내 정보 변경 버튼 추가, username 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/lnb.html" target="_blank">lnb.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.21</td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>ID없음</td>
+							<td>대시보드</td>
+							<td class="nt04">
+								<p class="add_text">
+									- 상단 #채널과 #채널LIVE 순서 변경<br/>
+									- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중
+								</p>
+							</td>
+							<td class="nt05"><a href="../html/dashboard.html" target="_blank">dashboard.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td></td>
+							<td>kt_bom_mail - 아웃룩</td>
+							<td class="nt04"></td>
+							<td class="nt05"><a href="../html/kt_bom_mail_outlook.html" target="_blank">kt_bom_mail_outlook.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td></td>
+							<td>kt_bom_mail</td>
+							<td class="nt04"></td>
+							<td class="nt05"><a href="../html/kt_bom_mail.html" target="_blank">kt_bom_mail.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td></td>
+							<td>에러 페이지</td>
+							<td class="nt04">
+								<p class="add_text">
+									- 이미지 태그에 사이즈 추가
+								</p>
+								<p class="add_text">
+									- 새로고침 버튼 클릭 시, 새로고침 기능 실행되도록 스크립트 추가
+								</p>
+							</td>
+							<td class="nt05"><a href="../html/error.html" target="_blank">error.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">19.01.22</td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								캠페인 등록 > 기본정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_campaign_01.html" target="_blank">guidepopup_campaign_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								캠페인 등록 > 랜딩 템플릿 연결
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_campaign_02.html" target="_blank">guidepopup_campaign_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								캠페인 등록 > 청구정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_campaign_03.html" target="_blank">guidepopup_campaign_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								캠페인 등록 > 승인 대기
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_campaign_04.html" target="_blank">guidepopup_campaign_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널 등록 > 기본정보입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_01.html" target="_blank">guidepopup_channel_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널 등록 > 랜딩템플릿 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_02.html" target="_blank">guidepopup_channel_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널 등록 > 청구정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_03.html" target="_blank">guidepopup_channel_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널 등록 > 승인대기
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_04.html" target="_blank">guidepopup_channel_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널 등록 > 컨텐츠 등록
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_05.html" target="_blank">guidepopup_channel_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널LIVE 등록 > 기본정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_live_01.html" target="_blank">guidepopup_channel_live_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널LIVE 등록 > 청구정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_live_02.html" target="_blank">guidepopup_channel_live_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								#채널LIVE 등록 > 승인대기
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_channel_live_03.html" target="_blank">guidepopup_channel_live_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+
+						<tr class="">
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								포털 등록 > 기본정보 입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_portal_01.html" target="_blank">guidepopup_portal_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								포털 등록 > 컨텐츠 등록
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_portal_02.html" target="_blank">guidepopup_portal_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								포털 등록 > 랜딩템플릿 연결
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_portal_03.html" target="_blank">guidepopup_portal_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								포털 등록 > 승인대기
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_portal_04.html" target="_blank">guidepopup_portal_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+
+						<tr class="">
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								위젯 등록 > 위젯템플릿제작
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_widget_00.html" target="_blank">guidepopup_widget_00.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								위젯 등록 > 기본정보입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_widget_01.html" target="_blank">guidepopup_widget_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								위젯 등록 > 위젯템플릿 연결
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_widget_02.html" target="_blank">guidepopup_widget_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								위젯 등록 > 청구정보입력
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_widget_03.html" target="_blank">guidepopup_widget_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								위젯 등록 > 승인대기
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_widget_04.html" target="_blank">guidepopup_widget_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>가이드 팝업</td>
+							<td class="nt04">
+								랜딩템플릿 생성
+							</td>
+							<td class="nt05"><a href="../html/guidepopup_landing_01.html" target="_blank">guidepopup_landing_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+
+
+
+						<tr class="first_line">
+							<td></td>
+							<td>0011</td>
+							<td>로그인</td>
+							<td class="nt04">사업자등록(개인사업자,법인사업자)</td>
+							<td class="nt05"><a href="../html/business_registration.html" target="_blank">business_registration.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>003-4</td>
+							<td>로그인</td>
+							<td class="nt04">개인사업자 등록_개인사업자 신규 /디자인 파일명:최종산출물 공통6</td>
+							<td class="nt05"><a href="../html/buisnessman_01.html"
+												target="_blank">buisnessman_01.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>003-3</td>
+							<td>로그인</td>
+							<td class="nt04">그룹관리자 등록_개인사업자 있는 경우 /디자인 파일명:최종산출물 공통7</td>
+							<td class="nt05"><a href="../html/group_businessman_01.html" target="_blank">group_businessman_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>003-22</td>
+							<td>로그인</td>
+							<td class="nt04">그룹 관리자 정보</td>
+							<td class="nt05"><a href="../html/group_manager_info.html" target="_blank">group_manager_info.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>003-1</td>
+							<td>로그인</td>
+							<td class="nt04">그룹관리자 등록_법인사업자 있는 경우</td>
+							<td class="nt05"><a href="../html/group_businessman_02.html" target="_blank">group_businessman_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>로그인</td>
+							<td class="nt04">그룹관리자 수정</td>
+							<td class="nt05"><a href="../html/group_businessman_02_modify.html" target="_blank">group_businessman_02_modify.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>003-21</td>
+							<td>로그인</td>
+							<td class="nt04">법인사업자 등록_법인사업자 신규</td>
+							<td class="nt05"><a href="../html/businessman_02.html"
+												target="_blank">businessman_02.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>211-1</td>
+							<td>캠페인</td>
+							<td class="nt04">진행 중인 캠페인
+								<p class="add_text">
+									- 상단 보고서 보기 버튼 삭제<br/>- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중
+								</p>
+							</td>
+							<td class="nt05"><a href="../html/campaign_01.html" target="_blank">campaign_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>211-21</td>
+							<td>캠페인</td>
+							<td class="nt04">캠페인 등록_캠페인 정보
+								<p class="add_text">- 캠페인 예산, 캠페인 노출수 input 안의 단위 텍스트 밖으로 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 유형 툴팁 내용 수정, 유형 선택 dropdown 메뉴리스트 수정</p>
+								<p class="add_text">- 제품선호도/VOD 시청 성향 라디오 버튼 추가/dimmed 처리 스타일 추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/campaign_03.html" target="_blank">campaign_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>211-21</td>
+							<td>캠페인</td>
+							<td class="nt04">캠페인 등록</td>
+							<td class="nt05"><a href="../html/campaign_04.html" target="_blank">campaign_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>211-23</td>
+							<td>캠페인</td>
+							<td class="nt04">캠페인 예산
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 반려/중지사유 '내용' 텍스트 컬러 강조(레드)로 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/campaign_05.html" target="_blank">campaign_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>211-51</td>
+							<td>캠페인</td>
+							<td class="nt04">캠페인 수정
+								<p class="add_text">- 캠페인 예산, 캠페인 노출수 input 안의 단위 텍스트 밖으로 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한<br/>- 타이틀이 있는 툴팁 마크업 변경</p>
+								<p class="add_text">- 유형 툴팁 내용 수정, 유형 선택 dropdown 메뉴리스트 수정</p>
+								<p class="add_text">- 제품선호도/VOD 시청 성향 라디오 버튼 추가/dimmed 처리 스타일 추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- "18시 이전 수정 내역은 명일 적용되며, 18시 이후 수정 내역은 명후일에 적용됩니다." 문구 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/campaign_06.html" target="_blank">campaign_06.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>211-11</td>
+							<td>캠페인</td>
+							<td class="nt04">캠페인 팝업</td>
+							<td class="nt05"><a href="../html/campaign_02.html"
+												target="_blank">campaign_02.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>211-41</td>
+							<td>캠페인</td>
+							<td class="nt04">상세 - (하단 "반려사유" 추가 도 같이 들어있음)</td>
+							<td class="nt05"><a href="../html/campaign_05.html"
+												target="_blank">campaign_05.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>210-3-3-11</td>
+							<td>캠페인</td>
+							<td class="nt04">상세정보</td>
+							<td class="nt05"><a href="../html/campaign_03.html"
+												target="_blank">campaign_03.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>W001-01</td>
+							<td>캠페인</td>
+							<td class="nt04">위젯템플릿관리</td>
+							<td class="nt05"><a href="../html/widget_template_01.html" target="_blank">widget_template_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>W001-02</td>
+							<td>캠페인</td>
+							<td class="nt04">위젯템플릿관리 - 위젯 템플릿 생성
+								<p class="add_text">- 위젯 템플릿 상세 정보 우측 "이미지 등록 안내 " 버튼 추가</p>
+								<p class="add_text">- 위젯 상세 유형 아래 "샘플보기" 버튼 삭제</p>
+								<p class="add_text">- 등록된 위젯 이미지 영역 마우스 호버 시 수정/삭제 버튼 노출</p>
+								<p class="add_text">- 위젯 상세 유형 > 이미지 필수 등록 영역의 안내문구에 필수입력 항목 기호(*)를 레드 컬러로 표시</p>
+								<p class="add_text">- 위젯 이미지 > 이미지 등록 영역 필수 등록 문구 추가</p>
+								<p class="add_text">- 위젯 이미지 > 이미지 등록 영역 필수 등록 문구 첫번째 이미지에만 적용</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 상단 랜딩 템플릿 생성 버튼 하단으로 이동</p>
+								<p class="add_text">- "위젯 정보 단계에서 선택 된  #채널 번호와 연결되는 화면이며, 시청자가 #채널 번호로 검색 시 이동되는 화면 입니다." 문구 추가 </p>
+							</td>
+							<td class="nt05"><a href="../html/widget_template_02.html" target="_blank">widget_template_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>W001-02</td>
+							<td>캠페인</td>
+							<td class="nt04">위젯템플릿관리 - 위젯 이미지 등록 안내 팝업
+								<p class="add_text">- 인디케이터 위치 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_template_popup.html" target="_blank">widget_template_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.04</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>W001-03,4</td>
+							<td>캠페인</td>
+							<td class="nt04">위젯템플릿관리 - 위젯 템플릿 상세/수정
+								<p class="add_text">- 위젯 제목 → 제목 텍스트 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_template_03.html" target="_blank">widget_template_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>W001-05</td>
+							<td>캠페인</td>
+							<td class="nt04">위젯템플릿관리 - 위젯 청약</td>
+							<td class="nt05"><a href="../html/widget_template_04.html" target="_blank">widget_template_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-01</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩탬플릿관리
+								<p class="add_text">-상단의 검수 전, 검수 완료 박스 클래스 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/landing_template_01.html" target="_blank">landing_template_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-02</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩템플릿생성
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/landing_template_02.html" target="_blank">landing_template_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-02</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩템플릿_팝업</td>
+							<td class="nt05"><a href="../html/landing_template_popup.html" target="_blank">landing_template_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-02</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩템플릿_팝업_2</td>
+							<td class="nt05"><a href="../html/landing_template_popup_01.html" target="_blank">landing_template_popup_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-05</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩템플릿상세</td>
+							<td class="nt05"><a href="../html/landing_template_03.html" target="_blank">landing_template_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-06</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 랜딩템플릿수정</td>
+							<td class="nt05"><a href="../html/landing_template_04.html" target="_blank">landing_template_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>RT001-06</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 템플릿 소스 목록</td>
+							<td class="nt05"><a href="../html/template_source_01.html" target="_blank">template_source_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-06</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 템플릿 소스 생성</td>
+							<td class="nt05"><a href="../html/template_source_02.html" target="_blank">template_source_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-06</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 템플릿 소스 상세</td>
+							<td class="nt05"><a href="../html/template_source_03.html" target="_blank">template_source_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RT001-06</td>
+							<td>캠페인</td>
+							<td class="nt04">탬플릿관리 - 템플릿 소스 수정</td>
+							<td class="nt05"><a href="../html/template_source_04.html" target="_blank">template_source_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td>214-1</td>
+							<td>포털</td>
+							<td class="nt04">진행중인 #포털
+								<p class="add_text">- 보고서 보기 버튼 삭제<br/>- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중</p>
+							</td>
+							<td class="nt05"><a href="../html/portal_01.html" target="_blank">portal_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>214-2</td>
+							<td>포털</td>
+							<td class="nt04">#포털 등록
+								<p class="add_text">- 제목 input 사이즈 변경<br/>
+									- 채널번호 input 사이즈 수정</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/portal_02_renew.html"
+												target="_blank">portal_02_renew.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>214-3</td>
+							<td>포털</td>
+							<td class="nt04">포털 컨테츠 등록
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/portal_03.html" target="_blank">portal_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>214-4</td>
+							<td>포털</td>
+							<td class="nt04">대학로 뮤지컬 포털 컨텐츠 정보
+								<p class="add_text">- 제목 input 사이즈 변경</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 템플릿 삭제, 썸네일 위치 이동, 텍스트 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/portal_04_1.html" target="_blank">portal_04_1.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.13</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>214-4</td>
+							<td>포털</td>
+							<td class="nt04">대학로 뮤지컬 포털 컨텐츠 정보_팝업</td>
+							<td class="nt05"><a href="../html/portal_04_2.html" target="_blank">portal_04_2.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>214-4</td>
+							<td>포털</td>
+							<td class="nt04">대학로 뮤지컬 포털 컨텐츠 정보 수정 (상세랑 같은 페이지)
+								<p class="add_text">- 제목 input 사이즈 변경<br/>
+									- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 템플릿 삭제, 썸네일 위치 이동, 텍스트 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/portal_04_3.html" target="_blank">portal_04_3.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.13</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>224-1</td>
+							<td>포털</td>
+							<td class="nt04">#포털 보고서 목록</td>
+							<td class="nt05"><a href="../html/portal_report_01.html" target="_blank">portal_report_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>224-21</td>
+							<td>포털</td>
+							<td class="nt04">#포털 보고서 상세</td>
+							<td class="nt05"><a href="../html/portal_report_02.html" target="_blank">portal_report_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>포털</td>
+							<td class="nt04">상세
+
+							</td>
+							<td class="nt05"><a href="../html/portal_05.html" target="_blank">portal_05.html</a>
+								<p class="add_text">- 반려/중지사유 '내용' 텍스트 컬러 강조(레드)로 수정</p>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>포털</td>
+							<td class="nt04">방송시간 팝업</td>
+							<td class="nt05"><a href="../html/portal_05_popup_01.html" target="_blank">portal_05_popup_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.13</td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td>215-1</td>
+							<td>위젯</td>
+							<td class="nt04">위젯
+								<p class="add_text">- 보고서 보기 버튼 삭제<br/>- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_01.html" target="_blank">widget_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>215-21</td>
+							<td>위젯</td>
+							<td class="nt04">위젯_위젯 정보(전체노출형)
+								<p class="add_text">- 위젯 제목 → 제목 텍스트 수정 <br/>- 제목 input 사이즈 변경<br/>- #채널 선택 번호 입력 input
+									사이즈 수정<br/>- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 12자 제한
+									<br/>- 타이틀이 있는 툴팁 마크업 변경</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_02.html" target="_blank">widget_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>215-22</td>
+							<td>위젯</td>
+							<td class="nt04">위젯_위젯 정보(타겟노출형)
+								<p class="add_text">- 위젯 제목 → 제목 텍스트 수정 <br/>- 제목 input 사이즈 변경<br/>- #채널 선택 번호 입력 input
+									사이즈 수정<br/>- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 12자 제한<br/>- 타이틀이 있는 툴팁 마크업 변경</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 제품선호도/VOD 시청 성향 라디오 버튼 추가/dimmed 처리 스타일 추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_03.html" target="_blank">widget_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>215-21</td>
+							<td>위젯</td>
+							<td class="nt04">위젯수정
+								<p class="add_text">- 위젯 제목 → 제목 텍스트 수정 <br/>- 제목 input 사이즈 변경<br/>- #채널 선택 번호 입력 input
+									사이즈 수정<br/>- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 12자 제한</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/widget_04.html" target="_blank">widget_04.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>215-25</td>
+							<td>위젯</td>
+							<td class="nt04">위젯청약</td>
+							<td class="nt05"><a href="../html/widget_06.html" target="_blank">widget_06.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>215-31</td>
+							<td>위젯</td>
+							<td class="nt04">위젯상세정보 (구글독스리스트에없고, 디자인,SB에 있어서 구축함)</td>
+							<td class="nt05"><a href="../html/widget_03_1.html" target="_blank">widget_03_1.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>225-1</td>
+							<td>위젯</td>
+							<td class="nt04">위젯보고서목록</td>
+							<td class="nt05"><a href="../html/widget_report_01.html" target="_blank">widget_report_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>225-21</td>
+							<td>위젯</td>
+							<td class="nt04">위젯보고서상세</td>
+							<td class="nt05"><a href="../html/widget_report_02.html" target="_blank">widget_report_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-3-4</td>
+							<td>위젯</td>
+							<td class="nt04">상세정보 (상세랑 같은페이지임)</td>
+							<td class="nt05"><a href="../html/widget_05.html" target="_blank">widget_05.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>210-3</td>
+							<td>청약</td>
+							<td class="nt04">캠페인정보 -> 청약_기본정보, 청구정보, 상품정보
+								<p class="add_text">- 이전 청구 불러온 후 영역 수정</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+							</td>
+							<td class="nt05"><a href="../html/offer_info_01.html" target="_blank">offer_info_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">2018.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3</td>
+							<td>청약</td>
+							<td class="nt04">캠페인정보 -> 이전청구정보 불러오기 팝업</td>
+							<td class="nt05"><a href="../html/offer_info_01_popup_01.html" target="_blank">offer_info_01_popup_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>청약</td>
+							<td class="nt04">위젯 -> 청약_기본정보, 청구정보, 상품정보
+								<p class="add_text">
+									- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+
+							</td>
+							<td class="nt05">
+								<a href="../html/offer_info_01_1.html" target="_blank">offer_info_01_1.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>청약</td>
+							<td class="nt04">PCI -> 청약_기본정보, 청구정보, 상품정보
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+
+							</td>
+							<td class="nt05">
+								<a href="../html/offer_info_01_2.html" target="_blank">offer_info_01_2.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>청약</td>
+							<td class="nt04">#채널 LIVE 정보 -> 청약_기본정보, 청구정보, 상품정보
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+
+							</td>
+							<td class="nt05">
+								<a href="../html/offer_info_01_3.html" target="_blank">offer_info_01_3.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>청약</td>
+							<td class="nt04">#채널 -> 청약_기본정보, 청구정보, 상품정보
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+
+							</td>
+							<td class="nt05">
+								<a href="../html/offer_info_01_4.html" target="_blank">offer_info_01_4.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>ID없음</td>
+							<td>청약</td>
+							<td class="nt04">추가됨 - 일반 수정(추가 기획 : 반려 케이스 화면 사나리오 별도 표기 - 구글독스)</td>
+							<td class="nt05"><a href="#" target="_blank"></a></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-1-11</td>
+							<td>청약</td>
+							<td class="nt04">청약_법인사업자인 경우</td>
+							<td class="nt05"><a href="../html/offer_info_02.html" target="_blank">offer_info_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-1-21</td>
+							<td>청약</td>
+							<td class="nt04">청구정보_지로 선택한 경우</td>
+							<td class="nt05"><a href="../html/bill_info_01.html" target="_blank">bill_info_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-1-22</td>
+							<td>청약</td>
+							<td class="nt04">청구정보_신용카드 선택한 경우
+							<p class="add_text">- 청구정보입력 : [카드인증] 버튼 위치 정보입력 마지막 위치로 변경</p>
+						</td>
+							<td class="nt05"><a href="../html/bill_info_02.html" target="_blank">bill_info_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-1-23</td>
+							<td>청약</td>
+							<td class="nt04">주소검색
+								<p class="add_text">- 레이어 팝업으로 원상복구</p>
+								<p class="add_text">- 주소 팝업 높이 수정</p>
+								<p class="add_text">- "도로명 주소 확인" 선택 필수 영역 표시 "*"추가</p>
+							</td>
+							<td class="nt05"><a href="../html/bill_info_04.html" target="_blank">bill_info_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">10.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-2-1</td>
+							<td>청약</td>
+							<td class="nt04">청약_개인사업자인 경우</td>
+							<td class="nt05"><a href="../html/offer_info_03.html" target="_blank">offer_info_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-3-2-2</td>
+							<td>청약</td>
+							<td class="nt04">청구정보</td>
+							<td class="nt05"><a href="../html/bill_info_03.html" target="_blank">bill_info_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>210-4</td>
+							<td>청약</td>
+							<td class="nt04">청약 승인요청 완료</td>
+							<td class="nt05"><a href="../html/offer_info_04.html" target="_blank">offer_info_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td>221-1</td>
+							<td>보고서</td>
+							<td class="nt04">캠페인 보고서 목록</td>
+							<td class="nt05"><a href="../html/campaign_report_01.html" target="_blank">campaign_report_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>221-21</td>
+							<td>보고서</td>
+							<td class="nt04">캠페인 보고서 상세
+								<p class="add_text"></p>
+								<p class="add_text">
+									- 타이틀이 있는 툴팁 마크업 변경</p>
+								<p class="add_text">
+									- 툴팁 텍스트 변경</p>
+								</td>
+							<td class="nt05"><a href="../html/campaign_report_02.html" target="_blank">campaign_report_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>42-1</td>
+							<td>설정</td>
+							<td class="nt04">그룹관리</td>
+							<td class="nt05"><a href="../html/setting_01.html" target="_blank">setting_01.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>42-1</td>
+							<td>설정</td>
+							<td class="nt04">그룹관리 - 팝업</td>
+							<td class="nt05"><a href="../html/setting_01-2.html" target="_blank">setting_0-2.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>41-1</td>
+							<td>설정</td>
+							<td class="nt04">멤버관리 목록</td>
+							<td class="nt05"><a href="../html/setting_02-1.html" target="_blank">setting_02-1.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>41-2</td>
+							<td>설정</td>
+							<td class="nt04">멤버등록</td>
+							<td class="nt05"><a href="../html/setting_02-2.html" target="_blank">setting_02-2.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>41-3</td>
+							<td>설정</td>
+							<td class="nt04">멤버정보</td>
+							<td class="nt05"><a href="../html/setting_02-3.html" target="_blank">setting_02-3.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>41-4</td>
+							<td>설정</td>
+							<td class="nt04">멤버정보수정</td>
+							<td class="nt05"><a href="../html/setting_02-4.html" target="_blank">setting_02-4.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>212-1</td>
+							<td>채널 LIVE</td>
+							<td class="nt04">진행 중인 #채널LIVE
+								<p class="add_text">- 보고서 보기 버튼 삭제<br/>- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중</p>
+								<p class="add_text">- 이용시간 테이블 컬럼 삭제/방송시간 표기 수정/제목에 텍스트 추가</p>
+								<p class="add_text">- 제목 영역 [외 0건] 동일하게 주석 처리</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_live_01.html" target="_blank">channel_live_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">19.01.03</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>212-21</td>
+							<td>채널 LIVE</td>
+							<td class="nt04">#채널LIVE 등록
+								<p class="add_text">- #채널LIVE 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경<br/>
+									- 촬영 비밀번호, 채널번호, TV시청 비밀번호 input 사이즈 수정</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 시청방법문자수신/시청방법내용 영역 삭제, 등록 버튼 하단에 방송시청방법안내/방송촬영방법안내 추가</p>
+								<p class="add_text">
+									- "촬영자 인증번호" > "촬영인증 번호"로 변경,"※ 8자리 숫자만 가능합니다." > "※ 4자리 숫자만 가능합니다."로 변경, "촬영 비밀번호" > "코드번호"로 변경<br />
+									- #채널LIVE > 방송시청방법안내/방송촬영방법안내 수정된 텍스트 적용<br />
+									- [촬영 인증 번호] → [촬영 인증 코드] 텍스트 수정
+									- [저장] → [임시 저장] 텍스트 수정<br />
+									- [코드 번호] → [촬영 접속 코드] 텍스트 수정<br />
+									- [촬영 인증 코드], [촬영 접속 코드] → [TV 시청 코드] 위로 테이블 영역 변경]<br />
+									- #채널 번호 선택 시, 인증번호 0000(평문) + "인풋 영역" 순으로 평문(수정 불가 상태로 선택된 #채널 번호 연동 노출 처리) 추가<br/>
+									- "※ 쵤영 인증 코드 8자리와 촬영 접속 코드 4자리를 이용해 BOM 모바일 앱에서 촬영 목록을 확인 및 촬영을 실행 할 수 있습니다." 문구 추가<br/>
+									- "※ 시청자가 해당 #채널 LIVE 방송을 시청 할 수 있는 접속번호 입니다." 문구 추가<br/>
+									- [#채널LIVE 추가] 버튼 및 기능 주석 처리
+								</p>
+							<td class="nt05"><a href="../html/channel_live_02.html" target="_blank">channel_live_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">19.01.03</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>212-41</td>
+							<td>채널 LIVE</td>
+							<td class="nt04">#채널LIVE 수정
+								<p class="add_text">- #채널LIVE 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경<br/>
+									- 촬영 비밀번호, 채널번호, TV시청 비밀번호 input 사이즈 수정</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 시청방법문자수신/시청방법내용 영역 삭제, 등록 버튼 하단에 방송시청방법안내/방송촬영방법안내 추가</p>
+								<p class="add_text">- "촬영자 인증번호" > "촬영인증 번호"로 변경,"※ 8자리 숫자만 가능합니다." > "※ 4자리 숫자만 가능합니다."로 변경, "촬영 비밀번호" > "코드번호"로 변경</p>
+								<p class="add_text">
+									- #채널LIVE > 방송시청방법안내/방송촬영방법안내 수정된 텍스트 적용<br />
+									- [촬영 인증 번호] → [촬영 인증 코드] 텍스트 수정
+									- [저장] → [임시 저장] 텍스트 수정<br />
+									- [코드 번호] → [촬영 접속 코드] 텍스트 수정<br />
+									- [촬영 인증 코드], [촬영 접속 코드] → [TV 시청 코드] 위로 테이블 영역 변경]<br />
+									- #채널 번호 선택 시, 인증번호 0000(평문) + "인풋 영역" 순으로 평문(수정 불가 상태로 선택된 #채널 번호 연동 노출 처리) 추가<br/>
+									- "※ 쵤영 인증 코드 8자리와 촬영 접속 코드 4자리를 이용해 BOM 모바일 앱에서 촬영 목록을 확인 및 촬영을 실행 할 수 있습니다." 문구 추가<br/>
+									- "※ 시청자가 해당 #채널 LIVE 방송을 시청 할 수 있는 접속번호 입니다." 문구 추가<br/>
+									- [#채널LIVE 추가] 버튼 및 기능 주석 처리
+								</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_live_04.html"
+												target="_blank">channel_live_04.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">19.01.03</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>222-1</td>
+							<td>채널 LIVE</td>
+							<td class="nt04">#채널LIVE 보고서 목록</td>
+							<td class="nt05"><a href="../html/channel_live_report_01.html" target="_blank">channel_live_report_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>212-31</td>
+							<td>채널 LIVE</td>
+							<td class="nt04">상세 (210-3-3-2 상세정보 같이 있음)
+								<p class="add_text">- 시청방법문자수신/시청방법내용 영역 삭제, 등록 버튼 하단에 방송시청방법안내/방송촬영방법안내 추가</p>
+								<p class="add_text">- "촬영자 인증번호" > "촬영인증 번호"로 변경,"※ 8자리 숫자만 가능합니다." > "※ 4자리 숫자만 가능합니다."로 변경, "촬영 비밀번호" > "코드번호"로 변경</p>
+<p class="add_text">
+	- [촬영 인증 번호] → [촬영 인증 코드] 텍스트 수정<br />
+	- [코드 번호] → [촬영 접속 코드] 텍스트 수정<br />
+	- [촬영 인증 코드], [촬영 접속 코드] → [TV 시청 코드] 위로 테이블 영역 변경
+</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_live_03.html"
+												target="_blank">channel_live_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+
+
+						<tr class="first_line">
+							<td></td>
+							<td>213-1</td>
+							<td>채널</td>
+							<td class="nt04">진행 중인 #채널
+								<p class="add_text">- 보고서 보기 버튼 삭제<br/>- 띄어쓰기 수정 : 승인대기 → 승인 대기/진행중 → 진행 중</p></td>
+							<td class="nt05"><a href="../html/channel_01.html" target="_blank">channel_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-2</td>
+							<td>채널</td>
+							<td class="nt04">#채널 등록_채널정보
+								<p class="add_text">- #채널 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경<br/>
+									- 채널번호 input 사이즈 수정<br/>
+									- 이용 금액 금액 단위 텍스트 분리
+									- 사용자 이용제한 툴팁 안에 '이동형 추가'</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_02.html" target="_blank">channel_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-3</td>
+							<td>채널</td>
+							<td class="nt04">#채널 > 수상스키 동호회
+								<p class="add_text">- 서비스 등록 안내 버튼 추가</p>
+								<p class="add_text">- 돌아가기 버튼 위치 왼쪽 하단으로 이동, 텍스트 "이전"으로 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_03.html" target="_blank">channel_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-3</td>
+							<td>채널</td>
+							<td class="nt04">#채널 > 수상스키 동호회_팝업</td>
+							<td class="nt05"><a href="../html/channel_popup.html" target="_blank">channel_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-4</td>
+							<td>채널</td>
+							<td class="nt04">#채널 > 수상스키 동호회 영상등록
+								<p class="add_text">- #채널 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_04.html" target="_blank">channel_04.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-5</td>
+							<td>채널</td>
+							<td class="nt04">#채널 > 수상스키 동호회 영상정보</td>
+							<td class="nt05"><a href="../html/channel_05.html" target="_blank">channel_05.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-6</td>
+							<td>채널</td>
+							<td class="nt04">#채널 > 수상스키 동호회 영상수정
+								<p class="add_text">- #채널 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_06.html" target="_blank">channel_06.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>213-9</td>
+							<td>채널</td>
+							<td class="nt04">#채널 수정
+								<p class="add_text">- #채널 제목 → 제목 텍스트 수정 <br/>
+									- 제목 input 사이즈 변경<br/>
+									- 채널번호 input 사이즈 수정<br/>
+									- 이용 금액 금액 단위 텍스트 분리</p>
+								<p class="add_text">- 제목 input 안 입력 텍스트 글자 20자 제한</p>
+								<p class="add_text">- 이용 금액 → 월 이용 금액 텍스트 수정/툴팁추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/channel_07.html" target="_blank">channel_07.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>223-1</td>
+							<td>채널</td>
+							<td class="nt04">#채널 보고서 목록</td>
+							<td class="nt05"><a href="../html/channel_report_01.html" target="_blank">channel_report_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="">
+							<td></td>
+							<td>223-21</td>
+							<td>채널</td>
+							<td class="nt04">#채널 보고서 상세
+								<p class="add_text"></p>
+								<p class="add_text">- 타이틀이 있는 툴팁 마크업 변경</p>
+								 <p class="add_text">툴팁 텍스트 변경</p>
+							</td>
+							<td class="nt05"><a href="../html/channel_report_02.html" target="_blank">channel_report_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.05</td>
+						</tr>
+
+						<tr class="">
+							<td></td>
+							<td>213-81</td>
+							<td>채널</td>
+							<td class="nt04">상세 (210-3-3-3 상세정보랑 같이 있음)</td>
+							<td class="nt05"><a href="../html/channel_08.html"
+												target="_blank">channel_08.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td>31-1</td>
+							<td>정산</td>
+							<td class="nt04">정산관리 목록</td>
+							<td class="nt05"><a href="../html/accounts_01.html" target="_blank">accounts_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>31-2</td>
+							<td>정산</td>
+							<td class="nt04">정산관리_정산서 보기</td>
+							<td class="nt05"><a href="../html/accounts_02.html" target="_blank">accounts_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>51-1</td>
+							<td>고객센터</td>
+							<td class="nt04">공지사항 목록
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/notice_01.html" target="_blank">notice_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>51-2</td>
+							<td>고객센터</td>
+							<td class="nt04">공지사항 상세
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/notice_02.html" target="_blank">notice_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>51-11</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 기본사항 및 계정
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/faq_01.html" target="_blank">faq_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A522-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 서비스 정책
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/faq_02.html" target="_blank">faq_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>A524-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 서비스만들기
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/faq_03.html" target="_blank">faq_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A524-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 보고서
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/faq_04.html" target="_blank">faq_04.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A525-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 정산
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/faq_05.html" target="_blank">faq_05.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>53-1</td>
+							<td>고객센터</td>
+							<td class="nt04">Q&A목록
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/qa_01.html" target="_blank">qa_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>53-2</td>
+							<td>고객센터</td>
+							<td class="nt04">Q&A등록
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/qa_03.html" target="_blank">qa_03.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>53-3</td>
+							<td>고객센터</td>
+							<td class="nt04">Q&A상세
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/qa_02.html" target="_blank">qa_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>54-1</td>
+							<td>고객센터</td>
+							<td class="nt04">자료실목록
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/document_01.html" target="_blank">document_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>54-2</td>
+							<td>고객센터</td>
+							<td class="nt04">자료실상세
+								<p class="add_text">- 소개페이지의 header 추가 <br/>- section에 "customer_section" 클래스 추가<br/>-
+									footer 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/document_02.html" target="_blank">document_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.09</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="tab_content" id="tab_2">
+					<table class="admin_coding_list_table">
+						<colgroup>
+							<col width="5%"/>
+							<col width="5%"/>
+							<col width="10%"/>
+							<col width="40%"/>
+							<col width="*"/>
+							<col width="5%"/>
+							<col width="5%"/>
+						</colgroup>
+						<thead>
+						<th class="first">NUM</th>
+						<th scope="col">화면 ID</th>
+						<th scope="col">카테고리</th>
+						<th scope="col">설명</th>
+						<th scope="col">링크<span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
+						<th scope="col">진행</th>
+						<th scope="col">수정</th>
+						</thead>
+						<tbody>
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>LNB</td>
+							<td class="nt04"><p class="add_text">- 상단 프로필 사진 제거</p>
+								<p class="add_text">-하단 소개페이지, 고객센터 링크 삭제</p>
+								<p class="add_text">- 파비콘 추가</p>
+								<p class="add_text">- 서비스관리 > "템플릿 관리"(lnb 2뎁스) 을 "템플릿 등록 관리"로 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_lnb.html" target="_blank">admin_lnb.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>어드민 - 대시보드</td>
+							<td class="nt04"></td>
+							<td class="nt05">
+								<a href="../html/admin_dashboard.html" target="_blank">admin_dashboard.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>어드민 - 대시보드</td>
+							<td class="nt04">일별판매수 팝업</td>
+							<td class="nt05">
+								<a href="../html/admin_dashboard_popup_01.html" target="_blank">admin_dashboard_popup_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>어드민 - 로그인</td>
+							<td class="nt04"></td>
+							<td class="nt05"><a href="../html/admin_login.html" target="_blank">admin_login.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A211-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-캠페인-캠페인목록</td>
+							<td class="nt05"><a href="../html/admin_campaign_01.html" target="_blank">admin_campaign_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A211-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-캠페인-캠페인목록_팝업</td>
+							<td class="nt05"><a href="../html/admin_campaign_01_popup.html" target="_blank">admin_campaign_01_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A211-21</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-캠페인-캠페인상세</td>
+							<td class="nt05"><a href="../html/admin_campaign_02.html" target="_blank">admin_campaign_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>A212-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-채널Live 목록</td>
+							<td class="nt05"><a href="../html/admin_channel_live_01.html" target="_blank">admin_channel_live_01.html</a>
+
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A212-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-채널Live 상세</td>
+							<td class="nt05"><a href="../html/admin_channel_live_02.html" target="_blank">admin_channel_live_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A213-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-채널 목록</td>
+							<td class="nt05"><a href="../html/admin_channel_01.html" target="_blank">admin_channel_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A213-21</td>
+							<td>서비스관리</td>
+							<td class="nt04">승인관리-채널상세</td>
+							<td class="nt05"><a href="../html/admin_channel_02.html" target="_blank">admin_channel_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">포털 - 승인 관리 > 포털</td>
+							<td class="nt05"><a href="../html/admin_portal_01.html" target="_blank">admin_portal_01.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.13</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">포털 - 승인 관리 > 포털</td>
+							<td class="nt05"><a href="../html/admin_portal_02.html" target="_blank">admin_portal_02.html</a></td>
+							<td class="ok"></td>
+							<td class="chg">18.12.13</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A215-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯-위젯 목록</td>
+							<td class="nt05"><a href="../html/admin_widget_01.html"
+												target="_blank">admin_widget_01.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A215-21</td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯-위젯 상세</td>
+							<td class="nt05"><a href="../html/admin_widget_02.html"
+												target="_blank">admin_widget_02.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>W001-05</td>
+							<td>서비스관리</td>
+							<td class="nt04">삭제 위젯 템플릿 관리</td>
+							<td class="nt05"><a href="../html/admin_del_widget_template.html" target="_blank">admin_del_widget_template.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A22-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">중지관리-중지관리 목록</td>
+							<td class="nt05"><a href="../html/admin_suspended_01.html" target="_blank">admin_suspended_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A22-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">중지관리-중지관리 상세</td>
+							<td class="nt05"><a href="../html/admin_suspended_02.html" target="_blank">admin_suspended_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A23-1</td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리</td>
+							<td class="nt05"><a href="../html/admin_widget_management_01.html" target="_blank">admin_widget_management_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리 - foucs 지정 팝업</td>
+							<td class="nt05"><a href="../html/admin_widget_management_popup_01.html" target="_blank">admin_widget_management_popup_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리 - 위젯 변경이력 팝업</td>
+							<td class="nt05"><a href="../html/admin_widget_management_popup_02.html" target="_blank">admin_widget_management_popup_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리-3번 위젯 편성</td>
+							<td class="nt05"><a href="../html/admin_widget_management_02.html" target="_blank">admin_widget_management_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리 - 위젯 편성 이력 팝업</td>
+							<td class="nt05"><a href="../html/admin_widget_management_popup_03.html" target="_blank">admin_widget_management_popup_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리 - 편성 수정/추가 팝업</td>
+							<td class="nt05"><a href="../html/admin_widget_management_popup_04.html" target="_blank">admin_widget_management_popup_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리 - 편성 삭제 팝업</td>
+							<td class="nt05"><a href="../html/admin_widget_management_popup_05.html" target="_blank">admin_widget_management_popup_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A23-2</td>
+							<td>서비스관리</td>
+							<td class="nt04">위젯 관리-위젯 유형 변경</td>
+							<td class="nt05"><a href="../html/admin_widget_management_03.html" target="_blank">admadin_widget_management_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AT001-01</td>
+							<td>서비스관리</td>
+							<td class="nt04">템플릿관리</td>
+							<td class="nt05"><a href="../html/admin_template_01.html" target="_blank">admin_template_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AT001-02</td>
+							<td>서비스관리</td>
+							<td class="nt04">템플릿관리 - 새 템플릿 생성
+								<p class="add_text">- 물음표 안에 있는 txt -> 가이드txt 로 변경 </p>
+
+							</td>
+							<td class="nt05"><a href="../html/admin_template_02.html" target="_blank">admin_template_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.20</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AT001-03</td>
+							<td>서비스관리</td>
+							<td class="nt04">템플릿관리 - 템플릿 상세 <p class="add_text">- 물음표 안에 있는 txt -> 가이드txt 로 변경 </p></td>
+							<td class="nt05"><a href="../html/admin_template_03.html" target="_blank">admin_template_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.20</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>AT001-04</td>
+							<td>서비스관리</td>
+							<td class="nt04">템플릿관리 - 템플릿 수정<p class="add_text">- 물음표 안에 있는 txt -> 가이드txt 로 변경 </p></td>
+							<td class="nt05"><a href="../html/admin_template_04.html" target="_blank">admin_template_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.20</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AC001-01</td>
+							<td>서비스관리</td>
+							<td class="nt04">컴포넌트 관리
+								<p class="add_text">* 컴포넌트 이미지 → 컴포넌트 아이콘으로 텍스트 수정<br/>
+
+									* 썸네일 사이즈 24*24로 수정</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_component_01.html" target="_blank">admin_component_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.16</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AC001-02</td>
+							<td>서비스관리</td>
+							<td class="nt04">컴포넌트 관리 - 새 컴포넌트 생성
+								<p class="add_text">- 물음표 안에 있는 txt -> 가이드txt 로 변경 </p>
+							</td>
+							<td class="nt05"><a href="../html/admin_component_02.html" target="_blank">admin_component_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.20</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>AC001-03</td>
+							<td>서비스관리</td>
+							<td class="nt04">컴포넌트 관리 - 상세
+
+							</td>
+							<td class="nt05"><a href="../html/admin_component_03.html" target="_blank">admin_component_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>AC001-04</td>
+							<td>서비스관리</td>
+							<td class="nt04">컴포넌트 관리 - 수정<p class="add_text">- 물음표 안에 있는 txt -> 가이드txt 로 변경 </p></td>
+							<td class="nt05"><a href="../html/admin_component_04.html" target="_blank">admin_component_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.20</td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>ART001-01</td>
+							<td>서비스관리</td>
+							<td class="nt04">랜딩 템플릿 상태 관리
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_landing_template_01.html" target="_blank">admin_landing_template_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>ART001-02</td>
+							<td>서비스관리</td>
+							<td class="nt04">랜딩 템플릿 상태 관리 상세</td>
+							<td class="nt05"><a href="../html/admin_landing_template_02.html" target="_blank">admin_landing_template_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>V001-01</td>
+							<td>서비스관리</td>
+							<td class="nt04">랜딩 템플릿 이력관리</td>
+							<td class="nt05"><a href="../html/admin_landing_template_popup.html" target="_blank">admin_landing_template_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>ART001-03</td>
+							<td>서비스관리</td>
+							<td class="nt04">삭제 랜딩템플릿 관리</td>
+							<td class="nt05"><a href="../html/admin_del_landing_template.html" target="_blank">admin_del_landing_template.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>ART001-04</td>
+							<td>서비스관리</td>
+							<td class="nt04">템플릿 이용 현황</td>
+							<td class="nt05"><a href="../html/admin_template_use.html" target="_blank">admin_template_use.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>ART001-05</td>
+							<td>서비스관리</td>
+							<td class="nt04">일별 템플릿 등록 현황</td>
+							<td class="nt05"><a href="../html/admin_template_date.html" target="_blank">admin_template_date.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A25-1</td>
+							<td>brokering상품관리</td>
+							<td class="nt04">KT-BOM 상품관리
+								<p class="add_text">- "BOM 상품" -> "프로모션" 으로 명칭 변경</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_kt_bom_product_management.html" target="_blank">admin_kt_bom_product_management.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A25-1</td>
+							<td>brokering상품관리</td>
+							<td class="nt04">KT-BOM 상품관리-팝업
+							<p class="add_text">- "BOM 상품" -> "프로모션" 으로 명칭 변경</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_kt_bom_product_management_popup.html" target="_blank">admin_kt_bom_product_management_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.12.26</td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A26-1</td>
+							<td>기본상품관리</td>
+							<td class="nt04">기본상품관리</td>
+							<td class="nt05"><a href="../html/admin_common_product_management.html" target="_blank">admin_common_product_management.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td>기본상품관리</td>
+							<td class="nt04">기본상품관리-팝업</td>
+							<td class="nt05"><a href="../html/admin_common_product_management_popup.html"
+												target="_blank">admin_common_product_management_popup.html</a></td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A31-1</td>
+							<td>정산관리</td>
+							<td class="nt04">정산 관리</td>
+							<td class="nt05"><a href="../html/admin_accounts_01.html" target="_blank">admin_accounts_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A41-1</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - 고객현황</td>
+							<td class="nt05"><a href="../html/admin_service_current.html" target="_blank">admin_service_current.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td>A42-11</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - 캠페인</td>
+							<td class="nt05"><a href="../html/admin_service_current_01.html" target="_blank">admin_service_current_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - 캠페인_일별현황 팝업</td>
+							<td class="nt05"><a href="../html/admin_service_current_01_popup.html" target="_blank">admin_service_current_01_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A42-2</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - #채널LIVE</td>
+							<td class="nt05"><a href="../html/admin_service_current_02.html" target="_blank">admin_service_current_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A42-31</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - #채널</td>
+							<td class="nt05"><a href="../html/admin_service_current_03.html" target="_blank">admin_service_current_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-5</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - #포털</td>
+							<td class="nt05"><a href="../html/admin_service_current_04.html" target="_blank">admin_service_current_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-51</td>
+							<td>현황</td>
+							<td class="nt04">서비스현황 - 위젯</td>
+							<td class="nt05"><a href="../html/admin_service_current_05.html" target="_blank">admin_service_current_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A43-1</td>
+							<td>현황</td>
+							<td class="nt04">매출현황</td>
+							<td class="nt05"><a href="../html/admin_revenue_table.html" target="_blank">admin_revenue_table.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>현황</td>
+							<td class="nt04">PCI 현황</td>
+							<td class="nt05"><a href="../html/admin_pci_current_01.html" target="_blank">admin_pci_current_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.15<br/>추가</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A44-1</td>
+							<td>현황</td>
+							<td class="nt04">인벤토리 사용현황</td>
+							<td class="nt05"><a href="../html/admin_inventory_table.html" target="_blank">admin_inventory_table.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-1</td>
+							<td>현황</td>
+							<td class="nt04">Tag현황 - 성별</td>
+							<td class="nt05"><a href="../html/admin_tag_current_01.html" target="_blank">admin_tag_current_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-2</td>
+							<td>현황</td>
+							<td class="nt04">Tag현황 - 연령별</td>
+							<td class="nt05"><a href="../html/admin_tag_current_02.html" target="_blank">admin_tag_current_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-3</td>
+							<td>현황</td>
+							<td class="nt04">Tag현황 - 지역별</td>
+							<td class="nt05"><a href="../html/admin_tag_current_03.html" target="_blank">admin_tag_current_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A45-4</td>
+							<td>현황</td>
+							<td class="nt04">Tag현황 - VOD장르별</td>
+							<td class="nt05"><a href="../html/admin_tag_current_04.html" target="_blank">admin_tag_current_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A42-41</td>
+							<td>현황</td>
+							<td class="nt04">Tag 현황 - 선호상품별</td>
+							<td class="nt05"><a href="../html/admin_tag_current_05.html" target="_blank">admin_tag_current_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+						<tr class="first_line">
+							<td></td>
+							<td>A51-1</td>
+							<td>고객센터</td>
+							<td class="nt04">공지사항</td>
+							<td class="nt05">
+								<a href="../html/admin_notice_01.html" target="_blank">admin_notice_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A51-1</td>
+							<td>고객센터</td>
+							<td class="nt04">공지사항 등록 (A51-4, 수정이랑 같음)</td>
+							<td class="nt05">
+								<a href="../html/admin_notice_02.html" target="_blank">admin_notice_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A51-1</td>
+							<td>고객센터</td>
+							<td class="nt04">공지사항 상세</td>
+							<td class="nt05">
+								<a href="../html/admin_notice_03.html" target="_blank">admin_notice_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A51-1</td>
+							<td>고객센터</td>
+							<td class="nt04">고객센터 공통 팝업</td>
+							<td class="nt05"><a href="../html/admin_notice_popup.html" target="_blank">admin_notice_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A521-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 기본사항 및 계정</td>
+							<td class="nt05"><a href="../html/admin_faq_01.html" target="_blank">admin_faq_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A522-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 서비스정책</td>
+							<td class="nt05"><a href="../html/admin_faq_02.html" target="_blank">admin_faq_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A523-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 서비스 만들기</td>
+							<td class="nt05"><a href="../html/admin_faq_03.html" target="_blank">admin_faq_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A524-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 보고서</td>
+							<td class="nt05"><a href="../html/admin_faq_04.html" target="_blank">admin_faq_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A525-1</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 정산</td>
+							<td class="nt05"><a href="../html/admin_faq_05.html" target="_blank">admin_faq_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A521-2</td>
+							<td>고객센터</td>
+							<td class="nt04">FAQ 등록 (A521-3상세, A521-4수정 같은 페이지 )</td>
+							<td class="nt05"><a href="../html/admin_faq_06.html" target="_blank">admin_faq_06.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A53-1</td>
+							<td>고객센터</td>
+							<td class="nt04">Q&A 목록</td>
+							<td class="nt05"><a href="../html/admin_qa_01.html" target="_blank">admin_qa_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A53-2</td>
+							<td>고객센터</td>
+							<td class="nt04">Q&A 상세</td>
+							<td class="nt05"><a href="../html/admin_qa_02.html" target="_blank">admin_qa_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A54-1</td>
+							<td>고객센터</td>
+							<td class="nt04">자료실 목록</td>
+							<td class="nt05"><a href="../html/admin_document_01.html" target="_blank">admin_document_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A54-2</td>
+							<td>고객센터</td>
+							<td class="nt04">자료실 등록(및 수정)</td>
+							<td class="nt05"><a href="../html/admin_document_03.html" target="_blank">admin_document_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A54-3</td>
+							<td>고객센터</td>
+							<td class="nt04">자료실 상세</td>
+							<td class="nt05"><a href="../html/admin_document_02.html" target="_blank">admin_document_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A55-1</td>
+							<td>고객센터</td>
+							<td class="nt04">PUSH 발송</td>
+							<td class="nt05"><a href="../html/admin_push_01.html" target="_blank">admin_push_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A55-2</td>
+							<td>고객센터</td>
+							<td class="nt04">PUSH 발송 작성</td>
+							<td class="nt05"><a href="../html/admin_push_02.html" target="_blank">admin_push_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A55-3</td>
+							<td>고객센터</td>
+							<td class="nt04">PUSH 발송 상세</td>
+							<td class="nt05"><a href="../html/admin_push_03.html" target="_blank">admin_push_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A55-4</td>
+							<td>고객센터</td>
+							<td class="nt04">PUSH 발송 수정</td>
+							<td class="nt05"><a href="../html/admin_push_04.html" target="_blank">admin_push_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr class="first_line">
+							<td></td>
+							<td>A41-1</td>
+							<td>설정</td>
+							<td class="nt04">운영자관리-운영자관리 목록</td>
+							<td class="nt05"><a href="../html/admin_admin_setting_01.html" target="_blank">admin_admin_setting_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>A41-2</td>
+							<td>설정</td>
+							<td class="nt04">운영자관리-운영자 등록</td>
+							<td class="nt05"><a href="../html/admin_admin_setting_02.html" target="_blank">admin_admin_setting_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">운영자관리-운영자정보 상세</td>
+							<td class="nt05"><a href="../html/admin_admin_setting_03.html" target="_blank">admin_admin_setting_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">운영자관리-운영자정보 수정</td>
+							<td class="nt05"><a href="../html/admin_admin_setting_04.html" target="_blank">admin_admin_setting_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">고객권한관리 - 고객권한관리 목록</td>
+							<td class="nt05"><a href="../html/admin_customer_authority_01.html" target="_blank">admin_customer_authority_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">고객권한관리 - 고객권한관리 목록_문자발송 팝업</td>
+							<td class="nt05"><a href="../html/admin_customer_authority_popup.html" target="_blank">admin_customer_authority_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">고객권한관리 - 고객정보 상세</td>
+							<td class="nt05"><a href="../html/admin_customer_authority_02.html" target="_blank">admin_customer_authority_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">고객권한관리 - 고객권한 수정</td>
+							<td class="nt05"><a href="../html/admin_customer_authority_03.html" target="_blank">admin_customer_authority_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - #채널 번호관리</td>
+							<td class="nt05"><a href="../html/admin_setting_channel_01.html" target="_blank">admin_setting_channel_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - #채널 번호관리 팝업
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 골드번호 영역 수정 번호 입력, 번호추가 버튼 추가</p>
+
+							</td>
+							<td class="nt05"><a href="../html/admin_setting_channel_popup_01.html" target="_blank">admin_setting_channel_popup_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class="chg">18.11.15</td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - #대표번호 설정</td>
+							<td class="nt05"><a href="../html/admin_setting_channel_02.html" target="_blank">admin_setting_channel_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - #대표번호 설정 팝업(추가,수정 같이 사용)</td>
+							<td class="nt05"><a href="../html/admin_setting_channel_popup_02.html" target="_blank">admin_setting_channel_popup_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - Tag 관리</td>
+							<td class="nt05"><a href="../html/admin_tag_01.html" target="_blank">admin_tag_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - 인벤토리 관리(상세/수정)</td>
+							<td class="nt05"><a href="../html/admin_inventory_01.html" target="_blank">admin_inventory_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - 공통코드 관리</td>
+							<td class="nt05"><a href="../html/admin_common_code_management.html" target="_blank">admin_common_code_management.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - 공통코드 관리_팝업</td>
+							<td class="nt05"><a href="../html/admin_common_code_management_popup.html" target="_blank">admin_common_code_management_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - 그룹코드 관리</td>
+							<td class="nt05"><a href="../html/admin_manage_code_02.html" target="_blank">admin_manage_code_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>설정</td>
+							<td class="nt04">환경설정 - 그룹코드 관리 팝업</td>
+							<td class="nt05"><a href="../html/admin_manage_code_02_popup.html" target="_blank">admin_manage_code_02_popup.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+
+
+						<tr class="first_line">
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">대시보드</td>
+							<td class="nt05"><a href="../html/admin_dashboard_data_mining.html" target="_blank">admin_dashboard_data_mining.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 내역 - 수집/적재
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_work_specification_01.html" target="_blank">admin_work_specification_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 내역 - 데이터마트
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_work_specification_02.html" target="_blank">admin_work_specification_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 내역 - 모델학습
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_work_specification_03.html" target="_blank">admin_work_specification_03.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 내역 - 모델학습 결과
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_work_specification_04.html" target="_blank">admin_work_specification_04.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 내역 - 연관 Tag 생성
+								<p class="add_text"></p>
+								<p class="add_text"></p>
+								<p class="add_text">- 페이지 상단 영역 아이콘 추가</p>
+							</td>
+							<td class="nt05"><a href="../html/admin_work_specification_05.html" target="_blank">admin_work_specification_05.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 관리</td>
+							<td class="nt05"><a href="../html/admin_work_setting_01.html" target="_blank">admin_work_setting_01.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>데이터 마이닝</td>
+							<td class="nt04">작업 관리 > 작업 정보</td>
+							<td class="nt05"><a href="../html/admin_work_setting_02.html" target="_blank">admin_work_setting_02.html</a>
+							</td>
+							<td class="ok"></td>
+							<td class=""></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<button type="button" class="top_btn">UP</button>
+	<div class="dim"></div>
+</div>
+<script>
+
+	$(function () {
+		var tds = $(".coding_list_table tr td:first-child");
+		for (var i = 0; i < tds.length; i++) {
+			$(tds[i]).html(i + 1);
+		}    });
+	$(function () {
+		var tds = $(".admin_coding_list_table tr td:first-child");
+		for (var i = 0; i < tds.length; i++) {
+			$(tds[i]).html(i + 1);
+		}
+	});
+
+	function top_btn() {
+
+		$(window).scroll(function () {
+
+			if ($(this).scrollTop() > 100) {
+				$('.top_btn').addClass('show');
+			} else {
+				$('.top_btn').removeClass('show');
+			}
+//        console.log('work');
+		});
+
+		$('.top_btn').on('click', function () {
+			var $this = $(this);
+//             console.log('ddd');
+			$('html, body').scrollTop(0);
+
+		})
+
+	}
+
+	function tab() {
+
+
+		$('#tabs .btn_set').click('on', function () {
+			var tab_id = $(this).attr('data-tab');
+
+			$('#tabs .btn_set').removeClass('on');
+			$('.tab_content').removeClass('on');
+			$(this).addClass('on');
+			$("#" + tab_id).addClass('on');
+
+		})
+	}
+
+	top_btn();
+	tab();
+</script>
+</body>
+</html>
