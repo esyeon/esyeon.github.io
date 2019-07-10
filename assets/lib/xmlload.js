@@ -14,10 +14,10 @@ var APP = {
                 var $pjWork = $pjList.find('pjWork').text();
 
 
-
                 if($siteUrl == ""){
-                    var listObj = '<a href="' + $siteUrl + '" class="default">';
-                    listObj += '<p>내부 사이트이므로 링크없음</p>';
+                    var listObj = '<a href="javascript:void(0)" class="default">';
+                    listObj += '<p>내부보안사이트이므로 해당 링크가 없습니다</p>';
+
 
                 }else{
                     listObj = '<a href="' + $siteUrl + '" class="thumb" target="_blank" title="새창 열림">';
