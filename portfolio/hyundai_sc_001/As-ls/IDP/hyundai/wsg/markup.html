@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>HYUNDAI</title>
+	<link rel="stylesheet" type="text/css" href="../@resource/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../@resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="wsg.css">
+	<script type="text/javascript" src="../@resource/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../@resource/js/jquery.uniform.bundled.js"></script>
+	<script type="text/javascript" src="wsg.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//gnb 열림
+			$('#allMenu').click(function () {
+				$('.gnb').addClass('active');
+			});
+			//gnb 닫음
+			$('.btn-close').click(function () {
+				$('.gnb').removeClass('active');
+			});
+
+		});
+	</script>
+	<style type="text/css">
+	.wsg .data-table tbody tr:hover {
+		background-color: #faffd3
+	}
+
+	.tab-cont {
+		display: none;
+		padding-top: 30px;
+	}
+
+	.tab-cont.active {
+		display: block;
+	}
+	.dim{
+		z-index: 10;
+		position: absolute;
+		top: 417px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 67%;
+		height: 409px;
+		background-color: rgba(0, 0, 0, 0.41);
+	}
+	.dim:before{
+		content:'내부용사이트이므로 샘플 페이지만 링크 연결';
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+
+	}
+</style>
+</head>
+<body>
+	<a href="#container" class="skip-navi">본문 바로가기</a>
+	<!-- WRAP -->
+	<div id="wrap" class="wsg">
+		<!-- HEADER -->
+		<div id="header">
+			<div class="header-wrap">
+				<h1><span class="blind">HYUNDAI</span></h1>
+				<a href="#" id="allMenu" class="all-menu"><span class="blind">모든 메뉴</span></a>
+				<div class="gnb">
+					<div class="gnb-wrap">
+						<h3>PROGRESS</h3>
+						<ul>
+							<li><a href="markup.html">markup</a></li>
+						</ul>
+						<h3>UI LIBRARY</h3>
+						<ul>
+							<li><a href="layout.html">layout</a></li>
+							<li><a href="table.html">table</a></li>
+							<li><a href="form.html">form</a></li>
+							<li><a href="fieldset.html">fieldset</a></li>
+							<li><a href="button.html">button</a></li>
+							<li><a href="tab.html">tab</a></li>
+							<li><a href="list.html">list</a></li>
+							<li><a href="popup.html">popup</a></li>
+							<li><a href="print.html">print</a></li>
+							<li><a href="etc.html">etc</a></li>
+							<li><a href="etc.html">etc</a></li>
+						</ul>
+						<a href="#" class="btn-close"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // HEADER -->
+		<!-- CONTENT -->
+		<div id="container">
+			<h2>WSG / MARKUP LIST</h2>
+			<div class="tab-wrap">
+				<!-- TAB -->
+				<ul class="tab">
+					<li class="active"><a href="#tab07">HRR</a></li>
+					<li><a href="#tab04">템플릿</a></li>
+				</ul>
+				<!-- // TAB -->
+
+				<!-- HRR 신규 리뉴얼 -->
+				<div id="tab07" class="tab-cont">
+					<div class="table-wrap">
+						<table id="progressList07" class="data-table">
+							<colgroup>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>번호</th>
+									<th>1 Depth</th>
+									<th>2 Depth</th>
+									<th>3 Depth</th>
+									<th>4 Depth</th>
+									<th>개발 시작일</th>
+									<th>FOLDER</th>
+									<th>PAGE ID</th>
+									<th>완료</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td></td>
+									<td rowspan="59">전문성 및 경력 개발</td>
+									<td rowspan="2">사내이력서</td>
+									<td></td>
+									<td>사내이력서</td>
+									<td>2019-02-18</td>
+									<td>hrr</td>
+									<td class="state">HRR-0020</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>사내이력서 - 구성원 조회</td>
+									<td>2019-03-29</td>
+									<td>hrr</td>
+									<td class="state">HRR-0020-1</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="57">전문성 개발</td>
+									<td></td>
+									<td>성장목표 티저 화면</td>
+									<td>2018-03-04</td>
+									<td>hrr</td>
+									<td class="state">HRR-0600</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="8">성장로드맵</td>
+									<td>성장로드맵</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0040</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>분야</td>
+									<td>2018-12-26</td>
+									<td>hrr</td>
+									<td class="state">HRR-0060</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장로드맵: R&D</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0070</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장로드맵 팝업</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0080</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장로드맵 팝업 - R_D <strong>구글리스트에 ID HRR-0080 랑 같이 있음</strong></td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0080-1</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>역량 프로파일 팝업 : 역량 정의</td>
+
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0090</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>역량 프로파일 팝업 : 연관 솔루션 및 업무</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0100</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>역량 프로파일 팝업 : 적용사례</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0110</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="3">전문성 개발 현황</td>
+									<td>메인</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0010</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장목표 시즌 안내 팝업</td>
+									<td>2019-01-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0250</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>전문성 개발 현황</td>
+									<td>2019-01-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0030</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="8">역량진단</td>
+									<td>역량진단</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0120</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Step1 진단준비</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0130</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>부문 선택 팝업</td>
+									<td>2018-12-26</td>
+									<td>hrr</td>
+									<td class="state">HRR-0140</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>분야 연차 입력 팝업</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0150</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Step2 진단실시:공통역량</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0160</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Step2 진단실시:특화역량</td>
+									<td>2018-12-10</td>
+									<td>hrr</td>
+									<td class="state">HRR-0170</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Step3 진단결과</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0180</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>역량진단 결과 팝업</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0190</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<tr>
+									<td></td>
+									<td rowspan="37">성장목표</td>
+									<td>나의 분야 선택 팝업 : 역량 진단 선택</td>
+									<td>2019-01-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0260</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>나의 분야 선택 팝업 : 분야 직접 선택</td>
+									<td>2019-01-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0261</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<tr>
+									<td></td>
+									<td>경력계획 수립</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0270</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<tr>
+									<td></td>
+									<td>경력 경로 추가 팝업 : 성장로드맵에서 선택</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0280</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>경력 경로 추가 팝업 : 직접 입력</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0290</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장목표 수립 : 경력계획(역량 진단 미 선택 시)</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0300</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 수립</td>
+									<td>2019-01-24</td>
+									<td>hrr</td>
+									<td class="state">HRR-0320</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획(역량 진단 미 선택 시)</td>
+									<td>2019-01-24</td>
+									<td>hrr</td>
+									<td class="state">HRR-0330</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 추가 팝업</td>
+									<td>2019-01-24</td>
+									<td>hrr</td>
+									<td class="state">HRR-0340</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>수강신청 팝업</td>
+									<td>2019-01-24</td>
+									<td>hrr</td>
+									<td class="state">HRR-0350</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>e-Catalog 검색 팝업</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0360</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>e-Catalog 검색 팝업 : 검색결과</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0370</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>마일리지 상세 팝업</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0230</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>현황 : 경력계획</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0200</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습결과 업로드 팝업 : 상시학습</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0450</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습결과 업로드 팝업 : 자격증</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0460</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습결과 업로드 팝업 : 결재 전</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0470</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습결과 보고서 팝업</td>
+									<td>ID없음</td>
+									<td>hrr</td>
+									<td class="state">HRR-0471</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습결과 업로드 팝업 : 전문활동</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0440</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 상세 팝업</td>
+									<td>2019-01-21</td>
+									<td>hrr</td>
+									<td class="state">HRR-0430</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 직접 입력 팝업 : 추가 완료시</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0410</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 직접 입력 팝업 : Step1</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0380</td>
+									<td class="state">1차 완료</td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 직접 입력 팝업 : Step2</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0390</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 직접 입력 팝업 : Step3</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0400</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>현황 : 학습계획</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0210</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>현황 : 점검/피드백</td>
+									<td>2019-02-07</td>
+									<td>hrr</td>
+									<td class="state">HRR-0220</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 : 학습활동</td>
+									<td>2019-01-21</td>
+									<td>hrr</td>
+									<td class="state">HRR-0420</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 : 학습활동 (과거 학습계획 조회 시)</td>
+									<td>2019-01-21</td>
+									<td>hrr</td>
+									<td class="state">HRR-0421</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>결재라인 확인 팝업</td>
+									<td>2019-01-14</td>
+									<td>hrr</td>
+									<td class="state">HRR-0240</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습계획 : 전문가 활동</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0510</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>결재 정보 선택 팝업</td>
+									<td>2019-02-18</td>
+									<td>hrr</td>
+									<td class="state">HRR-0550</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>반려 사유 팝업</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0480</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>미 이수 사유 팝업</td>
+									<td>2019-02-11</td>
+									<td>hrr</td>
+									<td class="state">HRR-0490</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장목표 점검/피드백 팝업</td>
+									<td>2019-02-18</td>
+									<td>hrr</td>
+									<td class="state">HRR-0530</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>성장목표 점검/피드백 팝업: 결재 전</td>
+									<td>2019-02-18</td>
+									<td>hrr</td>
+									<td class="state">HRR-0540</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>알림</td>
+									<td>2018-12-31</td>
+									<td>hrr</td>
+									<td class="state">HRR-0590</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<!--<tr>-->
+									<!--<td></td>-->
+									<!--<td>강의 평가보기 팝업</td>-->
+									<!--<td>2019-02-11</td>-->
+									<!--<td>hrr</td>-->
+									<!--<td class="state">HRR-0520</td>-->
+									<!--<td class="">디자인 못받음 <br> 추후 디자인 받고 진행예정</td>-->
+								<!--</tr>-->
+								<tr>
+									<td></td>
+									<td>성장목표 리포트</td>
+									<td>2019-02-18</td>
+									<td>hrr</td>
+									<td class="state">HRR-0560</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<tr>
+									<td></td>
+									<td rowspan="9">육성과 동기부여 (리더)</td>
+									<td rowspan="9">직원성장 지원</td>
+									<td rowspan="5">팀 성장목표 현황</td>
+									<td>육성현황(리더메인)</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0610</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>메인> 알람 > 학습예정자 메시지 보내기 팝업(팀원선택)</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0620</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>메인> 알람 > 학습지연자 메시지 보내기 팝업(팀원선택)</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0630</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>메인> 알람 > 메시지보내기(입력화면)</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0640</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>메인> 학습현황> 메시지 보내기</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0650</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="4">육성현황</td>
+									<td>역량현황</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0660</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습현황</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0670</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습현황> 피드백_ 메시지 보내기(팝업)</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0680</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>어학현황</td>
+									<td>2019-02-25</td>
+									<td>hrr</td>
+									<td class="state">HRR-0690</td>
+									<td class="state">1차 완료</td>
+								</tr>
+
+								<tr>
+									<td></td>
+									<td rowspan="4">육성과 동기부여 (임원)</td>
+									<td rowspan="4">조직(임원)</td>
+									<td>직원 성장 현황</td>
+									<td>직원성장 현황(임원메인/사업부기준)</td>
+									<td>2019-03-04</td>
+									<td>hrr</td>
+									<td class="state">HRR-0700</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="3">육성현황</td>
+									<td>역량현황</td>
+									<td>2019-03-04</td>
+									<td>hrr</td>
+									<td class="state">HRR-0710</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>학습현황</td>
+									<td>2019-03-04</td>
+									<td>hrr</td>
+									<td class="state">HRR-0720</td>
+									<td class="state">1차 완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>어학현황</td>
+									<td>2019-03-04</td>
+									<td>hrr</td>
+									<td class="state">HRR-0730</td>
+									<td class="state">1차 완료</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- // HRR 신규 리뉴얼 -->
+
+				<!-- 템플릿 -->
+				<div id="tab04" class="tab-cont">
+					<div class="table-wrap">
+						<table id="progressList04" class="data-table">
+
+							<colgroup>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>번호</th>
+									<th>1 Depth</th>
+									<th>2 Depth</th>
+									<th>3 Depth</th>
+									<th>4 Depth</th>
+									<th>FOLDER</th>
+									<th>PAGE ID</th>
+									<th>완료</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td rowspan="2">front<br>레이아웃</td>
+									<td>메인</td>
+									<td></td>
+									<td></td>
+									<td>@temp</td>
+									<td class="state">layout_01</td>
+									<td class="state">완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>서브</td>
+									<td></td>
+									<td></td>
+									<td>@temp</td>
+									<td class="state">layout_02</td>
+									<td class="state">완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td rowspan="2">인사담당<br>레이아웃</td>
+									<td>header 있는타입</td>
+									<td></td>
+									<td></td>
+									<td>@temp</td>
+									<td class="state">layout_03</td>
+									<td class="state">완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>header 없는 타입</td>
+									<td></td>
+									<td></td>
+									<td>@temp</td>
+									<td class="state">layout_04</td>
+									<td class="state">완료</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>전체메뉴</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>@temp</td>
+									<td class="state">all_menu</td>
+									<td class="state">완료</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- // 템플릿 -->
+
+
+			</div>
+		</div>
+		<!-- // CONTENT -->
+		<!-- FOOTER -->
+		<div id="footer">Copyright 2017 HYUNDAI MOTOR COMPANY, All right reserved.</div>
+		<!-- // FOOTER -->
+	</div>
+	<!-- // WRAP -->
+	<div class="dim"></div>
+</body>
+</html>
+

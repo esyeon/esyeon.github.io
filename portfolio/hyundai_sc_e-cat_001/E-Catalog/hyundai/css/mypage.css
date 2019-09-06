@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*학습관리*/
+.header.mypage {height: 98px; padding-top: 38px; background: #00234a; box-sizing: border-box;position: static;}
+.header.mypage .h_Wrap {width: 1045px;margin: 0 auto;}
+.header.mypage h1 {display: inline-block;line-height: 1em;font-size:1em;}
+.header.mypage .current_pos {margin-left:38px;padding:0 0 0 36px;display: inline-block;background:url(../images/icon/icon_lecture_room.png) no-repeat;color: #fff;font-size:16px; vertical-align: top;}
+.header.mypage .user-right {float:right;padding-right:65px;}
+.header.mypage .user-right .icon-txt{padding-left:40px;margin-right:40px;display: inline-block; background:url(../images/icon/icon_lecture_knowledgein.png) 0 0 no-repeat;font-size:16px;color: #fff;}
+.header.mypage .user-right .userName{font-size:16px;color: #fff;}
+
+.learning-manage .contwrap {width:1042px;margin:auto;/*padding-right:67px;*/box-sizing: border-box;}
+.learning-manage .section1 {background: #f6f7f8;}
+.learning-manage .section1 .inner {width:1042px;padding:80px 0;margin: auto;overflow: hidden;position: relative;}
+.learning-manage .section1 .inner:after {content: "";display: block;clear: both;}
+.learning-manage .section1 .st1_left {float:left;width:425px;}
+.learning-manage .section1 .st1_left .thumb {float:left;width:121px; height:160px;border:1px solid #cdd1d2;background: #fff;}
+.learning-manage .section1 .st1_left .profile {float:left;width: 270px;padding:20px 0 0 27px;box-sizing: border-box;}
+.learning-manage .section1 .st1_left .profile .plan-field {font-size:0;margin-bottom:20px;}
+.learning-manage .section1 .st1_left .profile .plan-field li {display: inline-block;margin-left:4px;color: #919192;font-size:14px;vertical-align: middle}
+.learning-manage .section1 .st1_left .profile .plan-field li:first-child {margin: 0; width:42px;height:20px;line-height: 20px;text-align: center;color: #fff;font-size:14px;background: #012d5c;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.learning-manage .section1 .st1_left .profile .plan-field .l3 a{text-decoration: underline;}
+.learning-manage .section1 .st1_left .profile .who {font-size:24px;font-weight:700;color: #333333;line-height:1.6;}
+.learning-manage .section1 .st1_left .profile .message {width:100%;padding-bottom:8px;font-size:20px;font-weight:300;color: #333333;letter-spacing: -1px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.learning-manage .section1 .st1_left .profile .belong {font-size:0;color: #919192;}
+.learning-manage .section1 .st1_left .profile .belong li {margin-left:4px;font-size:14px;display: inline-block;}
+.learning-manage .section1 .st1_left .profile .belong li:first-child{margin:0;}
+.v_bar:before {content:"\007C";margin-right: 4px; }
+
+.learning-manage .section1 .st1_right {float:right;}
+.learning-manage .section1 .st1_right .mileage{width:613px;height:162px;overflow: hidden; border:1px solid #cdd1d2;}
+.learning-manage .section1 .st1_right .mileage .graph {float:left;width:223px;height: 162px;padding:15px 0;text-align: center;box-sizing: border-box;}
+.learning-manage .section1 .st1_right .mileage .category {float:right;width:385px;height: 162px;position: relative;font-size:0;text-align: center;}
+.learning-manage .section1 .st1_right .mileage .category:before {content: ""; position: absolute;left:0;top:50px;width:2px;height:60px;border-left:1px dashed #cdcdce;}
+.learning-manage .section1 .st1_right .mileage .category li {display:inline-block;padding-top:55px;margin: 0 22px}
+.learning-manage .section1 .st1_right .mileage .category li .icon {display: block;padding:0 0 12px 28px;color: #818181;font-size:16px;}
+.learning-manage .section1 .st1_right .mileage .category .icon.will{background:url(../images/icon/icon_mypage_learning_will.png) no-repeat;}
+.learning-manage .section1 .st1_right .mileage .category .icon.ing {background:url(../images/icon/icon_mypage_learning_ing.png) no-repeat;}
+.learning-manage .section1 .st1_right .mileage .category .icon.done{background:url(../images/icon/icon_mypage_learning_done.png) no-repeat;}
+.learning-manage .section1 .st1_right .mileage .category li .value {display: inline-block;text-align: center;color: #000000;font-size:24px;font-weight:400;}
+.learning-manage .section1 .st1_right .tip{padding-top: 12px;font-size: 14px;color: #818181;text-align: right}
+.learning-manage .section1 .st1_right .tip a {color: #333333;font-weight: 400; border-bottom: 1px solid #333;}
+.learning-manage .section1 .content_tab {position: absolute;left:0;bottom:0;font-size:0;}
+.learning-manage .section1 .content_tab a {display: inline-block;margin-right:40px;padding:0 0 25px;font-size:16px;color: #999999;}
+.learning-manage .section1 .content_tab a.on {color: #00234a;font-weight:400;position: relative;}
+.learning-manage .section1 .content_tab a.on:after {content: "";width:100%;height:5px;background: #00234a;position: absolute;left:0;bottom:0;}
+
+.dropDownBox .visable_Area {border:1px solid #e6e6e6;position: relative;box-sizing: border-box;cursor: pointer;line-height: 1em}
+.dropDownBox .visable_Area:after {content: "";width: 17px;height:10px;position: absolute;left: 95%; top: 15px; background: url(../images/sub/arrow_faq_open.png) no-repeat 0 0;}
+.dropDownBox .visable_Area.active:after {content: ""; background: url(../images/sub/arrow_faq_close.png) no-repeat 0 95%;}
+.dropDownBox .visable_Area .pay_notice {font-size:0;line-height: 1em;}
+.dropDownBox .visable_Area .pay_notice li {display: inline-block;font-size:16px;color: #333333;padding-left:11px;line-height: 1em;}
+.dropDownBox .visable_Area .pay_notice li span{color: #00234a;font-weight:400;}
+.dropDownBox .visable_Area .pay_notice li.v_bar:before {content: "";color: #585858;margin-right:11px;}
+.dropDownBox .hidden_Area {display: none;}
+
+.learning-manage .dropDownBox {width:1042px;margin:auto;position: relative;}
+.learning-manage .dropDownBox .visable_Area {padding:15px 20px;height: 44px;}
+.learning-manage .dropDownBox .hidden_Area {position: absolute;left:0;top:44px;width:1042px;max-height:324px;padding:40px 0;border:1px solid #e6e6e6;border-top:0;background: #fff;box-sizing: border-box;z-index:1000;}
+.learning-manage .dropDownBox .hidden_Area .notice-iconTxt {margin:50px 0;padding-top:70px;color: #999999;}
+.learning-manage .dropDownBox .hidden_Area .notice-iconTxt .subject:before {content: '\005B'}
+.learning-manage .dropDownBox .hidden_Area .notice-iconTxt .subject:after {content: '\005D'}
+
+.learning-manage .dropDownBox .hidden_Area ul {padding:0 39px;}
+.learning-manage .dropDownBox .hidden_Area ul li {border-bottom:1px solid #e5e5e5;padding:26px 0;}
+.learning-manage .dropDownBox .hidden_Area ul>li:first-child {padding-top:0}
+.learning-manage .dropDownBox .hidden_Area ul>li:last-child {border-bottom:0;padding-bottom: 0;}
+.learning-manage .dropDownBox .hidden_Area ul li:after {content: "";display: block;clear: both;}
+.learning-manage .dropDownBox .hidden_Area ul .no_more .notice-iconTxt {margin:20px 0 0;}
+.learning-manage .dropDownBox .hidden_Area .payCont {float:left;width:820px;}
+.learning-manage .dropDownBox .hidden_Area .payCont a {font-size:0;margin-bottom:7px;display: block;}
+.learning-manage .dropDownBox .hidden_Area .payCont a span {display: inline-block;font-size:14px;color: #666666;}
+.learning-manage .dropDownBox .hidden_Area .payCont .sol_type {margin-right: 4px;}
+.learning-manage .dropDownBox .hidden_Area .payCont .sol_type:before {content: "\005B"}
+.learning-manage .dropDownBox .hidden_Area .payCont .sol_type:after {content: "\005D"}
+.learning-manage .dropDownBox .hidden_Area .payCont .sol_title {}
+.learning-manage .dropDownBox .hidden_Area .payCont .guideTxt {}
+.learning-manage .dropDownBox .hidden_Area .payCont .v_bar:before {content: "";margin-left:5px;}
+.learning-manage .dropDownBox .hidden_Area .payCont .r-date {color: #999999;font-size:14px;}
+.learning-manage .dropDownBox .hidden_Area .funcButton {float:left;width:142px;}
+.learning-manage .dropDownBox .hidden_Area .funcButton .btnBasic {width:142px;}
+.learning-manage .dropDownBox .hidden_Area .funcButton .inTxt {font-weight:300;}
+.learning-manage .dropDownBox .hidden_Area .mCSB_inside > .mCSB_container {margin-right: 0;}
+
+.learning-manage .sec {margin:0;}
+.learning-manage .s_similar.sec {background: #fff;margin-top: 0;padding-bottom:100px;}
+.learning-manage .section2 h2 {padding: 0 0 10px 34px;background:url(../images/icon/icon_mypage_learning_sol.png) 0 0 no-repeat;}
+
+.learning-manage .section3 h2 {padding: 0 0 10px 32px;background:url(../images/icon/icon_mypage_sc.png) no-repeat;}
+.scheduleBox {margin: 50px 0;border:1px solid #e5e5e5;}
+.scheduleBox .fiveDay {}
+.scheduleBox .fiveDay .tit {padding:17px 0;color: #333333;font-size:16px;font-weight:400;text-indent: 20px;background: #f2f2f2;}
+.scheduleBox .fiveDay .schedule-list {max-height:425px;}
+.scheduleBox .fiveDay .schedule-list .list-wrap {padding:25px 40px; box-sizing: border-box; width: 100%; display: table;border-bottom: 1px solid #e5e5e5;overflow: hidden;}
+.scheduleBox .fiveDay .schedule-list .list-wrap:last-of-type {border-bottom:0;}
+.scheduleBox .fiveDay .schedule-list .list-wrap>div {display: table-cell;vertical-align: middle;}
+/*.scheduleBox .fiveDay .schedule-list div.left {width:130px;padding-right: 40px; font-size:14px;color: #999999;vertical-align: top;}*/
+.scheduleBox .fiveDay .schedule-list div.center {width: 626px;}
+
+.scheduleBox .fiveDay .schedule-list .left {position: relative; padding-right: 40px; display: table-cell; box-sizing: border-box; font-size: 0;}
+.scheduleBox .fiveDay .schedule-list .left .year{display: inline-block; vertical-align: top; font-size: 14px; color: #666; font-weight: 400;}
+.scheduleBox .fiveDay .schedule-list .left .year:before{content:'\0027';display: inline-block; vertical-align: top; font-size: 14px; color: #666; font-weight: 400;}
+.scheduleBox .fiveDay .schedule-list .left .date{display: inline-block; vertical-align: top; margin: 1px 0 0 14px;}
+.scheduleBox .fiveDay .schedule-list .left .date > div{content:''; position: relative; display: inline-block; width: 40px; height: 35px; background: url(../images/icon/date_slash.png) center no-repeat;}
+.scheduleBox .fiveDay .schedule-list .left .date div:first-child:after{content:'\002D'; position: absolute; top: 50%; right: -15px; transform: translate(0, -50%); display: inline-block; color: #999; font-size: 14px; font-weight: 400;}
+.scheduleBox .fiveDay .schedule-list .left .date div:last-child{margin-left: 20px;}
+.scheduleBox .fiveDay .schedule-list .left .date span{position: absolute; font-size: 18px; color: #333; font-weight: 700; line-height: 1;}
+.scheduleBox .fiveDay .schedule-list .left .date span:first-child{top: 0; left: -2px;}
+.scheduleBox .fiveDay .schedule-list .left .date span:nth-of-type(2){right:-2px; bottom: 0;}
+
+.schInfo {padding:0 0 5px;overflow:hidden;font-size: 0;}
+.schInfo .loca {display: inline-block;margin-right:10px; font-size: 0; padding-right: 10px;border-right: 1px solid #ddd;vertical-align: middle;}
+.schInfo .loca>li {display: inline-block;height:16px;font-size:13px;color: #818181;line-height:16px;font-weight: 400;}
+.schInfo .loca>li:first-child {padding-right:5px;}
+.schInfo .loca>li:first-child:after {content: "\003E";padding-left:5px;}
+.schInfo .i_txt {display: inline-block;}
+.schInfo .i_txt li {font-size:13px;float:none;display: inline-block;vertical-align: middle;font-weight:400;}
+.schInfo .i_txt .count{margin-left:10px;}
+.scheduleBox .fiveDay .schedule-list .center .sol_title {padding:10px 0 15px;font-size:18px;color: #333333;font-weight:400;}
+.scheduleBox .fiveDay .schedule-list .center .sol_title {padding:10px 0 15px;font-size:18px;color: #333333;font-weight:400;}
+.scheduleBox .fiveDay .schedule-list .center .alim-msg {color: #d3774a;font-size:14px;}
+.scheduleBox .fiveDay .schedule-list .center .alim-msg span {color: #666666;}
+.scheduleBox .fiveDay .schedule-list .right {width:150px; }
+.scheduleBox .fiveDay .schedule-list .right .btnBasic {width:144px;}
+.scheduleBox .fiveDay .mCSB_scrollTools .mCSB_draggerContainer {top:10%;}
+.scheduleBox .fiveDay .mCSB_inside > .mCSB_container {margin-right: 0;}
+.learning-manage .section4 h2 {padding: 0 0 10px 28px;background:url(../images/icon/icon_mypage_bookmark_sol.png) 0 0 no-repeat;}
+
+.learning-manage .section5 h2 {padding: 0 0 10px 28px; background: url(../images/icon/icon_mypage_attention.png) 0 0 no-repeat;}
+.learning-manage .section5 .interest {margin: 53px 0 90px;border:1px solid #e6e6e6;}
+.learning-manage .section5 .interest .interest-top {padding:20px;background: #f2f2f2;font-size:16px;color: #333333;overflow: hidden}
+.learning-manage .section5 .interest .interest-top p {float:left;width:440px;letter-spacing: -1px;}
+.learning-manage .section5 .interest .interest-top .btnBasic {width:142px;float: right}
+.learning-manage .section5 .interest .interest-bottom ul {padding:0 37px;}
+.learning-manage .section5 .interest .interest-bottom ul li {display: table;padding:35px 0;border-bottom: 1px solid #e5e5e5;overflow: hidden;font-size:0;}
+.learning-manage .section5 .interest .interest-bottom ul li .name {width:122px;display: table-cell;font-size:16px;font-weight:400;}
+.learning-manage .section5 .interest .interest-bottom ul li .linkbtn {width:839px;display: table-cell;}
+.learning-manage .section5 .interest .interest-bottom ul li .btnBasic {width:144px;height:48px;margin:0 10px 10px 0;line-height:48px;font-size:16px;}
+
+
+.user-right.myArea {position:relative;padding-bottom:20px}
+.user-right.myArea .mCSB_container {margin-right:0;}
+.user-right.myArea .userName {cursor:pointer;}
+.user-right.myArea .dropdown{display:none;position:absolute;right:22px;width:145px;margin-top:5px;box-shadow:0px 6px 10px 4px rgba(38, 38, 38, 0.28); background: #fff;z-index:100;}
+.user-right.myArea .dropdown .downlist{max-height:300px;box-sizing:border-box;background:#fff;z-index:10000}
+.user-right.myArea .dropdown .dropdown_Wrap:last-child{height:40px}
+.user-right.myArea .logout{display:block;border-top:1px solid #e5e5e5;padding:7px 0;font-size:14px}

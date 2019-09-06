@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>KIA 학습 재 시작</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/popup.js"></script>
+    <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/jquery.ellipsis.min.js"></script>
+    <script>
+        $(function () {
+            $('#mask').show();
+            popup(1);
+        })
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#container" class="skipLink">본문바로가기</a>
+    </div>
+    <div class="wrap">
+
+
+        <!--Content-->
+
+        <!--학습 재 시작 팝업-->
+        <div id="popup1" class="popup">
+            <div class="pop_header">
+                <p class="popTitle">학습 재 시작</p>
+            </div>
+
+            <div class="popCont">
+                <div class="contentWrap scrolling chgTimeCont">
+                    <div class="chg-class-time">
+                        <div class="article mb0">
+                            <div class="innerWrap">
+                                <div class="head_title mt05">
+                                    <!--
+													**************  Class 아이콘 유형  ***************
+													 seminar =  세미나  / set = 집합교육   / knw = 지식인
+													  elearn = 이러닝	  / vod=동영상 / ebook = 이북    / i_data=일반자료
+													  s_data = 전문자료 / license = 자격증 / moc = MOOC / cop = CoP
+												-->
+                                    <span class="icon knw">MOOC</span>
+                                    <h1>신규 교육과정개발방법론 연구</h1>
+                                </div>
+                            </div>
+                            <p class="notice pt20">학습 종료가 예상되는 기간을 설정해주세요.<br>부문 담당자 승인 시 해당 기간으로 학습 기간이 연장되며 CoP 학습이
+                                다시 시작됩니다.<br>학습 시작 시점부터 CoP 정보 수정이 가능합니다.</p>
+                        </div>
+
+                        <!-- 기존 학습 기간 -->
+                        <div class="article mb20">
+                            <div class="innerWrap">
+                                <div class="solution_box_info restart">
+                                    <ul>
+                                        <li>
+                                            <p class="title">기존 학습기간</p>
+                                            <p class="txt">18.12.01 - 18.12.31</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icon_arrow"><i class="arrow_down"></i></div>
+                            </div>
+                        </div>
+                        <!-- //기존 학습 기간 -->
+
+                        <!-- 연장 희망기간 -->
+                        <div class="article">
+                            <div class="innerWrap">
+                                <div class="solution_box_info restart">
+                                    <div class="Period-date">
+                                        <label for="course_apply">연장 희망기간</label>
+                                        <input type="text" value="2019-03-13" class="datepicker hasDatepicker disabled"
+                                            id="course_apply" readonly="readonly"> <em>–</em>
+                                        <input type="text" class="datepicker hasDatepicker" id="course_apply2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //연장 희망기간 -->
+                    </div>
+
+                </div> <!-- //contentWrap-->
+                <div class="pop_btnArea">
+                    <!--dim 처리 시 class dim 추가-->
+                    <button type="button" class="btnBasic pop_ok" disabled><span class="inTxt">신청</span></button>
+                    <button type="button" class="btnBasic" onclick="popclose()"><span class="inTxt">닫기</span></button>
+                </div>
+            </div>
+            <button class="popupClose" onclick="popclose()">팝업창닫기</button>
+        </div>
+        <!-- //학습결과 보고서-->
+
+
+
+
+
+    </div>
+    <!-- //wrap-->
+
+
+</body>
+
+</html>

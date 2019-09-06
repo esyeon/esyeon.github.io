@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>KIA</title>
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/career.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/hrr.css">
+  <script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.ellipsis.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/common.js"></script>
+  <script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+</head>
+
+<body>
+
+  <div class="window-popup">
+    <h2 class="popup-title">
+      <!-- 성장목표 계획 보고서 Case -->
+      성장목표 계획 보고서
+      <!--
+			성장목표 중간 보고서일 때 텍스트 :
+			성장목표 중간 보고서
+		-->
+      <!--
+			성장목표 최종 보고서일 때 텍스트 :
+			성장목표 최종 보고서
+		-->
+      <!-- 닫기 -->
+      <a class="popup-close" href="javascript:window.open('about:blank','_self').self.close();">팝업닫기</a>
+      <!-- // 닫기 -->
+    </h2>
+    <!-- popup-wrap -->
+    <div class="popup-wrap">
+      <div class="title-area top-fixed">
+        <!-- 성장목표 계획 보고서일 때 -->
+        <h4>성장목표 계획 보고서</h4>
+        <p>수립하신 성장목표에 대한 계획안을 입력하십시오.<br />작성하신 계획 보고서는 소속 팀장님께 상신됩니다.</p>
+        <!-- // 성장목표 계획 보고서일 때 -->
+
+        <!-- 성장목표 중간 보고서일 때
+			<h4>성장목표 중간 보고서</h4>
+			<p>성장목표 수행에 대한 중간 점검 내역을 입력하십시오.<br />
+			작성하신 중간 보고서는 결재라인을 통해 상신됩니다.</p>
+		-->
+
+        <!-- 성장목표 최종 보고서일 때
+			<h4>성장목표 최종 보고서</h4>
+			<p>한 해 동안의 성장목표 수행 결과를 입력하십시오.<br />
+			최종 보고서는 결재라인을 통해 상신됩니다.</p>
+		-->
+      </div>
+
+
+      <div class="popup-content growth-target mt_70">
+        <section>
+          <h3 class="section-title">
+            성장목표 계획 보고서
+            <!-- 성장목표 계획 보고서 Case -->
+            <!--
+			성장목표 중간 보고서일 때 텍스트 :
+			성장목표 중간 보고서
+		-->
+            <!--
+			성장목표 최종 보고서일 때 텍스트 :
+			성장목표 최종 보고서
+		-->
+            <div class="btn-aside">
+              <button type="button" class="btn type01 small">결재라인 선택<span class="ico check01"></span></button>
+            </div>
+          </h3>
+          <!-- 성장목표 계획 보고서 테이블 -->
+          <div class="table-wrap">
+            <table class="data-table left">
+              <caption>성장목표 계획 보고서</caption>
+              <colgroup>
+                <col style="width: 13%">
+                <col style="width: *">
+                <col style="width: 13%">
+                <col style="width: *">
+                <col style="width: 13%">
+                <col style="width: *">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="col" class="center">부문</th>
+                  <td>총무</td>
+                  <th scope="col" class="center">계획 분야</th>
+                  <td>총무 전문가</td>
+                  <th scope="col" class="center">직무 경험년수</th>
+                  <td>1년</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- // 성장 목표 계획 보고서 테이블 -->
+
+          <div class="border">
+            <div class="write-box">
+              <textarea class="text-area" name="" cols="" rows=""
+                placeholder="성장목표 수립 목적과 이를 수행하며 성취하고 싶은 목표를 입력하십시오.&#13;&#10;200 byte 이상 입력해주세요."></textarea>
+
+              <!--
+			성장목표 중간 보고서일 때 textarea :
+			<textarea class="text-area" name="" cols="" rows="" placeholder="전반기 성장목표 수행 현황 및 결과 그리고 보안할 점에 대해 입력하십시오..&#13;&#10;200 byte 이상 입력해주세요."></textarea>
+		-->
+              <!--
+			성장목표 최종 보고서일 때 textarea :
+			<textarea class="text-area" name="" cols="" rows="" placeholder="한 해 동안의 성장목표를 수행하며 성취한 결과와 이를 향후 전문성 및 경력 발전에.&#13;&#10;200 byte 이상 입력해주세요."></textarea>
+		-->
+              <span class="write-count"><em>0</em>byte</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt_40">
+          <div class="tab-wrap">
+            <ul class="tab">
+              <li class="active"><a href="#tab1">역량진단</a></li>
+              <li><a href="#tab2">경력계획</a></li>
+              <li><a href="#tab3">학습계획</a></li>
+            </ul>
+          </div>
+
+          <!-- 역량진단 -->
+          <div id="tab1" class="tab-cont">
+            <h3 class="section-title mt_30">역량진단
+              <span class="notice-subtitle">
+                <span class="ico info"></span>
+                역량진단일일 : 2018-09-20
+              </span>
+            </h3>
+            <div class="section-grey pd_30">
+              <div class="tab-wrap">
+                <ul class="tab">
+                  <li class="active"><button>분야 평균</button></li>
+                  <li><button>분야 상위5% 평균</button></li>
+                  <li><button>작년 진단 결과</button></li>
+                </ul>
+              </div>
+
+              <!-- 진단 결과 화면 -->
+              <div class="diagnostic-result">
+                <!-- 테이블 -->
+                <div class="table-wrap graph-table default">
+                  <ul class="legend">
+                    <li><span class="blue01"></span>OOO님의 진단결과</li>
+                    <li><span class="dark02"></span>비교 점수</li>
+                  </ul>
+                  <table>
+                    <caption>역량 진단결과 테이블</caption>
+                    <colgroup>
+                      <col style="width:">
+                      <col style="width:">
+                      <col style="width:">
+                      <col style="width:">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th colspan="2" class="slash">
+                          <span>수준</span>
+                          <span>역량</span>
+                        </th>
+                        <th class="th-type01">학습필요</th>
+                        <th class="th-type02">적절</th>
+                        <th class="th-type03">탁월</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th rowspan="3" scope="row" class="th-current">현재<br>성장단계<br>요구역량</th>
+                        <th scope="row" class="th-row">사업관리<br>역할이해</th>
+                        <td colspan="3">
+
+                          <!-- ㅇㅇㅇ님의 진단결과 그래프 -->
+                          <div class="bar-top" style="width:40%"></div>
+
+                          <!-- 툴팁(역량 진단 수준 및 성장단계 정보) -->
+                          <div class="bar-info">
+                            <span class="tit">역량 A</span>
+                            <span>진단 결과 : 학습 필요</span>
+                            <span>성장단계 (권장 학습 단계) : 입문자</span>
+                          </div>
+                          <!-- // 툴팁(역량 진단 수준 및 성장단계 정보) -->
+
+                          <!-- 툴팁(분야 전체/상위5% 평균과 비교 시)-->
+                          <div class="bar-info">
+                            <span class="tit">역량 A</span>
+                            <ul class="legend">
+                              <li><span class="blue01"></span>나의 진단 결과 : 학습 필요</li>
+                              <li><span class="dark01"></span>분야 전체 평균 : 적절</li>
+                            </ul>
+                            <span>분야 전체 평균 대비 역량 수준이 낮습니다.</span>
+                          </div>
+                          <!-- // 툴팁(분야 전체/상위5% 평균과 비교 시)-->
+
+                          <!-- 툴팁(작년 학습자의 동일 분야 결과와 비교 시)-->
+                          <div class="bar-info">
+                            <span class="tit">역량 A</span>
+                            <ul class="legend">
+                              <li><span class="blue01"></span>나의 진단 결과 : 학습 필요</li>
+                              <li><span class="dark01"></span>작년 전체 평균 : 학습 필요</li>
+                            </ul>
+                            <span>작년 대비 역량 수준이 성장했습니다.</span>
+                          </div>
+                          <!-- // 툴팁(작년 학습자의 동일 분야 결과와 비교 시) -->
+
+                          <!-- //ㅇㅇㅇ님의 진단결과 그래프 -->
+
+                          <!-- 비교점수 그래프 -->
+                          <div class="bar-bottom" style="width:80%"></div>
+                          <!-- //비교 점수 그래프 -->
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">자동차시장 이해</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:70%"></div>
+                          <div class="bar-bottom" style="width:55%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">업무협의 및<br>조율 역량</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:56%"></div>
+                          <div class="bar-bottom" style="width:80%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th rowspan="5" scope="row" class="th-future">미래<br>성장단계<br>요구역량</th>
+                        <th scope="row" class="th-row">최적판매/생산<br>사업계획 수립</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:68%"></div>
+                          <div class="bar-bottom" style="width:56%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">판매/생산<br>운영전략 수립</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:7%"></div>
+                          <div class="bar-bottom" style="width:20%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">부문간 의견조율</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:25%"></div>
+                          <div class="bar-bottom" style="width:60%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">시장분석</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:50%"></div>
+                          <div class="bar-bottom" style="width:55%"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="th-row">OTD</th>
+                        <td colspan="3">
+                          <div class="bar-top" style="width:10%"></div>
+                          <div class="bar-bottom" style="width:30%"></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- // 테이블 -->
+              </div>
+              <!-- // 진단결과 화면 -->
+            </div>
+          </div>
+          <!-- //역량진단 -->
+
+
+          <!-- 경력 경로 -->
+          <div id="tab2" class="tab-cont">
+            <h3 class="section-title mt_30">경력 경로
+              <span class="notice-subtitle">
+                <span class="ico info"></span>
+                최종작성일 : 2018-09-20
+              </span>
+            </h3>
+            <div class="career-slide-disabled">
+              <ul>
+                <li>
+                  <span class="info01">2021년<br />보안교육(임직원, 협력사)</span>
+                  <span class="info02">전주 총무인사팀</span>
+                </li>
+                <li>
+                  <span class="info01">2023년<br />보안교육(임직원, 협력사)</span>
+                  <span class="info02">전주 총무인사팀</span>
+                </li>
+                <li>
+                  <span class="info01">2025년<br />보안교육(임직원, 협력사)</span>
+                  <span class="info02">전주 총무인사팀</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //경력 경로 -->
+
+          <!-- 학습 계획 -->
+          <div id="tab3" class="tab-cont">
+            <h3 class="section-title">학습 타임라인
+              <span class="section-aside timeline-legend">
+                <ul class="legend">
+                  <li><span class="blue01"></span>학습예정</li>
+                  <li><span class="blue03"></span>학습중</li>
+                  <li><span class="dark02"></span>학습완료</li>
+                </ul>
+              </span>
+            </h3>
+            <div class="timeline">
+              <!-- 학습 계획없을 때, "no-plan"클래스 추가-->
+              <!--학습 계획 없을 때 나오는 영역 -->
+              <div class="notice-area">
+                <div class="notice-cont">
+                  <p>수립된 학습계획이 없습니다.<br />올 한해 지속적인 성장과 발전을 위한<br />학습계획을 수립해 보십시오.</p>
+                  <div class="button-area">
+                    <button type="button" class="btn type04 medium">
+                      학습계획 수립<span class="ico check01 type01"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--// 학습 계획 없을 때 나오는 영역 끝 -->
+
+              <div class="scroll-area">
+
+                <!--.jan .feb .mar .apr .may .jun .jul .aug .sep .oct. nov .dec 각 클래스 넣으면 1월~12월 현재 기준 선이 나타남 -->
+                <div class="current-bar may">
+                  <span></span>
+                </div>
+                <table class="table-timeline">
+                  <colgroup>
+                    <col width="108px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                    <col width="117px">
+                  </colgroup>
+                  <thead>
+                    <tr class="month">
+                      <th></th>
+                      <th class="th-col">1월</th>
+                      <th class="th-col">2월</th>
+                      <th class="th-col">3월</th>
+                      <th class="th-col">4월</th>
+                      <th class="th-col">5월</th>
+                      <th class="th-col">6월</th>
+                      <th class="th-col">7월</th>
+                      <th class="th-col">8월</th>
+                      <th class="th-col">9월</th>
+                      <th class="th-col">10월</th>
+                      <th class="th-col">11월</th>
+                      <th class="th-col">12월</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- 집합교육 -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">집합교육</th>
+                      <td colspan="2">
+                        <div class="bar grey">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td>
+                        <!--그룹 타임라인바 class: group-->
+                        <div class="bar group">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <div class="bar skyblue">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td></td>
+                      <td>
+                        <div class="bar grey">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="2">
+                        <div class="bar grey">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- // 집합교육 -->
+
+                    <!--  세미나 컨퍼런스 -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">세미나 컨퍼런스</th>
+                      <td></td>
+                      <td>
+                        <div class="bar navy">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- // 세미나 컨퍼런스 -->
+
+                    <!-- e러닝 -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">e러닝</th>
+                      <td>
+                        <div class="bar grey">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td colspan="4">
+                        <div class="bar navy">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- // e러닝 -->
+
+                    <!-- CoP -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">CoP</th>
+                      <td></td>
+                      <td></td>
+                      <td colspan="6">
+                        <div class="bar grey">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="4">
+                        <div class="bar navy">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- //CoP -->
+
+                    <!-- 전문활동 -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">전문 활동</th>
+                      <td colspan="6">
+                        <div class="bar navy">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- // 전문활동 -->
+
+                    <!-- 상시학습 -->
+                    <tr class="row-top">
+                      <th rowspan="2" class="th-row">상시학습</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="row-bottom">
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <div class="bar skyblue">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td>
+                        <div class="bar navy">솔루션명</div>
+                        <!-- 툴팁 -->
+                        <div class="bar-info">
+                          <span class="tit">4월 학습 완료 솔루션 : 2개</span>
+                          <span class="ready">플랫폼 레볼루션</span>
+                          <!--학습예정-->
+                          <span class="ing">Gatner Trend Report</span>
+                          <!--학습중-->
+                          <span class="complete">Gatner Trend Report</span>
+                          <!--학습완료-->
+                        </div>
+                        <!-- //툴팁 -->
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- //상시학습 -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- 학습 이력 테이블 -->
+            <div class="table-wrap">
+              <table class="data-table">
+                <caption>학습 이력 테이블</caption>
+                <colgroup>
+                  <col width="3%">
+                  <col width="14%">
+                  <col width="">
+                  <col width="10%">
+                  <col width="20%">
+                  <col width="14%">
+                  <col width="10%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">NO.</th>
+                    <th scope="col">유형</th>
+                    <th scope="col">솔루션명</th>
+                    <th scope="col">마일리지</th>
+                    <th scope="col">학습기간</th>
+                    <th scope="col">학습상태</th>
+                    <th scope="col">상세보기</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      1
+                    </td>
+                    <td>세미나/컨퍼런스</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      2
+                    </td>
+                    <td>집합</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      3
+                    </td>
+                    <td>이러닝</td>
+                    <td>학습 솔루션</td>
+                    <td>2</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      4
+                    </td>
+                    <td>세미나/컨퍼런스</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      5
+                    </td>
+                    <td>이러닝</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      6
+                    </td>
+                    <td>집합</td>
+                    <td>학습 솔루션</td>
+                    <td>1.5</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      7
+                    </td>
+                    <td>세미나/컨퍼런스</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      8
+                    </td>
+                    <td>세미나/컨퍼런스</td>
+                    <td>학습 솔루션</td>
+                    <td>1</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      9
+                    </td>
+                    <td>이러닝</td>
+                    <td>학습 솔루션</td>
+                    <td>2</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      10
+                    </td>
+                    <td>집합</td>
+                    <td>학습 솔루션</td>
+                    <td>3</td>
+                    <td>2018-10-25 ~ 2018-10-30</td>
+                    <td>학습예정</td>
+                    <td>
+                      <a class="btn" href="#"><img alt="검색" src="../../@resource/images/common/search02.png"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //학습 이력 테이블 -->
+
+            <div class="pagination square">
+              <a href="javascript:void(0);" class="first">처음</a>
+              <a href="javascript:void(0);" class="prev">이전</a>
+              <span class="page">
+                <strong title="현위치">1</strong>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+              </span>
+              <a href="javascript:void(0);" class="next">다음</a>
+              <a href="javascript:void(0);" class="last">끝</a>
+            </div>
+          </div>
+          <!-- //학습 계획 -->
+        </section>
+
+        <div class="button-area">
+          <button type="button" class="btn type01 small add-plan" disabled="">상신<span
+              class="ico check01"></span></button>
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- //popup-wrap -->
+  </div>
+</body>
+
+</html>

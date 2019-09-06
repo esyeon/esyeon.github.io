@@ -1,0 +1,1221 @@
+@charset "UTF-8";
+
+/*현대 - MSS*/
+/*MSS 조직과 업무 MAIN*/
+.organize-main{height: 974px;padding-bottom: 0 !important;background: url('../images/mss/bg_main.png') center top no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.organize-main #content{width: 1060px;margin: 0 auto;}
+.organize-main #content .intro-text{padding-top: 89px;}
+.organize-main #content .intro-text h2{font-size: 40px;line-height: 55px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.organize-main #content .intro-text p{padding-top: 15px;font-size: 18px;line-height: 28px;color: #fff;font-weight: normal;}
+.organize-main #content .data-list{padding-top: 53px;}
+.organize-main #content .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.organize-main #content .data-list li{float: left;position: relative;width: 320px;height: 457px;margin-left: 50px;background-color: #fff;border-radius: 5px;-webkit-border-radius: 5px;}
+.organize-main #content .data-list li:first-child{margin-left: 0;}
+.organize-main #content .data-list li .thumb img{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.organize-main #content .data-list li h3{padding: 18px 30px 0;font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.organize-main #content .data-list li p{padding: 5px 10px 0 30px;font-size: 15px;line-height: 25px;color: #555;}
+.organize-main #content .data-list li .btn.type07{display: block;position: absolute;left: 0;right: 0;bottom: 40px;width: 160px;margin: 0 auto;text-align: center;}
+
+
+/* 워킹그룹 조직도 */
+.depth03#wrap #container.organize-group{max-width: 1240px; margin: 40px auto 0; background-color: #f7f7f7; padding: 12px 50px 100px;}
+.depth03#wrap #container.organize-group h2{}
+.depth03#wrap #container.organize-group h2 .aside-text{padding-left: 20px;vertical-align: 5px;}
+.depth03#wrap #container.organize-group::before{background-color: transparent; width: 0; height: 0;}
+.depth03#wrap #container.organize-group+#footer{border-top: 0 none;}
+.depth03#wrap #container.organize-group .tab-cont{margin-top: 30px;}
+.depth03#wrap #container.organize-group .cont{overflow: auto; height: 900px;}
+.depth03#wrap #container.organize-group .cont img{text-align: center;}
+.depth03#wrap #container.organize-group .table-wrap.sum-table{width: 890px; margin: 40px auto 0;}
+.depth03#wrap #container.organize-group .table-wrap.sum-table th{background-color: #ffffff}
+.depth03#wrap #container.organize-group .table-wrap.sum-table td{background-color: #ffffff}
+.depth03#wrap #container.organize-group .table-wrap.sum-table .sum{background-color: #edf8ff;}
+.depth03#wrap #container.organize-group .table-wrap.sum-table .notice{margin-top: 25px; font-size: 14px;}
+
+
+/*MSS 성과관리와 평가 MAIN*/
+.assessment-main{/*height: 1155px;*/background: #000 url('../images/mss/bg_main_02.png') center top no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.assessment-main #content{width: 1060px;margin: 0 auto;overflow: hidden;}
+.assessment-main #content .intro-text{padding-top: 89px;}
+.assessment-main #content .intro-text h2{font-size: 40px;line-height: 55px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.assessment-main #content .intro-text p{padding-top: 15px;font-size: 19px;line-height: 28px;color: #fff;font-weight: normal;}
+.assessment-main #content .data-list{padding-top: 53px;}
+.assessment-main #content .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.assessment-main #content .data-list li{float: left;position: relative;width: 320px;height: 611px;margin-left: 20px;background-color: #fff;border-radius: 5px;-webkit-border-radius: 5px;}
+.assessment-main #content .data-list li:first-child{margin-left: 0;}
+.assessment-main #content .data-list li .thumb img{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.assessment-main #content .data-list li h3{padding: 18px 30px 0;font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.assessment-main #content .data-list li p{padding: 5px 10px 0 30px;font-size: 15px;line-height: 25px;color: #555;}
+.assessment-main #content .data-list li strong{display: block;padding: 9px 10px 0 30px;font-size: 15px;line-height: 21px;color: #555;font-weight: normal;}
+.assessment-main #content .data-list li .btn.type07{display: block;position: absolute;left: 0;right: 0;bottom: 40px;width: 160px;height: 48px;line-height: 48px;margin: 0 auto;text-align: center;}
+.assessment-main #content li.detail-list{width: 380px;}
+.assessment-main #content li.detail-list{background-color: #002c5f;border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.assessment-main #content li.detail-list li{float: none;width: auto;height: auto;margin: 0;padding: 0 35px;background: #003166;background-image: url('../images/mss/bg_line.gif');background-position: 35px 100%;background-repeat:  no-repeat;border-radius: 0;-webkit-border-radius: 0;}
+.assessment-main #content li.detail-list li:first-child{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.assessment-main #content li.detail-list li.active{margin-top: -1px;padding-top: 31px;background-color: #00254e;background-image: none;}
+.assessment-main #content li.detail-list li:first-child.active{margin-top: 0;}
+.assessment-main #content li.detail-list li .title{display: block;font-size: 19px;line-height: 55px;color: #fff;/*border-top: 1px solid #2d547f;*/background: url('../images/common/arrow_down_03.png') 287px 50% no-repeat;}
+.assessment-main #content li.detail-list li:last-child{background-image: none;}
+.assessment-main #content li.detail-list li.active .title{font-size: 25px;line-height: 30px;padding: 15px 34px 15px 0;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-top: 0 none;background: url('../images/common/arrow_up_03.png') 287px 50% no-repeat;}
+.assessment-main #content li.detail-list li.active .read-more{display: block;padding-bottom: 41px;}
+.assessment-main #content li.detail-list li .read-more{display: none;}
+.assessment-main #content li.detail-list li .read-more p{padding: 0;font-size: 15px;line-height: 25px;color: #fff;}
+.assessment-main #content li.detail-list li .read-more .btn{display: block;width: 160px;height: 48px;margin-top: 25px;line-height: 48px;color: #fff;background-color: #2874c6;border-radius: 24px;-webkit-border-radius: 24px;text-align: center;}
+.assessment-main #content .evaluation-wrap{width: 110%;padding-top: 28px;}
+.assessment-main #content .evaluation-wrap .item{float: left;width: 505px;margin-top: 25px;margin-right: 50px;border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.assessment-main #content .evaluation-wrap .item .thumb{vertical-align: top;}
+.assessment-main #content .evaluation-wrap .item .thumb img{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;vertical-align: top;}
+.assessment-main #content .evaluation-wrap .item .detail{padding: 0 30px 30px;background-color: #fff;border-bottom-left-radius: 5px;-webkit-border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;-webkit-border-bottom-right-radius: 5px;}
+.assessment-main #content .evaluation-wrap .item .detail .subject{padding-top: 27px;font-size: 30px;line-height: 30px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.assessment-main #content .evaluation-wrap .item .detail .subject .btn-more{}
+.assessment-main #content .evaluation-wrap .item .detail p{min-height: 80px;padding-top: 22px;font-size: 15px;line-height: 25px;color: #555;}
+.assessment-main #content .evaluation-wrap .item .detail dl{padding-top: 3px;}
+.assessment-main #content .evaluation-wrap .item .detail dl dt{display: inline-block;font-size: 15px;line-height: 25px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.assessment-main #content .evaluation-wrap .item .detail dl dd{display: inline-block;font-size: 15px;line-height: 25px;color: #292929;}
+.assessment-main #content .evaluation-wrap .item .detail dl dd span{display: inline-block;margin-right: 14px;}
+.assessment-main #content .evaluation-wrap .item .detail .btn.type01{margin-top: 24px;}
+
+/*MSS 육성과 동기부여 MAIN*/
+.motivation-main{height: 1362px;padding-bottom: 0 !important;background: url('../images/mss/bg_main_03.png') center top no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.motivation-main #content{width: 1060px;margin: 0 auto;}
+.motivation-main #content .intro-text{padding-top: 89px;}
+.motivation-main #content .intro-text h2{font-size: 40px;line-height: 55px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.motivation-main #content .intro-text p{padding-top: 15px;padding-bottom: 44px;font-size: 19px;line-height: 28px;color: #fff;font-weight: normal;}
+.motivation-main #content .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.motivation-main #content .data-list li{float: left;position: relative;width: 320px;height: 884px;margin-left: 50px;border-radius: 5px;-webkit-border-radius: 5px;overflow: hidden;}
+.motivation-main #content .data-list li:first-child{margin-left: 0;}
+.motivation-main #content .data-list li .list-wrap{height:684px;background-color: #fff;vertical-align: top;}
+.motivation-main #content .data-list li .list-wrap .subject .btn-more{margin-left: 10px;vertical-align: middle;}
+.motivation-main #content .data-list li .list-wrap .text{height: 84px;margin: 0 35px;padding: 4px 0 10px;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';border-bottom: 1px solid #d1d1d1;}
+.motivation-main #content .data-list li .list-wrap .notice{padding:  0 0 0 13px;text-indent: -13px;font-size: 12px;line-height: 20px;border: 0 none;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';-webkit-appearance: none;}
+.motivation-main #content .data-list li .list-wrap p.notice{padding-left: 48px;}
+.motivation-main #content .data-list li .thumb{display: block;}
+.motivation-main #content .data-list li .thumb img{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;vertical-align: top;}
+.motivation-main #content .data-list li h3{padding: 21px 0 6px 35px;font-size: 20px;line-height: 25px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.motivation-main #content .data-list li ul{height: 393px;padding-left: 35px;padding-bottom: 12px;}
+.motivation-main #content .data-list li ul li{float: none;width: 250px;height: auto;margin-left: 0;padding: 15px 0;border-bottom: 1px solid #d1d1d1;background-color: transparent;border-radius: 0;-webkit-border-radius: 0;}
+.motivation-main #content .data-list li ul li:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.motivation-main #content .data-list li ul li .thumb{float: left;position: relative;width: 78px;height: 98px;border: 1px solid #d1d1d1;}
+.motivation-main #content .data-list li ul li .thumb img{width: 100%;max-height: 98px;border-radius: 0;}
+.motivation-main #content .data-list li ul li .thumb span{display: block;position: absolute;right: -14px;top: -10px;width: 33px;height: 33px;line-height: 33px;text-align: center;font-size: 16px;color: #fff;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';background-color: #666167;border-radius: 50%;-webkit-border-radius: 50%;}
+.motivation-main #content .data-list li ul li:first-child .thumb span{background-color: #00b9e4;}
+.motivation-main #content .data-list li ul li .text-wrap{float: left;width: 130px;padding-left: 20px;}
+.motivation-main #content .data-list li ul li .text-wrap span{display: block;overflow: hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;}
+.motivation-main #content .data-list li ul li .text-wrap .name{padding: 5px 0 7px;font-size: 16px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.motivation-main #content .data-list li ul li .text-wrap .info01{font-size: 14px;line-height: 21px;color: #555;}
+.motivation-main #content .data-list li ul li .text-wrap .info02{font-size: 14px;line-height: 21px;color: #555;}
+.motivation-main #content .data-list li .ready{position: absolute;left: 0;top: 0;width: 100%;height: 100%;font-size: 23px;text-align: center;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background-color: #000;opacity: 0.8;filter: alpha(opacity=80);}
+.motivation-main #content .data-list li .ready span{display: block;padding-top: 300px;}
+/*.motivation-main #content .data-list li.detail-list{background-color: #002c5f;}
+.motivation-main #content .data-list li.detail-list .item{margin: 0 40px;padding-top: 33px;padding-bottom: 40px;}
+.motivation-main #content .data-list li.detail-list .item + .item{padding-top: 18px;border-top: 1px solid #2d547f;}
+.motivation-main #content .data-list li.detail-list .item h3{padding-left: 0;padding-bottom: 16px;font-size: 25px;color: #fff;font-family:'HyundaiSansTextKRRegular';}
+.motivation-main #content .data-list li.detail-list .item .text{font-size: 15px;line-height: 25px;color: #fff;}
+.motivation-main #content .data-list li.detail-list .item .btn{display: block;width: 160px;height: 48px;margin-top: 25px;text-align: center;line-height: 48px;color: #fff;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';background-color: #2874c6;border-radius: 24px;-webkit-border-radius: 24px;}*/
+.motivation-main #content .no-member{margin-bottom: 12px;padding: 0 35px;}
+.motivation-main #content .no-member p{padding: 200px 0 170px;text-align: center;font-size:15px;background: url('../images/common/ico_member_02.png') 50% 155px no-repeat;border-bottom: 1px solid #d1d1d1;}
+
+/*현대 - 보상*/
+.reward-wrap img{vertical-align: top;}
+.content-visual{position: relative; overflow: hidden;border-radius: 5px; -webkit-border-radius: 5px;z-index: -1}
+.reward-main .content-primary{width: 1060px; margin: 0 auto;}
+.reward-main .content-primary:after{content: ''; display: block; clear: both}
+.reward-main .right-section{float: left; width: 360px; padding-top: 72px}
+.reward-main .title{font-size: 50px; line-height: 64px; color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.reward-main .summary{font-size: 15px; line-height: 25px; margin-top: 22px;}
+.reward-main .quick-menu{margin-top: 23px}
+.reward-main .quick-menu li{height: 53px; line-height: 53px; width: 167px; box-sizing: border-box;border-bottom: 1px solid #e1e1e1; background:url("../images/common/arrow_02.png") right 50% no-repeat;}
+.reward-main .quick-menu li a{display: block; color: #292929; font-size: 15px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.reward-section{float: left; margin-top: 80px; width: 350px; border-radius: 5px; -webkit-border-radius: 5px;}
+.reward-section h3{font-size: 20px;line-height: 20px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';color: #292929}
+.reward-section .reward-all{color: #292929}
+.reward-section .reward-all .amount{display: block; font-size: 19px; vertical-align: bottom; margin-top: 24px;}
+.reward-section .reward-all strong{display: inline-block;margin-right: 7px;font-size: 55px; line-height: 55px; font-weight: normal; font-family: '현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.reward-section .reward-all .sum{display: block; font-size: 19px; margin-top: 10px; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium";color: #555;}
+.reward-section .mydate-list{margin-top: 26px; width: 262px;}
+.reward-section .mydate-list li{padding: 24px 0; border-top: 1px solid #d9d9d9;}
+.reward-section .mydate-list li:after{content: ''; display: block; clear: both;}
+.reward-section .mydate-list li div{float: right; width: 130px; font-size: 15px; line-height: 15px; color: #646464;}
+.reward-section .mydate-list li .amount{font-size: 17px; margin-bottom: 4px;}
+.reward-section .mydate-list li .amount strong{font-size: 23px; color: #444444;font-weight: normal; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.reward-section .mydate-list li .date{margin-top: 10px;}
+.reward-section .mydate-list li .title{float: left; font-size: 19px;color: #292929; padding-top: 0; line-height: 23px; width: 70px}
+.reward-section .mydate-list li span{display: block; line-height: 23px; text-align: right;}
+.reward-section .button-area{margin-top: 26px;}
+.reward-section .button-area a{display: block; width: 205px; box-sizing: border-box;}
+.reward-section .button-area a .ico-check{width: 15px; height: 10px; background-size: 15px auto; margin-top: -3px}
+.reward-detalle{float: left; width:  250px; color: #ffffff; background-color: #002c5f; border-radius: 5px; -webkit-border-radius: 5px; padding: 40px 50px 60px; margin-top: -50px;}
+.reward-detalle .cont-detalle{padding-top: 10px}
+.reward-detalle .subject{height: 80px; line-height: 80px; font-size: 24px; }
+.reward-detalle .subject{font-weight: normal;}
+.reward-detalle .subject a{display: block; width: 100%}
+.reward-detalle .subject a:after{content: ''; display: block; clear: both;}
+.reward-detalle .subject .btn-more{float: right; background-image: url("../images/common/ico_more_02.png"); width: 32px; height: 32px; line-height: 32px; margin-top: 24px}
+.reward-detalle .data-list{color: #a3adbd;}
+.reward-detalle .data-list li{height:  54px; line-height: 54px; border-top: 1px solid #29507a;}
+.reward-detalle .data-list li:first-child{border-top: 0 none;}
+.reward-detalle .data-list li span{display: block; float: left;}
+.reward-detalle .data-list .date{width: 96px;}
+.reward-detalle .data-list strong{display: block; float: right; color: #ffffff; text-align: right; font-weight: normal; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium";}
+
+
+/*급여명세서*/
+/*#wrap #container.mss-reward-pay{min-width: 1400px;border-top: 1px solid #d6d6d6;padding-bottom: 0 !important;box-sizing: border-box;-webkit-box-sizing: border-box;}
+#wrap #container.mss-reward-pay #content{position: relative; float: none;padding-top: 38px;padding-left: 40px;overflow: hidden;border-left: 1px solid #d1d1d1;}*/
+.mss-reward-pay .content-wrap{width: 1080px;margin-bottom: 100px;padding-bottom: 70px;background:#fff url('../images/mss/bg_bill.jpg') center 10px repeat-y;border-radius: 5px;-webkit-border-radius: 5px;}
+.mss-reward-pay .content-header{/*max-width: 1320px;*/ height: 329px; border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px;border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px;background:url("../images/mss/reward_visual_01.jpg") center top no-repeat; color: #ffffff;}
+/*.mss-reward-pay .content-header .cont{width: 1060px; margin: 0 auto;}*/
+.mss-reward-pay .content-header .cont{padding: 98px 0 29px 100px;}
+.mss-reward-pay .content-header .cont h3{display: inline-block;font-size: 50px; line-height: 50px; height: 50px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-reward-pay .content-header .cont div{height: 100px; width: 670px; font-size: 16px}
+.mss-reward-pay .content-header .cont .text strong{display: inline-block;font-size: 20px;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';line-height: 28px;color: #fff;border-bottom: 1px solid #fff;}
+.mss-reward-pay .content-header .cont .text p{padding-top: 19px;font-size: 15px;line-height: 25px;}
+.mss-reward-pay .content-header .cont .btn-prev{display: inline-block;width: 40px;height: 40px;margin-top: 2px;margin-right: 20px;vertical-align: top;background: url('../images/common/prev.png') 0 0 no-repeat;}
+.mss-reward-pay .content-header .cont .btn-next{display: inline-block;width: 40px;height: 40px;margin-top: 2px;margin-left: 20px;vertical-align: top;background: url('../images/common/next.png') 0 0 no-repeat;}
+.mss-reward-pay .pay-list .content-title{padding: 50px 0 26px;color: #292929;font-size: 30px;line-height: 30px;}
+.mss-reward-pay .section-wrap{width: 880px;margin: 0 auto;padding-top: 60px;}
+.mss-reward-pay .section-wrap .section-left{position: relative;}
+.mss-reward-pay .content-wrap .section-left .content-title{padding: 0 0 14px;color: #fff;font-size: 30px;line-height: 30px;}
+.mss-reward-pay .section-wrap .section-left .notice{padding:0 0 16px; color: #a2a2a2;}
+.mss-reward-pay .section-wrap .section-left:after{content: ''; display: block; clear: both}
+.mss-reward-pay .section-wrap .section-left+.section-left{padding-left: 0px}
+.mss-reward-pay .section-wrap .section-left .month-info{width: 220px;}
+.mss-reward-pay .section-wrap .section-left .data-list.medium{width: 660px; border-top: 2px solid #fff;}
+.mss-reward-pay .section-wrap .section-left .data-list.medium li{height: 79px; line-height: 79px; border-bottom: 1px solid #4f4f4f; font-size: 15px;}
+.mss-reward-pay .section-wrap .section-left .data-list.medium em{display: inline-block; font-size: 40px; line-height: 40px; vertical-align: top; padding-top: 22px; }
+.mss-reward-pay .section-wrap .section-left .data-list.medium span{display: inline-block; line-height: 15px; vertical-align: middle; padding-top: 10px}
+.mss-reward-pay .section-wrap .section-left .btn.medium{float: left;width: 163px;margin-top: 10px;color: #fff;background: url('../images/common/bg_btn.png');border: 0 none;-webkit-appearance: none;}
+.mss-reward-pay .section-wrap .section-left .account{margin-top: 16px;color: #fff;}
+.mss-reward-pay .section-wrap .section-left .notice-box{padding: 55px 30px 54px 16px;text-indent: -17px;font-size: 15px;line-height: 25px;color: #fff; border-bottom: 1px solid #4f4f4f;}
+
+
+.mss-reward-pay .section {margin-top: 80px;width: 880px;margin: 0 auto;padding: 0 40px;background-color: #fff;}
+.mss-reward-pay .section.pay-list{margin-top: 56px;}
+.mss-reward-pay .section.pay-info{margin-top: 0;padding-bottom: 60px;}
+.mss-reward-pay .section.pay-info .content-title{padding-top: 50px;padding-bottom: 30px;font-size: 30px;line-height: 30px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-reward-pay .table-wrap{border-top: 0 none;}
+.mss-reward-pay .pay-list .data-table tbody th{padding: 13px 5px 14px;font-size: 13px;background-color: transparent;}
+.mss-reward-pay .pay-list .data-table tbody th.cellselected{background-color: #edf8ff;}
+.mss-reward-pay .data-table tbody tr td{padding: 13px 20px 14px;}
+.mss-reward-pay .data-table tbody tr td .ico.pop{margin-left: 5px;}
+.mss-reward-pay .pay-list .data-table tbody td .label{color: #6d6d6d}
+.mss-reward-pay .pay-list .data-table tfoot td {font-size: 20px; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"; color: #292929; padding: 25px 0;}
+.mss-reward-pay .pay-list .data-table tfoot td span{font-size: 15px;}
+.mss-reward-pay .pay-list .data-table tfoot td .ico{margin-right: 10px}
+.mss-reward-pay .pay-list .content-title{color: #292929;}
+.mss-reward-pay .etc-pay:after{content: ''; display: block;clear: both;}
+.mss-reward-pay .pay-list .notice{position: absolute; right: 41px; top: 61px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 15px;}/*20180411 추가*/
+/*.mss-reward-pay .etc-pay .table-wrap{float: left;width: 50%}
+.mss-reward-pay .etc-pay .pay-tip{float: left;width: 50%; padding-left: 60px; box-sizing: border-box; background:url("../images/reward/arrow_01.png") 34px 63px no-repeat;}
+.mss-reward-pay .etc-pay .pay-tip .wrap{background-color: #f7f7f7; padding: 34px 50px;}
+.mss-reward-pay .etc-pay .pay-tip p{font-size: 20px; line-height: 30px;color: #292929;font-family: "HyundaiSansTextKRMedium";}
+.mss-reward-pay .etc-pay .pay-tip .tag{margin-top: 22px;}
+.mss-reward-pay .etc-pay .pay-tip .data-list{margin-top: 13px;}
+.mss-reward-pay .etc-pay .pay-tip .data-list{font-size: 15px;line-height: 25px;}*/
+.mss-reward-pay .data-list.medium .title{color: #fff;font-size: 17px;}
+.mss-reward-pay .data-list.medium li div{color: #fff;font-size: 18px;}
+.mss-reward-pay .data-table thead tr th{padding: 10px;background-color: #292929;color: #fff;font-size: 18px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-right:1px solid #858585;}
+.mss-reward-pay .section-title{font-size: 20px;}
+.mss-reward-pay .divide{display: block; margin-top: 50px; width:880px; height: 5px; background: url('../images/mss/reward_dotline.png') 0 0 no-repeat;}
+
+
+/*임원 급여담당자 안내 - 세분화 했을 경우 180403 수정*/
+.charge-wrap{background-color: #f7f7f7; border-radius: 5px; -webkit-border-radius: 5px; padding: 70px 20px;}
+.charge-wrap .charge-info{position: relative;overflow: hidden;}
+.charge-wrap .charge-info:after{content: ''; display: block; position: absolute;left: 210px;top: 0px;bottom: -70px;width: 420px;height: 100%;background: url('../images/reward/line_02.gif') 0 0 repeat-y;}
+.charge-wrap .charge-list{position: relative; float: left; width: 210px; margin: 0px 0px 30px; text-align: center;}
+.charge-wrap .charge-list h3{font-size: 20px; color: #292929; text-align: center; font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium'; padding-top: 80px; margin-bottom: 10px; background: url('../images/common/menu_ico_06.png') center 0 no-repeat;}
+.charge-wrap .charge-list.list01 h3{background-image: url('../images/common/menu_ico_07.png');}
+.charge-wrap .charge-list.list02 h3{background-image: url('../images/common/menu_ico_09.png');}
+.charge-wrap .charge-list.list03 h3{background-image: url('../images/common/menu_ico_08.png');}
+.charge-wrap .charge-list.list04 h3{background-image: url('../images/common/menu_ico_10.png');}
+.charge-wrap .charge-list h4{font-size: 14px; color: #292929; padding-top: 20px; font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.charge-wrap .charge-list ul{margin-top: 5px;}
+.charge-wrap .charge-list ul li{line-height: 34px; font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.charge-wrap .charge-list ul+h4{border-top: 1px solid #e1e1e1; width: 130px; margin:20px auto 0;}
+
+
+
+/*임원 급여담당자 안내 - 담당자 세분화 안했을 경우
+.charge-info{background-color: #f2f2f2; border-radius: 5px; -webkit-border-radius: 5px; padding: 30px 66px;}
+.charge-info:after{content: ''; display: block; clear: both}
+/*.charge-info .charge-list{position: relative;float: left;width: 205px; margin: 0 30px; text-align: center;}
+.charge-info .charge-list+.charge-list:after{content: ''; display: block; position: absolute; left: -30px; top: 0; width: 1px; height: 415px; background-color: #e1e1e1;}
+.charge-info .charge-list h3{float: left;width: 173px;height: 65px;line-height: 65px;border-right: 1px solid #d9d9d9;font-size: 20px; color: #292929;text-align: left;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';padding-left: 64px;background: url('../images/common/menu_ico_06.png') 0 8px no-repeat;}
+.charge-info .charge-list.list01 h3{background-image: url('../images/mss/menu_ico_07.png');}
+/*.charge-info .charge-list.list02 h3{background-image: url('../images/common/menu_ico_08.png');}
+.charge-info .charge-list.list03 h3{background-image: url('../images/common/menu_ico_09.png');}
+.charge-info .charge-list.list04 h3{background-image: url('../images/common/menu_ico_10.png');}
+.charge-info .charge-list h4{font-size: 15px; color: #292929; padding-top: 20px;}
+.charge-info .charge-list ul{float: left;padding-left: 50px;}
+.charge-info .charge-list ul:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.charge-info .charge-list ul li{float: left;line-height: 66px;padding-right: 30px;color: #292929;}
+.charge-info .charge-list ul li strong{display: inline-block;padding-right: 3px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-weight: normal;}
+.charge-info .charge-list ul+h4{border-top: 1px solid #e1e1e1; width: 130px; margin:20px auto 0;}*/
+
+
+
+
+/*연봉 통보서*/
+/* .notice-pay{border-top: 1px solid #d6d6d6; padding-bottom: 0 !important; padding-right: 40px; box-sizing: border-box; -webkit-box-sizing: border-box; } */
+/* .notice-pay {position: relative; float: none; overflow: hidden; padding-top: 38px;padding-left: 40px;border-left: 1px solid #d1d1d1;} */
+.notice-pay {position: relative; float: none; overflow: hidden; padding-top: 38px;padding-left: 40px;}
+.notice-pay  .content-wrap{width: 1080px;height: 1413px;margin-bottom: 120px;background: url('../images/mss/bg_notice.jpg') 0 0 no-repeat;}
+.notice-pay  .content-wrap .content-header{height: 298px;}
+.notice-pay  .content-wrap .content-header .title{padding-right: 93px;padding-top: 163px;text-align: right;font-size: 70px;line-height: 75px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.notice-pay  .content-wrap .content-header .text{padding-right: 100px;text-align: right;font-size: 16px;line-height: 40px;color: #949494;}
+.notice-pay  .content-wrap h2{width: 904px;margin: 0 auto;padding-top: 47px;padding-left: 83px;font-size: 26px;line-height: 32px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.notice-pay  .content-wrap .section{width: 803px;margin: 0 auto;}
+.notice-pay  .content-wrap .section .table-wrap{border-top: 0 none;}
+.notice-pay  .content-wrap .section .data-table{width: 100%;border:  0 none;}
+.notice-pay  .content-wrap .section .data-table thead tr th{color: #fff;background-color: #292929;border-top: 0 none;border-right: 1px solid #7e7e7e;border-left: 1px solid #7e7e7e;}
+.notice-pay  .content-wrap .section .data-table thead tr th:first-child{border-left: 0 none;}
+.notice-pay  .content-wrap .section .data-table thead tr th:last-child{border-right: 0 none;}
+.notice-pay  .content-wrap .section .data-table tbody tr td{border-bottom: 1px solid #d1d1d1;}
+.notice-pay  .section-title strong{display: inline;padding-left: 5px;font-weight: normal;color: #555;}
+.notice-pay  .quota{padding: 22px 45px 20px 0;border-top: 2px solid #000;border-bottom: 1px solid #d1d1d1;background: url('../images/mss/bg_quota.png') 0 0 repeat;overflow: hidden;}
+.notice-pay  .quota .level{float: left;width: 210px;text-align: center;}
+.notice-pay  .quota .level span{display: block;padding: 15px 0;line-height: 15px;font-size: 15px;color: #555;}
+.notice-pay  .quota .data-list{float: right;width: 520px;}
+.notice-pay  .quota .data-list li{overflow: hidden;height: 48px;border-top: 1px solid #d1d1d1;}
+.notice-pay  .quota .data-list li:first-child{border-top: 0 none;}
+.notice-pay  .quota .data-list li .label{float: left;line-height: 48px;font-size: 15px;color: #555;}
+.notice-pay  .quota .data-list li .insert{float: right;line-height: 48px;font-size: 18px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.notice-pay  .section.terms .data-list{padding-top: 16px;}
+.notice-pay  .section.terms .data-list li{font-size: 15px;line-height: 30px;color: #555;}
+.notice-pay  .section .signature{padding-top: 105px;text-align: center;}
+.notice-pay  .section .signature p{font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.notice-pay  .section .signature dl{padding: 20px 0 20px 140px;}
+.notice-pay  .section .signature dl dt{display: inline-block;font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.notice-pay  .section .signature dl dd{display: inline-block;width: 140px;font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: left;}
+.notice-pay  .section .signature .company{font-size: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+/*현대 - 근태*/
+.depth-main#wrap #footer{border: 0 none;-webkit-appearance: none;}
+/*#wrap.diligence-wrap  #footer{border-top: 1px solid #d1d1d1 !important;}*/
+#wrap.mss-sub #footer{border-top: 1px solid #d1d1d1 !important;}
+.depth-main#wrap #container.diligence{padding-bottom: 0;}
+.diligence .calender-wrap{padding-bottom: 70px;border-radius: 5px; -webkit-border-radius: 5px;background: url('../images/mss/sub_main_visual_03.jpg') 0 0 no-repeat; border-radius: 5px; -webkit-border-radius: 5px;}
+.diligence .calender-wrap:after{content: ''; display: block; clear: both;}
+.diligence .content-header{position: relative;width: 1060px; margin: 0 auto; padding: 70px 0 40px}
+.diligence .content-header:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.diligence .content-header h2{padding-bottom: 15px;font-size: 40px;line-height: 55px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.diligence .content-header h3{display: inline-block;margin-top: 4px;padding: 0 12px;font-size: 15px;line-height: 45px;color: #fff;background-color: #00b9e4;border-radius: 5px;-webkit-border-radius: 5px;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';vertical-align: top;}
+.diligence .content-header ul{display: inline-block;max-width: 530px;padding-left: 13px;vertical-align: middle;}
+.diligence .content-header ul li{width: 100%;font-size: 18px;line-height: 28px;color: #fff;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: break-all;}
+.diligence .content-header .btn-more{display: inline-block; margin-left: 2px; width: 32px; height: 32px; vertical-align: bottom; background: url(../images/common/ico_more_05.png) 0 0 no-repeat; font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; border: 0 none;-webkit-appearance: none;}
+/*.diligence .content-header p{float: left;padding-top: 14px;font-size: 19px;line-height: 28px;color: #fff;}
+.diligence .content-header p span{border-bottom: 1px solid #fff;}*/
+.diligence .content-header .button-area{position: absolute;right: 0;top: 91px;}
+.diligence .content-header .button-area .btn{display: block;width: 230px;margin-right: 0;margin-left: 2px;text-align: center;}
+.diligence .content-header .btn.type03{margin-top: 10px;}
+/*.diligence .content-primary{width: 1060px; margin: 0 auto;}*/
+.diligence .calender{width: 1060px;  /*height: 865px;*/ margin: 0 auto; padding: 39px 40px 20px;background-color: #fff;box-sizing: border-box;-webkit-box-sizing: border-box;border-radius: 5px;-webkit-border-radius: 5px;}
+.diligence .calender .button-area.large{margin-top: 30px;}
+.diligence .calender .button-area .btn+.btn{margin-left: 19px;}
+.diligence .state{position: relative;float: right; width: 420px; height: 900px; background-color: #00b9e4; padding: 60px 0 50px 50px;  box-sizing: border-box; -webkit-box-sizing: border-box; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+.diligence .state:after{content: ''; display: block; position: absolute; right: 0; top: -23px; width: 62px;height: 58px; background: url('../images/diligence/ico_state.png') 0 0 no-repeat; z-index: 1}
+.diligence .state .month {color: #ffffff; text-align: center; padding-right: 50px; font-size:130px; line-height: 130px; font-family: '현대산스 Text Medium',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;}
+.diligence .state .month span{display: block; font-size: 30px; line-height: 30px; letter-spacing: 0.05em; font-family: '현대산스 Text 보통','현대산스 Text',"HyundaiSansTextKRRegular"}
+.diligence .state .tab-wrap{margin-right: 50px; width: auto; margin-top: 65px}
+.diligence .calender-header{position: relative; margin-bottom: 10px}
+.diligence .calender-header .date{font-size: 45px; line-height: 45px; text-align: center; color: #292929; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;}
+.diligence .calender-header .btn-area a{display: inline-block; position: absolute; top: 11px; font-size: 20px; line-height: 20px; color: #868686;}
+.diligence .calender-header .btn-area .btn.prev{left: 240px; padding-left: 25px; background: url('../images/diligence/ico_prev_01.png') left center no-repeat;}
+.diligence .calender-header .btn-area .btn.next{right: 240px; padding-right: 25px; background: url('../images/diligence/ico_next_01.png') right center no-repeat;}
+.diligence .calender-header .info{padding-top: 12px;text-align: right;}
+.diligence .calender-header .info li{display: inline-block;margin-left: 8px;padding-right: 9px;padding-left: 32px;font-size: 14px;line-height: 25px;color: #555;background: url('../images/mss/ico_02.gif') 0 50% no-repeat;}
+.diligence .calender-header .info li:first-child{background-image: url('../images/mss/ico_01.gif');}
+.diligence .calender-body .item-table{width: 100%; border-bottom: 1px solid #d1d1d1;  text-align: center; border-collapse: collapse;}
+.diligence .calender-body .item-table td:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.diligence .calender-body .item-table thead th{height: 70px; border-top: 1px solid #d1d1d1; font-size: 20px; color: #292929;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';font-weight: normal;}
+.diligence .calender-body .item-table tbody td{height: 120px; border-top: 1px solid #d1d1d1; vertical-align: top;}
+.diligence .calender-body .item-table .data-header{float: left;width: 33px;margin-top: 9px;padding-left: 8px;text-align: center;font-size: 17px;line-height: 17px;text-align: left;}
+.diligence .calender-body.edit .item-table .data-header{float: none;margin-top: 8px;}
+.diligence .calender-body .item-table .data-header .day{display: inline-block;width: 33px;height: 33px;line-height: 33px;text-align: center;}
+.diligence .calender-body .item-table .data-header .day.today{font-size: 15px;color: #fff;background-color: #00b9e4;border-radius: 50%;-webkit-border-radius: 50%;}
+.diligence .calender-body .item-table .data-header .prev-month,
+.diligence .calender-body .item-table .data-header .next-month{display: inline-block;width: 33px;height: 33px;line-height: 33px;text-align: center;color: #adadad}
+.diligence .calender-body .item-table .data-info{float: left;font-size: 12px; line-height: 12px; margin-top: 15px;}
+.diligence .calender-body.edit .item-table .data-info{float: none;margin-top: 5px;padding-left: 16px;padding-bottom: 5px;text-align: left;}
+.diligence .calender-body .item-table .data-info div{margin-bottom: 3px;margin-left: 5px;font-size: 14px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.diligence .calender-body .item-table .data-info div .tag{height: 23px;line-height: 23px;padding: 0 2px;color: #fff;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';}
+.diligence .calender-body.edit .item-table .data-info a.tag{display: inline-block;width: 90px;height: 30px;line-height: 30px;margin: 3px 0 0;padding: 0 28px 0 10px;box-sizing: border-box;-webkit-box-sizing: border-box;border-radius: 5px;-webkit-border-radius: 5px;background-image: url('../images/common/arrow_03.png');background-position: 72px center;background-repeat: no-repeat;cursor: pointer;}
+.diligence .calender-body .work-state {text-align: right; margin: 16px 0 10px}
+.diligence .calender-body .work-state span{margin-left: 27px;}
+.diligence .calender-body .save{padding-left: 20px; background: url('../images/diligence/ico_color_01.png') 0 50% no-repeat;}
+.diligence .calender-body .complete{padding-left: 20px; background: url('../images/diligence/ico_color_02.png') 0 50% no-repeat;}
+.diligence .calender-body .pending{padding-left: 20px; background: url('../images/diligence/ico_color_03.png') 0 50% no-repeat;}
+.diligence .calender .button-area .btn.large{width: 175px;}
+.diligence .state .tab-cont {width: 350px ;height: 465px; margin-top: 30px; color: #ffffff; overflow:  auto; padding-top: 20px;}
+.diligence .state .tab-cont {
+		scrollbar-arrow-color: #00acd4;
+		scrollbar-arrow-size: 2px;
+		scrollbar-Track-Color: #00acd4;
+		scrollbar-base-color: #56ceec;
+		scrollbar-Face-Color: #56ceec;
+		scrollbar-3dLight-Color: #00acd4;
+		scrollbar-DarkShadow-Color: #00acd4;
+		scrollbar-Highlight-Color: #00acd4;
+		scrollbar-Shadow-Color: #56ceec}
+/* Chrome, Safari용 스크롤 바 */
+.diligence .state .tab-cont ::-webkit-scrollbar {width: 17px; height: 17px;}
+.diligence .state .tab-cont ::-webkit-scrollbar-button:start:decrement,
+.diligence .state .tab-cont ::-webkit-scrollbar-button:end:increment {display: block; width: 17px;height: 17px; background: url() rgba(0,172,212,1);}
+.diligence .state .tab-cont ::-webkit-scrollbar-track {background:  rgba(0,172,212,1); }
+.diligence .state .tab-cont ::-webkit-scrollbar-thumb { background: rgba(86,206,236,1);}
+.diligence .state .tab-cont .data-list{font-size: 15px; width: 320px;}
+.diligence .state .tab-cont .data-list li{padding: 16px 0; border-bottom: 1px solid #66d5ef; color: #ffffff}
+.diligence .state .tab-cont .cont+.cont{margin-top: 40px}
+.diligence .state .tab-cont h4{padding-left: 20px; font-size: 20px; line-height: 20px; background: url('../images/diligence/bullet_01.png') 0 50% no-repeat; font-weight: normal; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif; margin-bottom: 8px;}
+.diligence .subject{font-size: 30px;line-height: 42px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.diligence .apply-work{width: 1060px;margin: 0 auto;padding-top: 40px;padding-bottom: 60px;}
+.diligence .apply-work p{padding-top: 7px;font-size: 15px;line-height: 24px;}
+.diligence .apply-work .work-list{padding-top: 24px;}
+.diligence .apply-work .work-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.diligence .apply-work .work-list li{float: left;width: 188px;height: 188px;margin-left: 30px;background-color: #ececec;border-radius: 50%;-webkit-border-radius: 50%;}
+.diligence .apply-work .work-list li:first-child{margin-left: 0;}
+.diligence .apply-work .work-list li a{display: block;width: 188px;height: 124px;padding-top: 64px;line-height: 25px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;background: #e0eff7 url('../images/common/btn_next_03.png') 50% 128px no-repeat;border-radius: 50%;-webkit-border-radius: 50%;}
+.diligence .etc-work{width: 1060px;margin: 0 auto;padding-top: 53px;padding-bottom: 60px;}
+.diligence .etc-work h3.subject{padding-bottom: 21px;}
+.diligence .etc-work .etc-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.diligence .etc-work .etc-list li{float: left;width: 310px;margin-left: 65px;padding-bottom: 30px;}
+.diligence .etc-work .etc-list li:first-child{margin-left: 0;}
+.diligence .etc-work .etc-list li .thumb{display: block;}
+.diligence .etc-work .etc-list li .thumb img{border-radius: 5px;-webkit-border-radius: 5px;}
+.diligence .etc-work .etc-list li .title{display: inline-block;margin-top: 21px;padding-right: 16px;font-size: 20px;line-height: 25px;color: #292929;background: url('../images/common/arrow.gif') 100% 7px no-repeat;}
+.diligence .etc-work .etc-list li p{padding-top: 9px;font-size: 15px;line-height: 25px;color: #555;}
+.diligence .communication{margin-top: 30px;padding-bottom: 80px;background-color: #f5f5f5;border-radius: 5px;-webkit-border-radius: 5px;}
+.diligence .communication .member-wrap{width: 1060px;margin: 0 auto;}
+.diligence .communication .member-wrap .subject{padding-top: 63px;font-size: 35px;}
+.diligence .communication .member-wrap p{padding-top: 17px;padding-bottom: 50px;font-size: 15px;line-height: 15px;}
+.diligence .communication .bx-wrapper{min-width: 890px;margin-bottom: 0;padding: 0 85px;background-color: #f5f5f5;}
+.diligence .communication .bx-wrapper ul li{width: 130px;text-align: center;}
+.diligence .communication .bx-wrapper ul li .thumb{width: 130px;height: 150px;margin: 0 auto;background-color: #eaeaea;overflow: hidden;}
+.diligence .communication .bx-wrapper ul li .thumb img{width: 100%;}
+.diligence .communication .bx-wrapper ul li .info-wrap{position:relative;height: 75px;padding-top: 15px;text-align: center;}
+.diligence .communication .bx-wrapper ul li .info-wrap .name{font-size: 15px;line-height: 25px;color: #555;text-align: center;}
+.diligence .communication .bx-wrapper ul li .info-wrap .name em{display: inline-block;max-width: 95px;line-height: 22px;margin-right:5px;vertical-align: middle;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-break: break-all;}
+.diligence .communication .bx-wrapper ul li .info-wrap .date{display: block;font-size: 15px;line-height: 25px;color: #292929;text-align: center;}
+.diligence .communication .bx-wrapper ul li .info-wrap .today{position: absolute;left:0;right:0;top:-20px;margin: 0 auto;}
+.diligence .communication .bx-wrapper ul li .info-wrap .today em{display: inline-block;padding: 0 18px;height: 30px;line-height: 32px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 12px;background-color: #00b9e4;border-radius: 20px;-webkit-border-radius: 20px;}
+.diligence .communication .bx-wrapper .bx-controls-direction a{top: 54px;margin-top: 0; background-position: 0 0; background-repeat: no-repeat;}
+.diligence .communication .bx-wrapper .bx-controls-direction .bx-prev{left: 0;right: auto; width: 43px; height: 43px; background-image: url(../images/common/btn_prev_05.png);}
+.diligence .communication .bx-wrapper .bx-controls-direction .bx-next{right: 0;width: 43px; height: 43px; background-image: url(../images/common/btn_next_06.png);}
+.diligence .communication .total{text-align: center;}
+.diligence .communication .total span{font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 15px;color: #292929;}
+.diligence .communication .total span img{margin-right: 9px;vertical-align: middle;}
+.diligence .communication .no-data{padding-top: 73px;text-align: center;}
+.diligence .communication .no-data p{padding-top: 60px; font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium'; font-size: 18px; line-height: 18px; color: #292929; background: url(../images/common/ico_member.png) 50% 0 no-repeat;}
+
+/*모성보호 - 임신사실확인*/
+.pregnancy .due-date .data-list{margin-bottom: 11px}
+.pregnancy .due-date .btn-link{margin-top: 20px}
+.pregnancy .uploader .action{background-color: #ffffff}
+
+/*출산휴가 신청*/
+.pregnancy .section-apply h4{font-size: 15px; color: #292929; margin: 15px 0;font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.pregnancy .section-apply .data-list{padding-bottom: 35px; border-bottom: 1px solid #d6d6d6;}
+.pregnancy .section-apply .data-list ul{padding-left: 15px; margin-bottom: 15px;}
+.pregnancy .section-apply .data-list ul li{line-height: 25px;}
+.pregnancy .maternity-leave .data-list{margin-bottom: 15px;}
+.pregnancy .maternity-leave .button-area{position: relative;}
+.pregnancy .maternity-leave .btn-link{position: absolute; left: 0; top: 0}
+.pregnancy .maternity-leave .btn-link+.btn-link{margin-top: 36px;}
+.pregnancy .maternity-leave .btn.large{width: 130px}
+
+/*MSS MAIN*/
+/*메인 팀장*/
+#wrap.depth-main #container.mss-main{padding-bottom: 0;border-bottom: 0 none;}
+#wrap.depth-main #container.mss-main.team-leader{padding-bottom: 0;border-bottom: 0 none;}
+.depth-main#wrap #footer{}
+.mss-main:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .section{width: 1060px; margin: 0 auto; }
+.mss-main .section:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .content-title{font-size: 30px;line-height: 30px;}
+.mss-main .mss-visual{position: relative;border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;overflow: hidden;}
+.mss-main .mss-visual img{vertical-align: top;}
+.mss-main .mss-visual .title{display: block;position: absolute;left: 130px;top: 60px;font-size: 45px;line-height: 60px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .mss-visual .mss-slider li{height: 300px;}
+.mss-main .mss-visual .mss-slider li .info-text{position: absolute;left: 130px;top: 0;}
+.mss-main .mss-visual .mss-slider li .info-text strong{display: block;padding-top: 45px;font-size: 50px;line-height: 65px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-weight: normal;color: #fff;}
+.mss-main .mss-visual .mss-slider li .info-text p{padding-top: 12px;font-size: 18px;line-height: 28px;color: #fff;}
+.mss-main .mss-visual .mss-slider li .info-text .btn{width: 160px;height: 48px;line-height: 46px;margin-top: 22px;padding-left: 39px;color: #fff;font-size: 14px;border: 2px solid #fff;border-radius: 24px;-webkit-border-radius: 24px;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .mss-visual .mss-slider li .btn-guide{display: block;position: absolute;right: 130px;top: 40px;width: 212px;height: 48px;line-height: 48px;padding-left: 30px;font-size: 14px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background-color: #292929;border-radius: 24px;-webkit-border-radius: 24px;box-sizing: border-box;-webkit-box-sizing: border-box;cursor: pointer;}
+.mss-main .mss-visual .mss-slider li .btn-guide .ico{margin-left: 10px;}
+.mss-main .mss-visual .bx-wrapper{margin-bottom: 0;}
+.mss-main .mss-visual .bx-wrapper .thumb img{border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.mss-main .mss-visual .bx-wrapper .thumb img{max-width: none;border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;border-top-right-radius: 5px;-webkit-border-top-right-radius: 5px;}
+.mss-main .mss-visual .bx-wrapper .bx-controls-direction{position: absolute;left: 0;right: 0;bottom: 30px;text-align: center;}
+.mss-main .mss-visual .bx-wrapper .bx-controls-direction a{position: static;left: 0;right: 0;top: auto;bottom:auto;display: inline-block;margin: 0 10px;background-position: 0 0;background-repeat: no-repeat;}
+.mss-main .mss-visual .bx-controls-direction .bx-prev{width: 40px;height: 40px;background-image: url('../images/common/prev.png');}
+.mss-main .mss-visual .bx-controls-direction .bx-next{width: 40px;height: 40px;background-image: url('../images/common/next.png');}
+
+/*업무담당*/
+.mss-main .task{padding: 40px 0;background-color: #ececec;}
+.mss-main .task .content-title{padding-bottom: 18px;}
+.mss-main .task .section-title{float: left;}
+.mss-main .task .text-info{float: left;padding-top: 8px;padding-left: 19px;margin: 0;background: 0 none;}
+.mss-main .task .text-info span{display: inline-block;padding-right: 22px;font-size: 15px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .aside{float: right;padding-top: 9px;font-size: 13px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';vertical-align: middle;}
+.mss-main .aside .btn-more{display: inline-block; margin-left: 9px; width: 28px; height: 28px; vertical-align: middle; background: url(../images/common/ico_more_01.png) 0 0 no-repeat; font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; border: 0 none;-webkit-appearance: none;}
+.mss-main .task .table-wrap{clear: both;}
+.mss-main .task .table-wrap:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .task .table-wrap .data-table tbody td div{width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;word-break: break-all;}
+.mss-main .task .table-wrap .data-table thead th.info01{color: #555;background-color: #e2e2e2;border-left: 0 none;border-right: 0 none;}
+.mss-main .task .table-wrap .data-table tbody td.info01{color: #292929;background-color: #e2e2e2;border-left: 0 none;border-right: 0 none;}
+.mss-main .task .table-wrap .data-table thead th.info02{color: #555;background-color: #fff;border-left: 0 none;border-right: 0 none;}
+.mss-main .task .table-wrap .data-table tbody td.info02{color: #292929;background-color: #fff;border-left: 0 none;border-right: 0 none;}
+.mss-main .task .table-wrap .data-table thead th.first.info02{border-left: 1px solid #d6d6d6;}
+.mss-main .task .table-wrap .data-table tbody td.first.info02{border-left: 1px solid #d6d6d6;}
+.mss-main .task .btn-area{padding-top: 30px;}
+.mss-main .task .btn-area .btn.type06{margin-right: 17px;}
+
+/*조직근태관리*/
+.mss-main .diligence-wrap{background: url('../images/mss/bg_01.jpg') center 0 no-repeat;}
+.mss-main .diligence-control{float: left;width: 640px;height: 526px;padding-right: 60px;padding-top: 49px;box-sizing: border-box;-webkit-box-sizing: border-box;border-bottom: 1px solid #d6d6d6;}
+.mss-main .diligence-control:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .diligence-control .aside{padding-top: 3px;}
+.mss-main .diligence-control .content-title{float: left;padding-bottom: 12px;}
+.mss-main .diligence-control .text{clear: both;font-size: 15px;line-height: 25px;color: #555;}
+.mss-main .diligence-control .date-header{position: relative;margin: 35px 0 20px;text-align: center;}
+.mss-main .diligence-control .date-header .today{display: inline-block;line-height: 28px;font-size: 25px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .diligence-control .date-header .today span{color: #555;}
+.mss-main .diligence-control .date-header .btn-area .btn{display: inline-block;position: absolute;top: 0;width: 84px;line-height: 28px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mss-main .diligence-control .date-header .btn-area .btn.prev{left: 58px;padding-left: 48px;text-align: right;background: url('../images/common/btn_prev_03.png') 0 50% no-repeat;}
+.mss-main .diligence-control .date-header .btn-area .btn.next{right: 58px;padding-right: 48px;text-align: left;background: url('../images/common/btn_next_04.png') 100% 50% no-repeat;}
+.mss-main .diligence-control .data-table tbody th{color: #555;text-align: left;background-color: #fff;}
+.mss-main .diligence-control .data-table .boundary{border-left: 0 none;border-right: 0 none;}
+.mss-main .diligence-control .data-table .total{display: inline-block;min-width: 26px;height: 26px;line-height: 26px;text-align: center;color: #fff;box-sizing: border-box;-webkit-box-sizing: border-box;border-radius: 50%;-webkit-border-radius: 50%;}
+.mss-main .diligence-control .data-table .total.type01{background-color: #00b9e4;}
+.mss-main .diligence-control .data-table .total.type02{background-color: #002c5f;}
+.mss-main .diligence-control .state-bar{margin-top: 20px;}
+.mss-main .diligence-control .state-bar .bar{width: 100%;height: 40px;background-color: #ececec;border-radius: 2px;-webkit-border-radius: 2px;overflow: hidden;}
+.mss-main .diligence-control .state-bar .bar span{display: block;float: right;line-height: 40px;text-align: center;color: #fff;font-size: 14px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .diligence-control .state-bar .bar span.total01{background-color: #00b9e4;}
+.mss-main .diligence-control .state-bar .bar span.total02{background-color: #002c5f;}
+.mss-main .diligence-control .state-bar .count{padding-top: 14px;}
+.mss-main .diligence-control .state-bar .count span{display: block;font-size: 15px;line-height: 15px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';s}
+.mss-main .diligence-control .state-bar .count .all{float: left;color: #292929;}
+.mss-main .diligence-control .state-bar .count .sort{float: right;color: #666167;}
+.mss-main .diligence-control .noti{padding-top: 10px;}
+
+/*팀 미션/사업계획*/
+/*.mss-main .plan{float: left;width: 420px;padding: 40px 0 74px 60px;background-color: #292929;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mss-main .plan .content-title{color: #fff;font-family:'HyundaiSansTextKRRegular';}
+.mss-main .plan .aside{margin-top: -4px;padding-top: 0;color: #fff;}
+.mss-main .plan .aside .btn-more{background: url(../images/common/ico_more_04.png) 0 0 no-repeat;}
+.mss-main .plan .detail:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .plan .detail + .detail{margin-top: 24px;padding-top: 29px;border-top: 1px solid #6a6a6a;}
+.mss-main .plan .detail h3{float: left;font-size: 20px;line-height: 20px;color: #fff;font-family:'HyundaiSansTextKRRegular';}
+.mss-main .plan .detail p{clear: both;padding-top: 9px;font-size: 24px;line-height: 34px;color: #fff;font-weight: normal;font-family:'HyundaiSansTextKRRegular';}
+.mss-main .plan .detail .data-list{clear: both;padding-top: 10px;}
+.mss-main .plan .detail .data-list li{margin-top: 10px;height: 24px;line-height: 24px;color: #fff;}
+.mss-main .plan .detail .data-list li:first-child{margin-top: 5px;}
+.mss-main .plan .detail .data-list li .tag{margin-right: 6px;padding: 0 6px;}*/
+
+/*팀원 기념일*/
+.mss-main .team-birthday{float: left;width: 420px;height: 526px;padding: 50px 40px 0;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mss-main .team-birthday .content-title{float: left;padding-bottom: 14px;font-size: 33px;line-height: 35px;color: #fff;font-weight: normal;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';}
+.mss-main .team-birthday .aside{padding-top: 7px;font-size: 13px;color: #fff;}
+.mss-main .team-birthday .aside .btn-more{background: url(../images/common/ico_more_04.png) 0 0 no-repeat}
+.mss-main .team-birthday .notice{clear: both;padding-bottom: 5px;font-size: 20px;line-height: 31px;color: #c8c8c8;}
+.mss-main .team-birthday .bx-wrapper{min-width: 340px !important;width: 100%;padding-top: 34px;background-color: transparent;border-top: 1px solid #7c7c7c;}
+.mss-main .team-birthday .birthday-slider li{width: 100px;text-align: center;}
+.mss-main .team-birthday .birthday-slider li .thumb{width: 100px;height: 120px;border-radius: 10px;-webkit-border-radius: 10px;overflow: hidden;background-color: #000;}
+.mss-main .team-birthday .birthday-slider li .thumb img{width: 100%;}
+.mss-main .team-birthday .birthday-slider li .btn.type03{position: absolute;top: 105px;left: 0;right: 0;width: 78px;height: 27px;line-height: 26px;margin: 0 auto;padding: 0;font-size: 12px;color: #fff;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.mss-main .team-birthday .birthday-slider li .btn.type03 .ico.birthday{margin-left: 0 !important;}
+.mss-main .team-birthday .birthday-slider li .name{padding-top: 18px;font-size: 16px;line-height: 25px;color: #ffffff;}
+.mss-main .team-birthday .birthday-slider li .position{font-size: 15px;line-height: 18px;color: #ffffff;}
+.mss-main .team-birthday .birthday-slider li .date{font-size: 13px;line-height: 25px;color: #ffffff;}
+.team-birthday .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.team-birthday .bx-wrapper .bx-pager.bx-default-pager a.active,
+.team-birthday .bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #fff;}
+.team-birthday .bx-wrapper .bx-pager.bx-default-pager a{width: 16px;height: 16px;background-color: #78757a;border-radius: 50%;-webkit-border-radius: 50%;}
+.team-birthday .bx-wrapper .bx-pager,
+.team-birthday .bx-wrapper .bx-controls-auto{bottom: -45px;}
+.mss-main .team-birthday .no-anniversary{padding-top: 	71px;border-top: 1px solid #7d7d7d;}
+.mss-main .team-birthday .no-anniversary p{padding-top: 	121px;font-size: 18px;line-height: 25px;color: #fff;text-align: center;background: url('../images/mss/bg_anniversary.png') 50% 0 no-repeat;}
+.mss-main .team-birthday .by-team{padding-bottom: 30px;}
+.mss-main .team-birthday .by-team li{font-size: 13px;line-height: 20px;color: #c8c8c8;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+/*팀 휴가 사용률*/
+.mss-main .take-leave{width: 1240px;margin: 0 auto;padding-bottom: 100px;border-bottom: 1px solid #d6d6d6;}
+.mss-main .take-leave:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .take-leave .section-left{float: left;position: relative;width: 730px;padding: 40px 60px 0 90px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mss-main .take-leave .section-left + .section-left{width: 510px;padding: 0;}
+.mss-main .take-leave .section-left:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .take-leave .section-left .content-title{float: left;padding-bottom: 15px;}
+.mss-main .take-leave .section-left .aside{padding-top: 0;}
+.mss-main .take-leave .section-left .vacation-info{clear: both;}
+.mss-main .take-leave .section-left .vacation-info:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .take-leave .section-left .vacation-info p{float: left;width: 260px;padding-top: 8px;font-size: 20px;line-height: 30px;color: #555;}
+.mss-main .take-leave .section-left .vacation-info .graph{float: left;}
+.mss-main .take-leave .section-left .vacation-info .days{float: left;width: 160px;padding-top: 6px;padding-left: 30px;}
+.mss-main .take-leave .section-left .vacation-info .days li{height: 39px;line-height: 39px;border-top: 1px solid #e1e1e1;}
+.mss-main .take-leave .section-left .vacation-info .days li:first-child{border-top: 0 none;}
+.mss-main .take-leave .section-left .vacation-info .days li:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .take-leave .section-left .vacation-info .days li span{float: left;font-size: 15px;color: #555;}
+.mss-main .take-leave .section-left .vacation-info .days li strong{float: right;font-size: 15px;color: #292929;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .take-leave .section-left .notice{margin-top: 32px;padding: 19px 35px;font-size: 15px;line-height: 25px;color: #555;background-color: #ececec;border-radius: 5px;-webkit-border-radius: 5px;}
+.mss-main .take-leave .section-left .graph-wrap{float: left;}
+.mss-main .take-leave .section-left .graph-wrap .graph-state{width: 90px;padding-top: 17px;}
+.mss-main .take-leave .section-left .graph-wrap.myself .graph-state{min-height: 245px;padding-right: 30px;padding-left: 8px;border-right: 1px solid #d1d1d1;}
+.mss-main .take-leave .section-left .graph-wrap.others{padding-left: 30px;}
+.mss-main .take-leave .section-left .graph-wrap .graph-state .graph{position: relative;width: 50px;height: 170px;margin: 0 auto;border-radius: 2px;-webkit-border-radius: 2px;}
+.mss-main .take-leave .section-left .graph-wrap .graph-state .graph .current{display: block;position: absolute;left: 0;bottom: 0;width: 100%;border-bottom-left-radius: 2px;-webkit-border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;-webkit-border-bottom-right-radius: 2px;}
+.mss-main .take-leave .section-left .graph-wrap.myself .graph-state .graph{background-color: #eaf2fc;}
+.mss-main .take-leave .section-left .graph-wrap.myself .graph-state .graph .current{background-color: #002c5f;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .graph{background-color: #ededed;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .data-list{width: 270px;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .data-list li{float: left;width: 90px;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .graph01 .current,
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .graph03 .current{background-color: #595959;}
+.mss-main .take-leave .section-left .graph-wrap.others .graph-state .graph02 .current{background-color: #292929;}
+.mss-main .take-leave .section-left .graph-wrap .detail-info{padding-top: 16px;}
+.mss-main .take-leave .section-left .graph-wrap .detail-info span{display: block;text-align: center;font-size: 15px;line-height: 21px;}
+.mss-main .take-leave .section-left .graph-wrap .detail-info strong{display: block;text-align: center;font-size: 15px;line-height: 21px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-weight: normal;}
+.mss-main .take-leave .section-left .ballon{display: none;position: absolute;left: 28px;top: 189px;width: 398px;padding-bottom: 8px;z-index: 10;}
+.mss-main .take-leave .section-left .ballon.active{display: block;}
+.mss-main .take-leave .section-left .ballon:after{content: '';display: block;position: absolute;left: 23px;bottom: 0;width: 9px;height: 8px;background: url('../images/common/balloon_02.png') 0 0 ;}
+.mss-main .take-leave .section-left .ballon .text-wrap{padding: 14px 45px 14px 47px;font-size: 15px;line-height: 25px;color: #ffffff;background: #003166 url('../images/common/ico_info_03.png') 20px 18px no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+
+
+/*MSS 임원*/
+/*보직자 현황*/
+.mss-main .board-member{padding: 60px 0;background-color: #f5f5f5;border-bottom-left-radius: 5px;-webkit-border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;-webkit-border-bottom-right-radius: 5px;}
+.mss-main .board-member .data-table tbody tr td{padding: 10px;background-color: #f5f5f5;}
+.mss-main .board-member .data-table tbody tr td .btn.type01{margin-top: 10px;}
+.mss-main .board-member .data-table tbody tr td span{display: block;}
+
+/*인원 현황*/
+.mss-main .present-condition{padding-top: 70px;}
+.mss-main .present-condition .section:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .present-condition .content-title{float: left;}
+.mss-main .present-condition .position{display: inline-block;float: right;height: 35px;padding-right: 35px;padding-left: 55px;border-radius: 17px;border-radius: 17px;background: #292929 url('../images/common/ico_check_02.png') 40px 50% no-repeat;}
+.mss-main .present-condition .position span{display: inline-block;line-height: 35px;margin: 0 5px;font-size: 15px;color: #fff;}
+.mss-main .present-condition .table-wrap{clear: both;}
+.mss-main .present-condition .table-wrap .data-table tbody tr th{background-color: #fff;}
+.mss-main .present-condition .table-wrap .data-table tbody tr:first-child th,
+.mss-main .present-condition .table-wrap .data-table tbody tr:first-child td{background-color: #edf8ff;}
+
+/*휴가 사용 현황*/
+.mss-main .vacation-condition{padding: 70px 0}
+.mss-main .vacation-condition .section:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.mss-main .vacation-condition .content-title{float: left;padding-bottom: 28px;}
+.mss-main .vacation-condition .content-title span{font-size: 18px;line-height: 25px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';vertical-align: middle;}
+.mss-main .vacation-condition .standard{display: inline-block;float: right;margin-top: 6px;padding-left: 20px;font-size: 15px;color: #292929/*;background: url('../images/common/standard.gif') 0 50% no-repeat;*/}
+
+/*주요인원 현황*/
+.mss-main .executive-member{height: 595px;padding: 50px 0;background-color: #f5f5f5;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mss-main .executive-member .tab-cont{position: relative;text-align: center;}
+.mss-main .executive-member .by-team{display: inline-block;position: absolute;left: 0;right: 0;top: 345px;margin: 0 auto;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .executive-member .by-teamTemp{display: inline-block;position: absolute;left: 0;right: 0;top: 300px;margin: 0 auto;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.mss-main .executive-member .tab-wrap{margin-bottom: 50px;}
+.mss-main .executive-member .tab-wrap .tab li{width: 170px;text-align:center;}
+.mss-main .executive-member .tab-wrap .tab li a{display: block;padding: 0;background-color: #e1e1e1;}
+.mss-main .executive-member .tab-wrap .tab li a:hover,
+.mss-main .executive-member .tab-wrap .tab li.active a{background-color: #2b2b2b;}
+.mss-main .executive-member .tab-wrap .tab li a .ico.event{width: 21px;height: 21px;margin-right: 7px;background-image: url('../images/common/ico_event_02.png');}
+.mss-main .executive-member .tab-wrap .tab li:hover a .ico.event,
+.mss-main .executive-member .tab-wrap .tab li.active a .ico.event{width: 21px;height: 21px;background-image: url('../images/common/ico_event.png');}
+.mss-main .executive-member .bx-wrapper{min-width: 890px;padding: 0 85px;background-color: #f5f5f5;}
+.mss-main .executive-member .bx-wrapper ul li{width: 130px;text-align: center;}
+.mss-main .executive-member .bx-wrapper ul li .thumb{width: 130px;height: 150px;margin: 0 auto;background-color: #eaeaea;overflow: hidden;}
+.mss-main .executive-member .bx-wrapper ul li .thumb img{width: 100%;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap{height: 150px;padding-top: 14px;text-align: center;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .name{font-size: 15px;line-height: 25px;color: #555;text-align: center;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .name em{display: inline-block;max-width: 95px;line-height: 22px;margin-right:5px;vertical-align: top;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-break: break-all;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .date{display: block;font-size: 13px;line-height: 25px;color: #292929;text-align: center;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .sort{display: block;width: 100%;font-size: 15px;line-height: 25px;color: #292929;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-break:break-all;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .state{display: block;font-size: 14px;line-height: 25px;color: #292929;text-align: center;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .btn.type01{margin-top: 9px;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap{position:relative;}
+.mss-main .executive-member .bx-wrapper ul li .info-wrap .btn.type01{position:absolute;left:0;bottom:0;}
+.mss-main .executive-member .bx-wrapper .tab01-slider li .info-wrap{height: 142px;padding-top: 14px;}
+.mss-main .executive-member .bx-wrapper .tab02-slider li .info-wrap{height: 142px;padding-top: 14px;}
+.mss-main .executive-member .bx-wrapper .tab03-slider li .info-wrap{height: 165px;padding-top: 14px;}
+.mss-main .executive-member .bx-wrapper .tab04-slider li .info-wrap{height: 120px;padding-top: 14px;}
+.mss-main .executive-member .bx-wrapper .tab05-slider li .info-wrap{height: 120px;padding-top: 14px;}
+.mss-main .executive-member .bx-wrapper .bx-controls-direction a{top: 54px;margin-top: 0;background-position: 0 0;background-repeat: no-repeat;}
+.mss-main .executive-member .bx-wrapper .bx-controls-direction .bx-prev{left: 0;right: auto;width: 43px;height: 43px;background-image: url('../images/common/prev_02.png');}
+.mss-main .executive-member .bx-wrapper .bx-controls-direction .bx-next{right: 0;width: 43px;height: 43px;background-image: url('../images/common/next_02.png');}
+.mss-main .executive-member .no-data{padding-top: 65px;text-align: center;}
+.mss-main .executive-member .no-data p{padding-top: 60px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 18px;line-height: 18px;color: #292929;background: url('../images/common/ico_member.png') 50% 0 no-repeat;}
+
+/*depth-main > aside-menu */
+#wrap.depth-main  #aside-menu{position: relative; float: left; width: 200px; height: 100%; margin-left: 40px; padding-top: 35px; z-index: 1; /*overflow-x: auto*/ }
+#wrap.depth-main  #aside-menu h2{line-height: 32px;font-family: "HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;font-size: 24px;color: #292929;}
+#wrap.depth-main  #aside-menu .lnb{padding-top: 25px;}
+#wrap.depth-main  #aside-menu .lnb li{border-bottom: 1px solid #d1d1d1;}
+#wrap.depth-main  #aside-menu .lnb li a{display: block;padding: 16px 16px 15px 0;  margin-right: 20px; font-size: 15px; line-height: 15px; color: #555555;/*white-space: nowrap;*/}
+#wrap.depth-main  #aside-menu .lnb li a:hover{font-family: '현대산스 Text 중간',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;font-size: 15px;color: #292929;padding-right: 16px;}
+#wrap.depth-main  #aside-menu .lnb li a.active{font-family: '현대산스 Text 중간',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;font-size: 15px;color: #292929;padding-right: 16px; background: url('../images/common/arrow.gif') 100% 18px no-repeat;}
+#wrap.depth-main  #aside-menu .lnb li a.more{background: url('../images/common/ico_plus.gif') right 50% no-repeat;}
+#wrap.depth-main  #aside-menu .lnb li a.more.active{background: url('../images/common/ico_minus.gif') right 50% no-repeat;}
+#wrap.depth-main  #aside-menu .lnb li ul{padding: 9px 5px;border-top: 1px solid #d1d1d1;}
+#wrap.depth-main  #aside-menu .lnb li ul li{border-bottom: 0 none;}
+#wrap.depth-main  #aside-menu .lnb li ul li a{display: inline-block;padding: 9px 16px 9px 0; border-bottom: 0 none;}
+#wrap.depth-main  #aside-menu .lnb li ul li a.active{background-position: 100% 11px}
+
+/*핵심인재 현황*/
+#wrap.depth-main .talented-person{border-top: 1px solid #d6d6d6;padding-bottom: 0 !important;padding-right: 40px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+#wrap.depth-main .talented-person #content{position: relative; float: none; overflow: hidden; padding-top: 38px;padding-left: 40px;border-left: 1px solid #d1d1d1;}
+#wrap.depth-main .talented-person #content .content-title{padding-bottom: 23px;}
+#wrap.depth-main .talented-person .core-state .total{padding-bottom: 15px;text-align: right;font-size: 15px;line-height: 15px;border-bottom:  2px solid #292929;}
+#wrap.depth-main .talented-person .core-state .total span{display: inline-block;padding-left: 	29px;line-height: 22px;background: url('../images/common/ico_pr_02.png') 0 center no-repeat;}
+#wrap.depth-main .talented-person .core-state .item{position: relative;padding: 40px 30px 40px 25px;overflow: hidden;border-bottom: 1px solid #d1d1d1;}
+#wrap.depth-main .talented-person .core-state .item .thumb{position: absolute;left: 25px;top: 40px;width: 114px;height: 150px;margin-right: 50px;overflow: hidden;}
+#wrap.depth-main .talented-person .core-state .item .thumb img{width: 100%;height: auto;}
+#wrap.depth-main .talented-person .core-state .item .info{min-height: 150px;padding-left: 154px;overflow: hidden;}
+#wrap.depth-main .talented-person .core-state .item .info h3{float: left;font-size: 24px;line-height: 30px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+#wrap.depth-main .talented-person .core-state .item .info h3 .year{display: inline-block;}
+#wrap.depth-main .talented-person .core-state .item .info .aside{float: right;margin-bottom: 15px;}
+#wrap.depth-main .talented-person .core-state .item .info .aside .btn{margin-left: 7px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+#wrap.depth-main .talented-person .core-state .item .info .detail{clear: both;padding: 13px 0;background-color: #ececec;border-top: 1px solid #e3e3e3;overflow: hidden;}
+#wrap.depth-main .talented-person .core-state .item .info .detail .item-list{width: 780px;margin-left: -105px;overflow: hidden;}
+#wrap.depth-main .talented-person .core-state .item .info .detail .item-list li{float: left;padding-left: 105px;}
+#wrap.depth-main .talented-person .core-state .item .info .detail .item-list li .label{display: inline-block;width: 95px;padding-left: 20px;font-size: 14px;line-height: 26px;text-align: left;vertical-align: top;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';font-weight: normal;}
+#wrap.depth-main .talented-person .core-state .item .info .detail .item-list li .insert{display: inline-block;width: 155px;font-size: 14px;line-height: 26px;text-align: left;color: #292929;vertical-align: top;font-family:'현대산스 Text 보통','현대산스 Text Medium','HyundaiSansTextKRMedium';text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-break: break-all;}
+
+/*리더십 지원센터*/
+/*리더십 가이드*/
+.main-cause{max-width: 920px;margin-top: 24px;padding: 75px 0;border: 1px solid #d1d1d1;border-radius: 14px;-webkit-border-radius: 14px;overflow: hidden;}
+.main-cause .title{height: 100px;padding-top: 25px;text-align: center;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.main-cause .title h4{padding-bottom: 15px;line-height: 18px;font-size: 18px;color: #fff;}
+.main-cause .title strong{position: relative;padding: 0 20px;line-height: 20px;font-size: 18px;color: #fff;opacity: 0.55;filter: alpha(opacity=55);font-weight: normal;}
+.main-cause .title strong:before{content: '';display: block;position: absolute;left: 0;top:0;width: 13px;height: 11px;background: url('../images/common/mark_left_03.png') 0 0 no-repeat;}
+.main-cause .title strong:after{content: '';display: block;position: absolute;right: 0;top:0;width: 13px;height: 11px;background: url('../images/common/mark_right_03.png') 0 0 no-repeat;}
+.main-cause .data-list li:first-child{margin-top: 10px;}
+.main-cause .data-list li{margin-top: 5px;text-align: center;background-color: #ececec;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-radius: 5px;-webkit-border-radius: 5px;}
+.main-cause .performance{float: left;position: relative;width: 270px;padding-left: 155px;}
+.main-cause .performance .title{background-color: #00aad2;}
+.main-cause .performance .data-list{}
+.main-cause .performance .data-list li{height: 35px;line-height: 35px;}
+.main-cause .performance p{position: absolute;left: 20px;top: 110px;height: 155px;padding-top: 52px;padding-right: 35px;line-height: 25px;text-align: right;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/mss/bg_text.png') 100% 0 no-repeat;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.main-cause .competency{float: left;float: left;position: relative;width: 270px;padding-right: 170px;padding-left: 50px;}
+.main-cause .competency .title{background-color: #9735d5;}
+.main-cause .competency .data-list{}
+.main-cause .competency .data-list li:first-child{height: 49px;line-height: 49px;}
+.main-cause .competency .data-list li{height: 48px;line-height: 48px;}
+.main-cause .competency p{position: absolute;left: 330px;top: 110px;height: 155px;padding-top: 52px;padding-left: 34px;line-height: 25px;text-align: left;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/mss/bg_text_02.png') 0 0 no-repeat;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.create-purpose{width: 920px;}
+.create-purpose .data-list{padding: 34px 0;border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;overflow: hidden;}
+.create-purpose .data-list li{float: left;height: 32px;padding: 0 50px;line-height: 32px;border-left: 1px solid #d1d1d1;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.create-purpose .data-list li:first-child{padding-left: 70px;border-left: 0 none;}
+.create-purpose .data-list li .num{display: inline-block;width: 29px;height: 29px;margin-right: 7px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;font-size: 14px;color: #fff;border-radius: 50%;-webkit-border-radius: 50%;background-color: #00aad2;}
+.create-purpose .data-list li p{display: inline-block;font-size: 17px;line-height: 32px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';color: #292929;}
+.create-process{position: relative;max-width: 920px;height: 600px;border-radius: 14px;-webkit-border-radius: 14px;background: #edf8ff url('../images/mss/bg_process.jpg') 50% 110px no-repeat;}
+.create-process .data-list{position: absolute;}
+.create-process .data-list li{padding-left: 18px;line-height: 20px;background: url('../images/common/ico_check.gif') 0 5px no-repeat;}
+.create-process .step01 .data-list{left: 638px;top: 98px;}
+.create-process .step02 .data-list{left: 638px;top: 403px;}
+.create-process .step03 .data-list{left: 45px;top: 403px;}
+.create-process .step04 .data-list{left: 45px;top: 98px;}
+
+.case-guide .intro-wrap{height: 250px;padding-left: 427px;background: #ece9e6 url('../images/mss/thumb_385x250.jpg') 0 0 no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.case-guide .intro-wrap p{position: relative;display: inline-block;margin-top: 38px;padding: 6px 30px 0;font-size: 16px;line-height: 28px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .intro-wrap p:before{content: ''; display: block; position: absolute; left: 0; top: 0; width: 19px; height: 16px; background: url(../images/common/mark_left.png) 0 0 no-repeat;}
+.case-guide .intro-wrap p:after{content: ''; display: block; position: absolute; right: 0; top: 133px; width: 19px; height: 16px; background: url(../images/common/mark_right.png) 0 0 no-repeat; }
+.case-guide .intro-wrap strong{display: block;padding-top: 10px;padding-left: 30px;font-size: 16px;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .text-wrap p{padding-top: 10px;font-size: 14px;line-height: 25px;}
+.case-guide .text-wrap p span{display: block;padding-top: 25px;}
+.case-guide .text-wrap h4{padding-top: 33px;font-size: 26px;line-height: 37px;color: #002c5f;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .text-wrap h5{padding-top: 43px;line-height: 18px;font-size: 17px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';color: #292929;}
+.case-guide .text-wrap h5 img{margin-right: 10px;vertical-align: middle;}
+.case-guide .tab-wrap{margin-top: 30px;}
+.case-guide .tab-cont{padding-top: 20px;}
+.case-guide .tab-cont .data-list.highlight{padding: 25px 0 15px;}
+.case-guide .tab-cont .data-list .em.weighty p{padding-left: 20px;color: #555;}
+.case-guide .tab-cont .indent{padding-left: 25px;text-indent: -10px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+.case-guide .tab-cont .tit{display: block;margin-top: 25px;margin-bottom: 4px;color: #002c5f;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-weight: normal;}
+.case-guide .tab-cont .admin-check{width: 920px;margin-top: 15px;padding: 30px 0 30px 207px;background-color: #edf8ff;border-radius: 14px;-webkit-border-radius: 14px;text-align: left;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.case-guide .tab-cont .admin-check strong{display: inline-block;color: #002c5f;}
+.case-guide .tab-cont .admin-check p{font-size: 14px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';line-height: 40px;}
+.case-guide .tab-cont .security-check{width: 920px;margin-top: 	15px;padding: 40px 0 40px 170px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.case-guide .tab-cont .security-check:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.case-guide .tab-cont .security-check strong{display: block;width: 178px;height: 35px;margin-bottom: 15px;margin-left: 10px;line-height: 35px;color: #fff;text-align: center;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background-color: #292929;border-radius: 17px;-webkit-border-radius: 17px;font-weight: normal;}
+.case-guide .tab-cont .security-check .check-list{float: left;width: 290px;height: 245px;}
+.case-guide .tab-cont .security-check .check-list .data-list li{line-height: 25px;font-size: 14px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .tab-cont .security-check .check-list.type02{width: auto;padding-left: 38px;border-left: 1px solid #d1d1d1;}
+.case-guide .tab-cont .security-check .check-list.type02 strong{margin-left: 62px;}
+.case-guide .tab-cont .security-check .check-list.type02 dl dt{line-height: 25px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .tab-cont .security-check .check-list.type02 dl dd{padding-left: 10px;line-height: 25px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .tab-cont .arrange-document{width: 920px;margin-top: 	15px;padding: 	50px 0 30px;border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;overflow: hidden;}
+.case-guide .tab-cont .arrange-document .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.case-guide .tab-cont .arrange-document .data-list{margin-left: -1px;}
+.case-guide .tab-cont .arrange-document .data-list li{float: left;width: 33.333%;height: 90px;margin-bottom: 20px;text-align: center;border-left: 1px solid #d1d1d1;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.case-guide .tab-cont .arrange-document .data-list li strong{display: inline-block;line-height: 20px;margin-bottom: 22px;padding-left: 30px;font-size: 16px;color: #292929;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/common/ico_process.png') 0 50% no-repeat;}
+.case-guide .tab-cont .arrange-document .data-list li p{font-size: 14px;line-height: 25px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .table-wrap tbody td .data-list{padding: 5px 0;}
+.case-guide .table-wrap tbody td .data-list.last{padding-bottom: 0;}
+.case-guide .table-wrap tbody td .notice{font-size: 13px;}
+.case-guide .table-wrap tbody td .notice span{display: block;}
+.case-guide .table-wrap tbody td .notice02{padding-top: 10px;padding-left: 15px;font-size: 13px;}
+.case-guide .table-wrap tbody td .notice02 p{padding-left: 15px;}
+/*.case-guide .table-wrap tbody td .notice .indent02{display: block;padding-left: 30px;text-indent: 0;}*/
+.case-guide .table-wrap tbody td .indent{padding-left: 25px;text-indent: -9px;}
+.case-guide .table-wrap tbody td .indent02{padding-left: 32px;text-indent: -9px;}
+.case-guide .table-wrap tbody td h6{padding-top: 13px;padding-bottom: 4px;font-size: 14px;color: #003166;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.case-guide .table-wrap tbody td h6.first{padding-top: 0;}
+.case-guide .notice-list{padding-top: 10px;}
+
+/*.core-movement{width: 920px;}
+.core-movement .step{position: relative;margin-bottom: 10px;padding: 45px 0 50px 160px;background-color: #edf8ff;border-radius: 24px;-webkit-border-radius: 24px;}
+.core-movement .step .num{position: absolute;left: 50px;top: 42px;font-size: 65px;line-height: 65px;color: #bce2f2;font-family:'HyundaiSansTextKRMedium';}
+.core-movement .step p{font-size: 17px;line-height: 25px;color: #555;font-family:'HyundaiSansTextKRMedium';}
+.core-movement .step p span{display: block;}
+.core-movement .step ul{padding-top: 25px;overflow: hidden;}
+.core-movement .step ul li{float: left;position: relative;width: 300px;padding: 30px 0;margin-left: 60px;text-align: center;background-color: #9735d5;border-radius: 5px;-webkit-border-radius: 5px;}
+.core-movement .step ul li:first-child{margin-left: 0;background-color: #00aad2;}
+.core-movement .step ul li:after{content: '';display: block;position: absolute;left: -43px;top: 43px;width: 26px;height: 26px;background: url('../images/common/ico_plus_02.png') 0 0 no-repeat;}
+.core-movement .step ul li:first-child:after{content: none;}
+.core-movement .step ul li h4{text-align: center;font-size: 18px;line-height: 25px;color: #fff;}
+.core-movement .step ul li strong{position: relative;display: inline-block;margin-top: 14px;padding: 0 20px; line-height: 20px; font-size: 18px; color: #fff; opacity: 0.55; filter: alpha(opacity=55); font-weight: normal;}
+.core-movement .step ul li strong:before{content: ''; display: block; position: absolute; left: 0; top: 0; width: 13px; height: 11px; background: url(../images/common/mark_left_03.png) 0 0 no-repeat;}
+.core-movement .step ul li strong:after{content: ''; display: block; position: absolute; right: 0; top: 0; width: 13px; height: 11px; background: url(../images/common/mark_right_03.png) 0 0 no-repeat;}*/
+
+.goal-setting{width: 920px;padding: 50px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.goal-setting .data-list{overflow: hidden;}
+.goal-setting .data-list li{float: left;position: relative;padding-left: 45px;}
+.goal-setting .data-list li:first-child{padding-left: 0;}
+.goal-setting .data-list li:after{content: '';display: block;position: absolute;left:20px;top:56px;width: 7px;height: 12px;background: url('../images/common/arrow_05.gif') 0 0 no-repeat;}
+.goal-setting .data-list li:first-child:after{display: none;}
+.goal-setting .data-list li.list02,
+.goal-setting .data-list li.list03 .box{color: #fff;}
+.goal-setting .data-list li .box{width: 220px;height: 126px;margin-bottom: 15px;padding-left: 20px;border-radius: 5px;-webkit-border-radius: 5px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.goal-setting .data-list li.list01 .box{background-color: #ececec;}
+.goal-setting .data-list li.list02 .box{background-color: #00b9e4;}
+.goal-setting .data-list li.list03 .box{background-color: #003166;}
+.goal-setting .data-list li .box span{display: block;padding: 23px 0 12px;font-size: 15px;line-height: 15px;}
+.goal-setting .data-list li .box p{font-size: 15px;}
+.goal-setting .data-list li .data-list{}
+.goal-setting .data-list li .data-list li{float: none;width: auto;padding-top: 2px;padding-left: 20px;background: url('../images/common/ico_check_07.png') 0 7px no-repeat;}
+.goal-setting .data-list li .text{width: auto;padding-top: 2px;padding-left: 20px;font-size: 14px;color: #555;background: url('../images/common/ico_check_07.png') 0 7px no-repeat;}
+
+.smart-way{width: 920px;padding: 80px 20px;background-color: #edf8ff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.smart-way dl{display: inline-block;position: relative;height: 192px;padding: 0 18px;text-align: center;border-left: 1px solid #7dc8de;vertical-align: top;}
+.smart-way dl.first{border-left: 0 none;}
+.smart-way dl dt{font-size: 65px;line-height: 50px;color: #00aad2;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';vertical-align: bottom;}
+.smart-way dl dt:after{content: '';display: }
+.smart-way dl dt span{display: inline-block;padding-left: 2px;line-height: 21px;font-size: 16px;color: #555;}
+.smart-way dl dt em{display: block;padding-right: 13px;line-height: 16px;font-size: 16px;color: #555;text-align: right;}
+.smart-way dl dd{padding-top: 59px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 14px;line-height: 25px;text-align: left;vertical-align: bottom;}
+
+.core-action{width: 920px;border-top: 1px solid #d1d1d1;}
+.core-action .data-list{padding: 15px 0 10px;}
+.core-action .data-list li{line-height: 78px;font-size: 16px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.core-action .data-list li span{display: inline-block;padding-right: 15px;font-size: 65px;color: #bce2f2;vertical-align: middle;}
+
+.explain-box{width: 920px;margin-top: 25px;padding: 55px 0 55px 139px;background-color: #edf8ff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing:border-box;-webkit-box-sizing:border-box;overflow: hidden;}
+.explain-box .text-wrap{float: left;margin-right: 65px;}
+.explain-box .text-wrap .subject{width: 277px;height: 97px;padding-top: 49px;}
+.explain-box .text-wrap.personal .subject{background: url('../images/mss/bg_title.png') 0 0 no-repeat;}
+.explain-box .text-wrap.work .subject{background: url('../images/mss/bg_title_02.png') 0 0 no-repeat;}
+.explain-box .text-wrap .subject li{float: left;width: 146px;margin-left:-15px;padding-top: 40px;font-size: 15px;line-height: 15px;color: #555;text-align: center;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.explain-box .text-wrap .subject li:first-child{margin-left: 0;}
+.explain-box .text-wrap.personal .subject li{background: url('../images/common/ico_tit_02.png') 50% 0 no-repeat;}
+.explain-box .text-wrap.personal .subject li:first-child{background: url('../images/common/ico_tit_01.png') 50% 0 no-repeat;}
+.explain-box .text-wrap.personal .data-list{padding-left: 23px;}
+.explain-box .text-wrap.work .subject{margin-left: 10px;}
+.explain-box .text-wrap.work .subject li{background: url('../images/common/ico_tit_04.png') 50% 0 no-repeat;}
+.explain-box .text-wrap.work .subject li:first-child{background: url('../images/common/ico_tit_03.png') 50% 0 no-repeat;}
+.explain-box .text-wrap .data-list{padding-top: 10px;}
+.explain-box .text-wrap .data-list li{font-size: 15px;line-height: 25px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+.team-mission .text{font-size: 14px;line-height: 24px;color: #555;}
+.team-mission .text span{display: block;padding-left: 9px;}
+.team-mission .process-box{position: relative;width: 920px;height: 680px;margin-top: 15px;background: #edf8ff url('../images/mss/bg_mission.png') 147px 92px no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.team-mission .process-box .data-list li{padding-left: 17px;font-size: 14px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';line-height: 20px;color: #555;background: url('../images/common/ico_check_07.png') 0 4px no-repeat;}
+.team-mission .process-box .set h4{position: absolute;left: 347px;top: 78px;padding-left: 30px;font-size: 18px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/common/ico_opinion.png') 0 50% no-repeat;}
+.team-mission .process-box .set .data-list li{position: absolute;}
+.team-mission .process-box .set .data-list li.list01{left: 601px;top: 135px;}
+.team-mission .process-box .set .data-list li.list02{left: 570px;top: 197px;}
+.team-mission .process-box .set .data-list li.list03{left: 523px;top: 254px;}
+.team-mission .process-box .plan h4{position: absolute;left: 347px;top: 571px;padding-left: 34px;font-size: 18px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/common/ico_plan.png') 0 50% no-repeat;}
+.team-mission .process-box .plan .data-list li{position: absolute;}
+.team-mission .process-box .plan .data-list li.list01{left: 541px;top: 418px;}
+.team-mission .process-box .plan .data-list li.list02{left: 579px;top: 461px;}
+.team-mission .process-box .plan .data-list li.list03{left: 612px;top: 519px;}
+.team-mission .process-box .point{display: inline-block;position: absolute;left: 125px;top: 315px;height: 46px;line-height: 46px;padding: 0 53px;font-size: 16px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';color: #292929;background-color: #e4dcd3;border-radius: 23px;-webkit-border-radius: 23px;}
+.team-mission .process-box .point strong{color: #e63312;font-weight: normal;}
+
+/*HR 안내*/
+.hr-info .visual{width: 1080px;height: 958px;margin-bottom: 100px;background: url('../images/hr_info/bg_main.jpg') center 0 no-repeat;border-radius: 5px;-webkit-border-radius: 5px;}
+.hr-info .visual .content-title{margin: 0 auto;padding-top: 80px;padding-left: 80px;padding-bottom: 4px !important;font-size: 40px;line-height: 55px;color: #fff;}
+.hr-info .visual .notice{padding-left: 80px;font-size: 15px;line-height: 55px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.hr-info .visual .mCSB_scrollTools.mCSB_scrollTools_horizontal{left: 80px;right: 80px;height: 30px;margin: 0 !important;}
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{margin: 0 !important;}
+.hr-info .visual .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.hr-info .visual .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: #00b9e4;}
+.hr-info .visual .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{width: 0;height: 10px;margin: 0;background-color: rgba(0,185,228,0.3);}
+.hr-info .visual .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{width: 30px !important;height: 30px !important;margin-top: -10px;}
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width: 30px !important;height: 30px !important;}
+.mCSB_horizontal.mCSB_inside > .mCSB_container{margin-bottom: 110px !important;}
+.timeline{overflow: hidden;}
+.timeline .data-list{position: relative;margin-top: 60px;padding: 0 50px;background: url('../images/hr_info/line_02.png') 0 8px repeat-x;}
+.timeline .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.timeline .data-list li{float: left;width: 190px;margin-left: 90px;padding-top: 64px;border-radius: 10px;-webkit-border-radius: 10px;overflow: hidden;background: url('../images/hr_info/line_01.png') 50% 0 no-repeat;}
+.timeline .data-list li.list01{margin-top: 7px;}
+.timeline .data-list li.list02{margin-top: 76px;}
+.timeline .data-list li.list03{margin-top: 75px;}
+.timeline .data-list li.list04{margin-top: 7px;}
+.timeline .data-list li.list05{margin-top: 6px;}
+.timeline .data-list li.list06{margin-top: 75px;}
+.timeline .data-list li.list07{margin-top: 75px;}
+.timeline .data-list li.list08{margin-top: 4px;}
+.timeline .data-list li.list09{margin-top: 74px;}
+.timeline .data-list li.list10{margin-top: 76px;}
+.timeline .data-list li.list11{margin-top: 6px;}
+
+.timeline .data-list li a{display: block;width: 100%;height: 100%;}
+.timeline .data-list li img{border-radius: 10px;-webkit-border-radius: 10px;}
+.timeline .data-list li:first-child{margin-left: 0;}
+.timeline .data-list li strong{display: inline-block;margin-top: 30px;padding-right: 22px;font-size: 24px;line-height: 30px;color: #d9d9d9;background: url('../images/hr_info/arrow.png') 100% 9px no-repeat;}
+.timeline .data-list li p{padding-top: 13px;font-size: 15px;line-height: 25px;color: #d9d9d9;}
+
+/*시스템별 상세 사용법*/
+.system-detail{width: 920px;overflow: hidden;}
+.system-detail .data-list{width: 110%;overflow: hidden;}
+.system-detail .data-list li{float: left;margin-right: 35px;padding-bottom: 40px;}
+.system-detail .data-list.part{padding-top: 40px;border-top: 1px solid #d1d1d1;}
+.system-detail .data-list li .thumb{border-radius: 5px;-webkit-border-radius: 5px;overflow: hidden;}
+.system-detail .data-list li .thumb img{vertical-align: top;}
+.system-detail .data-list li .title{display: block;padding-top: 14px;padding-bottom: 8px;font-size: 17px;line-height: 23px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-detail .data-list li p{font-size: 14px;line-height: 23px;}
+.system-detail .data-list li .button-area{padding-top: 15px;}
+.system-detail .data-list li .button-area .btn.type01{font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-detail .data-list li .button-area .btn.type01 .ico{margin-left: 0;margin-right: 10px;}
+
+/*시스템가이드 개편사항안내*/
+.system-info .section{width: 920px;padding-bottom: 40px;}
+.system-info .news{border-top: 1px solid #d1d1d1;}
+.system-info .news .data-list{overflow: hidden;}
+.system-info .news .data-list li{float: left;margin-left: 40px;}
+.system-info .news .data-list li:first-child{margin-left: 0;}
+.system-info .news .data-list li .thumb{border-radius: 5px;-webkit-border-radius: 5px;overflow: hidden;}
+.system-info .news .data-list li .thumb img{vertical-align: top}
+.system-info .news .data-list li .title{display: block;font-size: 18px;line-height: 55px;color: #292929;}
+.system-info .news .data-list li .button-area .btn.type01{font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .news .data-list li .button-area .btn.type01 span{margin-left: 0;margin-right: 10px;}
+
+/*팀조직운영*/
+.team-organize .explain-box{padding: 0;background-color: #fff;}
+.team-organize .explain-box .text-wrap{width: 450px;height: 465px;margin: 0;padding: 60px 40px 0;text-align: center;background-color: #edf8ff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.team-organize .explain-box .text-wrap.team{margin-left: 20px;}
+.team-organize .explain-box .text-wrap h4{display: inline-block;padding-bottom: 25px;padding-left: 28px;font-size: 22px;line-height: 22px;color: #292929;text-align: center;background: url('../images/common/ico_title.png') 0 2px no-repeat;}
+.team-organize .explain-box .text-wrap .data-list{padding-top: 30px;border-top: 1px solid #b8b8b8;}
+.team-organize .explain-box .text-wrap .data-list li{position: relative;height: 95px;padding-left: 90px;text-align: left;}
+.team-organize .explain-box .text-wrap .data-list li span{display: block;position: absolute;left: 0;top: 0;width: 70px;height: 50px;line-height: 50px;color: #fff;font-size: 15px;text-align: center;border-radius: 5px;-webkit-border-radius: 5px;}
+.team-organize .explain-box .text-wrap .data-list li.step01 span{background-color: #002c5f;}
+.team-organize .explain-box .text-wrap .data-list li.step02 span{background-color: #00aad2;}
+.team-organize .explain-box .text-wrap .data-list li.step03 span{background-color: #9735d5;}
+.team-organize .explain-box .text-wrap .data-list li strong{display: block;font-size: 17px;line-height: 17px;color: #000;}
+.team-organize .explain-box .text-wrap .data-list li p{padding-top: 5px;font-family:'현대산스 Text','HyundaiSansTextKRRegular';font-size: 14px;line-height: 25px;color: #555;}
+.team-organize .task-strategy{width: 920px;}
+.team-organize .task-strategy .text-wrap{position: relative;float: left;width: 450px;height: 370px;margin-top: 20px;padding-top: 85px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.team-organize .task-strategy .text-wrap.even{margin-right: 20px;}
+.team-organize .task-strategy .text-wrap .num{position: absolute;left: 36px;top: 30px;font-size: 65px;line-height:65px;color: #bce2f2;}
+.team-organize .task-strategy .text-wrap p{padding-top: 60px;font-size: 14px;color: #555;text-align: center;background: url('../images/common/ico_member_03.png') 50% 0 no-repeat;}
+.team-organize .task-strategy .text-wrap h4{padding-bottom: 9px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 18px;color: #002c5f;text-align: center;}
+.team-organize .task-strategy .text-wrap .data-list{margin: 0 65px;padding-top: 8px;border-top: 1px solid #d1d1d1;}
+.team-organize .task-strategy .text-wrap .data-list li{font-size: 14px;line-height: 25px;color: #555;}
+.effect-wrap .stance{width: 920px;padding-bottom: 20px;overflow: hidden;}
+.effect-wrap .stance h4{float: left;width: 170px;height: 158px;padding-top: 90px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 17px;text-align: center;color: #fff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.effect-wrap .stance.type01 h4{background: #00aad2 url('../images/mss/ico_stance.png') 50% 54px no-repeat;}
+.effect-wrap .stance.type02 h4{background: #9735d5 url('../images/mss/ico_stance_02.png') 50% 54px no-repeat;}
+.effect-wrap .stance .data-list{float: left;width: 730px;padding-left: 20px;}
+.effect-wrap .stance .data-list li{padding: 12px 15px;font-size: 14px;line-height: 14px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-bottom: 1px solid #d1d1d1;}
+.effect-wrap .stance .data-list li:first-child{border-top: 2px solid #292929;}
+.effect-wrap .stance .data-list li span{display: inline-block;margin-right: 9px;padding-right: 9px;line-height: 14px;border-right: 1px solid #d1d1d1;}
+.team-organize .consideration{width: 920px;height: 360px;padding-top: 60px;padding-left: 90px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.team-organize .consideration .data-list{padding-bottom: 50px;background: url('../images/mss/bg_consideration.gif') 77px 200px no-repeat;overflow: hidden;}
+.team-organize .consideration .data-list li{float: left;position: relative;width: 145px;padding-left: 52px;}
+.team-organize .consideration .data-list li:first-child{padding-left: 0;}
+.team-organize .consideration .data-list li:after{content: '';display: block;position: absolute;left: 21px;top: 62px;width: 11px;height: 18px;background: url('../images/common/arrow_07.png') 0 0 no-repeat;}
+.team-organize .consideration .data-list li:first-child:after{content: none;display: none;}
+.team-organize .consideration .data-list li strong{display: block;width: 145px;height: 145px;line-height: 145px;font-size: 16px;color: #fff;text-align: center;border-radius: 50%;-webkit-border-radius: 50%;background-color: #002c5f;}
+.team-organize .consideration .data-list li.even strong{background-color: #555;}
+.team-organize .consideration .data-list li p{padding-top: 10px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;font-size: 14px;line-height: 20px;color: #292929;}
+.team-organize .commission{width: 920px;}
+.team-organize .commission h4{padding-bottom: 18px;font-size: 16px;color: #292929;line-height: 65px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.team-organize .commission h4 span{display: inline-block;padding-right: 10px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 65px;color: #bce2f2;vertical-align: middle;}
+.team-organize .commission .how-to{margin-bottom: 40px;padding: 40px 0;background-color: #edf8ff;overflow: hidden;border-radius: 5px;-webkit-border-radius: 5px;}
+.team-organize .commission .how-to dl{float: left;width: 229px;border-left: 1px solid #d1d1d1;}
+.team-organize .commission .how-to dl.first{border-left: 0 none;}
+.team-organize .commission .how-to dl dt{font-size: 16px;line-height: 16px;color: #00aad2;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;}
+.team-organize .commission .how-to dl dd{padding-top: 15px;font-size: 14px;line-height: 20px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;}
+.team-organize .commission .process .data-list li{float: left;position: relative;padding-left: 30px;}
+.team-organize .commission .process .data-list li:first-child{padding-left: 0;}
+.team-organize .commission .process .data-list li:after{content: '';display: block;position: absolute;left: 11px;top: 56px;display: block;width: 7px;height: 12px;background: url(../images/common/arrow_05.gif) 0 0 no-repeat;}
+.team-organize .commission .process .data-list li:first-child:after{display: none;}
+.team-organize .commission .process .data-list li div{width: 160px;height: 125px;padding-left: 19px;font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 15px;color: #555;box-sizing: border-box;-webkit-box-sizing: border-box; background-color: #ececec; border-radius: 5px; -webkit-border-radius: 5px;}
+.team-organize .commission .process .data-list li.type01 div{color: #fff;background-color: #00b9e4;}
+.team-organize .commission .process .data-list li.type02 div{color: #fff;background-color: #003166;}
+.team-organize .commission .process .data-list li div span{display: block;padding-top: 19px;padding-bottom: 7px;padding-left: 0;font-size: 16px;color: #555;}
+.team-organize .commission .process .data-list li.type01 span{color: #fff;}
+.team-organize .commission .process .data-list li.type02 span{color: #fff;}
+.team-organize .guide-article{position: relative;width:920px; padding: 50px 40px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.team-organize .guide-article:after{content: '';display: block;position: absolute;left: 40px;top: 258px;width: 840px;height: 1px;background-color: #d1d1d1;}
+.team-organize .guide-article ol.data-list{overflow: hidden;}
+.team-organize .guide-article ol.data-list li{float: left;width:280px;height: 168px;padding-left: 30px;border-left: 1px solid #d1d1d1;box-sizing: border-box;-webkit-box-sizing: border-box;vertical-align: top;}
+.team-organize .guide-article ol.data-list li.list01,
+.team-organize .guide-article ol.data-list li.list04{width: 275px;padding-left: 0;border-left: 0 none;}
+.team-organize .guide-article ol.data-list li.list01,
+.team-organize .guide-article ol.data-list li.list02,
+.team-organize .guide-article ol.data-list li.list03{margin-bottom: 80px;}
+.team-organize .guide-article ol.data-list li h4{padding-bottom: 5px;line-height: 40px;font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 17px;color: #292929;}
+.team-organize .guide-article ol.data-list li h4 span{display: inline-block;padding-right: 18px;font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 50px;color: #bce2f2;vertical-align: middle;}
+.team-organize .guide-article ol.data-list li li{float: none;border-left: 0 none;}
+.team-organize .guide-article ol.data-list li li,
+.team-organize .guide-article ol.data-list li p{height: auto;padding-left: 10px;text-indent: -10px;font-size: 14px;line-height: 25px;}
+.team-organize .write-guide li{display: inline-block;padding-right: 20px;font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.team-organize .write-guide li span{display: inline-block;width: 70px;height: 50px;line-height: 50px;margin-right: 15px;color: #fff;text-align: center;border-radius: 5px;-webkit-border-radius: 5px;background-color: #9735d5;}
+.team-organize .write-guide li:first-child span{background-color: #00aad2;}
+.expected-effect{width: 920px;padding: 35px 0;border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;overflow: hidden;}
+.expected-effect dl{float: left;position: relative;width: 306px;text-align: center;}
+.expected-effect dl.first:after{content: none;display: none;height: 0;}
+.expected-effect dl:after{content: '';display: block;position: absolute;left: 0;top: 0;width: 1px;height: 45px;background-color: #d1d1d1;}
+.expected-effect dl dt{padding-bottom: 6px;font-size: 17px;line-height: 20px;color: #00aad2;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.expected-effect dl dd{font-size: 14px;line-height: 25px;color: #555;}
+.coaching-skill{width: 920px;padding: 50px 0 43px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;}
+.coaching-skill .data-list{padding-left: 120px;overflow: hidden;}
+.coaching-skill .data-list li{float: left;width: 206px;text-align: center;}
+.coaching-skill .data-list li h4{display: inline-block;width: 145px;height: 145px;line-height: 145px;text-align: center;font-size: 35px;color: #fff;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-radius: 50%;-webkit-border-radius: 50%;}
+.coaching-skill .data-list li.skill01 h4{background-color: #00aad2;}
+.coaching-skill .data-list li.skill02 h4{background-color: #002c5f;}
+.coaching-skill .data-list li.skill03 h4{background-color: #9735d5;}
+.coaching-skill .data-list li p{padding-top: 9px;font-size: 14px;line-height: 25px;color: #292929;text-align: center;}
+.coaching-way{position: relative;width: 920px;min-height: 370px;margin-top: 25px;background: url('../images/mss/bg_way.gif') 0 0 no-repeat;}
+.coaching-way h4{padding-top: 157px;font-size: 17px;color: #002c5f;text-align: center;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.coaching-way h4 strong{display: block;font-size: 25px;color: #002c5f;font-weight: normal;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.coaching-way .data-list{}
+.coaching-way .data-list li{position: absolute;font-size: 14px;line-height: 25px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.coaching-way .data-list li.way01{left: 50px;top: 72px;}
+.coaching-way .data-list li.way02{left: 50px;top: 260px;}
+.coaching-way .data-list li.way03{right: 50px;top: 72px;text-align: right;}
+.coaching-way .data-list li.way04{right: 50px;top: 260px;text-align: right;}
+.coaching-way .data-list li strong{display: block;padding-bottom: 4px;font-size: 17px;color: #00aad2;font-weight: normal;}
+dl.category dt{font-size: 15px;color: #002c5f;}
+
+.durability.section{width: 920px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.assessment-aim .data-list{width: 920px;padding-top: 15px;overflow: hidden;}
+.assessment-aim .data-list li{float: right;position: relative;width: 450px;padding: 32px 55px 45px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: right;color: #fff;font-size: 14px;background-color: #9735d5;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.assessment-aim .data-list li:first-child{float: left;text-align: left;background-color: #00aad2;}
+.assessment-aim .data-list li:after{content: '';display: block;position: absolute;right: 132px;top: 45px;width: 60px;height: 1px;background-color: #fff;}
+.assessment-aim .data-list li:first-child:after{left: 132px;right: auto;}
+.assessment-aim .data-list li strong{display: block;padding-bottom: 7px;font-size: 17px;}
+.note-matter{width: 920px;padding: 35px 35px 30px;background-color: #edf8ff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.note-matter h4{padding-left: 22px;font-size: 16px;line-height: 30px;color: #003166;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';background: url('../images/common/ico_check_08.png') 0 50% no-repeat;}
+.note-matter .data-list{padding: 5px 0 5px 23px;}
+.note-matter .data-list li{font-size: 14px;line-height: 25px;color: #555555;}
+.fair-effort{width: 920px;margin-top: 25px;border-top: 1px solid #d1d1d1;border-bottom: 1px solid #d1d1d1;}
+.fair-effort .data-list{width: 920px;height: 150px;overflow: hidden;}
+.fair-effort .data-list li{display: table;float: left;position: relative;width: 25%;height: 100%;font-size: 16px;line-height: 25px;color: #00aad2;text-align: center;}
+.fair-effort .data-list li:after{content: '';display: block;position: absolute;left: 0;top: 35px;width: 1px;height: 75px;background-color: #d1d1d1;}
+.fair-effort .data-list li:first-child:after{content: none;display: none;}
+.fair-effort .data-list li div{display: table-cell;width: 100%;vertical-align: middle;text-align: center;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.feedback-guide01{width: 920px;padding: 30px 50px;border: 1px solid #d1d1d1;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.feedback-guide01 .data-list{overflow: hidden;}
+.feedback-guide01 .data-list li{float: left;position: relative;width: 365px;height: 140px;padding-top: 25px;padding-left: 140px;border-bottom: 1px solid #d1d1d1;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.feedback-guide01 .data-list li.even{width: 450px;padding-left: 190px;}
+.feedback-guide01 .data-list li.none{border-bottom: 0 none;}
+.feedback-guide01 .data-list li h4{float: left;position: absolute;left:0;top:30px;font-size: 25px;line-height: 25px;color: #00aad2;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.feedback-guide01 .data-list li strong{display: block;font-size: 17px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.feedback-guide01 .data-list li p{padding-top: 3px;font-size: 14px;line-height: 20px;color: #555;}
+.feedback-guide02 .data-list{width: 680px;overflow: hidden;}
+.feedback-guide02 .data-list li{float: left;width: 340px;line-height: 30px;margin-bottom: 10px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 15px;}
+.feedback-guide02 .data-list li span.tag{width: 49px;height: 30px;line-height: 30px;font-size: 15px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+
+
+
+/*주재원 임원메인*/
+.resident-visual{position: relative;max-width: 1320px;}
+.resident-main .section h3 {font-size: 30px; line-height: 30px; color: #292929; margin-top: 42px; }
+.resident-visual .bx-wrapper{margin-bottom: 0;border-top-right-radius: 5px; border-top-left-radius: 5px; overflow: hidden;}
+.resident-visual .bx-controls{position: absolute; left: 0; right: 0; bottom:  40px; text-align: center; z-index: 51;}
+.resident-visual .bx-controls .bx-pager-item{display: inline-block; text-align: center; width: 16px; height: 16px; border-radius: 50%; overflow: hidden; margin: 0 6px;}
+.resident-visual .bx-controls .bx-pager-item a{display: inline-block; width: 100%; height: 100%;  color: transparent;background: rgba(255,255,255,0.54);}
+.resident-visual .bx-controls .bx-pager-item a.active{background-color: #ffffff}
+.resident-visual .bx-controls-auto{display: none}
+.resident-visual .bx-controls-direction{display: none;}
+.resident-visual .resident-slider{}
+.resident-visual .resident-slider li{position: relative;}
+.resident-visual .resident-slider li .info-text{position: absolute; left: 130px; top: 0;width: 1060px; margin: 0 auto; color: #ffffff}
+.resident-visual .resident-slider li .info-text strong{width: 790px;display: inline-block;padding-top: 92px;font-size: 70px;line-height: 83px;font-family: '현대산스 Text Medium',"HyundaiSansTextKRMedium", "맑은 고딕", sans-serif;font-weight: normal;}
+.resident-visual .resident-slider li .info-text p{width: 790px;margin-top: 9px;font-size: 16px;line-height: 27px;}
+.resident-visual .resident-slider li img{vertical-align: top;}
+
+.profile-wrap{height: 308px; background-color: #ececec; overflow: hidden;}
+.profile-wrap .section:after{content: ''; display: block; clear: both;}
+.profile-wrap .section>div{float: left; height: 308px;}
+.profile-wrap .section>div+div{border-left: 1px solid #d1d1d1;margin-left: -1px}
+.profile-wrap .item-info {position: relative;margin-top: 44px; width: 370px}
+.profile-wrap .item-info:after{content: ''; display: block; clear: both;}
+.profile-wrap .item-info .thumb{float: left;width:  130px; height: 150px; border-radius: 24px;-webkit-border-radius: 24px; overflow: hidden; text-align: center; background-color: #ffffff}
+.profile-wrap .item-info .thumb img{width: 100%;}
+.profile-wrap .item-info .info{float: left; margin-left: 30px}
+.profile-wrap .item-info .info .number{color: #002c5f; font-size: 15px; line-height: 15px; margin-top: 30px;}
+.profile-wrap .item-info .info .user{color: #002c5f; font-size: 26px;line-height: 26px; margin-top: 10px; font-family: '현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.profile-wrap .item-info .info .team{color: #292929; font-size: 20px; line-height: 20px; margin-top: 15px;}
+.profile-wrap .item-info .today-event{display: inline-block;position: absolute;left:90px;top:-24px;height: 40px;line-height: 40px;padding: 0 20px;font-size: 14px;color: #fff;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';background: #00b9e4;border-radius: 20px;-webkit-border-radius: 20px;}
+.profile-wrap .item-info .today-event:after{content: '';display: block;position:absolute;left:25px;bottom:-6px;width: 11px;height: 6px;background: url('../images/common/bg_event.png') 0 0 no-repeat;}
+.profile-wrap .item-info .today-event .ico.event{margin-right: 6px;}
+.profile-wrap .profile .cont-footer{padding-right: 50px}
+.profile-wrap .profile .cont-footer:after{content: ''; display: block; clear: both;}
+.profile-wrap .profile .cont-footer .update{float: left; margin-top: 34px; margin-left: 20px; padding-left: 50px; line-height: 17px; font-size: 14px; color: #555; background: url('../images/common/ico_camera.gif') 0 0 no-repeat;}
+.profile-wrap .profile .cont-footer .btn.large{float: right; margin-top: 16px;}
+
+
+.profile-wrap .mydate{width: 370px;}
+.profile-wrap .mydate .cont-header{height: 80px; line-height: 80px; padding: 0 50px; background-color: #292929; font-size: 20px}
+.profile-wrap .mydate .cont-header:after{content: ''; display: block; clear: both;}
+.profile-wrap .mydate .cont-header .title{float: left; color: #949494}
+.profile-wrap .mydate .cont-header .all-date{float: right; color: #ffffff; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.profile-wrap .mydate .mydate-list{margin: 22px 50px 0;}
+.profile-wrap .mydate .mydate-list li{padding: 13px 0;}
+.profile-wrap .mydate .mydate-list li+li{border-top: 1px solid #d1d1d1;}
+.profile-wrap .mydate .mydate-list li:after{content: ''; display: block; clear: both;}
+.profile-wrap .mydate .mydate-list li div{float: right; font-size: 15px; color: #292929; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.profile-wrap .mydate .mydate-list li .title{float: left; color: #555;}
+.profile-wrap .mydate .mydate-list li span{display: block; line-height: 23px; text-align: right;}
+.profile-wrap .mydate .mydate-list li span.team{width: 180px;overflow: hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;}
+
+.profile-wrap .career{position: relative;}
+.profile-wrap .career:before{content: '';display: block;position: absolute;left: -1px; top: 0; width: 451px; height: 80px; background-color: #000000; z-index: 0}
+.profile-wrap .career .cont-header{position: relative; left: 0; top: 0;height: 80px; line-height: 80px; padding-left: 50px;width: 320px; font-size: 20px; box-sizing: border-box;}
+.profile-wrap .career .cont-header:after{content: ''; display: block; clear: both;}
+.profile-wrap .career .cont-header .title{float: left; color: #666666}
+.profile-wrap .career .cont-header .lavel{float: right; color: #ffffff; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.profile-wrap .career .career-list{margin: 22px 0 0 50px;}
+.profile-wrap .career .career-list li{padding: 13px 0;}
+.profile-wrap .career .career-list li+li{border-top: 1px solid #d1d1d1;}
+.profile-wrap .career .career-list li:after{content: ''; display: block; clear: both;}
+.profile-wrap .career .career-list li div{ font-size: 15px; color: #292929; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.profile-wrap .career .career-list li .title{float: left; color: #555;}
+.profile-wrap .career .career-list li .text{float: right; color: #db1515; text-decoration: underline;}
+.profile-wrap .career .career-list li span{display: block; line-height: 23px; text-align: right;}
+
+.hr-notice{float: left; height: 100%;border-right: 1px solid #d1d1d1;}
+.hr-notice h3{font-size: 30px;line-height: 30px; color: #292929;}
+.hr-notice .cont{margin-top: 22px; width: 320px; margin-right: 49px}
+.hr-notice .title{font-size: 26px; line-height: 36px;color: #292929}
+.hr-notice .text{margin-top: 9px}
+.hr-notice .text:hover{text-decoration: underline;}
+.btn-control {margin-top: 26px}
+.btn-control .prev{display: inline-block; width: 30px; height: 30px; background: url("../images/common/btn_prev_02.png") 0 0 no-repeat;  font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden;}
+.btn-control .next{display: inline-block; width: 30px; height: 30px; background: url("../images/common/btn_next_02.png") 0 0 no-repeat;  font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; margin-left: 7px;}
+
+.appoint{float: right; width: 640px;}
+.appoint .tab-appoint{position: relative;}
+.appoint .tab{background-color: #ffffff; height: auto; width: auto; position: absolute; right: 0; top: -20px;}
+.appoint .tab li{display: inline-block; font-size: 24px; line-height: 30px;box-sizing: border-box;}
+.appoint .tab li+li{margin-left: 10px}
+.appoint .tab li.active{border-bottom: 1px solid #292929;}
+.appoint .tab li a{color: #b3b3b3}
+.appoint .tab li.active a{color: #292929}
+.appoint .tab-cont{ display: none; padding-top: 28px}
+.appoint .tab-cont li+li{margin-top: 10px}
+.appoint .tab-cont li span{display: inline-block;}
+.appoint .tab-cont .text{display: inline-block; width: 380px; vertical-align: top; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.appoint .tab-cont .team{width: 155px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;vertical-align: top;}
+.appoint .tab-cont .date{width: 75px; text-align: right;}
+.appoint .tab-cont.active{display: block;}
+
+/*부서원 기념일*/
+#wrap.depth-main #container.resident-main{padding-bottom: 0;border-bottom: 0 none;}
+#wrap.depth-main #container.resident-main.team-leader{padding-bottom: 0;border-bottom: 0 none;}
+.resident-main:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.resident-main .section{width: 1060px; margin: 0 auto; }
+.resident-main .section:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.resident-main .content-title{padding-bottom: 40px;font-size: 30px;line-height: 30px;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';}
+.resident-main .executive-member{height: 350px;padding: 42px 0 70px;border-top: 1px solid #d1d1d1;}
+.resident-main .executive-member .tab-cont{position: relative;text-align: center;}
+.resident-main .executive-member .by-team{display: inline-block;position: absolute;left: 0;right: 0;top: 300px;margin: 0 auto;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.resident-main .executive-member .tab-wrap{margin-bottom: 50px;}
+.resident-main .executive-member .tab-wrap .tab li{width: 170px;text-align:center;}
+.resident-main .executive-member .tab-wrap .tab li a{display: block;padding: 0;background-color: #e1e1e1;}
+.resident-main .executive-member .tab-wrap .tab li a:hover,
+.resident-main .executive-member .tab-wrap .tab li.active a{background-color: #2b2b2b;}
+.resident-main .executive-member .tab-wrap .tab li a .ico.event{width: 21px;height: 21px;margin-right: 7px;background-image: url('../images/common/ico_event_02.png');}
+.resident-main .executive-member .tab-wrap .tab li:hover a .ico.event,
+.resident-main .executive-member .tab-wrap .tab li.active a .ico.event{width: 21px;height: 21px;background-image: url('../images/common/ico_event.png');}
+.resident-main .executive-member .bx-wrapper{min-width: 890px;padding: 0 85px;}
+.resident-main .executive-member .bx-wrapper ul li{width: 130px;text-align: center;}
+.resident-main .executive-member .bx-wrapper ul li .thumb{width: 130px;height: 150px;margin: 0 auto;background-color: #eaeaea;overflow: hidden;}
+.resident-main .executive-member .bx-wrapper ul li .thumb img{width: 100%;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap{height: 150px;padding-top: 14px;text-align: center;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .name{font-size: 15px;line-height: 25px;color: #555;text-align: center;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .name em{display: inline-block;max-width: 95px;line-height: 22px;margin-right:5px;vertical-align: middle;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-break: break-all;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .date{display: block;font-size: 13px;line-height: 25px;color: #292929;text-align: center;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .sort{display: block;width: 100%;font-size: 15px;line-height: 25px;color: #292929;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-break:break-all;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .state{display: block;font-size: 14px;line-height: 25px;color: #292929;text-align: center;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .btn.type01{margin-top: 9px;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap{position:relative;height: 110px;padding-top: 14px;}
+.resident-main .executive-member .bx-wrapper ul li .info-wrap .btn.type01{position:absolute;left:0;bottom:0;}
+.resident-main .executive-member .bx-wrapper .bx-controls-direction a{position: absolute;top: 54px;margin-top: 0;background-position: 0 0;background-repeat: no-repeat;outline: 0;text-indent: -9999px;z-index: 9999;}
+.resident-main .executive-member .bx-wrapper .bx-controls-direction .bx-prev{left: 0;right: auto;width: 43px;height: 43px;background-image: url('../images/common/btn_prev_05.png');}
+.resident-main .executive-member .bx-wrapper .bx-controls-direction .bx-next{right: 0;width: 43px;height: 43px;background-image: url('../images/common/btn_next_06.png');}
+.resident-main .executive-member .no-data{padding-top: 65px;text-align: center;}
+.resident-main .executive-member .no-data p{padding-top: 60px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 18px;line-height: 18px;color: #292929;background: url('../images/common/ico_member.png') 50% 0 no-repeat;}
+
+/* 180621 추가 */
+.time-state .time-view:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.time-state .time-view .time-wrap{float: left;width: 50%;padding-right: 10px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.time-state .time-view .time-wrap .time-inner{width: 100%;overflow-x: scroll;background-color: #fafafa;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.time-state .time-view .time-wrap + .time-wrap{padding-right: 0;padding-left: 10px;}
+.time-state .time-view .time-wrap .graph{position: relative;width: 100%;padding: 30px;height: 242px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.time-state .time-view .time-wrap .graph h3{position: absolute;left: 30px;top: 25px;font-size: 18px;color: #292929;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.time-state .time-view .time-wrap .graph .average-time{position: absolute;right: 30px;top: 25px;font-size: 14px;line-height: 27px;color: #6b6b6b;border-bottom: 1px solid #6b6b6b;}
+.time-state .time-view .time-wrap .graph .average-time:after{content: '*';display: block;position: absolute;left: -10px;top: 0;}
+.time-state .time-view .time-wrap .graph .detail{position: relative;width: 100%;}
+.time-state .time-view .time-wrap .graph .detail .hour li{display: inline-block;position: absolute;top: 60px;}
+.time-state .time-view .time-wrap .graph .detail .hour li.h01{left: 0%;}
+.time-state .time-view .time-wrap .graph .detail .hour li.h02{left: 33.333%;margin-left: -12px;}
+.time-state .time-view .time-wrap .graph .detail .hour li.h03{right: 33.333%;margin-right: -12px;}
+.time-state .time-view .time-wrap .graph .detail .hour li.h04{right: 0;}
+.time-state .time-view .time-wrap .graph .detail .team-average{position: absolute;left: 0;right: 0;top: 30px;font-size: 15px;line-height: 19px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';text-align: center;}
+.time-state .time-view .time-wrap .graph .detail .team-average span{display: block;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';}
+.time-state .time-view .time-wrap .graph .detail .team-average:after{position: absolute;left: 0;right: 0;top: 47px;content: '';display: block;width: 1px;margin: 0 auto;height: 63px;border-left: 1px dashed #8f8f8f;}
+.time-state .time-view .time-wrap .graph .detail .graph-line{display: block;position: absolute;left: 0;top: 92px;width: 100%;height: 4px;background-color: #dcdcdc;}
+.time-state .time-view .time-wrap .graph .team-list{padding-top: 90px;}
+.time-state .time-view .time-wrap .graph .team-list li{position: absolute;float: left;text-align: center;}
+.time-state .time-view .time-wrap .graph .team-list li:after{content: '';display: inline-block;position: absolute;left: 0;right: 0;top: -2px;width: 12px;height: 12px;margin: 0 auto;background: url('../images/common/time.png') 0 0 no-repeat;}
+.time-state .time-view .time-wrap .graph .team-list li span{display: block;color: #000;font-size: 15px;}
+.time-state .time-view .time-wrap .graph .team-list li span.arrive{padding-top: 20px;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';font-size: 15px;line-height: 25px;}
+.time-state .time-view .time-wrap .graph .team-list li span.total{line-height: 21px;}
+.time-state .time-view .time-wrap .graph .team-list li span.sort{line-height: 21px;}
+.time-state .tab-cont{padding-top: 30px;padding-bottom: 40px;}
+.time-state .state-notice li{display: inline-block;margin-right: 17px;font-size: 15px;color: #292929;}
+.time-state .state-notice li img{margin-right: 10px;}
+.time-state .standard-state{position: relative;margin-top: 45px;padding-left: 350px;}
+.time-state .standard-state .all-team{position: absolute;left: 0;top: 0;width: 300px;margin-right: 50px;}
+.time-state .standard-state .each-team{width: 100%;overflow-x: scroll;}
+.time-state .standard-state .each-team ul{padding-bottom: 40px;}
+.time-state .standard-state .each-team ul:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.time-state .standard-state .each-team ul li{float: left;margin-right: 95px;}
+.time-state .standard-state h3{padding-bottom: 30px;text-align: center;font-size: 18px;line-height: 20px;color: #292929;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.time-state .standard-state .chart{text-align: center;}
+.time-state .standard-state .table-wrap{width: 197px;margin: 30px auto 0;}
+.time-state .standard-state .table-wrap .data-table thead tr th{height: 20px;background: #f7f7f7;}
+.time-state .standard-state .table-wrap .data-table tbody tr td{height: 20px;}
+.chart-with-time{overflow:hidden;}
+.chart-with-time .inner-chart{position: relative;float: left;width: 50%;min-height:340px;padding: 20px 20px 20px 25px;background-color: #fafafa;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.chart-with-time .inner-chart h3{padding-bottom: 10px;font-size: 18px;color: #292929;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.chart-with-time .inner-chart + .inner-chart{padding: 20px 10px 20px 35px;}
+.chart-with-time .inner-chart:after{content: '';display: block;position: absolute;right: 0;top: 0;width: 10px;height: 100%;background-color: #fff;}
+.chart-with-time .inner-chart + .inner-chart:after{right: auto;left: 0;}
+.chart-with-time2{overflow:hidden;}
+.chart-with-time2 .inner-chart{position: relative;float: left;width: 50%;min-height:340px;padding: 20px 20px 20px 25px;background-color: #fafafa;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.chart-with-time2 .inner-chart h3{padding-bottom: 10px;font-size: 18px;color: #292929;font-family:'현대산스 Text 굵게','현대산스 Text Bold','HyundaiSansTextKRBold';}
+.chart-with-time2 .inner-chart + .inner-chart{padding: 20px 10px 20px 35px;}
+.chart-with-time2 .inner-chart:after{content: '';display: block;position: absolute;right: 0;top: 0;width: 10px;height: 100%;background-color: #fff;}
+.chart-with-time2 .inner-chart + .inner-chart:after{right: auto;left: 0;}
+

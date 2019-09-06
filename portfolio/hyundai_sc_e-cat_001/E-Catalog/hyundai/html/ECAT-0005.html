@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>약관동의 Step-03 설정 후</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/popup.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="../js/sortable.js"></script>
+    <!--순서변경 드래그 스크립트-->
+    <script>
+        termsOpen();
+    </script>
+</head>
+
+<body>
+    <div id="skipNavi">
+        <a href="#container" class="skipLink">본문바로가기</a>
+    </div>
+    <div class="wrap">
+        <div class="terms_mask"></div>
+        <div class="popup_terms">
+            <div class="tabs_content_wrap">
+                <div id="tab-a1" class="terms_tab_contents">
+                    <ul class="step_btn">
+                        <li><a href="#tab-a1" class="current">01 약관동의</a></li>
+                        <li><a href="#tab-a2">02 계획분야</a></li>
+                        <li><a href="#tab-a3">03 관심분야</a></li>
+                    </ul>
+                    <div class="terms_content">
+                        <p class="tit">능동적이고 효율적인 학습의 시작<br> e-catalog와 함께하세요!</p>
+
+                        <div class="detail">
+                            <p>내 역량에 맞는 솔루션을 추천받고 성장목표를 세워 역량을 발전시켜보세요.<br>
+                                본인이 계획한 분야 뿐만 아니라 관심분야를 선택하시면 해당 분야의 솔루션도 추천해드립니다.</p>
+                            <p class="mt15">먼저 e-catalog 사용을 위해 약관동의가 필요합니다. </p>
+                        </div>
+                    </div>
+
+                    <div class="terms_link">
+                        <p><a href="#a" onclick="popup(1)">[약관명]</a>과 <a href="#a">[약관명]</a>, <a href="#a">[약관명]</a>에
+                            동의합니다.</p>
+                    </div>
+
+                    <div class="pop_btnArea">
+                        <div class="tab_btn">
+                            <a href="#tab-a2" class="btnBasic bg">동의하고 시작하기</a>
+                            <!--<button type="button" class="btnBasic bg"><span class="inTxt">동의하고 시작하기</span></button>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-a2" class="terms_tab_contents">
+                    <ul class="step_btn">
+                        <li><a href="#tab-a1">01 약관동의</a></li>
+                        <li><a href="#tab-a2" class="current">02 계획분야</a></li>
+                        <li><a href="#tab-a3">03 관심분야</a></li>
+                    </ul>
+                    <div class="terms_content">
+                        <!-- 계획분야 없을 때-->
+                        <p class="tit">홍길동 대리님은<br>총무 부문이며 계획분야는 <span>설정 전</span>입니다.</p>
+                        <!-- //계획분야 없을 때 -->
+
+                        <!-- 계획분야 있을 때-->
+                        <!--
+						<p class="tit">홍길동 대리님은<br>총무 부문이며 계획분야는 <span>복지전문가</span>입니다.</p>
+					-->
+                        <!-- //계획분야 있을 때 -->
+
+                        <div class="detail">
+                            <p>e-catalog에서는 '계획분야' > '관심분야' 순으로<br>학습자에게 최적화된 솔루션을 추천합니다.</p>
+
+                            <!-- 계획 분야 없을 때 -->
+                            <p class="mt15">아직 계획분야가 없으시군요<br>HR라운지의 학습계획을 통해 e-catalot만의 보다 최적화된 솔루션 추천 로직을 경험해보세요.</p>
+                            <!-- //계획 분야 있을 때 -->
+
+
+                            <!-- 계획 분야 있을 때 -->
+                            <!--
+							<p class="mt15">계획분야는 HR라운지 학습계획을 통해 변경하실 수 있습니다.</p>
+						-->
+                            <!-- //계획 분야 없을 때 -->
+                        </div>
+                    </div>
+                    <div class="pop_btnArea">
+                        <div class="tab_btn">
+                            <button type="button" class="btnBasic bg"><span class="inTxt">계획분야 설정하기</span></button>
+                            <a href="#tab-a3" class="btnBasic bg">다음에 하기</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="tab-a3" class="terms_tab_contents interest show">
+                    <ul class="step_btn">
+                        <li><a href="#tab-a1">01 약관동의</a></li>
+                        <li><a href="#tab-a2">02 계획분야</a></li>
+                        <li><a href="#tab-a3" class="current">03 관심분야</a></li>
+                    </ul>
+                    <div class="terms_content scrolling">
+                        <p class="tit"><span>관심분야</span>를 설정하시면 부문 순서 제공에 영향을 미치며<br><span>솔루션 추천</span>의 근거가 됩니다.</p>
+
+                        <div class="detail">
+                            <p>지금 관심분야를 설정하시겠어요?<br>
+                                설정하지 않고 시작하셔도 ‘마이페이지’를 통해 관심분야를 설정하실 수 있습니다.</p>
+                        </div>
+                        <!-- 설정 전 부문선택-->
+                        <div class="terms_field_wrap" style="display: none">
+                            <div class="sort_title">
+                                <!--<a href="#" class="field_name">R&amp;D 부문</a>-->
+                                <span><span>19</span>개</span>의 부문입니다.
+                            </div>
+                            <div class="terms_field_slider">
+                                <ul class="">
+                                    <li>
+                                        <div class=""><a href="#">총무</a></div>
+                                        <div><a href="#">R&amp;D</a></div>
+                                        <div><a href="#">부문명3</a></div>
+                                        <div><a href="#">부문명4</a></div>
+                                        <div><a href="#">부문명5</a></div>
+                                        <div><a href="#">부문명6</a></div>
+                                        <div><a href="#">부문명7</a></div>
+                                        <div><a href="#">부문명8</a></div>
+                                        <div><a href="#">부문명9</a></div>
+                                        <div><a href="#">부문명10</a></div>
+                                    </li>
+                                    <li>
+                                        <div><a href="#">부문명11</a></div>
+                                        <div><a href="#">부문명12</a></div>
+                                        <div><a href="#">부문명13</a></div>
+                                        <div><a href="#">부문명14</a></div>
+                                        <div><a href="#">부문명15</a></div>
+                                        <div><a href="#">부문명16</a></div>
+                                        <div><a href="#">부문명17</a></div>
+                                        <div><a href="#">부문명18</a></div>
+                                        <div><a href="#">부문명19</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice_txt">
+                                아래 리스트 순서는 e-catalog 내 부문 리스트 제공 순서에 반영됩니다.<br>
+                                타 부문 관심분야 설정 시 해당 부문이 추가되며 관심부문 내 순서 변경이 가능합니다.
+                            </div>
+                        </div>
+                        <!--부문선택-->
+
+                        <!-- 설정 후 - 분야 선택-->
+                        <div class="terms_field_wrap">
+                            <div class="sort_title other_type">
+                                <a href="#" class="field_name">R&amp;D 부문</a>
+                                <span><span>19</span>개</span>의 부문입니다.
+                            </div>
+                            <div class="terms_select_slider">
+                                <ul>
+                                    <li>
+                                        <div class="all">
+                                            <a href="#">분야 전체</a>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="#">분야명</a>
+                                            <div class="hover_txt">
+                                                <p class="name">분야명</p>
+                                                <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice_txt">
+                                아래 리스트 순서는 e-catalog 내 부문 리스트 제공 순서에 반영됩니다.<br>
+                                타 부문 관심분야 설정 시 해당 부문이 추가되며 관심부문 내 순서 변경이 가능합니다.
+                            </div>
+                        </div>
+                        <!--분야 선택-->
+
+                        <div class="interest_list_wrap">
+
+                            <div class="my_field">
+                                <div class="left">
+                                    <p class="strong">내 부문명</p>
+                                    <p class="name">계획분야명</p>
+                                </div>
+                                <!--<div class="center">-->
+                                <!--<ul class="item_box">-->
+                                <!--<li>분야명 <a href="#" class="del">삭제버튼</a></li>-->
+                                <!--</ul>-->
+                                <!--</div>-->
+                            </div>
+
+                            <!--순서변경 리스트 sortable-->
+                            <div class="sortable">
+                                <div class="draggable">
+                                    <div class="left">
+                                        <p class="name">총무 부문</p>
+                                    </div>
+                                    <div class="center">
+                                        <ul class="item_box">
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="icon_drag"></div>
+                                </div>
+                                <div class="draggable">
+                                    <div class="left">
+                                        <p class="name">R&amp;D 부문</p>
+                                    </div>
+                                    <div class="center">
+                                        <ul class="item_box">
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                            <li>분야명 <a href="#" class="del">삭제버튼</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="icon_drag"></div>
+                                </div>
+                            </div>
+                            <!--순서변경 리스트 sortable-->
+                        </div>
+                    </div>
+
+                    <div class="pop_btnArea">
+                        <button type="button" class="btnBasic bg" onclick="popclose()"><span class=" inTxt">e-catalog
+                                시작하기</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!---->
+
+        <!--약관상세 팝업-->
+        <div id="popup1" class="popup terms_detail">
+            <div class="pop_header">
+                <p class="popTitle">약관 상세</p>
+            </div>
+
+            <div class="popCont">
+                <div class="contentWrap scrolling">
+                    <div class="innerWrap">
+                        <p class="tit">개인정보 수집 및 이용에 대한 안내</p>
+
+
+                        <div class="detail_cont">
+
+                            <p>정보통신망법 규정에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목,<br>
+                                개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+
+                                <p>1. 수집하는 개인정보<br>
+                                    이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다.<br>
+                                    이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우,<br>
+                                    서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.</p>
+
+                                <p>회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.</p>
+
+                                <p>- 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 가입인증 휴대전화번호’를 필수항목으로 수집합니다. 만약 이용자가 입력하는<br>
+                                    생년월일이 만14세 미만 아동일 경우에는 법정대리인 정보(법정대리인의 이름, 생년월일, 성별, 중복가입확인정보(DI), 휴대전화번호)를 추가로
+                                    수집합니다. 그리고 선택항목으로 이메일 주소를 수집합니다.</p>
+
+                                <p>- 단체아이디로 회원가입 시 단체아이디, 비밀번호, 단체이름, 이메일주소, 가입인증 휴대전화번호를 필수항목으로 수집합니다. 그리고 단체 대표자명
+                                    을 선택항목으로 수집합니다.서비스 이용 과정에서 이용자로부터 수집하는 개인정보는 아래와 같습니다.<br>
+                                    NAVER 내의 개별 서비스 이용, 이벤트 응모 및 경품 신청 과정에서 해당 서비스의 이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로
+                                    개인정보를 수집할 경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목, 개인정보의 수집 및 이용목적, 개인정보의 보관기간’에
+                                    대해 안내 드리고 동의를 받습니다.</p>
+
+                                <p>서비스 이용 과정에서 IP 주소, 쿠키, 서비스 이용 기록, 기기정보, 위치정보가 생성되어 수집될 수 있습니다.<br>
+                                    구체적으로 1) 서비스 이용 과정에서 이용자에 관한 정보를 정보통신서비스 제공자가 자동화된 방법으로 생성하여 이를 저장(수집)하거나,
+                                    2) 이용자 기기의 고유한 정보를 원래의 값을 확인하지 못 하도록 안전하게 변환한 후에 수집하는 경우를 의미합니다.<br>
+                                    네이버 위치기반서비스 이용 시 수집·저장되는 위치정보의 이용 등에 대한 자세한 사항은 ‘네이버 위치정보 이용약관’에서 규정하고 있습니다.</p>
+
+                        </div>
+                        <!-- //detail_cont -->
+                    </div>
+                </div> <!-- //contentWrap-->
+
+
+            </div>
+            <button class="popupClose" onclick="popclose()">팝업창닫기</button>
+        </div>
+        <!--END-->
+
+    </div><!-- //wrap-->
+
+</body>
+
+</html>

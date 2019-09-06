@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>솔루션강의실 - 이러닝</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../css/button.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#container" class="skipLink">본문바로가기</a>
+	</div>
+	<div class="wrap">
+
+		<!--Header-->
+		<div class="header lectureRoom">
+			<div class="h_lectureWrap">
+				<h1><a href="#"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+				<span class="current_pos">강의실</span>
+				<div class="user-right">
+					<a href="#" class="icon-txt">지식인</a>
+					<span class="userName pf_hover right" data-tooltip="knw">홍길동님</span>
+				</div>
+			</div>
+		</div>
+		<!-- //Header-->
+
+		<!--Content-->
+		<div id="container" class="container">
+			<div class="classRoom_content">
+				<!-- //Left Gnb-->
+				<div class="leftGnb scrolling">
+					<div class="gnbTop">
+						<ul class="room_location">
+							<li class="s-typeIcon">R&amp;D</li>
+							<li>정규학습</li>
+							<li>이러닝</li>
+						</ul>
+						<h2 class="solutionTitle">2018 상반기 현대자동차 신입사원 입문교육 사전학습 - 온라인 자동차 기술교육(Tech Tube)</h2>
+						<p class="learningTime">학습기간 : 18.10.10 - 18.12.12</p>
+					</div>
+					<div class="gnbBot">
+						<ul class="gnbList">
+							<li class="on"><a href="#">학습홈</a></li>
+							<li><a href="#">시험/과제</a></li>
+							<li><a href="#">자료실</a></li>
+							<li><a href="#">게시판</a></li>
+							<li><a href="#">반응평가</a></li>
+							<li><a href="#">사전/사후 솔루션</a></li>
+						</ul>
+						<ul class="elseInfo">
+							<li><span class="mileage">마일리지</span>15점</li>
+							<li><span class="place">학습장소</span>의왕</li>
+						</ul>
+						<a href="#" class="link" target="_blank">솔루션 상세</a>
+					</div>
+				</div>
+				<!-- //Left Gnb-->
+
+				<div class="rightContent">
+					<div class="notice">
+						<a href="#" onclick="fnMove(1)">
+							<span class="n_cate">공지사항</span>
+							<p class="n_tit">신규 교육과정개발방법론연구 솔루션 공지</p>
+							<span class="n_date">19.01.01</span>
+						</a>
+					</div>
+
+					<div class="topInfoBox">
+						<p>학습 시간 제한이 걸려있는 솔루션입니다.</p>
+						<p><span class="txtB">학습 가능 시간</span><span class="time">평일 (오전 8시 - 오후 5시)</span></p>
+					</div>
+
+
+					<!--**** 사후평가 있는경우 (버튼) -->
+					<!--<div class="topInfoBox">
+							<p>학습종료 <span class="txtB">N일전</span>입니다.</p>
+							<p>학습종료 전 사후평가를 진행하세요</p>
+							<button class="btnBasic">사후평가</button>
+						</div>-->
+
+
+					<div class="innerWrap mt50">
+						<div class="progress">
+							<div class="clear">
+								<p class="rateNum"><span>70</span>%</p>
+								<p class="myprogress">나의 진도율</p>
+							</div>
+							<div class="graph_form">
+								<div class="graph_rate" style="width:70%"></div>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="innerWrap mt80">
+						<h3>이수기준</h3>
+						<div class="tbl">
+							<p class="tbl_smTxt" style="float:right;">90% 이상 수강 필수</p>
+							<table>
+								<caption>이수기준 안내표</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">이수기준</th>
+										<th scope="col">가중치</th>
+										<th scope="col">학습정도</th>
+										<th scope="col">상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>총점</td>
+										<td>70점</td>
+										<td>-</td>
+										<td>-</td>
+										<td>63점</td>
+									</tr>
+									<tr>
+										<td>진도율</td>
+										<td>90점 이상</td>
+										<td>30%</td>
+										<td>5/5</td>
+										<td>70%</td>
+									</tr>
+									<tr>
+										<td>과제</td>
+										<td>60점 이상</td>
+										<td>40%</td>
+										<td><a href="#">5/5</a></td>
+										<td><a href="#" class="underline">채점중</a></td>
+									</tr>
+									<tr>
+										<td>시험</td>
+										<td>80점 이상</td>
+										<td>40%</td>
+										<td><a href="#">3/5</a></td>
+										<td><a href="" class="must">응시필요</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--이수기준-->
+
+
+					<div class="sec mt45">
+						<h2 class="sol_intro">학습목차</h2>
+						<div class="innerWrap ">
+							<div class="tblContents">
+								<div class="tr">
+									<div class="th col1">No.</div>
+									<div class="th col2">모듈명</div>
+									<div class="th col3">시간</div>
+									<div class="th col4">상태</div>
+									<div class="th col5"></div>
+									<div class="th col6">학습일시</div>
+									<div class="th col7">학습자료</div>
+								</div>
+
+								<div class="tr">
+									<div class="td col1">1</div>
+									<div class="td col2">교육체계의 정의</div>
+									<div class="td col3"></div>
+									<div class="td col4"></div>
+									<div class="td col5"></div>
+									<div class="td col6"></div>
+									<div class="td col7"></div>
+								</div>
+
+								<!--레슨 행-->
+								<div class="tr lesson">
+									<div class="td col1"></div>
+									<div class="td col2">레슨명</div>
+									<div class="td col3">30분</div>
+									<div class="td col4">수강완료</div>
+									<div class="td col5"><button type="button" class="btnBasic course"><span class="inTxt">수강하기</span></button></div>
+									<div class="td col6">19.01.01</div>
+									<div class="td col7"><button class="btn_more">더보기</button></div>
+								</div>
+								<!--레슨 행 END-->
+
+								<!--과목 행-->
+								<div class="tr subject" style="display: block">
+									<div class="td col1"></div>
+									<div class="td colspan">
+
+										<!--<p class="tc">등록된 학습자료가 없습니다.</p>-->
+
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+									</div>
+								</div>
+								<!--과목 행 END-->
+
+								<!--레슨 행-->
+								<div class="tr lesson">
+									<div class="td col1"></div>
+									<div class="td col2">레슨명</div>
+									<div class="td col3">30분</div>
+									<div class="td col4">수강중(35%)</div>
+									<div class="td col5"><button type="button" class="btnBasic course"><span class="inTxt">수강하기</span></button></div>
+									<div class="td col6"><button class="btnText" onclick="popup(2)"><span class="inTxt">이력보기</span></button></div>
+									<div class="td col7"><button class="btn_more">더보기</button></div>
+								</div>
+								<!--레슨 행 END-->
+
+								<div class="tr">
+									<div class="td col1">2</div>
+									<div class="td col2">모듈명</div>
+									<div class="td col3">30분</div>
+									<div class="td col4">수강완료</div>
+									<div class="td col5"><button type="button" class="btnBasic course"><span class="inTxt">수강하기</span></button></div>
+									<div class="td col6">19.10.10</div>
+									<div class="td col7"><button class="btn_more">더보기</button></div>
+								</div>
+								<div class="tr">
+									<div class="td col1">3</div>
+									<div class="td col2">모듈명</div>
+									<div class="td col3">30분</div>
+									<div class="td col4">미 수강</div>
+									<div class="td col5"><button type="button" class="btnBasic course"><span class="inTxt">수강하기</span></button></div>
+									<div class="td col6"><button class="btnText" onclick="popup(2)"><span class="inTxt">이력보기</span></button></div>
+									<div class="td col7"><button class="btn_more">더보기</button></div>
+								</div>
+
+								<!--과목 행-->
+								<div class="tr subject" style="display: block">
+									<div class="td col1"></div>
+									<div class="td colspan">
+
+										<p class="tc">등록된 학습자료가 없습니다.</p>
+
+										<!--<a href="#" class="btnBasic subject">글로벌 권역체계 경영글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>
+										<a href="#" class="btnBasic subject">글로벌 권역체계 경영</a>-->
+									</div>
+								</div>
+								<!--과목 행 END-->
+
+							</div><!-- //tblContents-->
+
+						</div>
+					</div>
+					<!-- //학습자료-->
+
+					<!--공지사항-->
+					<div id="spot1" class="sec mt45">
+						<h2 class="sol_notice">공지사항</h2>
+						<div class="innerWrap ">
+							<div class="tbl_updown">
+								<div class="row">
+									<div class="th col1">No</div>
+									<div class="th col2">제목</div>
+									<div class="th col1">작성일</div>
+									<div class="th col1"></div>
+								</div>
+
+								<div class="row">
+									<div class="td col1">99</div>
+									<div class="td col2">공지사항입니다 </div>
+									<div class="td col1">18.10.10</div>
+									<div class="td col1"><button class="btn_more">더보기</button></div>
+									<div class="moreCont">
+										<div class="inner">
+                      <div class="write_title">공지사항 </div>
+                      <div class="write_cont">
+                        <p>공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</p>
+                      </div>
+                      <div class="attachFile">
+                        <p>첨부파일 <span>2</span></p>
+                        <a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+                      </div>
+                    </div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="td col1">99</div>
+									<div class="td col2">공지사항입니다. <span class="reply_count">2</span></div>
+									<div class="td col1">18.10.10</div>
+									<div class="td col1"><button class="btn_more">더보기</button></div>
+									<div class="moreCont">
+										<div class="inner">
+                      <div class="write_title">공지사항 </div>
+                      <div class="write_cont">
+                        <p>공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</p>
+                      </div>
+                      <div class="attachFile">
+                        <p>첨부파일 <span>2</span></p>
+                        <a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+                      </div>
+                    </div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="td col1">99</div>
+									<div class="td col2">공지사항입니다. <span class="reply_count">2</span></div>
+									<div class="td col1">18.10.10</div>
+									<div class="td col1"><button class="btn_more">더보기</button></div>
+									<div class="moreCont">
+										<div class="inner">
+                      <div class="write_title">공지사항 </div>
+                      <div class="write_cont">
+                        <p>공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</p>
+                      </div>
+                      <div class="attachFile">
+                        <p>첨부파일 <span>2</span></p>
+                        <a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+                      </div>
+                    </div>
+									</div>
+								</div>
+							</div>
+							<div class="paging">
+								<a href="" class="move first no" title="처음으로">start</a>
+								<a href="" class="move prev no" title="이전페이지">prev</a>
+								<a href="#" class="current">1</a>
+								<a href="#" class="">2</a>
+								<a href="#" class="">3</a>
+								<a href="#" class="">4</a>
+								<a href="#" class="">5</a>
+								<a href="#" class="">6</a>
+								<a href="#" class="">7</a>
+								<a href="#" class="">8</a>
+								<a href="#" class="">9</a>
+								<a href="#" class="">10</a>
+								<a href="" class="move next" title="다음페이지">next</a>
+								<a href="" class="move end" title="마지막으로">End</a>
+							</div>
+						</div>
+					</div>
+					<!--//공지사항-->
+
+				</div>
+			</div><!-- //classRoom_content-->
+
+
+		</div><!-- // Container-->
+
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footWrap">
+				<ul class="link">
+					<li><a href="#">프로필</a></li>
+					<li><a href="#">포털 설정</a></li>
+					<li><a href="#">개인정보 위탁관리</a></li>
+					<li><a href="#" class="point">개인정보처리 방침</a></li>
+					<li><a href="#">도움센터</a></li>
+				</ul>
+
+				<p class="copyright">COPYRIGHT &copy; HYUNDAI MOTOR COMPANY.ALL RIGHTS RESERVED.</p>
+
+				<div class="util_btn site">
+					<span class="btn_inner">관련 사이트</span>
+					<div class="select_list">
+						<a href="#">관련사이트1</a>
+						<a href="#">관련사이트2</a>
+						<a href="#">관련사이트3</a>
+					</div>
+				</div>
+				<div class="util_btn right">
+					<a href="#" class="btn_inner">권한을 변경하세요</a>
+					<div class="select_list">
+						<a href="#">권한변경1</a>
+						<a href="#">권한변경2</a>
+						<a href="#">권한변경3</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer-->
+
+
+		<!-- ********************* 팝업 Start**************************** -->
+
+		<!--1일 진도제한 초과시 -->
+		<div id="popup1" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">1일진도 제한 초과시</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap auto">
+					<div class="innerWrap">
+						<p class="notice pb0">하루 <span>N개</span>의 개의 강의만 학습할 수 있습니다. <br>내일 이어서 학습해 주세요.</p>
+					</div>
+				</div> <!-- //contentWrap-->
+
+				<div class="pop_btnArea">
+					<button type="button" class="pop_ok" onclick="popclose()"><span class="inTxt">확인</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!-- //1일 진도제한 초과시 -->
+
+		<!--이력보기 팝업-->
+		<div id="popup2" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">이력보기</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap auto">
+					<div class="innerWrap">
+						<p class="notice">학습 시작 후 페이지 별 완료 여부 확인이 가능합니다.</p>
+						<div class="tbl">
+							<table>
+								<colgroup>
+									<col style="width:33.33%">
+									<col style="width:33.33%">
+									<col style="width:33.33%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">페이지</th>
+										<th scope="col">상태</th>
+										<th scope="col">완료여부</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Completed</td>
+										<td>O</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+
+					</div>
+				</div> <!-- //contentWrap-->
+
+				<div class="pop_btnArea">
+					<button type="button" class="pop_ok" onclick="popclose()"><span class="inTxt">확인</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!--//이력보기 팝업 -->
+
+		<!-- ********************* 팝업 End**************************** -->
+
+	</div><!-- //wrap-->
+
+	<!-- 프로필 툴팁-->
+	<div id="knw" class="profile_tooltip">
+		<div class="profile_pic"><img src="../images/profile/picture.jpg" alt=""></div>
+		<div class="profile_cont">
+			<strong class="name">정현대 전문가</strong>
+			<p class="group">
+				<span class="g1">기획본부</span>
+				<span class="g2">경영전략팀</span>
+			</p>
+			<p class="work_info">UX/UI/서비스</p>
+			<ul class="p_info">
+				<li class="mail">hyundai@hyundai.com</li>
+				<li class="phone">02-123-5678</li>
+				<li class="cellphone">010-1234-5678</li>
+				<li class="location">서초</li>
+			</ul>
+		</div>
+		<a href="#" class="inquiry" target="_blank">
+			<span class="icon">icon</span>
+			<span class="over_text">지식인문의</span>
+		</a>
+	</div>
+
+</body>
+
+</html>

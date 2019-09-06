@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>HYUNDAI</title>
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/career.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/hrr.css">
+  <script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.ellipsis.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/common.js"></script>
+  <script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+</head>
+
+<body>
+  <!--역량 프로파일 윈도우 팝업-->
+  <div class="window-popup">
+
+    <h2 class="popup-title">e-catalog 검색
+      <!-- 닫기 -->
+      <a class="popup-close" href="javascript:window.open('about:blank','_self').self.close();">팝업닫기</a>
+      <!-- // 닫기 -->
+    </h2>
+
+    <!-- popup-wrap -->
+    <div class="popup-wrap e-catalog-search">
+
+      <div class="input-wrap">
+        <!--.input-search-area.on 이 되면 .search-list가 활성화됨 -->
+        <div class="input-search-area on">
+          <div class="input-search">
+            <input type="search" class="input-text" name="" placeholder="수행하고자 하는 업무를 입력해주세요." value="솔루션">
+          </div>
+          <button class="btn small type01">검색 <span class="ico search"></span></button>
+          <div class="search-list">
+            <ul>
+              <li><span class="highlight">솔루션</span>검색어 자동완성1</li>
+              <li><span class="highlight">솔루션</span>검색어 자동완성2</li>
+              <li><span class="highlight">솔루션</span>검색어 자동완성3</li>
+              <li><span class="highlight">솔루션</span>검색어 자동완성4</li>
+              <li><span class="highlight">솔루션</span>검색어 자동완성5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title">나의 북마크 내역
+        <span class="notice-subtitle">
+          <span class="ico info"></span>
+          e-Catalog에서 북마크 했던 학습 솔루션 리스트입니다.
+        </span>
+      </h3>
+
+
+      <!-- 솔루션 없을 시-->
+      <div class="no-data" style="display:none">
+        북마크 한 학습 솔루션이 없습니다.
+      </div>
+      <!--검색결과 없을 시-->
+
+      <div class="solution-list-area" style="display:">
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <!-- 솔루션 카드 마우스오버 시 학습계획 추가 및 상세이동 버튼이 있을 경우, "add-button-set" 클래스 추가 -->
+        <div class="solution-card add-button-set">
+          <div class="img-area">
+            <img src="../../@resource/images/hrr/bg-slide-dummy02.png" alt="" />
+          </div>
+          <div class="tag-area">
+            <span class="solution-type seminar">세미나</span>
+            <span class="solution-tag">학습중</span>
+            <span class="bookmark on"></span>
+          </div>
+          <div class="tit-area ellip04">신규 교육과정 개발 방법론 연구 신규 교육과정개발 방법론 연구</div>
+
+          <div class="category-area">
+            <span class="category-name">총무(!!삭제 금지!!)</span>
+            <span class="star-num">5.0</span>
+            <span class="bookmark-num">234</span>
+          </div>
+          <div class="solution-button-area">
+            <button type="button" class="btn type01 small">학습계획 추가</button>
+            <button type="button" class="btn type01 small">상세 이동</button>
+          </div>
+        </div>
+        <div class="pagination square">
+          <a href="javascript:void(0);" class="first">처음</a>
+          <a href="javascript:void(0);" class="prev">이전</a>
+          <span class="page">
+            <strong title="현위치">1</strong>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+          </span>
+          <a href="javascript:void(0);" class="next">다음</a>
+          <a href="javascript:void(0);" class="last">끝</a>
+        </div>
+
+      </div>
+      <!-- //solution-list-area -->
+    </div>
+    <!-- //popup-wrap -->
+  </div>
+  <!--e-catalog  검색 윈도우 팝업-->
+
+</body>
+
+</html>

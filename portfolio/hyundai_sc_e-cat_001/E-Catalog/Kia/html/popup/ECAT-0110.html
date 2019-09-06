@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>KIA 솔루션 요청</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../../css/button.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jquery.bxslider.css">
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../js/popup.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/jquery.bxslider.js"></script>
+
+</head>
+
+<body>
+
+	<div class="win_popup sol_req">
+		<div class="pop_header">
+			<h1>솔루션 요청</h1>
+			<p class="guideTxt">부문 담당자 검토 후 적합 여부에 따라 솔루션이 개설되며, <br>개설 여부에 대한 별도 알림은 제공되지 않습니다. <br>솔루션을 개설할 부문과 분야를 선택해주세요.</p>
+		</div>
+
+		<div class="popCont">
+
+			<!-- ****** 직무선택영역***** -->
+			<div class="field_choice" style="display:block">
+
+				<!--학습자 분야 정보 있을 경우/선택 완료 시-->
+				<div class="showArea" style="display: none;">
+					<p class="tit"><span>총무 부문</span>의 <span>복지전문가</span>에 솔루션 개설</p>
+					<button type="button" class="btnBasic re_choice"><span class="inTxt">다시 선택하기</span></button>
+				</div>
+
+				<!--학습자 분야 정보 없을 경우-->
+				<div class="showArea">
+					<p class="tit"><span>총무 부문</span>의 <span>복지전문가</span>에 솔루션 개설</p>
+					<button type="button" class="btnBasic no_info"><span class="inTxt">선택하기</span></button>
+				</div>
+
+
+				<div class="hiddenArea">
+					<ul class="tab_btn">
+						<li><a href="#tab-a1">공통</a></li>
+						<li class=""><a href="#tab-a2">리더십</a></li>
+						<li class=""><a href="#tab-a3" class="current">직무</a></li>
+					</ul>
+
+
+					<div class="tabs_content_wrap">
+						<!--******************* 공통 ************** -->
+						<div id="tab-a1" class="tab_contents">
+							<div class="location sel">
+								<div class="counting">공통에 속한 <span>19개</span>의 부문입니다.</div>
+							</div>
+							<ul class="selectSlider">
+								<li>
+									<div><span>공통 caregory</span></div>
+									<div><span>공통 caregory</span></div>
+								</li>
+								<li>
+									<div><span>공통 caregory</span></div>
+									<div><span>공통 caregory</span></div>
+								</li>
+								<li>
+									<div><span>공통 caregory</span></div>
+									<div><span>공통 caregory</span></div>
+								</li>
+								<li>
+									<div><span>공통 caregory</span></div>
+									<div><span>공통 caregory</span></div>
+								</li>
+								<li>
+									<div><span>공통 caregory</span></div>
+									<div><span>공통 caregory</span></div>
+								</li>
+
+							</ul>
+						</div>
+						<!--******************* 공통 end************** -->
+
+						<!--******************* 리더십 ************** -->
+						<div id="tab-a2" class="tab_contents">
+							<div class="location sel">
+								<div class="counting">리더십에 속한 <span>19개</span>의 부문입니다.</div>
+							</div>
+							<ul class="selectSlider">
+								<li>
+									<div><span>리더십 caregory</span></div>
+									<div><span>리더십 caregory</span></div>
+								</li>
+								<li>
+									<div><span>리더십 caregory</span></div>
+									<div><span>리더십 caregory</span></div>
+								</li>
+								<li>
+									<div><span>리더십 caregory</span></div>
+									<div><span>리더십 caregory</span></div>
+								</li>
+								<li>
+									<div><span>리더십 caregory</span></div>
+									<div><span>리더십 caregory</span></div>
+								</li>
+								<li>
+									<div><span>리더십 caregory</span></div>
+									<div><span>리더십 caregory</span></div>
+								</li>
+							</ul>
+						</div>
+						<!--******************* 리더십 end************** -->
+
+						<!--******************* 직무 ************** -->
+						<div id="tab-a3" class="tab_contents">
+							<div class="location sel">
+								<div class="counting">직무에 속한 <span>19개</span>의 부문입니다.</div>
+							</div>
+
+							<ul class="selectSlider">
+								<li>
+									<div><span>총무</span></div>
+									<div><span>상용</span></div>
+								</li>
+								<li>
+									<div><span>생산</span></div>
+									<div><span>국내영업</span></div>
+								</li>
+								<li>
+									<div><span>마케팅</span></div>
+									<div><span>구매</span></div>
+								</li>
+								<li>
+									<div><span>사업관리</span></div>
+									<div><span>ICT</span></div>
+								</li>
+								<li>
+									<div><span>R&amp;D</span></div>
+									<div><span>생기</span></div>
+								</li>
+								<li>
+									<div><span>IT</span></div>
+									<div><span>감사</span></div>
+								</li>
+								<li>
+									<div><span>품질</span></div>
+									<div><span>HR</span></div>
+								</li>
+								<li>
+									<div><span>중국산업</span></div>
+									<div><span>기획</span></div>
+								</li>
+								<li>
+									<div><span>제네시스</span></div>
+									<div><span>재경</span></div>
+								</li>
+								<li>
+									<div><span>법무</span></div>
+									<div></div>
+								</li>
+							</ul>
+
+						</div>
+						<!--******************* 직무 end************** -->
+					</div>
+				</div>
+			</div>
+			<!-- ****** 직무선택영역 END***** -->
+
+
+			<!-- ****** 분야선택영역***** -->
+			<div class="field_choice" style="display: none">
+
+				<!--학습자 분야 정보 있을 경우/선택 완료 시-->
+				<div class="showArea">
+					<p class="tit"><span>총무 부문</span>의 <span>복지전문가</span>에 솔루션 개설</p>
+					<button type="button" class="btnBasic re_choice"><span class="inTxt">다시 선택하기</span></button>
+				</div>
+
+				<!--학습자 분야 정보 없을 경우 -->
+				<div class="showArea" style="display: none">
+					<p class="tit"><span>총무 부문</span>의 <span>복지전문가</span>에 솔루션 개설</p>
+					<button type="button" class="btnBasic no_info"><span class="inTxt">선택하기</span></button>
+				</div>
+
+				<div class="hiddenArea">
+					<ul class="tab_btn s2">
+						<li><a href="#tab-b1">공통</a></li>
+						<li><a href="#tab-b2">리더십</a></li>
+						<li><a href="#tab-b3" class="current">직무</a></li>
+					</ul>
+
+					<div class="tabs_content_wrap s2">
+						<!--******************* 공통 ************** -->
+						<div id="tab-b1" class="tab_contents s2">
+							<div class="location">
+								<div class="selectMenu">
+									<a href="#">공통</a>
+								</div>
+								<div class="counting">공통에 속한 <span>9개</span>의 부문입니다.</div>
+							</div>
+
+							<ul class="selectSlider2">
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--******************* 공통 end************** -->
+
+						<!--******************* 리더십 ************** -->
+						<div id="tab-b2" class="tab_contents s2">
+							<div class="location">
+								<div class="selectMenu">
+									<a href="#">리더십</a>
+								</div>
+								<div class="counting">리더십에 속한 <span>0개</span>의 부문입니다.</div>
+							</div>
+							<ul class="selectSlider2">
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--******************* 리더십 end************** -->
+
+						<!--******************* 직무 ************** -->
+						<div id="tab-b3" class="tab_contents s2">
+							<div class="location">
+								<div class="selectMenu">
+									<a href="#">R&amp;D 부문</a>
+								</div>
+								<div class="counting">직무에 속한 <span>19개</span>의 부문입니다.</div>
+							</div>
+
+							<ul class="selectSlider2">
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+									<div>
+										<p class="fieldName">분야명</p>
+										<p class="fieldExp">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+									</div>
+								</li>
+
+							</ul>
+
+						</div>
+						<!--******************* 직무 end************** -->
+					</div>
+				</div>
+			</div>
+			<!-- ****** 분야선택영역 END ***** -->
+
+
+			<!--필수입력사항-->
+			<div class="inner">
+				<form action="" name="frm1">
+					<fieldset class="article a1">
+						<p class="tit_d2">솔루션 유형</p>
+						<div class="selectArea">
+							<select id="selectList" class="select">
+								<option>솔루션 구분</option>
+								<option value="">정규학습</option>
+								<option value="">상시학습</option>
+								<option value="">MOOC</option>
+								<option value="">CoP</option>
+								<option value="">자격증</option>
+								<option value="">지식인</option>
+							</select>
+							<span>의</span>
+							<select id="select2" class="select">
+								<option value="">솔루션 유형</option>
+
+							</select>
+							<span>솔루션 개설을 요청드립니다.</span>
+						</div>
+					</fieldset>
+
+					<fieldset class="article">
+						<p class="tit_d2">요청 제목</p>
+						<input type="text" name="input1" id="" placeholder="솔루션 요청 제목을 입력해주세요">
+					</fieldset>
+
+					<fieldset class="article">
+						<p class="tit_d2">요청 내용</p>
+						<textarea name="input2" id="" cols="30" rows="10" placeholder="요청하시는 솔루션에 대한 내용을 입력해주세요."></textarea>
+					</fieldset>
+				</form>
+			</div>
+			<!-- //필수입력사항-->
+
+
+			<!--선택입력사항-->
+			<form action="">
+				<div class="mustNot">
+					<div class="inner">
+						<fieldset class="article">
+							<p class="tit_d2">선택사항 01</p>
+							<p class="tit_d3">솔루션 요청에 관련된 사이드 URL이 있으시면 첨부해주세요.</p>
+							<input type="text" name="input3" id="" placeholder="URL 복사 후 입력">
+						</fieldset>
+
+						<fieldset class="article">
+							<p class="tit_d2">선택사항 02</p>
+							<p class="tit_d3">솔루션 요청에 관련된 파일이 있으시면 첨부해주세요.</p>
+							<div class="fileUpload">
+								<div type="text" id="filePath" class="filePath">
+									<span class="validate">"파일은 개당 100MB, 최대 5개까지 업로드 가능합니다."</span>
+								</div>
+								<label for="upload" class="fileBtn">파일첨부</label>
+								<input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple" />
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="btnWrap">
+					  
+					<button type="button" class="btnBasic request"><span class="inTxt">솔루션 요청</span></button>
+					<button type="button" class="btnBasic" onclick="win_popup_close()"><span class="inTxt">닫기</span></button>
+				</div>
+			</form>
+			<!-- //선택입력사항-->
+
+		</div>
+		<!--popCont-->
+
+	</div>
+	<!--popup-->
+
+
+</body>
+
+</html>

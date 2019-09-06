@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>KIA 솔루션상세-이미지 크게보기</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/button.css">
+	<link rel="stylesheet" type="text/css" href="../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/viewer.css">
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../js/jquery.ellipsis.min.js"></script>
+	<script type="text/javascript" src="../js/viewer.min.js"></script>
+	<script>
+	$(function(){
+
+		var imgViewLength = $('#imgView li').length;
+		console.log(imgViewLength);
+		
+	var slider=$('.general_image').bxSlider({
+			mode: 'horizontal',
+			controls: true,
+			pager: false,
+			auto: false,
+        	responsive : true,
+			minSlides: 1,
+			moveSlides: 1,
+			slideMargin: 10,
+			hideControlOnEnd: true,
+			infiniteLoop: false
+		});
+		
+		$('.general_image').viewer({
+			title:false,
+			navbar:false,
+			toolbar:true,
+			movable:false
+		});
+		
+		$(document).on('click','.viewer-one-to-one',function(){
+			$(this).toggleClass('on')
+		})
+	})
+	</script>
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#container" class="skipLink">본문바로가기</a>
+	</div>
+
+	<div class="wrap">
+
+		<!--Header-->
+		<div class="header sub">
+			<div class="mask"></div>
+			<div class="headerWrap">
+				<div class="inner">
+					<div class="hd_top clear">
+						<h1><a href="index"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+
+						<div class="search">
+							<form action="">
+								<label for="search" class="blind">검색 입력</label>
+								<input type="text" name="" id="search" placeholder="찾으시는 솔루션이 있으신가요?" autocomplete="off">
+								<button class="search-button">검색버튼</button>
+							</form>
+							<div class="auto-complete">
+								<a href="">솔루션 검색어 자동 완성 01</a>
+								<a href="">솔루션 검색어 자동 완성 02</a>
+								<a href="">솔루션 검색어 자동 완성 03</a>
+								<a href="">솔루션 검색어 자동 완성 04</a>
+								<a href="">솔루션 검색어 자동 완성 05</a>
+							</div>
+						</div>
+
+						<div class="qna">
+							<span class="new"></span>
+							<!--확인하지 않은 문의글 또는 답변 있을 경우 -->
+							<a href="">전문가 Q&amp;A</a>
+						</div>
+
+						<div class="myArea">
+							<p class="pic"><img src="../images/common/profile_pic.png" alt=""></p>
+							<span class="userName">홍길동</span>
+							<div class="dropdown">
+								<div class="dropdown_Wrap">
+									<div class="title">
+										<p class="menuTit">Solution Title</p>
+									</div>
+								</div>
+								<ul class="downlist">
+									<li><a href="#">나의 학습 과정</a></li>
+									<li><a href="#">나의 수강신청 과정</a></li>
+									<li><a href="#">나의 찜하기</a></li>
+								</ul>
+							</div>
+						</div>
+						<button class="btnGnb">Gnb 버튼</button>
+					</div><!-- //hd_top-->
+
+					<div class="hd_mid">
+						<div class="path_star">
+							<div class="path">
+								<!--
+								 Class 아이콘 유형
+								seminar =  세미나 / knw = 지식인 / elearn = 이러닝,
+								vod=동영상 / ebook = e북 /  sdata = 전문자료 / idata = 일반자료
+								cop = CoP /	license = 자격증 / moc = MOOC / set = 집합
+								-->
+								<ul class="">
+									<li class="icon idata">상시학습</li>
+									<li>일반자료</li>
+								</ul>
+							</div>
+							<div class="starRank">
+								<span class="sector">총무</span>
+								<span class="grade">4.3</span>
+							</div>
+						</div>
+
+						<h2>제안 PT 포맷</h2>
+					</div>
+
+					<div class="hd_bot">
+						<ul class="menu">
+							<li class="m"><a href="#s_learning">솔루션 학습</a></li>
+							<li class="m"><a href="#s_introduce">솔루션 소개</a></li>
+							<li class="m"><a href="#s_finish">이수정보</a></li>
+							<li class="m"><a href="#s_review">학습리뷰</a></li>
+							<li class="m"><a href="#s_similar">유사솔루션</a></li>
+						</ul>
+						<div class="funcBtn">
+							<a href="#" class="btnPoint">전체다운로드</a>
+							<div class="bookmark large bg">
+								<input type="checkbox" name="" id="book1">
+								<label for="book1" title="찜하기"></label>
+							</div>
+
+							<button class="btnShare" title="공유하기"><span class="inTxt">공유하기 버튼</span></button>
+							<div class="dropdown">
+								<ul class="downlist">
+									<li><a href="#">메일로 공유</a></li>
+									<li><a href="#">Autoway M+ 쪽지로 공유</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- //hd_bot-->
+				</div><!-- //inner-->
+			</div>
+
+			<!--Gnb 영역-->
+			<div class="layer gnb">
+				<div class="innerWrap">
+
+					<h1><a href="#" onclick="layerClose()"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+
+					<div class="group">
+						<p>공통</p>
+						<ul>
+							<li>
+								<a href="#">공통</a>
+							</li>
+						</ul>
+					</div>
+					<div class="group">
+						<p>리더십</p>
+						<ul>
+							<li><a href="#">리더십</a></li>
+						</ul>
+					</div>
+					<div class="group bdr">
+						<p>직무</p>
+						<ul class="jobPart">
+							<li><a href="#">총무</a></li>
+							<li><a href="#">생산</a></li>
+							<li><a href="#">마케팅</a></li>
+							<li><a href="#">상용</a></li>
+							<li><a href="#">국내영업</a></li>
+							<li><a href="#">구매</a></li>
+							<li><a href="#">사업관리</a></li>
+							<li><a href="#">R&amp;D</a></li>
+							<li><a href="#">IT</a></li>
+							<li><a href="#">ICT</a></li>
+							<li><a href="#">생기</a></li>
+							<li><a href="#">감사</a></li>
+							<li><a href="#">품질</a></li>
+							<li><a href="#">중국산업</a></li>
+							<li><a href="#">제네시스</a></li>
+							<li><a href="#">HR</a></li>
+							<li><a href="#">기획</a></li>
+							<li><a href="#">재경</a></li>
+							<li><a href="#">법무</a></li>
+						</ul>
+					</div>
+					<div class="group bdr">
+						<p>소셜러닝</p>
+						<ul>
+							<li><a href="#">CoP</a></li>
+							<li><a href="#">지식인</a></li>
+						</ul>
+					</div>
+
+					<button class="layer_close" onclick="layerClose()">X</button>
+				</div>
+			</div><!-- //Gnb 영역-->
+
+			<!--솔루션 검색 영역-->
+			<div class="layer Layer_sch">
+				<div class="innerWrap">
+					<h1><a href="#" onclick="layerClose()"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+
+					<div class="schCont clear">
+						<div class="section left">
+							<p class="title popular">인기 검색어</p>
+							<ol>
+								<li>
+									<span class="num">01</span>
+									<span class="searchedWord">신규 교육과정</span>
+								</li>
+								<li>
+									<span class="num">02</span>
+									<span class="searchedWord">리더십</span>
+								</li>
+								<li>
+									<span class="num">03</span>
+									<span class="searchedWord">성공화법 클리닉</span>
+								</li>
+								<li>
+									<span class="num">04</span>
+									<span class="searchedWord">전략적 기획력</span>
+								</li>
+								<li>
+									<span class="num">05</span>
+									<span class="searchedWord">마케팅</span>
+								</li>
+							</ol>
+							<p class="time"><span>2018.10.01 - 2018.10.14</span>기준</p>
+						</div>
+
+						<div class="section right">
+							<p class="title recently">최근 검색어</p>
+
+							<div class="save_set">
+								<a href="#" class="recordDel">기록삭제</a>
+								<a href="javascript:;" class="save_word off">검색어 저장 끄기</a>
+								<a href="javascript:;" class="save_word on">검색어 저장 켜기</a>
+							</div>
+
+							<!--최근 검색어가 있을경우-->
+							<div class="search_word_On" style="display: block">
+								<ol>
+									<li>
+										<p class="searchedWord">신규 교육과정</p>
+										<p class="wordRight">
+											<span class="date">10.01</span>
+											<button type="button" class="wordDel">X</button>
+										</p>
+									</li>
+									<li>
+										<p class="searchedWord">리더십</p>
+										<p class="wordRight">
+											<span class="date">10.01</span>
+											<button type="button" class="wordDel">X</button>
+										</p>
+									</li>
+									<li>
+										<p class="searchedWord">성공화법 클리닉</p>
+										<p class="wordRight">
+											<span class="date">10.01</span>
+											<button type="button" class="wordDel">X</button>
+										</p>
+									</li>
+									<li>
+										<p class="searchedWord">전략적 기획력</p>
+										<p class="wordRight">
+											<span class="date">10.01</span>
+											<button type="button" class="wordDel">X</button>
+										</p>
+									</li>
+									<li>
+										<p class="searchedWord">마케팅</p>
+										<p class="wordRight">
+											<span class="date">10.01</span>
+											<button type="button" class="wordDel">X</button>
+										</p>
+									</li>
+								</ol>
+
+							</div>
+							<!--최근 검색어가 있을경우 END-->
+
+							<!--최근 검색어가 없을경우-->
+							<div class="search_word_nth" style="display: none">최근 검색내역이 없습니다.</div>
+							<!--최근 검색어가 없을경우 END-->
+
+							<div class="search_word_Off">검색어 기능이 꺼졌습니다.</div>
+
+						</div>
+					</div> <!-- //검색어 content-->
+
+					<button class="layer_close" onclick="layerClose()">X</button>
+				</div>
+			</div>
+			<!-- //솔루션 검색 영역-->
+		</div>
+		<!-- //Header-->
+
+		<!--Content-->
+		<div id="container" class="container typeA">
+
+			<!-- 솔루션 학습-->
+			<div id="s_learning" class="inner">
+				<div class="s-learning-slider">
+					<ul id="imgView" class="general_image">
+						<li><img src="../images/sub/general_image_slider01.jpg" alt=""></li>
+						<li><img src="../images/sub/general_image_slider02.jpg" alt=""></li>
+						<li><img src="../images/sub/general_image_slider03.jpg" alt=""></li>
+						<li><img src="../images/sub/general_image_slider01.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //솔루션 학습-->
+
+
+			<!--솔루션 소개-->
+			<div id="s_introduce" class="s_introduce sec">
+				<div class="inner">
+					<h2 class="sol_intro">솔루션 소개</h2>
+
+					<div class="innerWrap">
+						<h3>요약정보</h3>
+						<p class="txt_s">조직 내 이해관계자의 요구를 심층적으로 파악하고 사업적 맥락에서 과제의 타당성을 분명히 완수할 수 있는 제안 PT 포맷으로 업무 효율성 증대 기대</p>
+					</div>
+
+					<div class="innerWrap pt70">
+						<h3>함께보면 좋은 솔루션</h3>
+						<ul class="share_sol">
+							<li><a href="">교육과정 방법론</a></li>
+							<li><a href="">제안 PT포맷</a></li>
+						</ul>
+					</div>
+
+					<div class="innerWrap">
+						<h3>저작자</h3>
+						<!--텍스트 유형-->
+						<!--<p class="txt_s">배성재 대리</p>-->
+						
+						<!--카드유형-->
+						<div class="tutorwrap">
+							<div class="tutorPic"><img src="../images/sub/tutor_pic01.png" alt=""></div>
+							<div class="tutorinfo">
+								<p class="name"><span>배성재</span>대리</p>
+								<p class="pos">현대자동차 인재개발전략팀</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 학습자료 -->
+					<div class="innerWrap ">
+						<h3>학습자료</h3>
+						<div class="tbl_updown">
+							<div class="row">
+								<div class="th col1">No</div>
+								<div class="th col2">제목</div>
+								<div class="th col1">작성일</div>
+								<div class="th col1"></div>
+							</div>
+
+							<div class="row">
+								<div class="td col1">99</div>
+								<!--읽지않은 글 class: not_read-->
+								<div class="td col2 not_read">필수 학습자료입니다. </div>
+								<div class="td col1">18.10.10</div>
+								<div class="td col1"><button class="btn_more">더보기</button></div>
+
+								<!--expand-->
+								<div class="moreCont">
+									<div class="inner">
+										<div class="write_title">필수 학습자료입니다. </div>
+										<div class="write_cont"> 
+											<p>안녕하세요, 조직 내 이해관계자의 요구를 심층적으로 파악하고 사업적 맥락에서 과제의 타당성을 분명히 완수할 수 있는 역량 확보 목표입니다.</p><p>파일 다운로드 후 꼭 정독하고 학습에 참여해주세요. 감사합니다.</p>
+									  </div>
+										<div class="attachFile">
+											<p>첨부파일 <span>2</span></p>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+										</div>
+									</div>
+
+									<div class="review_edit">
+										<div class="reply_on">
+											<form action="">
+												<div class="write">
+													<div class="Msg">
+														<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+													</div>
+													<button class="btnPoint">등록</button>
+												</div>
+											</form>
+											<p class="rev_count">댓글 <span>22</span></p>
+											<ul class="reply_list">
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														
+														<div class="reply_info">
+															<div class="reply">
+																<p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p>
+																<p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p>
+															</div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply_info">
+															<div class="reply"><p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p></div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--expand End-->
+							</div>
+
+							<div class="row">
+								<div class="td col1">99</div>
+								<div class="td col2" class="col2">필수 학습자료입니다. <span class="reply_count">2</span></div>
+								<div class="td col1">18.10.10</div>
+								<div class="td col1"><button class="btn_more">더보기</button></div>
+
+								<!--expand-->
+								<div class="moreCont">
+									<div class="inner">
+										<div class="write_title">필수 학습자료입니다. </div>
+										<div class="write_cont"> 
+											<p>안녕하세요, 조직 내 이해관계자의 요구를 심층적으로 파악하고 사업적 맥락에서 과제의 타당성을 분명히 완수할 수 있는 역량 확보 목표입니다.</p><p>파일 다운로드 후 꼭 정독하고 학습에 참여해주세요. 감사합니다.</p>
+									  </div>
+										<div class="attachFile">
+											<p>첨부파일 <span>2</span></p>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+										</div>
+									</div>
+
+									<div class="review_edit">
+										<div class="reply_on">
+											<form action="">
+												<div class="write">
+													<div class="Msg">
+														<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+													</div>
+													<button class="btnPoint">등록</button>
+												</div>
+											</form>
+											<p class="rev_count">댓글 <span>22</span></p>
+											<ul class="reply_list">
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply_info">
+															<div class="reply"><p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p></div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply_info">
+															<div class="reply"><p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p></div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--expand End-->
+							</div>
+
+							<div class="row">
+								<div class="td col1">99</div>
+								<div class="td col2" class="col2">필수 학습자료입니다. <span class="reply_count">2</span></div>
+								<div class="td col1">18.10.10</div>
+								<div class="td col1"><button class="btn_more">더보기</button></div>
+
+								<!--expand-->
+								<div class="moreCont">
+									<div class="inner">
+										<div class="write_title">필수 학습자료입니다. </div>
+										<div class="write_cont"> 
+											<p>안녕하세요, 조직 내 이해관계자의 요구를 심층적으로 파악하고 사업적 맥락에서 과제의 타당성을 분명히 완수할 수 있는 역량 확보 목표입니다.</p><p>파일 다운로드 후 꼭 정독하고 학습에 참여해주세요. 감사합니다.</p>
+										</div>
+										<div class="attachFile">
+											<p>첨부파일 <span>2</span></p>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+											<a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a>
+										</div>
+									</div>
+
+									<div class="review_edit">
+										<div class="reply_on">
+											<form action="">
+												<div class="write">
+													<div class="Msg">
+														<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+													</div>
+													<button class="btnPoint">등록</button>
+												</div>
+											</form>
+											<p class="rev_count">댓글 <span>22</span></p>
+											<ul class="reply_list">
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply_info">
+															<div class="reply"><p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p></div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="first_write">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply_info">
+															<div class="reply"><p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p></div>
+															<div class="text_button">
+																<button class="btnText modi"><span class="inTxt">수정</span></button>
+																<button class="btnText del"><span class="inTxt">삭제</span></button>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--expand End-->
+							</div>
+						</div>
+						<div class="paging">
+							<a href="" class="move first no" title="처음으로">start</a>
+							<a href="" class="move prev no" title="이전페이지">prev</a>
+							<a href="#" class="current">1</a>
+							<a href="#" class="">2</a>
+							<a href="#" class="">3</a>
+							<a href="#" class="">4</a>
+							<a href="#" class="">5</a>
+							<a href="#" class="">6</a>
+							<a href="#" class="">7</a>
+							<a href="#" class="">8</a>
+							<a href="#" class="">9</a>
+							<a href="#" class="">10</a>
+							<a href="" class="move next" title="다음페이지">next</a>
+							<a href="" class="move end" title="마지막으로">End</a>
+						</div>
+					</div>
+					<!-- //학습자료-->
+
+					<div class="problem mt80">
+						<p class="ask">혹시 솔루션 컨텐츠에 문제가 있나요?</p>
+						<div class="answer">
+							<p class="infotxt">이 솔루션은 <a href="" class="txtLink">보완 프로그램 설치</a>가 필요합니다. 설치하셨을 경우 <a href="" class="txtLink" target="_blank">호환성보기 설정</a>과 <a href="" class="txtLink" target="_blank">학습환경 점검</a>을 해보세요.</p>
+
+							<p class="infotxt">모두 수행했으나문제가 해결되지 않는다면, 과정 담당자에게 문의해주세요. </p>
+							<p class="infotxt ">과정담당자 : 홍길동 대리 (교육시스템개발팀)</p>
+							<a href="javascript:;" onclick="popup(5)" class="btn_req">솔루션 수정 요청</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--솔루션 소개 END-->
+
+			<!--이수정보-->
+			<div id="s_finish" class="s_finish sec">
+				<div class="inner">
+					<h2 class="finish">이수정보</h2>
+					<div class="innerWrap">
+						<h3>이수 기준</h3>
+						<div class="tbl">
+							<table>
+								<colgroup>
+									<col style="width:33.33%">
+									<col style="width:33.33%">
+									<col style="width:33.33%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">이수기준</th>
+										<th scope="col">가중치</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>이미지</td>
+										<td>별도 이수 기준이 없습니다.</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--이수정보 END-->
+
+
+			<!--학습리뷰-->
+			<div id="s_review" class="s_review sec">
+				<div class="inner">
+					<h2 class="review">학습리뷰</h2>
+					<div class="innerWrap">
+						<div class="review_grade">
+							<div class="average">
+								<strong>4.3</strong>
+
+								<!--
+								별 한개: star1
+								별 두개: star2
+								별 세개: star3
+								별 네개: star4
+								별 다섯개: star5
+								-->
+								<span class="star4"></span>
+
+							</div>
+							<div class="bar_graph">
+								<ul>
+									<li>
+										<span class="jumsu">5점</span>
+										<div class="bar">
+											<div style="width:50%"></div>
+										</div>
+										<span class="people">10,000</span>
+									</li>
+									<li>
+										<span class="jumsu">4점</span>
+										<div class="bar">
+											<div style="width:70%"></div>
+										</div>
+										<span class="people">13,122</span>
+									</li>
+									<li>
+										<span class="jumsu">3점</span>
+										<div class="bar">
+											<div style="width:33%"></div>
+										</div>
+										<span class="people">1,000</span>
+									</li>
+									<li>
+										<span class="jumsu">2점</span>
+										<div class="bar">
+											<div style="width:22%"></div>
+										</div>
+										<span class="people">100</span>
+									</li>
+									<li>
+										<span class="jumsu">1점</span>
+										<div class="bar">
+											<div style="width:11%"></div>
+										</div>
+										<span class="people">22</span>
+									</li>
+								</ul>
+							</div>
+							<div class="total_pick"><span>22,000</span>참여</div>
+						</div>
+
+						<div class="comment">
+							<div class="clear">
+								<p class="notiTxt"><span>홍길동</span> 대리님, 학습은 어떠셨나요? <br>별점 등록 시 이수 완료되며 마일리지가 부여됩니다.</p>
+								<div class="starRev">
+									<span class="starR">별1</span>
+									<span class="starR">별2</span>
+									<span class="starR">별3</span>
+									<span class="starR">별4</span>
+									<span class="starR">별5</span>
+								</div>
+							</div>
+
+							<form action="">
+								<div class="write">
+									<div class="Msg">
+										<textarea class="msgWrite" placeholder="20byte 이상 입력해 주세요"></textarea>
+										<div class="chekcByte"><span class="count">0</span>byte</div>
+									</div>
+									<button type="button" class="btnPoint btn_submit">등록</button>
+								</div>
+							</form>
+
+							<!--내 글 view 영역 190320 수정-->
+							<div class="review_edit my_reply">
+
+								<div class="reply_list">
+									<div class="first_write">
+										<div class="writingInfo">
+											<p class="name"><span class="pf_hover" data-tooltip="review1">홍길동</span>대리</p>
+											<span class="w_date">2018.12.21</span>
+										</div>
+
+										<div class="reply_info">
+											<div class="reply">
+												<p>익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</p>
+												<div class="chekcByte"><span class="count">15</span>byte</div>
+												<div class="text_button">
+													<button class="btnText modi"><span class="inTxt">수정</span></button>
+													<button class="btnText del"><span class="inTxt">삭제</span></button>
+												</div>
+											</div>
+
+											<div class="reply_view_btn">
+												<button type="button" class="btnPoint num_reply" onclick="popup(7)">댓글 4</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--내 글 view 영역 190320 수정-->
+
+						</div>
+
+						<div class="review_edit">
+
+							<!--리뷰가 있는 경우-->
+							<div class="reply_on" style="display: block">
+								<p class="rev_count">다른 학습자 리뷰 <span>100</span></p>
+								<ul class="reply_list scrolling">
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span>손흥민</span>대리</p>
+													<span class="w_date">2018.12.21</span>
+													<div class="Text_button">
+														<button class="btnText btnAdd"><span class="inTxt">댓글</span></button>
+													</div>
+												</div>
+												<p class="reply">효율적이고 체계적인 수업이였으나, 앞 과정의 타 강의 내용과 유사하여 시간을 할애하기 아쉬운 부분이 있었음.</p>
+											</div>
+											<div class="col_r">
+												<span class="star2"></span>
+											</div>
+										</div>
+
+										<!--댓글 등록시-->
+										<div class="write reply_first">
+											<form action="">
+												<div class="Msg">
+													<textarea class="msgWrite" placeholder="20byte 이상 입력해 주세요"></textarea>
+													<div class="chekcByte"><span class="count">0</span>byte</div>
+												</div>
+												<button class="btnPoint">등록</button>
+											</form>
+										</div>
+										<!--댓글 등록시 END-->
+									</li>
+
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span>손흥민</span>대리</p>
+													<span class="w_date">2018.12.21</span>
+													<div class="Text_button">
+														<button class="btnText"><span class="inTxt">수정</span></button>
+														<button class="btnText"><span class="inTxt">삭제</span></button>
+													</div>
+												</div>
+												<p class="reply">결론부터 말씀드리면, 공부하기를 원한다면 1단계 꼭 들으세요!!!! 두 번 아니 세 번 들으세요!!</p>
+
+												<!-- 수정클릭시 입력창 -->
+												<div class="write">
+													<div class="Msg">
+														<textarea class="msgWrite" placeholder="">결론부터 말씀드리면, 공부하기를 원한다면 1단계 꼭 들으세요!!!! 두 번 아니 세 번 들으세요!!</textarea>
+														<div class="chekcByte"><span class="count">0</span>byte</div>
+													</div>
+													<div class="editBtn">
+														<button class="btnPoint btn_modify">수정</button>
+														<button class="btnPoint btn_cancle">취소</button>
+													</div>
+												</div>
+												<!-- 수정클릭시 입력창 END-->
+											</div>
+											<div class="col_r">
+												<span class="star4"></span>
+											</div>
+										</div>
+
+
+										<!--댓글 리스트 영역-->
+										<div class="first_after">
+											<div class="writingInfo">
+												<p class="name"><span>손흥민</span>대리</p>
+												<span class="w_date">2018.12.21</span>
+												<div class="Text_button">
+													<button class="btnText"><span class="inTxt">삭제</span></button>
+												</div>
+											</div>
+											<p class="addwriting">저도 비슷한 생각이에요! </p>
+											<!-- 수정클릭시 입력창 -->
+												<div class="write re_write">
+													<div class="Msg">
+														<textarea class="msgWrite">익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</textarea>
+														<div class="chekcByte"><span class="count">0</span>byte</div>
+													</div>
+													<div class="editBtn">
+														<button class="btnPoint btn_modify">수정</button>
+														<button class="btnPoint btn_cancle">취소</button>
+													</div>
+												</div>
+												<!-- 수정클릭시 입력창 END-->
+										</div>
+
+										<div class="first_after">
+											<div class="writingInfo">
+												<p class="name"><span>손흥민</span>대리</p>
+												<span class="w_date">2018.12.21</span>
+												<div class="Text_button">
+													<button class="btnText"><span class="inTxt">삭제</span></button>
+												</div>
+											</div>
+											<p class="addwriting">저도 비슷한 생각이에요! </p>
+										</div>
+										<!--댓글 영역 END-->
+									</li>
+
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span>손흥민</span>대리</p>
+													<span class="w_date">2018.12.21</span>
+													<div class="Text_button">
+														<button class="btnText btnAdd"><span class="inTxt">댓글</span></button>
+													</div>
+												</div>
+												<p class="reply">결론부터 말씀드리면, 공부하기를 원한다면 1단계 꼭 들으세요!!!! 두 번 아니 세 번 들으세요!!</p>
+											</div>
+											<div class="col_r">
+												<span class="star3"></span>
+											</div>
+										</div>
+
+										<!--댓글 등록시-->
+										<div class="write reply_first">
+											<form action="">
+												<div class="Msg">
+													<textarea class="msgWrite" placeholder="20byte 이상 입력해 주세요"></textarea>
+													<div class="chekcByte"><span class="count">0</span>byte</div>
+												</div>
+												<button class="btnPoint">등록</button>
+											</form>
+										</div>
+										<!--댓글 등록시 END-->
+									</li>
+								</ul>
+							</div>
+							<!--리뷰가 있는 경우 END-->
+
+							<!--리뷰가 없는 경우-->
+							<div class="reply_off" style="display: none">
+								<p>등록된 리뷰가 없습니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--학습리뷰 END-->
+
+
+			<!--유사솔루션-->
+			<div id="s_similar" class="s_similar sec">
+				<div class="inner">
+					<h2 class="similar">유사 솔루션 <span class="num">7</span></h2>
+					<div class="simWrap">
+
+						<!--유사솔루션이 있는경우-->
+						<div class="solution_card">
+							<ul id="card_list" class="card_list">
+								<!--
+										**************  Class 아이콘 유형  ***************
+								  seminar =  세미나  / set = 집합교육   / knw = 지식인
+								  elearn = 이러닝	  / vod=동영상 / ebook = 이북    / i_data=일반자료
+								  s_data = 전문자료 / license = 자격증 / moc = MOOC / cop = CoP
+								  -->
+
+								<li class="ebook">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag">학습완료</span>
+										<p class="cardTop"><img src="../images/sub/solution_card1.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol01">
+											<label for="sol01"></label>
+										</div>
+									</a>
+								</li>
+
+								<li class="etc">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag">신청마감</span>
+										<p class="cardTop"><img src="../images/sub/solution_card2.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol02">
+											<label for="sol02"></label>
+										</div>
+									</a>
+								</li>
+
+								<li class="i_data">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag ing">학습중</span>
+										<p class="cardTop"><img src="../images/sub/solution_card3.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol03">
+											<label for="sol03"></label>
+										</div>
+									</a>
+								</li>
+
+								<li class="s_data">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag">신청마감</span>
+										<p class="cardTop"><img src="../images/sub/solution_card4.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol04">
+											<label for="sol04"></label>
+										</div>
+									</a>
+								</li>
+
+								<li class="license">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag ing">학습중</span>
+										<p class="cardTop"><img src="../images/sub/solution_card1.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol05">
+											<label for="sol05"></label>
+										</div>
+									</a>
+								</li>
+
+								<li class="bmark">
+									<a href="javascript:;" target="_blank">
+										<span class="solTag">신청마감</span>
+										<p class="cardTop"><img src="../images/sub/solution_card2.jpg" alt=""></p>
+										<div class="cardBot">
+											<div class="cardName" title="[부품제조 기초기술] 용접기술 ① 용접 개요"><p>[부품제조 기초기술] 용접기술 ① 용접 개요</p></div>
+											<ul class="addexp">
+												<li class="exp1">총무 부문</li>
+												<li class="exp2">복지 전문가 분야</li>
+												<li class="exp3">자동차 시장의 이해 자동차 시장의 이해</li>
+											</ul>
+											<ul class="i_txt">
+												<li class="cate">총무</li>
+												<li class="grade">5.0</li>
+												<li class="count">9999</li>
+											</ul>
+										</div>
+
+										<!--북마크-->
+										<div class="bookmark large">
+											<input type="checkbox" name="" id="sol06">
+											<label for="sol06"></label>
+										</div>
+									</a>
+								</li>
+
+
+							</ul>
+						</div><!-- //solution_card-->
+
+						<!--유사솔루션이 없는경우-->
+						<div class="solution_no" style="display: none;">
+							<p class="notiTxt">등록된 유사 솔루션이 없습니다. 학습을 원하실 경우 ‘솔루션 요청’ 또는 ‘CoP 개설’을 <br>관련된 지식에 대한 문의가 필요할 경우 ‘전문가 Q&amp;A’를 해주세요.</p>
+							<ul class="req_btn">
+								<li><a href="">솔루션 요청</a></li>
+								<li><a href="">CoP 개설</a></li>
+								<li><a href="">전문가 Q&amp;A</a></li>
+							</ul>
+						</div>
+					</div><!-- //simWrap-->
+				</div>
+			</div>
+			<!--유사솔루션 End-->
+
+		</div>
+		<!-- //Content-->
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footWrap">
+				<ul class="link">
+					<li><a href="#">프로필</a></li>
+					<li><a href="#">포털 설정</a></li>
+					<li><a href="#">개인정보 위탁관리</a></li>
+					<li><a href="#" class="point">개인정보처리 방침</a></li>
+					<li><a href="#">도움센터</a></li>
+				</ul>
+
+				<p class="copyright">COPYRIGHT &copy; HYUNDAI MOTOR COMPANY.ALL RIGHTS RESERVED.</p>
+
+				<div class="util_btn site">
+					<span class="btn_inner">관련 사이트</span>
+					<div class="select_list">
+						<a href="#">관련사이트1</a>
+						<a href="#">관련사이트2</a>
+						<a href="#">관련사이트3</a>
+					</div>
+				</div>
+				<div class="util_btn right">
+					<a href="#" class="btn_inner">권한을 변경하세요</a>
+					<div class="select_list">
+						<a href="#">권한변경1</a>
+						<a href="#">권한변경2</a>
+						<a href="#">권한변경3</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer-->
+
+		<!--학습결과 업로드 팝업-->
+		<div id="popup1" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">학습결과 업로드</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap scrolling">
+
+					<div class="learn_upload">
+						<div class="innerWrap">
+							<div class="head_top">
+								<p class="who">학습 결과 업로드</p>
+								<p class="notitxt">팀장 결제 완료 시 이수처리되며 마일리지가 부여됩니다. <br>이수 시 입력하신 내용은 e-catalog 학습자에게 공개되며<br> 도서 선택에 대한 기준이 됩니다.</p>
+							</div>
+							<div class="head_title">
+								<!--
+													**************  Class 아이콘 유형  ***************
+											seminar =  세미나  / online= 온라인과정   / set = 집합교육   / knowledge = 지식인 
+											elearn = 이러닝	  / vod=동영상            / ebook = 이북    / etc= 기타 / i_data=일반자료 
+											s_data = 전문자료 / license = 자격증     / bmark = 북마크  / research= 학습연구회
+											-->
+								<h1>4차 산업혁명시대의 지적교육 방향</h1>
+							</div>
+						</div>
+
+						<form action="">
+							<div class="article mt30">
+								<div class="innerWrap">
+									<p class="sectionTit">주요내용</p>
+									<div class="write">
+										<form action="">
+											<div class="Msg">
+												<textarea class="msgWrite" placeholder="학습의 주요 내용은 무엇이었나요? &#13;&#10;200 byte 이상 입력해주세요."></textarea>
+												<p class="chekcByte"><span class="byteInfo">0</span>Byte</p>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="article">
+								<div class="innerWrap">
+									<p class="sectionTit">업무활용계획</p>
+									<div class="write">
+										<form action="">
+											<div class="Msg">
+												<textarea class="msgWrite" placeholder="이 학습의 향후 업무 활용 계획은 무엇인가요? &#13;&#10;200 byte 이상 입력해주세요."></textarea>
+												<p class="chekcByte"><span class="byteInfo">0</span>Byte</p>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="article">
+								<div class="innerWrap">
+									<p class="sectionTit">보완사항</p>
+									<div class="write">
+										<form action="">
+											<div class="Msg">
+												<textarea class="msgWrite" placeholder="학습 시 좀 더 보완했으면 하는 부분이 있으셨나요? &#13;&#10;100 byte 이상 입력해주세요." ></textarea>
+												<p class="chekcByte"><span class="byteInfo">0</span>Byte</p>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="article">
+								<div class="innerWrap">
+									<p class="sectionTit">별점</p>
+									<div class="stargrade">
+										<p>홍길동 대리님, 학습은 어떠셨나요?</p>
+										<div class="starRev">
+											<span class="starR">별1</span>
+											<span class="starR">별2</span>
+											<span class="starR">별3</span>
+											<span class="starR">별4</span>
+											<span class="starR">별5</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="mustNot">
+								<!--학습 결과 업로드 전-->
+								<div class="innerWrap" style="display: none">
+									<fieldset class="article">
+										<p class="tit_d2">선택사항 01</p>
+										<p class="tit_d3">학습리뷰를 남겨주세요.</p>
+										<div class="write learning_review">
+											<div class="Msg">
+												<input type="text" name="" id="" placeholder="20 byte 이상 입력해주세요.">
+												<div class="chekcByte"><span class="count">0</span>byte</div>
+											</div>
+											<button class="btnPoint">등록</button>
+										</div>
+									</fieldset>
+
+									<fieldset class="article">
+										<p class="tit_d2">선택사항 02</p>
+										<p class="tit_d3">솔루션 요청에 관련된 파일이 있으시면 첨부해주세요.</p>
+										<div class="fileUpload">
+											<div type="text" id="filePath" class="filePath">
+												<span class="validate">"파일은 개당 100MB, 최대 5개까지 업로드 가능합니다."</span>
+											</div>
+											<label for="upload" class="fileBtn">파일첨부</label>
+											<input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple">
+										</div>
+									</fieldset>
+								</div>
+								<!--학습 결과 업로드 전 END-->
+
+								<!--학습 결과 업로드 후 & 결재 전-->
+								<div class="innerWrap">
+									<div class="attachedFile">
+										<p class="sectionTit">첨부파일 <span class="fileCnt"></span></p>
+										<div class="attachBox">
+											<span class="attach_file ppt ellip_r1">완료보고서_홍길동대리.pptx</span>
+											<span class="attach_file ppt ellip_r1">완료보고서_홍길동대리.pptx</span>
+											<span class="attach_file ppt ellip_r1">완료보고서_홍길동대리.pptx</span>
+										</div>
+									</div>
+								</div>
+								<!--학습 결과 업로드 후 & 결재 전 END -->
+
+							</div>
+						</form>
+					</div>
+
+				</div> <!-- //contentWrap-->
+				<div class="pop_btnArea">
+					<!--dim 처리 시 class dim 추가-->
+					<button type="button" class="btnBasic request"><span class="inTxt">상신취소</span></button>
+					<button type="button" class="btnBasic" onclick="popclose()"><span class="inTxt">닫기</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!-- //학습결과 업로드 팝업-->
+		
+		<!--솔루션 수정요청 팝업-->
+		<div id="popup5" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">솔루션 수정 요청</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap scrolling">
+				
+					<div class="learn_upload">
+						<div class="innerWrap">
+							<div class="head_top">
+								<p class="modifyRequest">솔루션 수정 요청</p>
+								<p class="notitxt">솔루션에 문제가 있으신가요? <br>자세한 내용을 알려주시면 담당자 확인 후 처리해드리겠습니다.</p>
+							</div>
+							<div class="head_title">
+								<!--
+													**************  Class 아이콘 유형  ***************
+											seminar =  세미나  / online= 온라인과정   / set = 집합교육   / knowledge = 지식인 
+											elearn = 이러닝	  / vod=동영상            / ebook = 이북    / etc= 기타 / i_data=일반자료 
+											s_data = 전문자료 / license = 자격증     / bmark = 북마크  / research= 학습연구회
+											-->
+								<span class="icon book">도서</span>
+								<h1>솔루션 Title</h1>
+							</div>
+						</div>
+
+						<form action="">
+							<div class="article mt30">
+								<div class="innerWrap">
+									<p class="sectionTit">제목</p>
+									<div class="write">
+										<form action="">
+											<div class="Msg">
+												<textarea class="msgWrite" placeholder="솔루션 수정 요청 제목"></textarea>
+												<div class="chekcByte"><span class="count"></span>byte</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="article">
+								<div class="innerWrap">
+									<p class="sectionTit">수정요청내용</p>
+									<div class="write">
+										<form action="">
+											<div class="Msg">
+												<textarea class="msgWrite" placeholder="솔루션 수정이 필요한 부분에 대해 자세히 작성해주세요." ></textarea>
+												<div class="chekcByte"><span class="count"></span>byte</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="mustNot">
+								<div class="innerWrap">
+									<fieldset class="article">
+										<p class="tit_d2">선택사항 02</p>
+										<p class="tit_d3">솔루션 요청에 관련된 파일이 있으시면 첨부해주세요.</p>
+										<div class="fileUpload">
+											<div type="text" id="filePath" class="filePath">
+												<span class="validate">"파일은 개당 100MB, 최대 5개까지 업로드 가능합니다."</span>
+											</div>
+											<label for="upload" class="fileBtn">파일첨부</label>
+											<input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple">
+										</div>
+									</fieldset>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div> <!-- //contentWrap-->
+				<div class="pop_btnArea">
+					<!--dim 처리 시 class dim 추가-->
+					<button type="button" class="btnBasic request"><span class="inTxt">수정요청</span></button>
+					<button type="button" class="btnBasic" onclick="popclose()"><span class="inTxt">취소</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!-- //솔루션 수정요청 팝업-->
+		<!--솔루션상세_학습리뷰_popup_대댓글보기 보기 -->
+		<div id="popup7" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">학습리뷰</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap my_review_content">
+					<div class="innerWrap">
+						<div class="my_review_info">
+							<p><span>홍길동 대리님</span>이 남긴 학습리뷰의 댓글입니다.<br>
+								학습리뷰 삭제 시 아래 대댓글도 함께 삭제됩니다.</p>
+							<div class="starRev">
+								<span class="starR on">별1</span>
+								<span class="starR on">별2</span>
+								<span class="starR on">별3</span>
+								<span class="starR">별4</span>
+								<span class="starR">별5</span>
+							</div>
+							<div class="result_box">
+								<div class="reply">익숙한 것에 대해 새로운 시각에서 부터 창조가 시작되는 것!!!</div>
+								<div class="text_button">
+									<button class="btnText modi"><span class="inTxt">수정</span></button>
+									<button class="btnText del"><span class="inTxt">삭제</span></button>
+								</div>
+								<div class="chekcByte"><span class="count">38</span>byte</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="innerWrap">
+						<div class="review_edit">
+
+							<!--리뷰가 있는 경우-->
+							<div class="reply_on" style="display: block">
+								<p class="rev_count">내 학습리뷰 댓글 <span>3</span></p>
+								<ul class="reply_list scrolling">
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span class="pf_hover" data-tooltip="review2">홍길동</span>대리
+													</p>
+													<span class="w_date">2018.12.21</span>
+												</div>
+												<div class="reply_info">
+													<div class="reply">
+														<p>결론부터 말씀드리면, 공부하기를 원한다면 1단계 꼭 들으세요!! 두 번 아니 세 번 들으세요!!</p>
+													</div>
+												</div>
+											</div>
+											<div class="col_r">
+												<span class="star4"></span>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span class="pf_hover" data-tooltip="review22">홍길동</span>대리</p>
+													<span class="w_date">2018.12.21</span>
+												</div>
+												<div class="reply_info">
+													<div class="reply">
+														<p>효율적이고 체계적인 수업이었으나, 앞 과정의 타 강의 내용과 유사하다.</p>
+													</div>
+
+												</div>
+											</div>
+											<div class="col_r">
+												<span class="star2"></span>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="first_write">
+											<div class="col_l">
+												<div class="writingInfo">
+													<p class="name"><span class="pf_hover" data-tooltip="review11">홍길동</span>대리</p>
+													<span class="w_date">2018.12.21</span>
+												</div>
+												<div class="reply">
+													<p>결론부터 말씀드리면, 공부하기를 원한다면 1단계 꼭 들으세요!!!! 두 번 아니 세 번 들으세요!!</p>
+												</div>
+											</div>
+											<div class="col_r">
+												<span class="star3"></span>
+											</div>
+										</div>
+
+										<!--댓글 등록시-->
+										<div class="write reply_first">
+											<form action="">
+												<div class="Msg">
+													<textarea class="msgWrite" placeholder="20byte 이상 입력해 주세요"></textarea>
+													<div class="chekcByte"><span class="count">0</span>byte</div>
+												</div>
+												<button class="btnPoint">등록</button>
+											</form>
+										</div>
+										<!--댓글 등록시 END-->
+									</li>
+								</ul>
+							</div>
+							<!--리뷰가 있는 경우 END-->
+
+							<!--리뷰가 없는 경우-->
+							<div class="reply_off" style="display: none">
+								<p>내 리뷰에 등록된 댓글이 없습니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //contentWrap-->
+				<div class="pop_btnArea">
+					<button type="button" class="pop_ok" onclick="popclose()"><span class="inTxt">확인</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!-- //솔루션상세_학습리뷰_popup_대댓글보기 보기 -->
+	</div> <!-- //wrap-->
+
+
+</body>
+
+</html>

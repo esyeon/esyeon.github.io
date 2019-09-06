@@ -24,14 +24,14 @@
     </pjList>
 
     <pjList>
-        <siteUrl>../portfolio/hyundai_sc_01/As-Is/IDP/hyundai/wsg/index.html</siteUrl>
+        <siteUrl>../portfolio/hyundai_sc_001/As-ls/IDP/hyundai/wsg/markup.html</siteUrl>
         <pjthumb>hyundai_idp.PNG</pjthumb>
         <pjName>HYUNDAI-IDP(현대자동차상시학습)</pjName>
         <pjDate>2018.11 ~ 2019.03</pjDate>
         <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY/PC형</pjWork>
     </pjList>
     <pjList>
-        <siteUrl>../portfolio/hyundai_sc_e-cat_01/E-Catalog/hyundai/coding-list.html</siteUrl>
+        <siteUrl>../portfolio/hyundai_sc_e-cat_001/E-Catalog/hyundai/coding-list.html</siteUrl>
         <pjthumb>hyundai_e_cat.PNG</pjthumb>
         <pjName>HYUNDAI-ECAT(현대자동차상시학습 e-cat)</pjName>
         <pjDate>2019.2 ~ 2019.03</pjDate>

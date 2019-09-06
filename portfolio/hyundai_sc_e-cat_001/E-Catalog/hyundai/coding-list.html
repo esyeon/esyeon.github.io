@@ -1,0 +1,1696 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/coding.css" />
+</head>
+<style>
+    .dim{
+        z-index: 10;
+        position: absolute;
+        top: 230px;
+        left: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 67%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.41);
+    }
+    .dim:before{
+        content:'내부용사이트이므로 샘플 페이지만 링크 연결';
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+</style>
+<body>
+    <header>
+        <div id="header">
+            <h1>현대자동차 e-catalog</h1>
+
+        </div>
+    </header>
+    <section id="contents">
+        <div class="state-wrap">
+            <div class="state-group">
+                <strong>진행상태</strong> : &nbsp;
+                <span class="state"><span class="undecided">미</span></span> 작업전,
+                <!--  <span class="state"><span class="delete">삭</span></span> 삭제, -->
+                <span class="state"><span class="edit">중</span></span> 진행 및 수정 중,
+                <span class="state"><span class="complete">완</span></span> 완료
+                <!--  <div class="btn-guide"><a href="layout.html" class="on">Go to WSG <span class="img_swipe bounce_ani">화살표</span></a></div> -->
+            </div>
+            <p class="total"><span class="per">종합 진척률 : <span class="result"></span></span> <span class="comp"></span></p>
+        </div>
+
+
+        <table border="0" class="working-list">
+            <colgroup>
+                <col style="width:5%;" />
+                <col style="width:20%;" />
+                <col style="width:13%;" />
+                <col style="width:auto;" />
+                <col style="width:6%;" />
+                <col style="width:8%;" />
+                <col style="width:7%;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Depth</th>
+                    <th>File Directory (URL)</th>
+                    <th>디자인</th>
+                    <th>작업자
+                        <!--   <select name="select" id="">
+                      <option value="">작업자</option>
+                  </select> -->
+                    </th>
+                    <th>개발시작일
+                        <!--  <select name="select">
+                     <option value="">개발시작일</option>
+                 </select -->
+                    </th>
+                    <th>퍼블 상태</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linetitle">
+                    <td>
+                        <div class="sub-tit">메인</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>최초 진입 시-Step1 : 약관동의</td>
+                    <td>ECAT-0001.html</td>
+                    <td>e_catalog_00_약관동의팝업_Step_01.psd</td>
+                    <td>이승연</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>최초 진입 시-Step1 : 약관상세</td>
+                    <td>ECAT-0002.html</td>
+                    <td>e_catalog_00_약관동의팝업_Step_01_Popup_약관.psd</td>
+                    <td>이승연</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>최초 진입 시-Step2 : 계획분야</td>
+                    <td>ECAT-0003.html</td>
+                    <td>e_catalog_00_약관동의팝업_Step_02.psd</td>
+                    <td>이승연</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>최초 진입 시-Step3 : 관심분야 : 설정 전</td>
+                    <td>ECAT-0004.html</td>
+                    <td>e_catalog_00_약관동의팝업_Step_03.psd</td>
+                    <td>이승연</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>최초 진입 시-Step3 : 관심분야: 설정 후</td>
+                    <td>ECAT-0005.html</td>
+                    <td>e_catalog_00_약관동의팝업_Step_03.psd</td>
+                    <td>이승연</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>지식인 - 지식인 문의</td>
+                    <td>ECAT-0970.html</td>
+                    <td>e_catalog_06_지식인_지식인문의.psd</td>
+                    <td>이승연</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>메인</td>
+                    <td>ECAT-0010.html</td>
+                    <td>e_catalog_01_main_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-07</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <!--
+        <span class="complete"></span>
+        <span class="edit"></span>
+        <span class="undecided"></span>
+        <span class="complete"></span>
+        -->
+                <tr>
+                    <td>부문상세</td>
+                    <td>ECAT-0030.html</td>
+                    <td>e_catalog_01_main_부문상세_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-07</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>성장 로드맵 팝업</td>
+                    <td>popup/pop_roadMap.html</td>
+                    <td>e_catalog_01_main_Popup_성장로드맵.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-07</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 요청 팝업</td>
+                    <td>popup/pop_solution_request.html</td>
+                    <td>e_catalog_02_search_Popup_솔루션요청.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-07</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 신청완료 팝업</td>
+                    <td>ECAT-0030.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_솔루션요청_신청완료.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-07</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="linetitle">
+                    <td>
+                        <div class="sub-tit">서브</div>
+                    </td>
+                </tr>
+
+                <tr class="start">
+                    <td>솔루션 상세 정규과정</td>
+                    <td>ECAT-0250.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_정규과정.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>학습 결과보고서 팝업</td>
+                    <td>popup/ECAT-0241.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>강사 프로필 팝업</td>
+                    <td>ECAT-0260.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_강사프로필.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>학습 결과 업로드 팝업(정규학습, MOC)</td>
+                    <td>popup/ECAT-0270.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서_도서.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>솔루션 상세 상시과정_도서</td>
+                    <td>ECAT-0320.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_도서.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>학습 결과 업로드 팝업-도서</td>
+                    <td>popup/ECAT-0330.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서_도서.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 상시과정_이북</td>
+                    <td>ECAT-0300.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_이북.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 상시과정_동영상</td>
+                    <td>ECAT-0310.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_동영상.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 상시과정_파일</td>
+                    <td>ECAT-0360.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_파일.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션상세_학습리뷰_popup_대댓글보기</td>
+                    <td>ECAT-0243.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_학습리뷰_Popup_대댓글보기</td>
+                    <td>김충섭</td>
+                    <td>2019-01-14</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="start">
+                    <td>검색</td>
+                    <td>ECAT-0050.html</td>
+                    <td>e_catalog_01_main_menu_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>검색 Case</td>
+                    <td>ECAT-0051.html</td>
+                    <td>e_catalog_01_main_menu_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>검색결과</td>
+                    <td>ECAT-0060.html</td>
+                    <td>e_catalog_02_search_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>검색결과-외부자료 검색결과</td>
+                    <td>ECAT-0060.html</td>
+                    <td>e_catalog_02_search_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>검색결과-솔루션 유형 Sorting</td>
+                    <td>ECAT-0062.html</td>
+                    <td>e_catalog_02_search_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 Sorting</td>
+                    <td>ECAT-0070.html</td>
+                    <td>e_catalog_02_search_지식인_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>결과내 검색</td>
+                    <td>ECAT-0080.html</td>
+                    <td>e_catalog_02_search_결과내검색_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>결과 없는 경우</td>
+                    <td>ECAT-0090.html</td>
+                    <td>e_catalog_02_search_검색결과없는경우_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>공통/리더십/부문 선택 팝업</td>
+                    <td>ECAT-0100.html</td>
+                    <td>e_catalog_02_search_Popup_부문선택팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-21</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr class="start">
+                    <td>학습계획추가 팝업</td>
+                    <td>ECAT-0400.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습계획추가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>학습계획상세 팝업</td>
+                    <td>ECAT-0401.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습계획추가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>메일로 공유/Autoway M+ 쪽지로 공유</td>
+                    <td>ECAT-0410.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_메일공유.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>메일로 공유/Autoway M+ 쪽지로 공유 - 명단으로 추가</td>
+                    <td>ECAT-0420.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_메일공유.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>메일로 공유/Autoway M+ 쪽지로 공유 - 명단으로 추가 > 입력 시</td>
+                    <td>ECAT-0430.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_메일공유.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>메일로 공유/Autoway M+ 쪽지로 공유 - 검색으로 추가</td>
+                    <td>ECAT-0440.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_메일공유.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션상세 -정규학습, MOOC -1:1 차수변경팝업</td>
+                    <td>ECAT-0251.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_1대1차수변경.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션상세 -정규학습, MOOC -확인팝업</td>
+                    <td>ECAT-0252.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_1대1차수변경_확인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션상세 -정규학습, MOOC -1:1 차수변경 상세팝업</td>
+                    <td>ECAT-0253.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_1대1차수변경_상세.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-28</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <!--  *************** 2019-01-30  ***************-->
+                <tr class="start">
+                    <td>지식인- 메인</td>
+                    <td>ECAT-0830.html</td>
+                    <td>e_catalog_06_지식인_메인</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인- 분야</td>
+                    <td>ECAT-0840.html</td>
+                    <td>e_catalog_06_지식인_분야.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인- 분야 별 전문가 팝업</td>
+                    <td>ECAT-0841.html</td>
+                    <td>e_catalog_06_지식인_분야_분야별전문가팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인- 전체 부문</td>
+                    <td>ECAT-0850.html</td>
+                    <td>e_catalog_06_지식인_전체부문.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실-최초 진입시</td>
+                    <td>ECAT-0560.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_최초진입.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실-CoP 강의실</td>
+                    <td>ECAT-0570.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실-시스템 메시지</td>
+                    <td>ECAT-0580.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_시스템메시지.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실-솔루션 소개 영역 기능 동작</td>
+                    <td>ECAT-0590.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실-고정노티 영역 기능 동작</td>
+                    <td>ECAT-0600.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-01-30</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="start">
+                    <td>상시학습(전문자료(논문/저널)</td>
+                    <td>ECAT-0340.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_논문,저널.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>상시학습(전문자료(논문/저널) -학습결과 업로드 팝업</td>
+                    <td>popup/ECAT-0350.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>상시학습(일반자료(파일))</td>
+                    <td>ECAT-0360.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_파일,이미지.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션상세-상시학습(일반자료(이미지))</td>
+                    <td>ECAT-0361.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_이미지.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>상시학습(일반자료(링크_북마크유형))</td>
+                    <td>ECAT-0370.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_웹링크.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 상시과정_자격증</td>
+                    <td>ECAT-0380.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_자격증.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>자격증 -학습결과 업로드 팝업</td>
+                    <td>popup/ECAT-0390.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 이러닝</td>
+                    <td>ECAT-0460.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_학습홈_이러닝.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 이력보기팝업</td>
+                    <td>ECAT-0461.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_학습홈_이러닝.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 집합,세미나/컨퍼런스</td>
+                    <td>ECAT-0470.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_학습홈_집합.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 학습기간 종료 시</td>
+                    <td>ECAT-0480.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_학습홈_이러닝_종료시.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 시험/과제</td>
+                    <td>ECAT-0490.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_시험과제.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>등록된 시험/과제가 없는 경우</td>
+                    <td>ECAT-0491.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_시험과제.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 자료실</td>
+                    <td>ECAT-0500.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_자료실.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 게시판</td>
+                    <td>ECAT-0510.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_게시판.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 게시글상세</td>
+                    <td>ECAT-0520.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_게시판_Popup_게시글.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 글쓰기</td>
+                    <td>ECAT-0530.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_게시판_Popup_글쓰기.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 반응평가</td>
+                    <td>ECAT-0531.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_반응평가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션강의실 - 사전/사후솔루션</td>
+                    <td>ECAT-0532.html</td>
+                    <td>e_catalog_09_sub_솔루션강의실_솔루션.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="">
+                    <td>마이페이지-학습관리</td>
+                    <td>ECAT-1080.html</td>
+                    <td>e_catalog_07_mypage_학습관리.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이페이지-학습관리-데이터없는경우</td>
+                    <td>ECAT-1081.html</td>
+                    <td>e_catalog_07_mypage_학습관리_데이터없는 경우.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이페이지-학습관리-결재 요청 알림 노출 정책</td>
+                    <td>ECAT-1090.html</td>
+                    <td>e_catalog_07_mypage_학습관리.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <!-- ************** 2019-02-11 ******************** -->
+                <tr class="start">
+                    <td>e-catalog 메인- 검색</td>
+                    <td>ECAT-0050.html</td>
+                    <td>e_catalog_01_main_menu_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-11</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="">
+                    <td>e-catalog 메인- 검색Case</td>
+                    <td>ECAT-0051.html</td>
+                    <td>e_catalog_01_main_menu_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-11</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="">
+                    <td>e-catalog 메인- 검색결과</td>
+                    <td>ECAT-0060.html</td>
+                    <td>e_catalog_02_search_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-11</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="">
+                    <td>e-catalog 메인- 검색결과_공통/리더십/부문 선택 팝업</td>
+                    <td>ECAT-0100.html</td>
+                    <td>e_catalog_02_search_Popup_부문선택팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-11</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <!-- ************** 2019-02-18 ******************** -->
+                <tr class="start">
+                    <td>CoP</td>
+                    <td>ECAT-0280.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_CoP.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>Cop- 학습 결과보고서 팝업</td>
+                    <td>popup/ECAT-0290.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_학습결과보고서_CoP.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 게시글 정의</td>
+                    <td>ECAT-0610.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - CoP 전체 검색</td>
+                    <td>ECAT-0620.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_전체검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 파일함</td>
+                    <td>ECAT-0630.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_파일함.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 공지사항 게시판</td>
+                    <td>ECAT-0640.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_게시판_공지사항.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 일반 게시판</td>
+                    <td>ECAT-0650.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_게시판_일반.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 권한보기 팝업</td>
+                    <td>ECAT-0660.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_게시판_Popup_권한보기.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 강의실 - 게시판 내 검색</td>
+                    <td>ECAT-0670.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_게시판_게시판내검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 외 진입 시- 프로필</td>
+                    <td>ECAT-0860.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인외_프로필.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 외 진입 시- 온라인문의</td>
+                    <td>ECAT-0870.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인외_온라인문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 외 진입 시 - 온라인문의 > 답변이력이 없을 경우</td>
+                    <td>ECAT-0871.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인외_온라인문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-06</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 외 진입 시- 나의문의</td>
+                    <td>ECAT-0880.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인외_나의문의_01.psd <br>e_catalog_06_지식인_전문가페이지_본인외_나의문의_02.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 외 진입 시- 나의문의 > 답변이력이 없을 경우</td>
+                    <td>ECAT-0881.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인외_나의문의_01.psd <br>e_catalog_06_지식인_전문가페이지_본인외_나의문의_02.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-06</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시- 프로필</td>
+                    <td>ECAT-0890.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_프로필.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시- 프로필-프로필수정</td>
+                    <td>ECAT-0900.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_프로필_수정.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시- 프로필-프로필수정항목</td>
+                    <td>ECAT-0901.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_프로필_수정.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시- 받은문의</td>
+                    <td>ECAT-0910.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시 -받은문의 - 답변대기 있는 경우</td>
+                    <td>ECAT-0920.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시-받은문의 - 나의문의</td>
+                    <td>ECAT-0930.html</td>
+                    <td>e_catalog_06_지식인_질문자페이지_본인_나의문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시-받은문의 - 나의문의 이력 없을 경우</td>
+                    <td>ECAT-0931.html</td>
+                    <td>e_catalog_06_지식인_질문자페이지_본인_나의문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03.06</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 -본인 진입 시-받은문의 - 온라인문의</td>
+                    <td>ECAT-0940.html</td>
+                    <td>e_catalog_06_지식인_질문자페이지_본인외_온라인문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 검색</td>
+                    <td>ECAT-0960.html</td>
+                    <td>e_catalog_06_지식인_검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 검색 - 이력 없을 경우</td>
+                    <td>ECAT-0961.html</td>
+                    <td>e_catalog_06_지식인_검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -정규학습, MOOC - 차수변경팝업</td>
+                    <td>ECAT-0254.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_차수변경.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -정규학습, MOOC - 확인팝업</td>
+                    <td>ECAT-0255.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_차수변경_확인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -정규학습, MOOC - 차수변경상세팝업</td>
+                    <td>ECAT-0256.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_차수변경_상세.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -정규학습, MOOC - 수강취소팝업</td>
+                    <td>ECAT-0257.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_수강취소.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -상시학습(일반자료(이미지))-크게보기</td>
+                    <td>ECAT-0362.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_이미지_Popup_크게보기.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -상시학습(일반자료(기타))</td>
+                    <td>ECAT-0363.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_기타.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>솔루션 상세 -상시학습(일반자료(링크_내부유형))</td>
+                    <td>ECAT-0371.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_상시과정_내부유형.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -미이수사유 팝업-정규학습(사내교육)</td>
+                    <td>ECAT-1100.html</td>
+                    <td>e_catalog_07_mypage_Popup_미이수사유팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -미이수사유 팝업<br>정규학습(사외교육),MOOC,상시학습(전문자료,일반자료,웹링크),CoP,자격증</td>
+                    <td>ECAT-1110.html</td>
+                    <td>e_catalog_07_mypage_Popup_미이수사유팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -반려사유 팝업</td>
+                    <td>ECAT-1120.html</td>
+                    <td>e_catalog_07_mypage_Popup_미이수사유팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -결재 요청 알림 -요청 상세 팝업</td>
+                    <td>ECAT-1130.html</td>
+                    <td>e_catalog_07_mypage_Popup_결재요청상세팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -관심부문설정 팝업 -설정 전</td>
+                    <td>popup/ECAT-1150.html</td>
+                    <td>e_catalog_07_mypage_Popup_관심부문설정팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -관심부문설정 팝업 -설정 후</td>
+                    <td>popup/ECAT-1151.html</td>
+                    <td>e_catalog_07_mypage_Popup_관심부문설정팝업.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>마이 페이지 -학습이력</td>
+                    <td>ECAT-1170.html</td>
+                    <td>e_catalog_07_mypage_학습이력.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-18</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr class="start">
+                    <td>e-catalog 메인 - 외부자료 검색결과</td>
+                    <td>ECAT-0061.html</td>
+                    <td>e_catalog_02_search_01.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인 - 솔루션 유형 Sorting</td>
+                    <td>ECAT-0062.html</td>
+                    <td>e_catalog_02_search_01.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인 - 지식인 Sorting</td>
+                    <td>ECAT-0070.html</td>
+                    <td>e_catalog_02_search_지식인_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인 - 결과 내 검색</td>
+                    <td>ECAT-0080.html</td>
+                    <td>e_catalog_02_search_결과내검색_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인 - 결과 없는 경우</td>
+                    <td>ECAT-0090.html</td>
+                    <td>e_catalog_02_search_검색결과없는경우_01.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 학습자</td>
+                    <td>ECAT-0680.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_학습자.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 나의 학습</td>
+                    <td>ECAT-0690.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_나의학습.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - CoP 마일리지 팝업</td>
+                    <td>popup/ECAT-0700.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_나의학습_Popup_CoP마일리지.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+
+                <tr>
+                    <td>지식인 - 지식인 문의 : 전문가 선택 기능 동작</td>
+                    <td>ECAT-0980.html</td>
+                    <td>e_catalog_06_지식인_지식인문의.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의</td>
+                    <td>ECAT-0990.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_Popup_문의완료_온라인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 오프라인 문의</td>
+                    <td>ECAT-1000.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_Popup_문의완료_오프라인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 신청 : 답변</td>
+                    <td>ECAT-1010.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기_온라인문의_답변.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 신청 : 다른 지식인이 답변한 경우</td>
+                    <td>ECAT-1020.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기_온라인문의_답변있는경우.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 오프라인 문의 신청 : 답변</td>
+                    <td>ECAT-1030.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기_오프라인문의_답변.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온/오프라인 문의 신청 : 답변 - 반려</td>
+                    <td>ECAT-1040.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기_온라인문의_답변_Popup_반려.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온/오프라인 문의 신청 : 답변 - 반려</td>
+                    <td>ECAT-1040.html</td>
+                    <td>e_catalog_06_지식인_전문가페이지_본인_받은문의_답변대기_온라인문의_답변_Popup_반려.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인</td>
+                    <td>ECAT-0540.html</td>
+                    <td>e_catalog_05_CoP_메인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 2depth</td>
+                    <td>ECAT-0550.html</td>
+                    <td>e_catalog_05_CoP_메인.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 상세 - 답변 없는 경우</td>
+                    <td>ECAT-1050.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_온라인문의_답변없는경우.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 상세 - 답변 없는 경우 - 자세히보기 팝업</td>
+                    <td>ECAT-1051.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_온라인문의_답변없는경우_Popup_자세히보기.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 상세 - 답변완료</td>
+                    <td>ECAT-1052.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_온라인문의_답변완료.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 온라인 문의 상세 - 만족도 평가</td>
+                    <td>ECAT-1060.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_온라인문의_답변완료.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 오프라인 문의 상세 - 수락 전</td>
+                    <td>ECAT-1070.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_오프라인문의_수락전.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 오프라인 문의 상세 - 수락 시</td>
+                    <td>ECAT-1071.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_오프라인문의_수락시.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>지식인 - 오프라인 문의 상세 - 수락 시 - 만족도 평가</td>
+                    <td>ECAT-1072.html</td>
+                    <td>e_catalog_06_지식인_지식인문의_오프라인문의_수락시_만족도평가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - CoP 관리</td>
+                    <td>ECAT-0710.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - CoP 관리 > 학습 재 시작 팝업</td>
+                    <td>ECAT-0711.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_Popup_학습재시작.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-19</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 정보수정</td>
+                    <td>ECAT-0720.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_정보수정.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-02-25</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+
+                <tr>
+                    <td>CoP 메인 - 공지사항 게시판</td>
+                    <td>ECAT-0730.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_게시판관리_공지사항.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 일반 게시판</td>
+                    <td>ECAT-0740.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_게시판관리_일반.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 확인 팝업</td>
+                    <td>ECAT-0750.html</td>
+                    <td>e_catalog_08_sub_솔루션상세_Popup_공통.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인 - 일반 게시판 : 비공개</td>
+                    <td>ECAT-0760.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_게시판관리_일반_비공개.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 게시판 추가</td>
+                    <td>ECAT-0770.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_게시판관리_게시판추가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 보기권한/쓰기권한</td>
+                    <td>ECAT-0780.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_게시판관리_일반.psd 파일 참고</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 학습자관리</td>
+                    <td>ECAT-0790.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_학습자관리.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 마일리지관리</td>
+                    <td>ECAT-0800.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_마일리지관리.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 학습결과 업로드 팝업</td>
+                    <td>popup/ECAT-0810.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_마일리지관리_Popup_학습결과업로드.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>CoP 메인-CoP 관리 : 학습결과 보고서 팝업</td>
+                    <td>popup/ECAT-0820.html</td>
+                    <td>e_catalog_05_CoP_CoP강의실_CoP관리_마일리지관리_Popup_학습결과보고서.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>부문 상세-CoP 개설</td>
+                    <td>ECAT-0130.html</td>
+                    <td>e_catalog_02_search_검색결과_CoP개설.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 운영계획서 기능 동작</td>
+                    <td>ECAT-0140.html</td>
+                    <td>e_catalog_02_search_검색결과_CoP개설.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 :부문, 분야 설정 기능 동작</td>
+                    <td>ECAT-0150.html</td>
+                    <td>e_catalog_02_search_검색결과_CoP개설.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 학습자 추가 팝업</td>
+                    <td>ECAT-0160.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_학습자추가.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 학습자 추가 팝업 - 명단으로 추가</td>
+                    <td>ECAT-0170.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_학습자추가_명단_입력전.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 :학습자 추가 팝업 - 명단으로 추가 - 입력 시</td>
+                    <td>ECAT-0180.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_학습자추가_명단_입력후.psd <br>e_catalog_02_search_Popup_CoP_학습자추가_명단_입력후_오류.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 학습자 추가 팝업 - 검색으로 추가</td>
+                    <td>ECAT-0190.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_학습자추가_검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 학습자 추가 팝업 - 검색으로 추가 -검색 시</td>
+                    <td>ECAT-0200.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_학습자추가_검색.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 함께 들으면 좋은 솔루션 추가 팝업</td>
+                    <td>ECAT-0210.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_솔루션추가_검색전.psd <br>e_catalog_02_search_Popup_CoP_솔루션추가_검색후.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 : 함께 들으면 좋은 솔루션 추가 팝업 - 검색 시</td>
+                    <td>ECAT-0220.html</td>
+                    <td>e_catalog_02_search_Popup_CoP_솔루션추가_검색전.psd <br>e_catalog_02_search_Popup_CoP_솔루션추가_검색후.psd
+                    </td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+                <tr>
+                    <td>e-catalog 메인-CoP 개설 - 신청완료 팝업</td>
+                    <td>ECAT-0230.html</td>
+                    <td>e_catalog_02_search_Popup_CoP개설_신청완료.psd</td>
+                    <td>김충섭</td>
+                    <td>2019-03-04</td>
+                    <td><span class="state"><span class="complete"></span></span></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+    <hr />
+    <footer>
+        <div class="author">
+            <h3>담당 퍼블리셔</h3>
+            <dl>
+                <dt>이름</dt>
+                <dd><strong>김충섭</strong>책임</dd>
+            </dl>
+        </div>
+    </footer>
+    <div class="dim"></div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 번호 자동생성, 링크 자동생성
+            var $workTbody = $('.working-list tbody'),
+                itemlist = $workTbody.find('tr:not(".linetitle")'),
+                del = $workTbody.find('.del'),
+                $tds = $workTbody.find('td'),
+                arrayItem = $.makeArray(itemlist),
+                $lineTitle = $workTbody.find('.linetitle td'),
+                i = 0;
+            // 테이블내의 서브타이틀 영역의 colspan 정의
+            var totalcolspan = $('table thead th').length;
+            $lineTitle.attr('colspan', totalcolspan);
+
+            // 진척률 생성
+            var $complete = itemlist.find('td:last-child'), // 행마다 마지막 td
+                groupTotal = ($complete.length - del.length),
+                delCnt = del.find('.complete').length,
+                comTotal = ($complete.find('.complete').length - delCnt);
+
+            var groupProgress = (comTotal / groupTotal) * 100;
+
+            $('.total').html(
+                '<span class="per">종합 진척률 : ' +
+                ~~groupProgress +
+                '%</span>' +
+                '<span class="status">' +
+                comTotal +
+                '/' +
+                groupTotal +
+                ' (완료 / 총 본수)</span>'
+            );
+
+            for (; i < arrayItem.length; i++) {
+                var item = arrayItem[i]; // 각각 tr 참조
+                $(item).prepend("<td></td>"); // 첫번째 td 생성(number 영역)
+
+                // 파일 디렉토리 영역의 링크 생성
+                var $cols = $(item).children('td');
+                var $col01 = $cols.eq(1),
+                    $col02 = $cols.eq(2),
+                    $col03 = $cols.eq(3),
+                    $col04 = $cols.eq(4);
+                $col05 = $cols.eq(5);
+
+                var url = $cols.eq(2);
+                if ($(item).is('.del')) {
+                    $col02.html('<span class="url">' + url.html() + '</span>');
+                } else {
+                    $col02.html('<a href="' + 'html/' + url.html() + '" target="_blank" class="url">' +
+                        '<b style="color:#437cbc;">' + url.html() + '</b></a>');
+                }
+
+                var depthStr = $col01.text(),
+                    depthEm = depthStr.substr(depthStr.lastIndexOf('>') + 1);
+
+                $col01.html(depthStr.replace(depthEm, '<b style="color:#4b4b4b;">' + depthEm + '</b>'));
+
+                $col01.addClass('tal depth');
+                $col02.addClass('tal');
+                $col03.addClass('tal');
+                $col04.addClass('publ');
+                $col05.addClass('date');
+
+            }
+
+            // 검수요청,완료 여부에 따른 클래스 부여 및 상태란의 텍스트 생성
+            itemlist.each(function () {
+                var $this = $(this),
+                    tdStr = $this.find('td').eq(1).text(),
+                    newStr = tdStr.substr(tdStr.lastIndexOf('>') + 1),
+                    $tds = $this.find('td');
+
+                var state = $this.find('td:last-child');
+                state.find('.undecided').text('미');
+                state.find('.delete').text('삭');
+                state.find('.edit').text('중');
+                state.find('.complete').text('완');
+
+                var $inq = $this.find('td').eq(6),
+                    inqText = $inq.text();
+
+                if (inqText.indexOf('검수요청') > -1) {
+                    $inq.addClass('quest');
+                } else if (inqText.indexOf('검수완료') > -1) {
+                    $this.addClass('comp');
+                }
+
+            });
+
+            var $ths = $('.working-list thead th');
+            $ths.eq(0).append(' (' + groupTotal + ')');
+            $ths.eq(7).append(' (' + comTotal + ')');
+
+        });
+        (function ($) {
+
+            function update() {
+
+                var text, tr, select, visibleTr;
+
+                visibleTr = $('tbody tr:visible');
+                tr = $('tbody tr:not(".linetitle")');
+                select = $('select');
+                text = [];
+
+                // 셀렉트 값이 변경될 때마다 배열 text 에 참조
+                select.each(function () {
+                    text.push($.trim($(this).find('option:selected').text()));
+                });
+
+                // jQuery.inArray : 배열 내의 값을 찾아서 인덱스를 반환합니다.(요소가 없을 경우 -1을 반환)
+                // 작업자 전체, 전체인 경우에 모든 table row 를 보여줌
+                if (($.inArray('작업자', text) > -1) && ($.inArray('date', text) > -1)) {
+                    tr.show();
+                }
+                // 작업자 문자열이 아닌 이름을 선택하고 date 전체인 경우
+                else if (($.inArray('작업자', text) == -1) && ($.inArray('date', text) > -1)) {
+                    tr.each(function () {
+                        var $this = $(this);
+                        if (text[0] == $this.find('.publ').text()) {
+                            $this.show();
+                        } else {
+                            $this.hide();
+                        }
+                    })
+                }
+                // 작업자이고 전체가 아닌 날짜를 선택한 경우
+                else if (($.inArray('작업자', text) > -1) && ($.inArray('date', text) == -1)) {
+                    tr.each(function () {
+                        var $this = $(this);
+                        if (text[1] == $this.find('.date').text()) {
+                            $this.show();
+                        } else {
+                            $this.hide();
+                        }
+                    })
+                } else if (($.inArray('작업자', text) == -1) && ($.inArray('date', text) == -1)) {
+                    tr.each(function () {
+                        var $this = $(this);
+                        if (text[0] == $this.find('.publ').text() && text[1] == $this.find('.date').text()) {
+                            $this.show();
+                        } else {
+                            $this.hide();
+                        }
+                    });
+
+                }
+
+            }
+
+            $(document).on('change', 'select', update);
+
+            // 날짜 컬럼을 셀렉트 박스에 차례대로 생성
+            function sortDate(idx, el) {
+                var worklist = $('.working-list'),
+                    dateBox = $('thead th').eq(idx),
+                    dateData = [],
+                    dateList = worklist.find(el + ':visible');
+
+                dateList.each(function () {
+
+                    var $this = $(this);
+
+                    if (!!$.trim($(this).text())) {
+                        // 배열길이가 0 이면 날짜 컬럼 텍스트의 처음 문자열을 배열에 추가
+                        if (dateData.length == 0) {
+                            dateData.push($.trim($this.text()));
+                            return;
+                        }
+                        // 배열에 해당 날짜 문자열이 없다면 dateDate 배열에 추가
+                        if ($.inArray($.trim($this.text()), dateData) == -1) {
+                            dateData.push($.trim($this.text()));
+                        }
+
+                    }
+
+                });
+
+                var dateSort = dateData.sort(compareForSort);
+
+                function compareForSort(first, second) {
+                    if (first == second) {
+                        return 0;
+                    }
+                    if (first < second) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                }
+
+                // 배열에 저장된 날짜 모음을 셀렉트박스에 추가
+                for (var i = 0, max = dateSort.length; i < max; i++) {
+                    dateBox.find('select').append('<option>' + dateSort[i] + '</option>');
+                }
+
+            }
+
+            // number 컬럼에 넘버 증가 및 서브타이틀의 총 갯수 정의
+            function countLine() {
+                var count = 0,
+                    linetitle = $('.linetitle'),
+                    titleLength = linetitle.length,
+                    title,
+                    tr = $('tbody tr'),
+                    length = tr.length;
+
+                linetitle.each(function (index) {
+                    $(this).data('idx', index);
+                });
+
+                tr.each(function (idx) {
+                    var $this = $(this);
+
+
+                    if ($this.hasClass('linetitle')) {
+                        // 최초 linetitle 은 count 가 증가하기 전이므로 - 1 하여 요소를 선택하지 않는다.
+                        title = linetitle[$this.data('idx') - 1];
+
+                        // count 를 증가시킨후 linetitle 을 검색하도록 한다.
+                        if (!!title) {
+                            $(title).find('td .sub-tit').append(' (' + count + ')');
+                            // linetitle 이 있다면 count 를 0 으로 초기화
+                            count = 0;
+                        }
+                    } else {
+                        $this.find('td:first-child').append(count + 1);
+                        // del 클래스가 있으면 변수 count 를 증가시키지 않고 아니면 증가시킨다.
+                        count = $this.hasClass('del') ? count : count + 1;
+                    }
+
+                    // each 문이 모두 돌았을 때 즉, 마지막 .linetitle 의 count 를 참조
+                    if (idx == length - 1) {
+                        title = linetitle[titleLength - 1];
+                        if (!!title) {
+                            $(title).find('td .sub-tit').append(' (' + count + ')');
+                        }
+                    }
+
+                })
+
+            }
+
+            function sortCount() {
+                var count = 0,
+                    tr = $('tbody tr:not(".del")');
+
+                tr.each(function () {
+                    var $this = $(this);
+                    if (!$this.hasClass('linetitle') && $this.is(':visible')) {
+                        count = count + 1;
+                    }
+                });
+
+                return count;
+
+            }
+
+            $(function () {
+                countLine();
+                sortDate(4, '.publ');
+                sortDate(5, '.date');
+                var $ribbon = $('#header .ribbon');
+                $ribbon.on('click', function () {
+                    var $this = $(this),
+                        cloneEl = $this.clone(true);
+                    $this.before(cloneEl);
+                    $('.' + $this.attr('class') + ':last').remove();
+                });
+            });
+
+        }(jQuery));
+    </script>
+</body>
+
+</html>

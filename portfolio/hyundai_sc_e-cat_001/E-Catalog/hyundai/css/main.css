@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+
+.header.main .headerWrap {width:100%;height:498px; margin:auto;
+  background-color:#012d5e;
+  background-image: url(../images/main/main_headerBg.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  }
+.container.main .section.s1 {transition:0.3s padding-top;}
+.header.main .bx-wrapper {margin-top: 60px;}
+.header.main .bx-wrapper .bx-viewport {overflow: inherit;}
+.header.main .visual_slider {position: relative;width:1042px;height:370px;margin-top:60px;overflow:hidden;}
+.header.main .visual_slider .hd_mid {position: absolute;left:0;top:0;width:100%;margin-top: 0;height:100%;box-sizing: border-box}
+.header.main .visual_slider .hd_mid>a{display: block;position: absolute;left:0;top:0;bottom:0;right:0;}
+.header.main .visual_slider .hd_mid .path li:first-child {padding-left:27px;}
+.header.main .visual_slider .hd_mid .path .seminar {background:url(../images/main/icon_header_seminar.png) no-repeat 0 3px;}/* 세미나*/
+.header.main .visual_slider .hd_mid .path .knowledge {background:url(../images/main/icon_header_knowledge.png) no-repeat 0 50%;}/* 지식인*/
+.header.main .visual_slider .hd_mid .path .elearn {background:url(../images/main/icon_header_elearn.png) no-repeat 0 50%;}/* 이러닝*/
+.header.main .visual_slider .hd_mid .path .vod {background:url(../images/main/icon_header_vod.png) no-repeat 0 50%;}/* 동영상*/
+.header.main .visual_slider .hd_mid .path .ebook {height:22px;background:url(../images/main/icon_header_ebook.png) no-repeat 0 50%;}/* e북*/
+.header.main .visual_slider .hd_mid .path .i_data {background:url(../images/main/icon_header_i_data.png) no-repeat 0 50%;}/* 일반자료*/
+.header.main .visual_slider .hd_mid .path .s_data {background:url(../images/main/icon_header_s_data.png) no-repeat 0 50%;}/* 전문자료*/
+.header.main .visual_slider .hd_mid .path .cop {background:url(../images/main/icon_header_cop.png) no-repeat 0 50%;}/* CoP*/
+.header.main .visual_slider .hd_mid .path .license {background:url(../images/main/icon_header_license.png) no-repeat 0 50%;}/* 자격증*/
+.header.main .visual_slider .hd_mid .path .moc {background:url(../images/main/icon_header_moc.png) no-repeat 0 50%;}/* MOOC*/
+.header.main .visual_slider .hd_mid .path .set {background:url(../images/main/icon_header_set.png) no-repeat 0 50%;}/* 집합*/
+.header.main .hd_top .myArea .dropdown .dropdown_Wrap:last-child {height:40px;background: #fff;}
+
+.header.main .visual_slider .hd_mid .path_star {padding:37px 0 0 100px;font-size:0;}
+.header.main .visual_slider .hd_mid h2 {padding:0 0 0 100px;}
+.header.main .visual_slider .hd_mid .more_info {padding:0 0 0 100px;width:320px;list-style: none; line-height:1.4em; overflow:hidden;}
+.header.main .visual_slider .hd_mid .more_info .addexp li {width:320px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.header.main .visual_slider .hd_mid .bookmark {margin:-5px 0 0 150px;text-align: center; border:1px solid #fff;border-radius:100%;}
+.header.main .visual_slider .hd_mid .bookmark label {padding:9px 11px;}
+.header.main .visual_slider .hd_mid .bookmark label:before {width:12px;height:17px;background: url(../images/main/visual_bookmark_off.png) no-repeat;}
+.header.main .visual_slider .hd_mid .bookmark input[type=checkbox]:checked + label:before {background: url(../images/main/visual_bookmark_on.png) no-repeat;}
+.header.main .visual_slider .img {position: absolute;right:10px;top:0;}
+.header.main .visual_slider .img img {}
+
+/*.header.main .bx-wrapper .bx-controls-direction a { position: absolute; top: 30%;margin-top:0; outline: 0; width: 61px;   height: 66px;text-indent: -9999px;z-index: 9999;display: block;box-shadow: 3px 5px 12px -2px #232222}*/
+.header.main .visual_slider + .slide_btn a {font-size: 0;text-indent: -9999px;}
+.header.main .visual_slider + .slide_btn .prev {width: 61px;height:66px; background: url(../images/main/mainSlide_prev_btn.png) no-repeat;left:-61px;z-index:99; position: absolute; left:-60px;top:45%;}
+.header.main .visual_slider + .slide_btn .next { width: 61px;height:66px; background: url(../images/main/mainSlide_next_btn.png) no-repeat;right:-61px;z-index: 99; position: absolute; right:-60px;top:45%;}
+.header.main .visual_slider + .slide_btn + .pager {position: absolute; left:50%;bottom:50px;transform: translateX(-50%);font-size: 0;}
+.header.main .visual_slider + .slide_btn + .pager a {display: inline-block;margin: 0 3px;width:10px;height:10px;background:#fff; border-radius: 100%;font-size: 0;text-indent: -9999px;}
+.header.main .visual_slider + .slide_btn + .pager .on {width:30px;background: #869bb3; border-radius: 10px;}
+
+
+/*content*/
+.container.main {padding-top:500px;transition:padding-top 0.3s;-webkit-transition:padding-top 0.3s;}
+.container.main .section {padding:80px 0 100px;}
+.container.main .section .inner {position: relative;}
+.container.main .section h2 {font-size:18px;padding:0 0 25px;color: #000;font-weight:700;}
+.container.main .section.s1 {background: #efefef;}
+.container.main .section.s2 {background: #d7dadd;}
+.container.main .section.s3 {background: #c4c7c9;}
+
+.section.s1 .btnTxt {border-color:#d1d1d1}
+.section.s2 .btnTxt {border-color:#737373}
+.section.s3 .btnTxt {border-color:#373636}
+
+.section .sort-title {/*position: absolute;left:0;top: -50px;width: 100%;*/margin-bottom:20px;overflow:hidden;}
+.section .sort-title .txt-left {float:left;font-size:18px;color: #000;font-weight:400;letter-spacing: -1px;}
+.section .sort-title .txt-left {float:left;font-size:18px;color: #000;font-weight:400;letter-spacing: -1px;}
+.section .sort-title .txt-right {float:right;font-size:14px;color: #666666;font-weight:300;letter-spacing: -1px;margin-right: 90px;}
+
+

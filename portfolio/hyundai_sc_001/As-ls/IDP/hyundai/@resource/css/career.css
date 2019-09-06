@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/*현대 - 경력개발*/
+#wrap.depth-main.career-wrap #container{padding-bottom: 0;}
+#wrap.career-wrap #footer{border-top: 0 none;}
+.career-main{min-height: 1097px;background: #f5f5f5 url("../images/career/thumb_1320x440.png") 0 bottom no-repeat; border-radius: 5px; -webkit-border-radius: 5px;}
+.career-main .content-primary{width: 1060px; margin: 0 auto;}
+.career-main .content-primary:after{content: ''; display: block; clear: both}
+.career-main .right-section{float: left; width: 400px}
+.career-main .title{font-size: 50px; line-height: 64px; color: #292929; padding-top: 62px;}
+.career-main .summary{font-size: 15px; line-height: 26px; margin-top: 20px;}
+.career-main .quick-menu{margin-top: 30px}
+.career-main .quick-menu li{height: 44px; line-height: 44px; width: 143px; box-sizing: border-box;border-top: 1px solid #e1e1e1; background:url("../images/common/arrow_02.png") right 16px no-repeat;}
+.career-main .quick-menu li:first-child{border-top: 0 none;}
+.career-main .quick-menu li a{display: block; color: #292929; font-size: 17px}
+.career-section{float: left; margin-left: 20px; margin-top: 130px; width: 220px; padding: 280px 45px 50px; border-radius: 5px; -webkit-border-radius: 5px; background: #003166 url("../images/career/thumb_310x250.jpg") 0 0 no-repeat;}
+.career-section h3{font-size: 27px;line-height: 32px; color: #ffffff; width: 100%}
+.career-section h3 a{display: inline-block; width: 100%}
+.career-section h3 a:after{content: ''; display: block;color: both}
+.career-section h3 .btn-more{float: right; background-image: url("../images/common/ico_more_02.png"); width: 32px; height: 32px; vertical-align: top;}
+.career-section .summary{color: #a3adbd; line-height: 24px}
+.career-section .mydate-list{margin-top: 20px}
+.career-section .mydate-list li{padding: 13px 0;}
+.career-section .mydate-list li+li{border-top: 1px solid #29507a;}
+.career-section .mydate-list li:after{content: ''; display: block; clear: both;}
+.career-section .mydate-list li div{float: right; width: 130px; font-size: 15px; line-height: 15px; color: #ffffff; font-family: '현대산스 Text 중간','현대산스 Text Medium',"HyundaiSansTextKRMedium"}
+.career-section .mydate-list li .title{float: left; color: #a3adbd; padding-top: 0; line-height: 23px; width: 70px}
+.career-section .mydate-list li span{display: block; line-height: 23px; text-align: right;}
+.career-section .last-data{color: #77b9ff; text-align: center; margin-top: 16px;}
+.career-section .button-area{margin-top: 26px;}
+.career-section .button-area a{display: block; width: 205px; font-size: 16px; box-sizing: border-box; margin: 0 auto;}
+.career-section .button-area .btn+.btn{margin:  10px auto 0;}
+.career-section .button-area a.type03{background-color: #2981df; border: 0 none;-webkit-appearance: none;}
+.career-section .button-area a.type04{background-color: #004fb1; border: 0 none;-webkit-appearance: none;}
+.apply-section{float: left; width: 230px; margin-top: 70px; margin-bottom: 100px ;margin-left: 20px; padding: 30px 40px; background-color: #292929; border-radius: 5px; -webkit-border-radius: 5px;}
+.apply-section li{padding: 40px 0 34px; border-top: 1px solid #494949}
+.apply-section li:first-child{border-top: 0 none;}
+.apply-section h3{font-size: 27px;line-height: 32px; color: #ffffff; }
+.apply-section h3 .btn-more{background-image: url("../images/common/ico_more_02.png"); width: 32px; height: 32px; vertical-align: top;}
+.apply-section h3:after{content: ''; display: block;color: both}
+.apply-section h3 a{display: inline-block;}
+.apply-section h3 .progress{float: right;font-size: 15px; padding-right: 18px; background:url("../images/career/ico_check.png") right 10px no-repeat;}
+.apply-section .summary{letter-spacing: -0.02em; line-height: 24px; color: #ababab}
+.apply-section .summary span{font-size: 12px;}
+
+
+/*사내이력서*/
+.profile-card .fieldset .label{font-size: 19px; line-height: 18px; font-family: '현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular', '맑은 고딕', sans-serif;}
+.profile-card .fieldset.center .insert{margin-top: 2px;margin-bottom: 8px;}
+.profile-card .fieldset strong{font-weight: normal; font-size: 19px; line-height: 18px;font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.profile-card .fieldset.center .all-career{display: inline-block;margin-top: 0;margin-bottom: 10px;padding-right: 30px;border-right: 1px solid #d6d6d6; }
+.profile-card .fieldset.center .major-field{margin-top: 0;margin: bottom: 10px;}
+/*.profile-card .fieldset #majorField{width: 600px}*/
+.profile-card .insert{display: inline-block;}
+.profile-card .hope-route .data-table .insert{position: relative; width: 30%; padding-right: 60px; box-sizing: border-box; margin-right: 2%}
+.profile-card .hope-route .data-table .insert.year{padding-right: 40px;}
+.profile-card .hope-route .data-table .insert .label{position: absolute; right: 0; top: 2px;}
+.profile-card .hope-route .data-table .insert .btn.small{position: absolute; right: 0; top: 0;}
+.profile-card .insert .input-date{text-align: center;}
+.profile-card .hope-route .notice{margin-top: 10px; padding-bottom: 16px;}
+.profile-card .data-table tbody tr td{font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.profile-card .btn-aside .btn{font-family: '현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+/*faq*/
+.faq .faq-list{margin-top: 30px;border-top: 2px solid #292929;}
+.faq .faq-list li{}
+.faq .faq-list li a{display: block;position: relative;height: 59px;line-height: 59px;padding-left: 54px;font-size: 15px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';border-bottom: 1px solid #d1d1d1;background: url('../images/career/question.png') 20px 18px no-repeat;}
+.faq .faq-list li.active a{color: #002c5f;background-image: url('../images/career/question_on.png');}
+.faq .faq-list li a:after{content: '';display: block;position: absolute;right: 30px;top: 24px;width: 12px;height: 12px;background: url('../images/career/more.png') 0 0 no-repeat;}
+.faq .faq-list li.active a:after{background: url('../images/career/less.png') 0 50% no-repeat;}
+.faq .faq-list li .answer{display: none;padding: 23px 95px 24px 73px;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-size: 14px;line-height: 25px;background: #f9f9f9 url('../images/career/answer.png') 40px 29px no-repeat;border-bottom: 1px solid #d1d1d1;}
+.faq .faq-list li.active .answer{display: block;}
+.faq .no-data{margin-top: 30px;padding: 80px 0;border-top: 2px solid #292929;border-bottom: 1px solid #d1d1d1;}
+.faq .no-data p{line-height: 40px;text-align: center;font-size: 15px;color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+
+/*제도안내*/
+.system-info .about .text-wrap{margin-top: 30px;padding-top: 320px;padding-bottom: 35px;border-radius: 5px;-webkit-border-radius: 5px;}
+.system-info .about.cdp .text-wrap{background: #ece9e6 url('../images/career/thumb_1600x320.jpg') 0 0 no-repeat;}
+.system-info .about.contest .text-wrap{background: #ece9e6 url('../images/career/thumb_1600x320_02.jpg') 0 0 no-repeat;}
+.system-info .about.resident .text-wrap{background: #ece9e6 url('../images/career/thumb_1600x320_03.jpg') 0 0 no-repeat;}
+.system-info .about .text-wrap h3{display: inline-block;margin: 0 40px;padding-top: 28px;font-size: 20px;line-height: 40px;color: #292929;border-bottom: 1px solid #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .about .text-wrap p{margin: 0 40px;padding-top: 13px;font-size: 15px;line-height: 25px;color: #292929;}
+.system-info .about .text-wrap strong{display: inline-block;position: relative;margin-top: 33px;padding-left: 65px;padding-right: 28px;font-size: 20px;line-height: 51px;color: #002c5f;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';font-weight: normal;}
+.system-info .about .text-wrap strong:before{content: '';display: block;position: absolute;left: 39px;top:0;width: 19px;height: 16px;background: url('../images/common/mark_left.png') 0 0 no-repeat;}
+.system-info .about .text-wrap strong:after{content: '';display: block;position: absolute;right: 0;top:25px;width: 19px;height: 16px;background: url('../images/common/mark_right.png') 0 0 no-repeat;}
+.system-info .about .text{font-size: 15px;line-height: 25px;color: #292929;}
+.system-info .process{height: 318px;margin-top: 45px;padding-top: 52px;text-align: center;background-color: #edf8ff;border-radius: 5px;-webkit-border-radius: 5px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.system-info .process h4{display: block;font-size: 20px;line-height: 25px;color: #002c5f;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .process ul{position: relative;width: 826px;height: 150px;margin: 40px auto 0;text-align: center;background: url('../images/career/process.png') left 0 no-repeat;}
+.system-info .process ul li{display: inline-block;position: absolute;top: 95px;font-size: 15px;line-height: 23px;color: #292929;text-align: center;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .process ul li.list01{left: 15px;}
+.system-info .process ul li.list02{left: 152px;}
+.system-info .process ul li.list03{left: 301px;}
+.system-info .process ul li.list04{left: 406px;}
+.system-info .process ul li.list05{left: 583px;}
+.system-info .process ul li.list06{left: 768px;}
+.system-info .process ul li span{display: block;font-size: 14px;line-height: 20px;font-family:'현대산스 Text 보통','현대산스 Text','HyundaiSansTextKRRegular';}
+.system-info .about .table-wrap .data-table tr td{padding: 5px 20px;}
+.system-info .about .table-wrap .data-table tr td strong{display: block;font-size: 14px;line-height: 25px;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .about .table-wrap .data-table tr td p{padding-top: 6px;color: #555;}
+.system-info .about.cdp{overflow: hidden;}
+.system-info .about .process02{float: left;width: 250px;}
+.system-info .about .process02 .data-list:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.system-info .about .process02 .data-list li{position: relative;width: 250px;height: 130px;}
+.system-info .about .process02 .data-list li div{height: 100px;padding-left: 20px;font-size: 14px;line-height: 20px;text-align: left;box-sizing: border-box;-webkit-box-sizing: border-box;border-radius: 5px;-webkit-border-radius: 5px;background-color: #ececec;font-family:'현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .about .process02 .data-list li div span{display: block; padding-top: 21px; padding-bottom: 10px; padding-left: 0; font-size: 16px; color: #555;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.system-info .about .process02 .data-list li:after{content: '';display: block;position: absolute;left: 119px;top: 112px;width: 19px;height: 11px;background: url('../images/common/arrow_08.png') 0 0 no-repeat;}
+.system-info .about .process02 .data-list li.confirm div{background-color: #00b9e4;color: #fff;}
+.system-info .about .process02 .data-list li.migrate div{background-color: #002c5f;color: #fff;}
+.system-info .about .process02 .data-list li.migrate:after{display: none;}
+.system-info .about .process02 .data-list li.confirm div span,
+.system-info .about .process02 .data-list li.migrate div span{color: #fff;}
+.system-info .about .info-wrap{float: left;}
+.system-info .about .info-wrap .data-list li{height: 130px;padding-left: 20px;text-align: left;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.system-info .about .info-wrap .data-list li li{height: auto;padding-top: 0;padding-left: 0;line-height: 25px;}
+.system-info .about .info-wrap .data-list li span{display: block;padding-left: 10px;font-size: 12px;line-height: 25px;}
+
+/*성과와 평가*/
+/*평가*/
+.result .info-wrap{width: 1060px;margin: 0 auto;}
+.result .info-wrap:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .plan{float: left;width: 673px;height: 300px;padding-top: 60px;border-right: 1px solid #e1e1e1;}
+.result .info-wrap .detail{float: left;margin-top: 38px;}
+.result .info-wrap h3.subject{font-size: 30px;line-height: 30px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.result .info-wrap .subject .btn-more{display: inline-block; margin-left: 13px; width: 28px; height: 28px; vertical-align: top; background: url(../images/common/ico_more_01.png) 0 0 no-repeat; font-size: 0; line-height: 999em; text-indent: 999em; overflow: hidden; border: 0 none;-webkit-appearance: none;}
+.result .info-wrap .plan .detail{min-width: 285px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.result .info-wrap .plan .detail + .detail{padding-left: 35px;border-left: 1px solid #e1e1e1;}
+.result .info-wrap .detail h4{padding-bottom: 15px;font-size: 20px;line-height: 20px;color: #292929;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+.result .info-wrap .detail p{font-size: 24px;line-height: 34px;color: #555;font-weight: normal;}
+.result .info-wrap .plan .detail .data-list{}
+.result .info-wrap .plan .detail .data-list li{margin-top: 10px;height: 24px;line-height: 24px;}
+.result .info-wrap .plan .detail .data-list li:first-child{margin-top: 5px;}
+.result .info-wrap .plan .detail .data-list li .tag{margin-right: 6px;padding: 0 6px;}
+.result .info-wrap .take-charge{float: right;width: 385px;height: 300px;padding-top: 60px;padding-left: 60px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.result .info-wrap .take-charge:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .take-charge .subject .btn-more{float: right;}
+.result .info-wrap .take-charge .data-list{padding-top: 29px;}
+.result .info-wrap .take-charge .data-list li{width: 100%;border-top: 1px solid #e1e1e1;}
+.result .info-wrap .take-charge .data-list li:first-child{border-top: 2px solid #292929;}
+.result .info-wrap .take-charge .data-list li:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.result .info-wrap .take-charge .data-list li span{display: block;float: left;height: 49px;line-height: 49px;padding-left: 10px;font-size: 15px;color: #555;}
+.result .info-wrap .take-charge .data-list li strong{display: block;float: right;height: 49px;line-height: 49px;padding-right: 10px;font-size: 15px;color: #292929;font-weight: normal;font-family:'현대산스 Text 중간','현대산스 Text Medium','HyundaiSansTextKRMedium';}
+

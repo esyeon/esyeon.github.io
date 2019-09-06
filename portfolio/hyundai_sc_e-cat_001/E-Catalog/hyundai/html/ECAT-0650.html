@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>CoP 강의실 - 일반 게시판</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../css/button.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#container" class="skipLink">본문바로가기</a>
+	</div>
+	<div class="wrap">
+
+		<!--Header-->
+		<div class="header lectureRoom">
+			<div class="h_lectureWrap">
+				<h1><a href="#"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+				<span class="current_pos cop">CoP</span>
+				<div class="user-right">
+					<a href="#" class="icon-txt">지식인</a>
+					<span class="userName pf_hover knw" data-tooltip="knw">홍길동님</span>
+				</div>
+			</div>
+		</div>
+		<!-- //Header-->
+
+		<!--Content-->
+		<div id="container" class="container">
+			<div class="classRoom_content cop">
+				<!-- Left Gnb-->
+				<div class="leftGnb scrolling">
+					<div class="gnbTop">
+						<ul class="room_location">
+							<li class="s-typeIcon">R&amp;D</li>
+							<li>CoP</li>
+						</ul>
+						<h2 class="solutionTitle">CoP <br>신규 교육과정</h2>
+						<p class="learningTime">학습기간 : 18.10.10 - 18.12.12</p>
+						
+						<div class="search">
+							<input type="text" class="word_text" placeholder="글내용, 작성자 검색">
+							<button class="search-input sch_btn">검색</button>
+							<ul class="search-sim">
+								<li><a href="#">본문:<span class="word"></span></a></li>
+								<li><a href="#">작성자:<span class="word"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="learner_info">
+							<a href="#" class="learner">학습자<span class="highlight">21</span></a>
+							<a href="#" class="my-learn">나의 학습</a>
+						</div>
+						<a href="#" class="cop_addmin">관리</a>
+					</div>
+					<div class="gnbBot">
+						<ul class="gnbList">
+							<li><a href="#">학습홈</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li class="on"><a href="#">게시판 1</a></li>
+							<li><a href="#">게시판 2</a></li>
+							<li><a href="#">게시판 3</a></li>
+							<li><a href="#">게시판 4</a></li>
+						</ul>
+						<div class="file_menu"><a href="#">파일함</a></div>
+						<ul class="elseInfo">
+							<li><span class="mileage">마일리지</span>15점</li>
+							<li><span class="place">학습장소</span>의왕</li>
+						</ul>
+						<a href="#" class="link" target="_blank">솔루션 상세</a>
+					</div>
+				</div>
+				<!-- //Left Gnb-->
+
+				<div class="rightContent">
+					<div class="sec">
+						<!--
+						************** class 유형 *************
+						sol_notice :공지사항 / sol_dataRoom : 자료실 / sol_board : 게시판
+						sol_react : 반응평가 / sol_ba : 사전 사후 솔루션 / sol_file : 파일함
+						-->
+						<div class="title_else">
+							<h2 class="sol_notice">게시판1<a href="#" class="next" onclick=""><span>권한보기</span></a></h2>
+							
+							<div class="find">
+								<input type="text" placeholder="게시판 내 검색">
+								<button class="btn_sch">검색</button>
+							</div>
+						</div>
+
+						<div class="innerWrap">
+							<div class="editor">
+								<div class="write-1">
+									 
+								</div>
+								
+								<div class="write-2">
+									
+									<div class="post_button">
+										<div class="fileUpload">
+											<div type="text" id="filePath" class="filePath">
+												<span class="validate">"파일은 개당 100MB, 최대 5개까지 업로드 가능합니다."</span>
+											</div>
+											<label for="upload" class="fileBtn">파일첨부</label>
+											<input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple">
+										</div>
+										<button class="btnBasic request"><span class="inTxt">게시</span></button>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="post">
+								<p class="user">
+									<span class="u1">게시판 이름</span>
+									<span class="u2 pf_hover" data-tooltip="pf1">홍길동 과장</span>
+									<span class="date">19.01.02</span>
+								</p>
+								<!--190306 수정-->
+								<div class="contwrite">
+									<p>저희 이번신규 교육과정 개발 방법론 연구 CoP 학습 위치 변경할게요. <br>카톡으로 다시 말씀드리겠지만 이번엔 개발 2동 입니다. 2동!! <br>수요일 저녁 8시 개발 2동에서 봐요~ <br><br> PS. 오실 때 아래 문서 프린트 해오기 잊지마세요 :D</p>
+									<div class="text_button">
+                    <button class="btnText modi wrote_justify" onclick="popup(1)"><span class="inTxt">수정</span></button>
+                    <button class="btnText del" onclick="popup(2)"><span class="inTxt">삭제</span></button>
+                  </div>
+								</div>
+								<!--190306 수정-->
+								
+
+								<div class="attachFile">
+									<p>첨부파일 <span>2</span></p>
+									<p class="file"><a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a></p>
+									<p class="file"><a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a></p>
+								</div>
+
+								<ul class="counting">
+									<li class="like">
+										<span class="icon_heart">좋아요</span>
+										<span class="highlight">12</span>
+									</li>
+									<li class="write"><a href="#">댓글 <span class="highlight">2</span></a></li>
+								</ul>
+								<form action="">
+									<div class="write">
+										<div class="Msg">
+											<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+										</div>
+										<button class="btnPoint">등록</button>
+									</div>
+								</form>
+							</div><!-- //post-->
+							
+							<div class="post mt30">
+								<p class="user">
+									<span class="u1">게시판 이름</span>
+									<span class="u2 pf_hover" data-tooltip="pf2">홍길동 과장</span>
+									<span class="date">19.01.02</span>
+								</p>
+								
+								<!--190306 수정-->
+								<div class="contwrite">
+									<p>저희 이번신규 교육과정 개발 방법론 연구 CoP 학습 위치 변경할게요. <br>카톡으로 다시 말씀드리겠지만 이번엔 개발 2동 입니다. 2동!! <br>수요일 저녁 8시 개발 2동에서 봐요~ <br><br> PS. 오실 때 아래 문서 프린트 해오기 잊지마세요 :D</p>
+									<div class="text_button">
+                    <button class="btnText modi wrote_justify" onclick="popup(1)"><span class="inTxt">수정</span></button>
+                    <button class="btnText del" onclick="popup(2)"><span class="inTxt">삭제</span></button>
+                  </div>
+								</div>
+								<!--190306 수정-->
+								
+								<ul class="counting">
+									<li class="like">
+										<span class="icon_heart">좋아요</span>
+										<span class="highlight">12</span>
+									</li>
+									<li class="write"><a href="#">댓글 <span class="highlight">2</span></a></li>
+								</ul>
+								<form action="">
+									<div class="write">
+										<div class="Msg">
+											<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+										</div>
+										<button class="btnPoint">등록</button>
+									</div>
+								</form>
+							</div><!-- //post-->
+							
+							<div class="post mt30">
+								<p class="user">
+									<span class="u1">게시판 이름</span>
+									<span class="u2 pf_hover" data-tooltip="pf3">홍길동 과장</span>
+									<span class="date">19.01.02</span>
+								</p>
+								
+								<!--190306 수정-->
+								<div class="contwrite">
+									<p>저희 이번신규 교육과정 개발 방법론 연구 CoP 학습 위치 변경할게요. <br>카톡으로 다시 말씀드리겠지만 이번엔 개발 2동 입니다. 2동!! <br>수요일 저녁 8시 개발 2동에서 봐요~ <br><br> PS. 오실 때 아래 문서 프린트 해오기 잊지마세요 :D</p>
+									<div class="text_button">
+                    <button class="btnText modi wrote_justify" onclick="popup(1)"><span class="inTxt">수정</span></button>
+                    <button class="btnText del" onclick="popup(2)"><span class="inTxt">삭제</span></button>
+                  </div>
+								</div>
+								<!--190306 수정-->
+								
+								<ul class="counting">
+									<li class="like">
+										<span class="icon_heart">좋아요</span>
+										<span class="highlight">12</span>
+									</li>
+									
+									<li class="write"><a href="#">댓글 <span class="highlight">2</span></a></li>
+								</ul>
+								<form action="">
+									<div class="write">
+									<div class="Msg">
+										<textarea class="msgWrite" placeholder="20byte 이상 입력해 주세요"></textarea>
+										<div class="chekcByte"><span class="count">0</span>byte</div>
+									</div>
+									<button class="btnPoint">등록</button>
+								</div>
+								</form>
+							</div><!-- //post-->
+
+						</div>
+
+
+					</div>
+				</div>
+			</div><!-- //classRoom_content-->
+
+
+		</div><!-- // Container-->
+
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footWrap">
+				<ul class="link">
+					<li><a href="#">프로필</a></li>
+					<li><a href="#">포털 설정</a></li>
+					<li><a href="#">개인정보 위탁관리</a></li>
+					<li><a href="#" class="point">개인정보처리 방침</a></li>
+					<li><a href="#">도움센터</a></li>
+				</ul>
+
+				<p class="copyright">COPYRIGHT &copy; HYUNDAI MOTOR COMPANY.ALL RIGHTS RESERVED.</p>
+
+				<div class="util_btn site">
+					<span class="btn_inner">관련 사이트</span>
+					<div class="select_list">
+						<a href="#">관련사이트1</a>
+						<a href="#">관련사이트2</a>
+						<a href="#">관련사이트3</a>
+					</div>
+				</div>
+				<div class="util_btn right">
+					<a href="#" class="btn_inner">권한을 변경하세요</a>
+					<div class="select_list">
+						<a href="#">권한변경1</a>
+						<a href="#">권한변경2</a>
+						<a href="#">권한변경3</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer-->
+
+
+		<!--************* 팝업 **************-->
+    
+    <!--게시글 수정 버튼 클릭 시-->
+    <div id="popup1" class="popup cop_w_edit">
+			<div class="pop_header">
+				<p class="popTitle">게시글 수정</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap auto">
+					<div class="innerWrap">
+						<div class="editor upload_edit">
+								<div class="write-1">
+									 Froala Editor Area
+								</div>
+								
+								<div class="write-2">
+									<textarea name="" placeholder=""></textarea>
+								</div>
+								<div class="fileUpload">
+                  <div type="text" id="filePath" class="filePath">
+                    <span class="validate">"파일은 개당 100MB, 최대 5개까지 업로드 가능합니다."</span>
+                  </div>
+                  <label for="upload" class="fileBtn">파일첨부</label>
+                  <input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple">
+                </div>
+								
+							</div>
+
+					</div>
+				</div> <!-- //contentWrap-->
+
+				<div class="pop_btnArea">
+					<button type="button" class="pop_ok"><span class="inTxt">수정</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+    <!--게시글 수정 버튼 클릭 시 END-->
+  
+
+		<!--팝업- 게시글 삭제 버튼 클릭 시-->
+		<div id="popup2" class="popup">
+			<div class="pop_header">
+				<p class="popTitle">게시글 삭제</p>
+			</div>
+
+			<div class="popCont">
+				<div class="contentWrap auto">
+					<div class="innerWrap">
+						<p class="notice pb25">게시글을 삭제하시겠습니까? <br>삭제된 게시글은 복구할 수 없습니다.</p>
+
+					</div>
+				</div> <!-- //contentWrap-->
+
+				<div class="pop_btnArea chasuAdd">
+					<button type="button" class="pop_ok"><span class="inTxt">삭제</span></button>
+					<button type="button" class="btnBasic" onclick="popclose()"><span class="inTxt">취소</span></button>
+				</div>
+			</div>
+			<button class="popupClose" onclick="popclose()">팝업창닫기</button>
+		</div>
+		<!--팝업- 게시글 삭제 버튼 클릭 시 END-->
+
+	</div><!-- //wrap-->
+	
+	<!-- 프로필 툴팁-->
+	<div id="knw" class="profile_tooltip">
+		<div class="profile_pic"><img src="../images/profile/picture.jpg" alt=""></div>
+		<div class="profile_cont">
+			<strong class="name">정현대 전문가</strong>
+			<p class="group">
+				<span class="g1">기획본부</span>
+				<span class="g2">경영전략팀</span>
+			</p>
+			<p class="work_info">UX/UI/서비스</p>
+			<ul class="p_info">
+				<li class="mail">hyundai@hyundai.com</li>
+				<li class="phone">02-123-5678</li>
+				<li class="cellphone">010-1234-5678</li>
+				<li class="location">서초</li>
+			</ul>
+		</div>
+		<a href="#" class="inquiry" target="_blank">
+			<span class="icon">icon</span>
+			<span class="over_text">지식인문의</span>
+		</a>
+	</div>
+	
+	<div id="pf1" class="profile_tooltip">
+		<div class="profile_pic"><img src="../images/profile/picture.jpg" alt=""></div>
+		<div class="profile_cont">
+			<strong class="name">정현대 전문가</strong>
+			<p class="group">
+				<span class="g1">기획본부</span>
+				<span class="g2">경영전략팀</span>
+			</p>
+			<p class="work_info">UX/UI/서비스</p>
+			<ul class="p_info">
+				<li class="mail">hyundai@hyundai.com</li>
+				<li class="phone">02-123-5678</li>
+				<li class="cellphone">010-1234-5678</li>
+				<li class="location">서초</li>
+			</ul>
+		</div>
+		<a href="#" class="inquiry" target="_blank">
+			<span class="icon">icon</span>
+			<span class="over_text">지식인문의</span>
+		</a>
+	</div>
+	
+	<div id="pf2" class="profile_tooltip">
+		<div class="profile_pic"><img src="../images/profile/picture.jpg" alt=""></div>
+		<div class="profile_cont">
+			<strong class="name">정현대 전문가</strong>
+			<p class="group">
+				<span class="g1">기획본부</span>
+				<span class="g2">경영전략팀</span>
+			</p>
+			<p class="work_info">UX/UI/서비스</p>
+			<ul class="p_info">
+				<li class="mail">hyundai@hyundai.com</li>
+				<li class="phone">02-123-5678</li>
+				<li class="cellphone">010-1234-5678</li>
+				<li class="location">서초</li>
+			</ul>
+		</div>
+		<a href="#" class="inquiry" target="_blank">
+			<span class="icon">icon</span>
+			<span class="over_text">지식인문의</span>
+		</a>
+	</div>
+	
+	<div id="pf3" class="profile_tooltip">
+		<div class="profile_pic"><img src="../images/profile/picture.jpg" alt=""></div>
+		<div class="profile_cont">
+			<strong class="name">정현대 전문가</strong>
+			<p class="group">
+				<span class="g1">기획본부</span>
+				<span class="g2">경영전략팀</span>
+			</p>
+			<p class="work_info">UX/UI/서비스</p>
+			<ul class="p_info">
+				<li class="mail">hyundai@hyundai.com</li>
+				<li class="phone">02-123-5678</li>
+				<li class="cellphone">010-1234-5678</li>
+				<li class="location">서초</li>
+			</ul>
+		</div>
+		<a href="#" class="inquiry" target="_blank">
+			<span class="icon">icon</span>
+			<span class="over_text">지식인문의</span>
+		</a>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>HYUNDAI</title>
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/base.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/common.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/career.css">
+  <link rel="stylesheet" type="text/css" href="../../@resource/css/hrr.css">
+  <script type="text/javascript" src="../../@resource/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.uniform.bundled.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/jquery.ellipsis.min.js"></script>
+  <script type="text/javascript" src="../../@resource/js/common.js"></script>
+  <script type="text/javascript" src="../../@resource/js/sonic.js"></script>
+</head>
+
+<body>
+
+  <div class="print_view_popup">
+    <div class="learn-active">
+      <h2 class="content-title">학습 계획</h2>
+
+      <!-- 탭 메뉴 영역 -->
+      <div class="tab-wrap">
+        <ul class="tab">
+          <li class=""><a href="#">학습 활동</a></li>
+          <li class="active"><a href="#">전문가 활동</a></li>
+        </ul>
+      </div>
+
+      <div id="" class="tab-cont">
+        <div class="section">
+          <fieldset class="fieldset large">
+            <legend></legend>
+            <div class="field">
+              <div class="insert">
+                <label class="label" for="radio1">유형/상태</label><input type="radio" id="radio1" name="radio" checked>
+              </div>
+              <div class="insert">
+                <label class="label" for="orgeh">유형</label>
+                <select class="select" id="orgeh">
+                  <option value="0">전체</option>
+                  <option>전체</option>
+                  <option>전체</option>
+                </select>
+              </div>
+              <div class="insert">
+                <label class="label" for="orgeh">학습상태</label>
+                <select class="select" id="orgeh1">
+                  <option value="0">전체</option>
+                  <option>전체</option>
+                  <option>전체</option>
+                </select>
+                <button type="button" class="btn type01 small">조회<span class="ico search"></span>
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <div class="insert">
+                <label class="label" for="radio12">솔루션 검색</label><input type="radio" id="radio12" name="radio">
+              </div>
+              <div class="insert">
+                <label class="label" for="orgeh">솔루션명</label>
+                <input type="text" class="input-text" name="" placeholder="" title="" disabled="disabled" style="width: 240px">
+                <button type="button" class="btn type01 small" disabled="disabled">조회<span class="ico search "></span></button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">학습계획 수립</h3>
+          <div class="sub-text ">
+            <p>e-Catalog에서 검색 버튼을 눌러 e-Catalog에 올라와 있는 자격증을 계획에 추가하실 수 있습니다. E-Catalog에 없는 자격증이나 전문 활동 계획을 추가하시려면 학습계획 직접 입력 버튼을 눌러 직접 입력하실 수 있습니다. 강의 내역 또는 마일리지를 부여 받은 학습의 경우 계획에서 삭제하실 수 없습니다.</p>
+          </div>
+          <div class="content-notice">
+            <ul class="solution-num">
+              <li>학습(강의) 예정 <span>0</span></li>
+              <li>학습(강의) 중 <span>03</span></li>
+              <li>교육결과 처리중<span>0</span></li>
+              <li>학습(강의) 완료 <span>06</span></li>
+            </ul>
+            <div class="btn-aside">
+              <button type="button" class="btn type01 small">e-Catalog에서 검색<span class="ico search"></span>
+              </button>
+              <button type="button" class="btn type01 small">학습계획 직접 입력<span class="ico write"></span>
+              </button>
+              <button type="button" class="btn type01 small" disabled>삭제<span class="ico delete_dimmed"></span></button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>학습계획 추가하기</caption>
+              <colgroup>
+                <col width="40px">
+                <col width="300px">
+                <col width="340px">
+                <col width="70px">
+                <col width="70px">
+                <col width="340px">
+                <col width="150px">
+                <col width="150px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox0" name="checkbox" disabled>
+                      <label for="checkbox0"></label>
+                    </div>
+                  </th>
+                  <th scope="col">유형</th>
+                  <th scope="col">솔루션명</th>
+                  <th scope="col">상세보기</th>
+                  <th scope="col">마일리지</th>
+                  <th scope="col">학습(강의)기간</th>
+                  <th scope="col" colspan="2">학습상태</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox" disabled>
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명<span class="badge warn">학습지연</span></td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">결과업로드</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox" disabled>
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명</td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">강의실</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox" disabled>
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명<span class="badge warn">학습지연</span></td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">결과업로드</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox" disabled>
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명</td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">강의실</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox" disabled>
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명<span class="badge warn">학습지연</span></td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">결과업로드</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명</td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">강의실</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명<span class="badge warn">학습지연</span></td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">결과업로드</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명</td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명<span class="badge warn">학습지연</span></td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">결과업로드</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="insert">
+                      <input type="checkbox" id="checkbox11" name="checkbox">
+                      <label for="checkbox11"></label>
+                    </div>
+                  </td>
+                  <td>특허</td>
+                  <td class="left">특허명</td>
+                  <td><a href="#a" class="btn-detail"><span class="ico search"></span></a></td>
+                  <td>50</td>
+                  <td>
+                    <p>2018-10-25 ~ 2018-10-30</p>
+                  </td>
+                  <td>학습 중</td>
+                  <td>
+                    <button type="button" class="btn type01 small">강의실</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <!--학습결과 없을 경우-->
+          <!--<div class="table-wrap">-->
+          <!--<table class="data-table">-->
+          <!--<caption>학습계획 추가하기</caption>-->
+          <!--<colgroup>-->
+          <!--<col width="40px">-->
+          <!--<col width="">-->
+          <!--<col width="">-->
+          <!--<col width="70px">-->
+          <!--<col width="340px">-->
+          <!--<col width="150px">-->
+          <!--<col width="150px">-->
+          <!--</colgroup>-->
+          <!--<thead>-->
+          <!--<tr>-->
+          <!--<th scope="col">-->
+          <!--<div class="insert">-->
+          <!--<div class="checker" id="uniform-checkbox0"><span><input type="checkbox" id="checkbox0" name="checkbox" disabled="disabled"></span></div>-->
+          <!--<label for="checkbox0"></label>-->
+          <!--</div>-->
+          <!--</th>-->
+          <!--<th scope="col">유형</th>-->
+          <!--<th scope="col">솔루션명</th>-->
+          <!--<th scope="col">상세보기</th>-->
+          <!--<th scope="col">신청기간 / 학습기간</th>-->
+          <!--<th scope="col" colspan="2">학습상태</th>-->
+          <!--</tr>-->
+          <!--</thead>-->
+          <!--<tbody>-->
+          <!--<tr>-->
+          <!--<td colspan="7">검색결과가 없습니다.</td>-->
+          <!--</tr>-->
+          <!--</tbody>-->
+          <!--</table>-->
+          <!--</div>-->
+          <!--학습결과 없을 경우-->
+
+          <!-- pagenation -->
+          <div class="pagination square">
+            <a href="javascript:void(0);" class="first">처음</a>
+            <a href="javascript:void(0);" class="prev">이전</a>
+            <span class="page">
+              <strong title="현위치">1</strong>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#">10</a>
+            </span>
+            <a href="javascript:void(0);" class="next">다음</a>
+            <a href="javascript:void(0);" class="last">끝</a>
+          </div>
+          <!-- //pagenation -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

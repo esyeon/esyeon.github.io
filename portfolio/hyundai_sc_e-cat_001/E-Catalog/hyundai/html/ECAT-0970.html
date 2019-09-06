@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>지식인 - 지식인 문의</title>
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/sub.css">
+  <link rel="stylesheet" type="text/css" href="../css/popup.css">
+  <link rel="stylesheet" type="text/css" href="../css/button.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+
+  <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <script type="text/javascript" src="../js/popup.js"></script>
+  <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="../js/shave.js"></script>
+  <script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+  <div id="skipNavi">
+    <a href="#container" class="skipLink">본문바로가기</a>
+  </div>
+  <div class="wrap">
+
+    <!--Header-->
+    <div class="header knw_main knw_que">
+      <div class="mask"></div>
+      <div class="headerWrap">
+        <div class="inner">
+          <div class="hd_top clear">
+            <h1><a href="#"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+
+            <div class="qna">
+              <!--확인하지 않은 문의글 또는 답변 있을 경우 -->
+              <!--<span class="new">4</span>-->
+              <a href="#">지식인</a>
+            </div>
+
+            <div class="myArea">
+
+              <span class="userName">홍길동</span>
+              <div class="dropdown">
+                <div class="dropdown_Wrap">
+                  <div class="title">
+                    <p class="menuTit dim">Solution Title</p>
+                    <p class="menuTit">Solution Title</p>
+                  </div>
+                </div>
+                <ul class="downlist">
+                  <li><a href="#">나의 학습 과정</a></li>
+                  <li><a href="#">나의 수강신청 과정</a></li>
+                  <li><a href="#">나의 찜하기</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- //hd_top-->
+
+          <div class="hd_mid txt_wrap">
+            <h2>지식인 문의</h2>
+            <p>온라인 문의로 시간과 공간 제약없이 빠르게 해결하고, 오프라인 문의로 보다 자세한 답변을 얻을 수 있습니다. </p>
+          </div>
+
+
+        </div><!-- //inner-->
+
+      </div><!-- //headerWrap-->
+
+
+    </div>
+    <!-- //Header-->
+
+    <!--Content-->
+    <div class="container knw_que_cont">
+
+      <div class="inner">
+        <div class="content ">
+          <div class="sec field_choice">
+            <div class="showArea">
+              <!--한줄일때 .one_line-->
+              <p class="tit one_line">문의 하고 싶은 <span>부문</span>과 <span>분야</span>,<span>전문가</span>를 선택해주세요.</p>
+
+              <!--선택된 전문가 노출 방식 일 CASE 2줄-->
+              <!--<p class="tit"><span>R&D 부문</span>의 <span>총무전문가</span>에게 문의 <br>-->
+              <!--가길동 책임연구원, 홍길동 책임 연구원 외 1-->
+              <!--</p>-->
+              <!--선택된 전문가 노출 방식 일 CASE-->
+
+              <button type="button" class="btnBasic que_choice_btn"><span class="inTxt">선택 하기</span></button>
+            </div>
+
+            <div class="hiddenArea">
+              <!--부문선택-->
+              <div class="interest_field_wrap" style="display: none;">
+                <div class="sort_title">
+                  <span><span>19</span>개</span>의 부문입니다.
+                </div>
+                <div class="interest_field_slider">
+                  <ul class="">
+                    <li>
+                      <div class="subject selected"><a href="#">총무</a></div>
+                      <div><a href="#">R&amp;D</a></div>
+                      <div><a href="#">부문명3</a></div>
+                      <div><a href="#">부문명4</a></div>
+                      <div><a href="#">부문명5</a></div>
+                      <div><a href="#">부문명6</a></div>
+                      <div><a href="#">부문명7</a></div>
+                      <div><a href="#">부문명8</a></div>
+                      <div><a href="#">부문명9</a></div>
+                      <div><a href="#">부문명10</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">부문명11</a></div>
+                      <div><a href="#">부문명12</a></div>
+                      <div><a href="#">부문명13</a></div>
+                      <div><a href="#">부문명14</a></div>
+                      <div><a href="#">부문명15</a></div>
+                      <div><a href="#">부문명16</a></div>
+                      <div><a href="#">부문명17</a></div>
+                      <div><a href="#">부문명18</a></div>
+                      <div><a href="#">부문명19</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--부문선택-->
+
+              <!--분야 선택-->
+              <div class="interest_field_wrap" style="display:;">
+                <div class="sort_title">
+                 
+                  <!--190429 수정-->
+									<a href="#" class="field_name"><span>공통)국내영업_test</span></a>
+									 <!--190429 수정 END-->
+                 
+                  <span><span>19</span>개</span>의 부문입니다.
+                  <div class="right">
+                    <span>분야는 2개까지 선택 가능합니다.</span>
+                  </div>
+                </div>
+                <div class="interest_select_slider">
+                  <ul>
+                    <li>
+                      <div class="">
+                        <a href="#">분야명분야명분야명분야명분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명분야명분야명분야명분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="selected">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <a href="#">분야명</a>
+                        <div class="hover_txt">
+                          <p class="name">분야명</p>
+                          <p class="txt">‘A’부터 ‘Z’까지의 업무를 소화할 수 있는 역량을 가진 전문가입니다.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="error_msg">분야는 2개까지 선택 가능합니다.</p>
+                </div>
+                <!--전문가 선택 리스트-->
+                <div class="search_wrap">
+                  <div class="search_top">
+                    <form action="">
+                      <input type="text" placeholder="전문가 이름, 직무 검색하여 선택">
+                      <button class="search_btn"></button>
+                    </form>
+                  </div>
+                  <div class="list_wrap">
+                    <div class="top_title">
+                      <p><span class="field_name">R&amp;D</span>총무전무가 <span class="num">27</span></p>
+                      <p>선택 <span class="num">0</span></p>
+                    </div>
+
+                    <div class="table scrolling">
+                      <table>
+                        <caption>전문가 리스트</caption>
+                        <colgroup>
+                          <col width="56px;">
+                          <col width="150px;">
+                          <col>
+                          <col>
+                          <col width="80px;">
+                          <col width="45px;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>No.</th>
+                            <th>이름 직급</th>
+                            <th>분야</th>
+                            <th>직무</th>
+                            <th>Lv.</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc1" checked="">
+                                <label for="etc1"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc2">
+                                <label for="etc2"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc3">
+                                <label for="etc3"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc4">
+                                <label for="etc4"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc5">
+                                <label for="etc5"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc6">
+                                <label for="etc6"></label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>홍길동<span>대리</span></td>
+                            <td>R&amp;D</td>
+                            <td>직무명</td>
+                            <td>10</td>
+                            <td>
+                              <div class="chkBox">
+                                <input type="checkbox" name="" id="etc7">
+                                <label for="etc7"></label>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!--전문가 선택 리스트-->
+                <!--버튼-->
+                <div class="button_wrap">
+                  <button type="button" class="btnBasic all_que_btn"><span class="inTxt">선택하지 않고 총무전문가, 복지전문가 전체 문의</span></button>
+                  <button type="button" class="btnBasic"><span class="inTxt">선택완료</span></button>
+                </div>
+                <!--버튼-->
+
+              </div>
+              <!--분야 선택-->
+
+
+            </div>
+          </div>
+          <div class="sec">
+            <div class="que_type_01">
+              <div class="num_title">
+                <p class="num">01</p>
+                <p>문의 유형을 선택해주세요.</p>
+              </div>
+              <ul class="tab_radio">
+                <li>
+                  <input type="radio" name="radio2" id="radio1" class="ip_radio" checked="" data-target="online">
+                  <label for="radio1">온라인문의</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio2" id="radio2" class="ip_radio" data-target="offline">
+                  <label for="radio2">오프라인문의</label>
+                </li>
+              </ul>
+              <div class="guide_wrap">
+                문의일로부터 10일 내 전문가 답변예정입니다.<br>
+                온라인문의의 경우 답변일로부터, 오프라인 문의의 경우 미팅일로부터 10일 내 만족도 평가 완료 시 해당 문의에 대한 마일리지 획득이 가능합니다.
+              </div>
+              <div class="offline_wrap">
+                <form action="">
+                  <div class="grey_box">
+                    <div class="Period-date">
+                      <label for="course_apply"></label>
+                      <input type="text" class="datepicker" id="course_apply" value="2018.03.24">
+
+                    </div>
+                    <select id="selectList" class="select">
+                      <option>오후 1시</option>
+                      <option>오후 1시 30분</option>
+                      <option>오후 2시 30분</option>
+                      <option>오후 2시 30분</option>
+                    </select>
+                    <span>에</span>
+                    <!--.error 클래스 빨간 테두리 활성화-->
+                    <input type="text" class="input_place" placeholder="대표 장소명">
+                    <span>에서 오프라인 문의 미팅 요청드립니다.</span>
+                  </div>
+                  <!--<input type="text" class="input_place error" 가 되면 .error_msg가 보여야함.>-->
+                  <!--<div class="error_msg">-->
+                  <!--오프라인 문의를 희망하는 장소명을 입력해주세요.-->
+                  <!--</div>-->
+                  <div class="guide_txt">
+                    질문일로부터 3일 이후부터 설정 가능합니다. 설정일은 권장 요청 기간이며 전문가에 의해 변동될 수 있습니다.<br>
+                    변동 시에는 메일로 변동일을 알려드립니다.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="sec">
+            <div class="que_type_02">
+              <div class="num_title">
+                <p class="num">02</p>
+                <p>문의 유형을 선택해주세요.</p>
+              </div>
+              <div class="editor_wrap">
+                <form action="">
+                  <div class="input_byte">
+                    <label for="writeTitle" class="blind">문의 내용 제목</label>
+                    <!--.error 클래스 빨간 테두리 활성화-->
+                    <!--<input type="text" class="input_title error" id="writeTitle" placeholder="제목은 50 byte 까지 입력가능합니다.">-->
+                    <input type="text" class="input_title" id="writeTitle" placeholder="제목은 50 byte 까지 입력가능합니다.">
+                    <p class="byte"><span>0</span>/<span>50</span>byte</p>
+                    <!--<input type="text" class="input_title error" 가 되면 .error_msg가 보여야함.>-->
+                    <!--<div class="error_msg">-->
+                    <!--문의 제목을 입력해주세요.-->
+                    <!--</div>-->
+                  </div>
+                  <div class="editor" style="background:#ccc; height: 38px; line-height: 38px; text-align: center;">
+                    Froala Editor Area
+                  </div>
+                  <!-- 에디터 영역에서 게시글 입력으로 사용하실 예정이면 아래 textarea 삭제 하셔도 됩니다. -->
+                  <div class="textarea_byte">
+                    <textarea class="" placeholder="문의 내용을 입력해주세요."></textarea>
+                    <p class="byte"><span>0</span>Byte</p>
+                  </div>
+                  <div class="fileUpload boardWrite">
+                    <div type="text" id="filePath" class="filePath">
+                      <span class="validate">파일은 개당 100MB, 최대 5개까지 업로드 가능합니다.</span>
+                    </div>
+                    <label for="upload" class="fileBtn">파일첨부</label>
+                    <input type="file" onchange="showUrl()" id="upload" class="input_file" multiple="multiple">
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="button_wrap">
+            <button class="btnBasic bg"><span class="inTxt">문의하기</span></button>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- // Container-->
+    <!--footer-->
+    <div class="footer">
+      <div class="footWrap">
+        <ul class="link">
+          <li><a href="#">프로필</a></li>
+          <li><a href="#">포털 설정</a></li>
+          <li><a href="#">개인정보 위탁관리</a></li>
+          <li><a href="#" class="point">개인정보처리 방침</a></li>
+          <li><a href="#">도움센터</a></li>
+        </ul>
+
+        <p class="copyright">COPYRIGHT &copy; HYUNDAI MOTOR COMPANY.ALL RIGHTS RESERVED.</p>
+
+        <div class="util_btn site">
+          <span class="btn_inner">관련 사이트</span>
+          <div class="select_list">
+            <a href="#">관련사이트1</a>
+            <a href="#">관련사이트2</a>
+            <a href="#">관련사이트3</a>
+          </div>
+        </div>
+        <div class="util_btn right">
+          <a href="#" class="btn_inner">권한을 변경하세요</a>
+          <div class="select_list">
+            <a href="#">권한변경1</a>
+            <a href="#">권한변경2</a>
+            <a href="#">권한변경3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //footer-->
+
+    <!--솔루션 요청 신청완료 팝업-->
+    <div class="popup sol_Complete" style="display:none">
+      <div class="pop_header">
+        <p class="popTitle">솔루션 요청</p>
+      </div>
+      <div class="popCont">
+        <div class="complete">
+          <p>솔루션 요청이 완료되었습니다. <br>
+            <span>부문 담당자 검토 후 적합 여부에 따라 솔루션이 개설</span>됩니다. <br>
+            개설에 소요되는 시간은 상황에 따라 달라지며 개설 시 별도 알림은 제공되지 않습니다.</p>
+        </div>
+      </div>
+
+      <div class="pop_btnArea">
+        <button class="btnBasic pop_ok" onclick="popclose()"><span>확인</span></button>
+      </div>
+      <button class="popupClose" onclick="popclose()">팝업창닫기</button>
+    </div>
+    <!--popup-->
+
+  </div>
+  <!--wrap-->
+  <script>
+    $(function () {
+      $(".datepicker").datepicker({
+        dateFormat: 'yy-mm-dd',
+        changeYear: true,
+      });
+    });
+  </script>
+
+</body>
+
+</html>

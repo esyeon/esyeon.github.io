@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>KIA CoP 강의실-솔루션 소개 영역 기능 동작</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/sub.css">
+	<link rel="stylesheet" type="text/css" href="../css/button.css">
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css">
+
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+	<script>
+	$(function(){
+		$('.l-purpose .more-view').trigger('click')
+		$('.problem .ask').trigger('click')
+	})
+	</script>
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#container" class="skipLink">본문바로가기</a>
+	</div>
+	<div class="wrap">
+
+		<!--Header-->
+		<div class="header lectureRoom">
+			<div class="h_lectureWrap">
+				<h1><a href="#"><img src="../images/common/logo.png" alt="HYUNDAI e-catalog"></a></h1>
+				<span class="current_pos cop">CoP</span>
+				<div class="user-right">
+					<a href="#" class="icon-txt">지식인</a>
+					<span class="userName">홍길동님</span>
+				</div>
+			</div>
+		</div>
+		<!-- //Header-->
+
+		<!--Content-->
+		<div id="container" class="container">
+			<div class="classRoom_content cop">
+				<!-- //Left Gnb-->
+				<div class="leftGnb scrolling">
+					<div class="gnbTop">
+						<ul class="room_location">
+							<li class="s-typeIcon">R&amp;D</li>
+							<li>CoP</li>
+						</ul>
+						<h2 class="solutionTitle">CoP <br>신규 교육과정</h2>
+						<p class="learningTime">학습기간 : 18.10.10 - 18.12.12</p>
+						
+						<div class="search">
+							<input type="text" class="word_text" placeholder="글내용, 작성자 검색">
+							<button class="search-input sch_btn">검색</button>
+							<ul class="search-sim">
+								<li><a href="#">본문:<span class="word"></span></a></li>
+								<li><a href="#">작성자:<span class="word"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="learner_info">
+							<a href="#" class="learner">학습자<span class="highlight">21</span></a>
+							<a href="#" class="my-learn">나의 학습</a>
+						</div>
+						<a href="#" class="cop_addmin">관리</a>
+					</div>
+					<div class="gnbBot">
+						<ul class="gnbList">
+							<li class="on"><a href="#">학습홈</a></li>
+							<li><a href="#" class="no-open">공지사항</a></li> <!--비공개시 class  no-open 추가-->
+							<li><a href="#">자료실</a></li>
+							<li><a href="#">게시판 1</a></li>
+							<li><a href="#">게시판 2</a></li>
+							<li><a href="#">게시판 3</a></li>
+						</ul>
+						<div class="file_menu"><a href="#">파일함</a></div>
+						<ul class="elseInfo">
+							<li><span class="mileage">마일리지</span>15점</li>
+							<li><span class="place">학습장소</span>의왕</li>
+						</ul>
+						<a href="#" class="link" target="_blank">솔루션 상세</a>
+					</div>
+				</div>
+				<!-- //Left Gnb-->
+
+				<div class="rightContent">
+					<!--공지사항-->
+					<div class="notice">
+						<a href="#">
+							<span class="n_cate">공지사항</span>
+							<p class="n_tit">신규 교육과정개발방법론연구 솔루션 공지</p>
+							<span class="n_date">19.01.01</span>
+						</a>
+					</div>
+					<!-- //공지사항-->
+
+					<!--댓글알림-->
+					<div class="notice reply">
+						<a href="#">
+							<span class="n_cate">댓글알림</span>
+							<p class="n_tit">읽지 않은 댓글 7</p>
+						</a>
+						<div class="board">
+
+							<div class="row">
+								<p class="show_write">
+									<span class="board-name">게시판</span>
+									<span class="board-cont">저희 이번 신규 교육과정 개발방법론 연구 CoP 학습 위치 변경할게요. 카톡으로 변경사항 보내드린 것 읽어보셨나요?</span>
+								</p>
+								<ul class="reply">
+									<li>
+										<p class="user"><span>홍길동</span> 대리</p>
+										<p class="txt">네. 좋은 자료 너무 너무 감사합니다!</p>
+										<p class="date">18.12.21</p>
+									</li>
+
+								</ul>
+							</div>
+
+							<div class="row">
+								<p class="show_write">
+									<span class="board-name">게시판</span>
+									<span class="board-cont">저희 이번 신규 교육과정 개발방법론 연구 CoP 학습 위치 변경할게요. 카톡으로 변경사항 보내드린 것 읽어보셨나요?</span>
+								</p>
+								<ul class="reply">
+									<li>
+										<p class="user"><span>홍길동</span> 대리</p>
+										<p class="txt">네. 좋은 자료 너무 너무 감사합니다!</p>
+										<p class="date">18.12.21</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="row">
+								<p class="show_write">
+									<span class="board-name">게시판</span>
+									<span class="board-cont">저희 이번 신규 교육과정 개발방법론 연구 CoP 학습 위치 변경할게요. 카톡으로 변경사항 보내드린 것 읽어보셨나요?</span>
+								</p>
+								<ul class="reply">
+									<li>
+										<p class="user"><span>홍길동</span> 대리</p>
+										<p class="txt">네. 좋은 자료 너무 너무 감사합니다!</p>
+										<p class="date">18.12.21</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="row">
+								<p class="show_write">
+									<span class="board-name">게시판</span>
+									<span class="board-cont">저희 이번 신규 교육과정 개발방법론 연구 CoP 학습 위치 변경할게요. 카톡으로 변경사항 보내드린 것 읽어보셨나요?</span>
+								</p>
+								<ul class="reply">
+									<li>
+										<p class="user"><span>홍길동</span> 대리</p>
+										<p class="txt">네. 좋은 자료 너무 너무 감사합니다!</p>
+										<p class="date">18.12.21</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="row">
+								<p class="show_write">
+									<span class="board-name">게시판</span>
+									<span class="board-cont">저희 이번 신규 교육과정 개발방법론 연구 CoP 학습 위치 변경할게요. 카톡으로 변경사항 보내드린 것 읽어보셨나요?</span>
+								</p>
+								<ul class="reply">
+									<li>
+										<p class="user"><span>홍길동</span> 대리</p>
+										<p class="txt">네. 좋은 자료 너무 너무 감사합니다!</p>
+										<p class="date">18.12.21</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //댓글알림-->
+
+					<div class="sec">
+						<div class="innerWrap">
+							<div class="l-purpose">
+								<h3>학습 목적 </h3>
+								<p class="nmTxt">호스트가 CoP 개설 시 입력한 학습목적 텍스트 노출되며 길어질 경우 말줄임 없으며 목적 전체 노출된다. 호스트가 CoP 개설 시 입력한 학습목적 텍스트 노출되며 길어질 경우 말줄임 없으며 목적 전체 노출된다.</p>
+
+								<div class="dropdown">
+									<h3>학습 대상</h3>
+									<p class="nmTxt">조직 내 이해관계자 모두, 직급에 관계없이 대상 포함</p>
+
+									<h3>학습 대상</h3>
+									<p class="nmTxt">조직 내 이해관계자 모두, 직급에 관계없이 대상 포함</p>
+
+									<h3>기대 효과</h3>
+									<p class="nmTxt">ADMIN에서 등록한 기대효과</p>
+
+									<h3>학습 내용</h3>
+									<p class="nmTxt">교육체계를 수립하는 방법을 학습함, 그리고 나머지는 실습할 것임</p>
+								</div>
+								<a href="#" class="more-view">더 보기</a>
+							</div>
+
+							<div class="tbl mt20">
+								<table>
+									<colgroup>
+										<col style="width:10%" />
+										<col style="width:20%" />
+										<col style="width:auto" />
+										<col style="width:15%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th>일정</th>
+											<th>주제</th>
+											<th>학습 내용</th>
+											<th>장소</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1주차</td>
+											<td>빅데이터</td>
+											<td>관련 북스터디를 통해 빅데이터에 대한 이해도 향상</td>
+											<td>설계 1동</td>
+										</tr>
+										<tr>
+											<td>2주차</td>
+											<td>빅데이터</td>
+											<td>관련 북스터디를 통해 빅데이터에 대한 이해도 향상</td>
+											<td>설계 1동</td>
+										</tr>
+										<tr>
+											<td>3주차</td>
+											<td>빅데이터</td>
+											<td>관련 북스터디를 통해 빅데이터에 대한 이해도 향상</td>
+											<td>설계 1동</td>
+										</tr>
+										<tr>
+											<td>4주차</td>
+											<td>빅데이터</td>
+											<td>관련 북스터디를 통해 빅데이터에 대한 이해도 향상</td>
+											<td>설계 1동</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="problem">
+								<p class="ask tl">함께 보면 좋은 솔루션 <span>7</span></p>
+								<div class="answer">
+									<ul class="share_sol">
+										<li><a href="#" title="교육과정 방법론">교육과정 방법론</a></li>
+										<li><a href="#" title="교육과정 방법론">교육과정 방법론</a></li>
+										<li><a href="#" title="교육과정 방법론">교육과정 방법론</a></li>
+										<li><a href="#" title="교육과정 방법론">교육과정 방법론</a></li>
+										<li><a href="#" title="교육과정 방법론">교육과정 방법론</a></li>
+										<li><a href="#" title="제안 PT포맷">제안 PT포맷</a></li>
+										<li><a href="#" title="제안 PT포맷">제안 PT포맷</a></li>
+										<li><a href="#" title="제안 PT포맷">제안 PT포맷</a></li>
+										<li><a href="#" title="제안 PT포맷">제안 PT포맷</a></li>
+										<li><a href="#" title="제안 PT포맷">제안 PT포맷</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //학습목적-->
+
+					<!--최근 게시물-->
+					<div class="sec mt50">
+						<h2 class="sol_recent">최근 게시물</h2>
+						<div class="innerWrap ">
+
+							<div class="post">
+								<p class="user">
+									<span class="u1">게시판 이름</span>
+									<span class="u2">홍길동 과장</span>
+									<span class="date">19.01.02</span>
+								</p>
+								<div class="contwrite">
+									저희 이번신규 교육과정 개발 방법론 연구 CoP 학습 위치 변경할게요. <br>카톡으로 다시 말씀드리겠지만 이번엔 개발 2동 입니다. 2동!! <br>수요일 저녁 8시 개발 2동에서 봐요~ <br><br> PS. 오실 때 아래 문서 프린트 해오기 잊지마세요 :D
+								</div>
+								<div class="attachFile">
+									<p>첨부파일 <span>2</span></p>
+									<p class="file"><a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a></p>
+									<p class="file"><a href="#">HMC_솔루션_완료보고서_홍길동대리.pptx (1MB)</a></p>
+								</div>
+
+								<ul class="counting">
+									<li class="like">
+										<span class="icon_heart">좋아요</span>
+										<span class="highlight">12</span>
+									</li>
+									<li class="write">댓글 <span class="highlight">2</span></li>
+								</ul>
+
+								<div class="review_edit">
+									<div class="reply_on">
+										<ul class="reply_list">
+											<li>
+												<div class="first_write">
+													<div class="col_l">
+														<div class="writingInfo">
+															<p class="name"><span>손흥민</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply">파일이 열리지 않습니다.</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="first_write">
+													<div class="col_l">
+														<div class="writingInfo">
+															<p class="name"><span>홍길동</span>대리</p>
+															<span class="w_date">2018.12.21</span>
+														</div>
+														<div class="reply">파일이 열리지 않습니다.</div>
+														<div class="text_button">
+															<button class="btnText"><span class="inTxt">수정</span></button>
+															<button class="btnText"><span class="inTxt">삭제</span></button>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- //post-->
+
+							<div class="post mt30">
+								<p class="user">
+									<span class="u1">게시판 이름</span>
+									<span class="u2">홍길동 과장</span>
+									<span class="date">19.01.02</span>
+								</p>
+								<div class="contwrite">
+									<p>본문 본문 본문 TEXT 본문 본문 본문 TEXT 본문 본문 본문 TEXT 본문 본문 본문 TEXT 본문</p> <p>본문 본문 TEXT 본문 본문 본문 TEXT 본문 본문 본문 TEXT 본문 본문 본문 TEXT 본문</p> <p>본문 본문 TEXT 본문 본문 본문 TEXT 본문 본문 본문 TEXT본문 본문 본문 TEXT</p>
+								</div>
+
+								<ul class="counting">
+									<li class="like">
+										<span class="icon_heart">좋아요</span>
+										<span class="highlight">12</span>
+									</li>
+									<li class="write">댓글 <span class="highlight">2</span></li>
+								</ul>
+
+								<form action="">
+									<div class="write">
+										<div class="Msg">
+											<textarea class="msgWrite" placeholder="댓글을 입력해 주세요."></textarea>
+										</div>
+										<button class="btnPoint">등록</button>
+									</div>
+								</form>
+							</div><!-- //post-->
+							
+							<!--<p class="notice-iconTxt">CoP에 등록된 게시물이 없습니다.</p> 등록된 게시물이 없을경우-->
+						</div>
+					</div>
+
+				</div>
+			</div><!-- //classRoom_content-->
+
+
+		</div><!-- // Container-->
+
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footWrap">
+				<ul class="link">
+					<li><a href="#">프로필</a></li>
+					<li><a href="#">포털 설정</a></li>
+					<li><a href="#">개인정보 위탁관리</a></li>
+					<li><a href="#" class="point">개인정보처리 방침</a></li>
+					<li><a href="#">도움센터</a></li>
+				</ul>
+
+				<p class="copyright">COPYRIGHT &copy; HYUNDAI MOTOR COMPANY.ALL RIGHTS RESERVED.</p>
+
+				<div class="util_btn site">
+					<span class="btn_inner">관련 사이트</span>
+					<div class="select_list">
+						<a href="#">관련사이트1</a>
+						<a href="#">관련사이트2</a>
+						<a href="#">관련사이트3</a>
+					</div>
+				</div>
+				<div class="util_btn right">
+					<a href="#" class="btn_inner">권한을 변경하세요</a>
+					<div class="select_list">
+						<a href="#">권한변경1</a>
+						<a href="#">권한변경2</a>
+						<a href="#">권한변경3</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer-->
+
+
+	</div><!-- //wrap-->
+
+
+</body>
+
+</html>
