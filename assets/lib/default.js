@@ -1,3 +1,39 @@
+$.ajax({
+
+    type:"POST"
+
+    ,url: "https://esyeon.github.io/html/index.html"
+
+    ,dataType:"html"
+
+    ,success:function(res){
+
+    }
+
+    ,beforeSend:function(){
+
+
+        $('.wrap-loading').removeClass('display-none');
+
+    }
+
+    ,complete:function(){
+
+        $('.wrap-loading').addClass('display-none');
+
+
+    }
+
+    ,error:function(e){
+
+
+    }
+
+    ,timeout:100000
+
+});
+
+
 $(document).ready(function () {
     var $windowScrollTop = $(window).scrollTop();
     var $headerHeight = $('header').outerHeight();

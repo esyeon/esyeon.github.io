@@ -70,19 +70,28 @@
         <pjWork>퍼블리싱/구축/HTML/CSS/반응형</pjWork>
     </pjList>
     <pjList>
-
         <pjName>LGU+해외송금</pjName>
         <pjDate>2016.11 ~ 2017.05</pjDate>
         <pjWork>퍼블리싱/구축/HTML/SCSS/JQUERY/Mobile형</pjWork>
     </pjList>
     <pjList>
-
+        <siteUrl>../portfolio/JQUERY/index.html</siteUrl>
+        <pjName>JQUERY</pjName>
+        <pjDate>
+            JQUERY 모음
+        </pjDate>
+        <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY</pjWork>
+    </pjList>
+    <pjList>
         <pjName>ETC (한달 단기간 f/w및 추가작업)</pjName>
-        <pjDate>Galaxy store admin 2016.10 //
-            skb oksusu 라이브스트리밍 어드민관리자 2017.07 //
-            newKT프로젝트 2018.09 //
-            LG AI admin 2018.11 //
-            LG thin client f/w 2019.01 // </pjDate>
+        <pjDate>
+            Galaxy store admin 2016.10///
+            skb oksusu 라이브스트리밍 어드민관리자 2017.07///
+            newKT프로젝트 2018.09 ///
+            LG AI admin 2018.11///
+            LG thin client f/w 2019.01 ///
+            LG MARS (REACT 구축)
+        </pjDate>
         <pjWork>퍼블리싱/구축/HTML/CSS/JQUERY</pjWork>
     </pjList>
 </pjGroup>
