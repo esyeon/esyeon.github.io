@@ -5,6 +5,7 @@ $(document).ready(function () {
     var $Count = $('.slide li').length
     var $idx = 0;
 
+
     $('.main .btn-next').on('click',function(){
         $('.slide li').eq($idx).removeClass('on').children('img').animate({
             left: -$slideWidth
@@ -49,7 +50,7 @@ $(document).ready(function () {
             }).parent().addClass('on').siblings().removeClass('on')
         }
     });
-    
+
     function load(Parent, Count) {
         var lists = Parent + " .list:not(.view)";
         var listsLength = $(lists).length;
