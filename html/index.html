@@ -18,12 +18,12 @@
             <a href="#" class="btn_mobile"><span></span></a>
         </div>
         <div class="dim_mobile"></div>
-        <h1 class="logo"><a href="index.html"></a></h1>
+        <h1><a class="logo" href="index.html"></a></h1>
         <nav>
             <ul>
                 <li class=""><a href="#">PORTFOLIO</a></li>
                 <li class=""><a href="#">Contact</a></li>
-<!--                <li class=""><a href="#">Menu3</a></li>-->
+                <!--                <li class=""><a href="#">Menu3</a></li>-->
             </ul>
         </nav>
     </header>
@@ -33,12 +33,20 @@
     <section class="main">
 
         <article>
+            <ul class="slide">
+                <li class="on"><img src="../assets/image/1.jpg" alt="스위스 배경1"></li>
+                <li><img src="../assets/image/2.jpg" alt="스위스 배경2"></li>
+                <li><img src="../assets/image/3.jpg" alt="스위스 배경2"></li>
+            </ul>
+            <button type="button" class="btn-next ir">다음</button>
+            <button type="button" class="btn-prev ir">이전</button>
 
             <div class="greeting">
                 <h2>안녕하세요</h2>
                 <p>웹퍼블리셔 이승연입니다 , 방문해주셔서 감사합니다 :)</p>
             </div>
-            <a href="#" class="btn_down"></a>
+            <button type="button" class="btn_down ir">아래 화살표</button>
+
 
         </article>
     </section>
@@ -51,12 +59,289 @@
                 <p>2016.10 ~ ing</p>
             </div>
 
-            <div class="portfolio_list">
-                <!-- xml 호출 -->
+            <div id="js-load" class="portfolio_list">
+                <ul>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LG_MARS</P>
+                                    <P class="date"><span>참여기간 : 2019.07 ~ 2019.08</span></P>
+                                    <P class="work"><span>수행업무 : react-creat-app 퍼블리싱 구축 / reactStrap 구축 / PC형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../portfolio/BSS/index.html" target="_blank">
+                            <img src="../assets/image/thumb/bss.PNG" title="bss project image" alt="bss project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">BSS</P>
+                                    <P class="date"><span>참여기간 : 2019.06 ~ 2019.06</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / 반응형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="https://pensive-snyder-2e1e03.netlify.com/" target="_blank">
+                            <img src="../assets/image/thumb/lg_ssg_webos.PNG" title="lg_ssg_webos project image" alt="lg_ssg_webos project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LG SSG-webos</P>
+                                    <P class="date"><span>참여기간 : 2019.03 ~ 2019.06</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / SASS / JQUERY / 반응형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="http://www.oksusu.com" target="_blank">
+                            <img src="../assets/image/thumb/skb_oksusu.PNG" title="skb_oksusu project image" alt="skb_oksusu project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">SKB-OKSUSU</P>
+                                    <P class="date"><span>참여기간 :2018.01 ~ 2019.09 (구축 및 연간운영)</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / 반응형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome / safari</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../portfolio/hyundai_sc_001/As-ls/IDP/hyundai/wsg/markup.html" target="_blank">
+                            <img src="../assets/image/thumb/hyundai_idp.PNG" title="hyundai_idp project image" alt="bss project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">HYUNDAI-IDP(현대자동차상시학습)</P>
+                                    <P class="date"><span>참여기간 : 2018.11 ~ 2019.03</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / PC형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../portfolio/hyundai_sc_e-cat_001/E-Catalog/hyundai/coding-list.html" target="_blank">
+                            <img src="../assets/image/thumb/hyundai_e_cat.PNG" title="hyundai_e_cat project image" alt="hyundai_e_cat project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">HYUNDAI-E-CAT(현대자동차상시학습 e-cat)</P>
+                                    <P class="date"><span>참여기간 : 2019.2 ~ 2019.03</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / PC형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../portfolio/KT_Brokering_01/coding_list/coding_index.html" target="_blank">
+                            <img src="../assets/image/thumb/kt_brokering.PNG" title="kt_brokering project image" alt="kt_brokering project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">Brokering</P>
+                                    <P class="date"><span>참여기간 : 2018.08 ~ 2019.01</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / PC형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <img src="../assets/image/thumb/lg_mobile_edu.PNG" title="lg_mobile_edu project image" alt="lg_mobile_edu project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LG 모바일 교육</P>
+                                    <P class="date"><span>참여기간 : 2018.05 ~ 2018.06</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / BOOTSTRAP / HTML / CSS / JQUERY / 반응형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LG전자 solar (구축 및 연간운영)</P>
+                                    <P class="date"><span>참여기간 : 2017.06 ~ 2018.01</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / PC형 / MOBILE형</span></P>
+                                    <P class=""><span>브라우저 : e10이상 / chrome / safari / firefox</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LG전자 ess프로젝트</P>
+                                    <P class="date"><span>참여기간 : 2017.05 ~ 2017.07</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / PC형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome / safari / firefox</span></P>
+                                    <P class=""><span>형상관리 : git</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="https://muzine.museum.go.kr/2017/70th/main.jsp" target="_blank">
+                            <img src="../assets/image/thumb/muzine.PNG" title="muzine project image" alt="muzine project image">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">국립중앙박물관 (구축 및 연간운영)</P>
+                                    <P class="date"><span>참여기간 : 2016년 12월, 2017년 2월 , 4월 , 11월</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / 반응형</span></P>
+                                    <P class=""><span>브라우저 : e11 / chrome</span></P>
+                                    <P class=""><span>형상관리 : svn</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">LGU+해외송금</P>
+                                    <P class="date"><span>참여기간 : 2016.11 ~ 2017.05</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY / MOBILE형</span></P>
+                                    <P class=""><span>하이브리드앱 / 안드로이드 4.0이상, iphone5 이상 최신버전까지 </span></P>
+                                    <P class=""><span>형상관리 : svn</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../portfolio/JQUERY/index.html" target="_blank">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">JQUERY 모음</P>
+                                    <P class="date"><span>참여기간 : 2017.01 ~ 2017.01</span></P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY</span></P>
+                                    <P class=""><span></span></P>
+                                    <P class=""><span></span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="empty">
+                            <div class="detail_wrap">
+                                <div class="detail">
+                                    <P class="project_name">단기간 f/w및 수정추가작업</P>
+                                    <P class="work"><span>수행업무 : 퍼블리싱 구축 / HTML / CSS / JQUERY</span></P>
+                                    <P class=""><span>Galaxy store admin 2016.10</span></P>
+                                    <P class=""><span>skb oksusu 라이브스트리밍 어드민관리자 2017.07</span></P>
+                                    <P class=""><span>newKT프로젝트 2018.09</span></P>
+                                    <P class=""><span>LG AI admin 2018.11</span></P>
+                                    <P class=""><span>LG thin client f/w 2019.01</span></P>
+                                </div>
+                            </div>
+                            <div class="lines">
+                                <span class="line_top"></span>
+                                <span class="line_right"></span>
+                                <span class="line_bottom"></span>
+                                <span class="line_left"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-<!--            <div class="block-more">-->
-<!--                <a href="#">load more work</a>-->
-<!--            </div>-->
+            <div class="block-more">
+                <a href="javascript:void(0)">load more work</a>
+            </div>
         </article>
     </section>
     <!--portfolio section end-->
@@ -66,7 +351,7 @@
         <article>
             <div class="block-info">
                 <div class="my_info">
-                    <h2>Contact Me</h2>
+                    <h2><span>Contact Me</span></h2>
                     <p><strong>Name :</strong>이승연</p>
                     <p><strong>Age :</strong>26세</p>
                     <p><strong>Gender :</strong>여</p>
@@ -84,12 +369,12 @@
     <!--Contact section end-->
 
     <!--Menu3 section start-->
-<!--    <section class="scroll" style="height: 850px;">-->
-<!--        <article>-->
-<!--            <div class="block-info no_data">-->
-<!--                <p>데이터가없습니다</p></div>-->
-<!--        </article>-->
-<!--    </section>-->
+    <!--    <section class="scroll" style="height: 850px;">-->
+    <!--        <article>-->
+    <!--            <div class="block-info no_data">-->
+    <!--                <p>데이터가없습니다</p></div>-->
+    <!--        </article>-->
+    <!--    </section>-->
     <!--Menu3 section end-->
 
     <!--footer-->
@@ -104,7 +389,7 @@
 </body>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=52e2e867550c61e766c2149a41293f15"></script>
 <script type="text/javascript" src="../assets/lib/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../assets/lib/xmlload.js"></script>
+<!--<script type="text/javascript" src="../assets/lib/xmlload.js"></script>-->
 <script type="text/javascript" src="../assets/lib/default.js"></script>
 
 </html>

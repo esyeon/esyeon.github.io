@@ -1,64 +1,74 @@
-$.ajax({
-
-    type:"POST"
-
-    ,url: "https://esyeon.github.io/html/index.html"
-
-    ,dataType:"html"
-
-    ,success:function(res){
-
-    }
-
-    ,beforeSend:function(){
-
-
-        $('.wrap-loading').removeClass('display-none');
-
-    }
-
-    ,complete:function(){
-
-        $('.wrap-loading').addClass('display-none');
-
-
-    }
-
-    ,error:function(e){
-
-
-    }
-
-    ,timeout:100000
-
-});
-
-
 $(document).ready(function () {
-    var $windowScrollTop = $(window).scrollTop();
+
     var $headerHeight = $('header').outerHeight();
+    var $slideWidth = $('.slide').width();
+    var $Count = $('.slide li').length
+    var $idx = 0;
 
-    $('a').on('click',function(e){
-        e.preventDefault()
+    $('.main .btn-next').on('click',function(){
+        $('.slide li').eq($idx).removeClass('on').children('img').animate({
+            left: -$slideWidth
+        },400).parent().next().addClass('on').children('img').css({
+            left: $slideWidth
+        }).stop().animate({
+            left: 0
+        })
+
+        $idx++;
+
+        if($idx == $Count){
+            $idx = 0;
+
+            $('.slide li').eq($idx).addClass('on').children('img').animate({
+                left:  $slideWidth
+            }).css({
+                left: -$slideWidth
+            }).stop().animate({
+                left: 0
+            })
+        }
+    });
+    $('.main .btn-prev').on('click',function(){
+        $('.slide li').eq($idx).removeClass('on').children('img').animate({
+            left: $slideWidth
+        },400).parent().prev().addClass('on').children('img').css({
+            left: -$slideWidth
+        }).stop().animate({
+            left: 0
+        })
+
+        $idx--;
+
+        if($idx < 0){
+            $idx = $Count-1;
+
+            $('.slide li').eq($idx).children('img').css({
+                left : -$slideWidth
+            }).stop().animate({
+                left: 0
+            }).parent().addClass('on').siblings().removeClass('on')
+        }
+    });
+    
+    function load(Parent, Count) {
+        var lists = Parent + " .list:not(.view)";
+        var listsLength = $(lists).length;
+        var totallists;
+        if (Count < listsLength) {
+            totallists = Count;
+        } else {
+            totallists = listsLength;
+            $('.block-more').hide()
+        }
+        $(lists + ":lt(" + totallists + ")").addClass("view");
+    }
+
+    load('.portfolio_list', '4');
+
+    $(".block-more a").on("click", function () {
+        load('.portfolio_list', '4');
     })
-    $('.btn_top').on('click',function(){
-        $('html,body').stop().animate({
-            scrollTop : 0
-        },500)
-    })
 
-    $('nav > ul > li > a').on('click',function(){
-        var $this = $(this);
-        var $li = $this.parent();
-        var $liIdx = $li.index();
-        var $sectionIdx = $('.scroll').eq($liIdx);
-        var $offsetTop = $sectionIdx.offset().top - $headerHeight;
-
-        $('html, body').stop().animate({
-            'scrollTop' : $offsetTop
-        },750)
-
-    })
 
     $(window).scroll(function(){
         var $li = $('nav li');
@@ -86,20 +96,54 @@ $(document).ready(function () {
         }
     })
 
+    $('.btn_top').on('click',function(){
+        $('html,body').stop().animate({
+            scrollTop : 0
+        },500)
+    })
+
+    $('nav > ul > li > a').on('click',function(){
+        var $this = $(this);
+        var $li = $this.parent();
+        var $liIdx = $li.index();
+        var $sectionIdx = $('.scroll').eq($liIdx);
+        var $offsetTop = $sectionIdx.offset().top - $headerHeight;
+
+        $('html, body').stop().animate({
+            'scrollTop' : $offsetTop
+        },500)
+        e.preventDefault()
+    })
+
+    $('.btn_down').on('click',function(){
+        var $sectionFirstTop = $('.portfolio_wrap').offset().top - $headerHeight;
+        $('html, body').stop().animate({
+            'scrollTop' : $sectionFirstTop
+        },750)
+        e.preventDefault()
+    })
+
+    $('.empty').on('click',function(){
+        alert("해당 사이트는 내부시스템이므로 비공개용 프로젝트입니다")
+    })
+
+
     $('.btn_mobile_menu').on('click',function(){
         var $this = $(this);
         var $header = $this.parent();
 
         $header.toggleClass('mini');
-
+        e.preventDefault()
     })
 
     $('.dim_mobile').on('click',function(){
         var $this = $(this);
         var $header = $this.parent();
         $header.removeClass('mini');
-
+        e.preventDefault()
     })
+
+
     //카카오 map API
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
         mapOption = {
@@ -110,6 +154,8 @@ $(document).ready(function () {
     // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
     var map = new kakao.maps.Map(mapContainer, mapOption);
 });
+
+
 
 
 
