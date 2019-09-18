@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>인하아이티허브 > IT솔루션 > 고객역할</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/layout.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/mobile-menu-sidebar.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+</head>
+<body>
+<dl id="skiptoContent">
+    <dt><strong class="invisible">바로가기 메뉴</strong></dt>
+    <dd><a href="#dBody">본문 바로가기</a></dd>
+    <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+</dl>
+<hr/>
+<header>
+    <div class="header">
+        <h1 class="logo"><a href="/">안하아이티허브</a></h1>
+        <h2 class="btn_menu" id="toggle-sidebar">메뉴</h2>
+        <nav class="gnbMenu">
+            <ul class="gnb" id="gnbMenu">
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=14">IT솔루션</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=21">구매신청</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/goods/list.do?menu_idx=21">IT공동구매신청</a></li>
+                            <li><a href="/order/list.do?menu_idx=22">IT공동구매신청조회</a></li>
+                            <li><a href="/seminar/data/list.do?menu_idx=23">세미나∙교육 신청</a></li>
+                            <li><a href="/solution/data/form.do?menu_idx=24">솔루션 도입신청</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=25">산학협력</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=25">산학협력구도</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=26">제조혁신 R&D</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=27">제품판매확대지원</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=28">IT전문교육</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/bbs/data/list.do?menu_idx=29">성공사례</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/bbs/data/list.do?menu_idx=29">IT솔루션 적용사례</a></li>
+                            <li><a href="/bbs/data/list.do?menu_idx=30">산학협력 성공사례</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/bbs/data/list.do?menu_idx=31">고객지원</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/bbs/data/list.do?menu_idx=31">공지사항</a></li>
+                            <li><a href="/bbs/data/list.do?menu_idx=32">자료실</a></li>
+                            <li><a href="/counsel/data/form.do?menu_idx=33">방문상담요청</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=34">회사소개</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=34">인사말</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=35">회사연혁</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=36">역할</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=37">서비스영역</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=38">지원조직</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=39">오시는 길</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav><!-- //gnbMenu -->
+        <button class="btn_allMenu">전체메뉴</button>
+    </div>
+    <div class="gnb_bg"></div>
+    <div class="allMenu">
+        <ul class="menu">
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=14" target="_blank">IT솔루션</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=21" target="_blank">구매신청</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/goods/list.do?menu_idx=21">IT공동구매신청</a></li>
+                        <li><a href="/order/list.do?menu_idx=22">IT공동구매신청조회</a></li>
+                        <li><a href="/seminar/data/list.do?menu_idx=23">세미나∙교육 신청</a></li>
+                        <li><a href="/solution/data/form.do?menu_idx=24">솔루션 도입신청</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=25" target="_blank">산학협력</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=25">산학협력구도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=26">제조혁신 R&D</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=27">제품판매확대지원</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=28">IT전문교육</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/bbs/data/list.do?menu_idx=29" target="_blank">성공사례</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/bbs/data/list.do?menu_idx=29">IT솔루션 적용사례</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=30">산학협력 성공사례</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/bbs/data/list.do?menu_idx=31" target="_blank">고객지원</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/bbs/data/list.do?menu_idx=31">공지사항</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=32">자료실</a></li>
+                        <li><a href="/counsel/data/form.do?menu_idx=33">방문상담요청</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=34" target="_blank">회사소개</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=34">인사말</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=35">회사연혁</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=36">역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=37">서비스영역</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=38">지원조직</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=39">오시는 길</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<div id="dBody">
+    <div class="location">
+        <div class="box">
+            <a href="#" class="home">HOME</a>
+            <ul>
+                <li class="dep1"><a href="#none"> IT솔루션</a>
+                    <ul class="dep2">
+                        <li><a href="/ibuilder.do?menu_idx=14">IT솔루션</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=21">구매신청</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=25">산학협력</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=29">성공사례</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=31">고객지원</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=34">회사소개</a></li>
+                    </ul>
+                </li>
+                <li class="dep1 on"><a href="#none">고객역할</a>
+                    <ul class="dep2">
+                        <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- //location -->
+    <div class="contents">
+
+        <!-- menu명 -->
+
+
+        <h1>문서중앙화(문서보안)</h1>
+        <h2 class="tith2_1">문서중앙화 개념</h2>
+        <div class="concept_box">
+            <img src="../images/doc_01.png" alt="문서중앙화 개념 이미지">
+        </div>
+
+        <h2 class="tith2_1">피해유형 분석</h2>
+        <ul class="list_li">
+            <li>파일서버 사용은 해킹과 바이러스의 최대 위험 요소</li>
+        </ul>
+        <div class="damage_list">
+
+            <ul>
+                <li>
+                    <p class="title">유출 관계자</p>
+                    <div class="img_box">
+                        <img src="../images/doc_02.png" alt="유출 관계자 이미지">
+                    </div>
+                </li>
+                <li>
+                    <p class="title">유출 관계자</p>
+                    <div class="ranking">
+                        <p class="top">1위 : 휴대용 저장장치</p>
+                        <p>2위 : 핵심인력 스카우트</p>
+                        <p>3위 : 복사,절취</p>
+                        <p>4위 : E-mail</p>
+                        <p>5위 : 스마트폰 카메라</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="title">유출 피해 유형</p>
+                    <div class="damage_type">
+                        <p class="orange"><i>42%</i><span>경쟁사로의 유출</span></p>
+                        <p class="blue"><i>27%</i><span>주요 기술인력 빼가기</span></p>
+                        <p class="green"><i>25%</i><span>내부직원의 유출</span></p>
+                        <p class="purple"><i>24%</i><span>거래관계에서 유출</span></p>
+                        <p class="bottom_txt">(중복 응답)</p>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="tith2_1">솔루션 특장점</h2>
+        <ul class="list_li">
+            <li>다양한 보안SW를 하나의 <span class="color_blue tx_underline">통합된 솔루션</span>으로 대체 (USB복사불가, 이메일 첨부승인, 개인PC다운로드 불가
+                등)
+            </li>
+            <li>‘구축 비용 없이, <span class="color_blue tx_underline">매월 사용료는 저렴</span>하게</li>
+            <li><span class="color_blue tx_underline">쉬운 적용</span> : 2시간 교육 후 바로 사용</li>
+        </ul>
+
+        <h2 class="tith2_1">솔루션 우수성</h2>
+        <div class="great_box">
+            <ul class="">
+                <li class="first"><p>600개 기업사를 <br>보유한 <span class="highlight">국내 1위</span> 제품</p></li>
+                <li class="second"><p>랜섬웨어에 안전한 <br><span class="highlight">차별화된 기술력</span></p></li>
+                <li class="third"><p>종이 없는 사무실!<br><span class="highlight">스마트 오피스 구현</span></p></li>
+                <li class="last"><p>종이문서 및 프린터 사용 감소로<br><span class="highlight">경제적 효과 달성</span></p></li>
+            </ul>
+
+        </div>
+
+
+        <h2 class="tith2_1">주요기능</h2>
+        <div class="function_box">
+            <ul class="img_bg_box">
+                <li>
+                    <div class="text_box icon01">
+                        <div class="box_cell">
+                            <h3>랜섬웨어 및 바이러스에 안전</h3>
+                            <p>700개 기업사 중 랜섬웨어 <br>감엽사례 단 한곳도 없음!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box icon02">
+                        <div class="box_cell">
+                            <h3>모든 문서를 중앙 서버에!</h3>
+                            <p>PC가 사라져도, 고장나도 PC만 있으면 업무 시작!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box icon03">
+                        <div class="box_cell">
+                            <h3>유출 경로 차단</h3>
+                            <p>인쇄, 캡쳐, 복사 등의 우회적인 <br>유출 행위 차단!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box icon04">
+                        <div class="box_cell">
+                            <h3>문서 버전 및 이력관리 </h3>
+                            <p>문서수정시 자동 버전 생성<br> 가능하며 문서의 모든 사용 </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box icon05">
+                        <div class="box_cell">
+                            <h3>삭제 문서 복원 기능 </h3>
+                            <p>관리자가 ‘복원’만 클릭하면<br> 휴지통에서 원래 위치로 복구 </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box icon06">
+                        <div class="box_cell">
+                            <h3>모바일 승인</h3>
+                            <p>언제, 어디서나 규정에 따라<br> 모바일로 승인하여 반출</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="tith2_1">차별화 내용</h2>
+        <div class="differentiation_box">
+            <ul>
+                <li class="left">
+                    <p class="title">시스템 우수성</p>
+                    <span>700개 이상 대기업, 중견기업 사용 중</span>
+                    <span>단 한번도 서버운영 중단이 없다. (이중화)</span>
+                    <span>만일을 대비해 기업 데이터를 별도 백업 받고 </span>
+                </li>
+                <li class="right">
+                    <p class="title">   경제적 우수성</p>
+                    <span>중소기업을 위한 최적비용 적용 (70% 수준)</span>
+                    <span>소기업을 위한 최소비용 구간 신설</span>
+                    <span>별도 유지보수 비용이 없다.</span>
+                </li>
+            </ul>
+        </div>
+        <h2 class="tith2_1">신청/수행절차</h2>
+        <div class="list_cont four">
+            <ol>
+                <li>
+                    <div class="text_box">
+                        <p>기업요청</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box">
+                        <p>전문가 시연 <br> <span class="small"> (컨설팅 안내)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box">
+                        <p>관리자교육/사용자교육<br> <span class="small"> (총 2시간)</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_box">
+                        <p>데이터 자동이관 및 사용</p>
+                    </div>
+                </li>
+            </ol>
+            <p class="basic_text center text_right">※ 기업 사정에 따라 언제든지 위약금 없이 해지가 가능하며, <span class="text_red tx_underline">반드시 인하아이티허브를 통해야 비용이 저렴합니다.</span></p>
+        </div>
+
+        <div class="add_btn_box center">
+            <a href="" class="blue_box_btn icon01"><span>솔루션 상세자료</span></a>
+            <a href="" class="blue_box_btn"><span>성공사례</span></a>
+            <a href="" class="blue_box_btn icon02"><span>솔루션 도입신청</span></a>
+            <a href="" class="blue_box_btn icon03"><span>솔루션 세미나</span></a>
+        </div>
+        <p class="basic_text center">※ 연락처 : contact@inhaithub.com, <span class="text_blue">1866-3684</span></p>
+    </div><!-- //content -->
+
+</div><!-- //dBody -->
+
+
+<footer>
+    <div class="footer">
+        <div class="familly_site">
+            <select id="familySite">
+                <option value="" selected="selected">관련업체 사이트 바로가기</option>
+                <option value="https://www.naver.com/">링크</option>
+                <option value="https://www.naver.com/">링크</option>
+                <option value="https://www.naver.com/">링크</option>
+            </select>
+            <button type="button" class="btnGo">이동</button>
+        </div>
+        <div class="address">
+            <p>(22212) 인천광역시 미추홀구 인하로 100 인하드림센터1관 102호<br/>E-MAIL contact@inhaithub.com </p>
+            <span class="tel"></span>
+            <p>COPYRIGHT 2019 ⓒ INHAITHUB, ALL RIGHTS RESERVED. </p>
+        </div>
+    </div><!-- //footer -->
+</footer>
+
+
+<!-- 모바일 side menu -->
+<div id="main-sidebar" class="main-sidebar main-sidebar-left">
+    <div id="main-sidebar-wrapper" class="main-sidebar-wrapper"></div>
+</div>
+
+<script type="text/javascript">
+
+    // $(document).ready(function () {
+    //     $.ajaxSetup({
+    //         cache: false
+    //     });
+
+    //     $('#main-sidebar-wrapper').load('/mobileMenu.do');
+
+    //     $('#main-sidebar').simpleSidebar({
+    //         opener: '#toggle-sidebar',
+    //         wrapper: '#contain',
+    //         animation: {
+    //             easing: "easeOutQuint"
+    //         },
+    //         sidebar: {
+    //             align: 'left',
+    //             closingLinks: '.close-sb',
+    //         },
+    //         sbWrapper: {
+    //             display: false
+    //         }
+    //     });
+    // });
+</script>
+<!-- //모바일 side menu -->
+
+
+<script type="text/javascript">
+    //< !--
+    subJs();
+    mobileNaviCurrent(0);
+    //-->
+</script>
+</body>
+
+</html>

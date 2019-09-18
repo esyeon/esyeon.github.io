@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>인하아이티허브 > IT솔루션 > 고객역할</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,  user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/layout.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/mobile-menu-sidebar.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+</head>
+<body>
+<dl id="skiptoContent">
+    <dt><strong class="invisible">바로가기 메뉴</strong></dt>
+    <dd><a href="#dBody">본문 바로가기</a></dd>
+    <dd><a href="#gnbMenu">주메뉴 바로가기</a></dd>
+</dl>
+<hr/>
+<header>
+    <div class="header">
+        <h1 class="logo"><a href="/">안하아이티허브</a></h1>
+        <h2 class="btn_menu" id="toggle-sidebar">메뉴</h2>
+        <nav class="gnbMenu">
+            <ul class="gnb" id="gnbMenu">
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=14">IT솔루션</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=21">구매신청</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/goods/list.do?menu_idx=21">IT공동구매신청</a></li>
+                            <li><a href="/order/list.do?menu_idx=22">IT공동구매신청조회</a></li>
+                            <li><a href="/seminar/data/list.do?menu_idx=23">세미나∙교육 신청</a></li>
+                            <li><a href="/solution/data/form.do?menu_idx=24">솔루션 도입신청</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=25">산학협력</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=25">산학협력구도</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=26">제조혁신 R&D</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=27">제품판매확대지원</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=28">IT전문교육</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/bbs/data/list.do?menu_idx=29">성공사례</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/bbs/data/list.do?menu_idx=29">IT솔루션 적용사례</a></li>
+                            <li><a href="/bbs/data/list.do?menu_idx=30">산학협력 성공사례</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/bbs/data/list.do?menu_idx=31">고객지원</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/bbs/data/list.do?menu_idx=31">공지사항</a></li>
+                            <li><a href="/bbs/data/list.do?menu_idx=32">자료실</a></li>
+                            <li><a href="/counsel/data/form.do?menu_idx=33">방문상담요청</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="depth1">
+                    <a href="/ibuilder.do?menu_idx=34">회사소개</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="/ibuilder.do?menu_idx=34">인사말</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=35">회사연혁</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=36">역할</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=37">서비스영역</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=38">지원조직</a></li>
+                            <li><a href="/ibuilder.do?menu_idx=39">오시는 길</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav><!-- //gnbMenu -->
+        <button class="btn_allMenu">전체메뉴</button>
+    </div>
+    <div class="gnb_bg"></div>
+    <div class="allMenu">
+        <ul class="menu">
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=14" target="_blank">IT솔루션</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=21" target="_blank">구매신청</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/goods/list.do?menu_idx=21">IT공동구매신청</a></li>
+                        <li><a href="/order/list.do?menu_idx=22">IT공동구매신청조회</a></li>
+                        <li><a href="/seminar/data/list.do?menu_idx=23">세미나∙교육 신청</a></li>
+                        <li><a href="/solution/data/form.do?menu_idx=24">솔루션 도입신청</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=25" target="_blank">산학협력</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=25">산학협력구도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=26">제조혁신 R&D</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=27">제품판매확대지원</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=28">IT전문교육</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/bbs/data/list.do?menu_idx=29" target="_blank">성공사례</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/bbs/data/list.do?menu_idx=29">IT솔루션 적용사례</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=30">산학협력 성공사례</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/bbs/data/list.do?menu_idx=31" target="_blank">고객지원</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/bbs/data/list.do?menu_idx=31">공지사항</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=32">자료실</a></li>
+                        <li><a href="/counsel/data/form.do?menu_idx=33">방문상담요청</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="depth1">
+                <p><a href="/ibuilder.do?menu_idx=34" target="_blank">회사소개</a></p>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="/ibuilder.do?menu_idx=34">인사말</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=35">회사연혁</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=36">역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=37">서비스영역</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=38">지원조직</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=39">오시는 길</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<div id="dBody">
+    <div class="location">
+        <div class="box">
+            <a href="#" class="home">HOME</a>
+            <ul>
+                <li class="dep1"><a href="#none"> IT솔루션</a>
+                    <ul class="dep2">
+                        <li><a href="/ibuilder.do?menu_idx=14">IT솔루션</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=21">구매신청</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=25">산학협력</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=29">성공사례</a></li>
+                        <li><a href="/bbs/data/list.do?menu_idx=31">고객지원</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=34">회사소개</a></li>
+                    </ul>
+                </li>
+                <li class="dep1 on"><a href="#none">고객역할</a>
+                    <ul class="dep2">
+                        <li><a href="/ibuilder.do?menu_idx=14">고객역할</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=15">정부지원제도</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=16">스마트팩토리 (ERP/MES)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=17">문서보안 (문서중앙화)</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=18">화재방지모니터링</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=19">그룹웨어</a></li>
+                        <li><a href="/ibuilder.do?menu_idx=20">홈페이지+B2B</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- //location -->
+    <div class="contents">
+
+        <!-- menu명 -->
+
+
+        <h1>스마트팩토리(ERP/MES)</h1>
+
+        <h2 class="tith2_1">스마트팩토리 구현 목표</h2>
+        <ul class="list_li">
+            <li>중소제조 일하는 방식의 혁신을 통한 제조 경쟁력 확보</li>
+        </ul>
+
+        <div class="factory_system">
+            <h3 class="tith3">스마트팩토리 구현을 위한 주요 정보화 시스템</h3>
+            <img src="../images/smart_factory_01.png" alt="스마트팩토리 구현을 위한 주요 정보화 시스템 이미지">
+        </div>
+
+        <h2 class="tith2_1">스마트팩토리 도입효과</h2>
+        <ul class="list_li">
+            <li>스마트팩토리 도입에 가장 큰 효과를 본 것은 소규모 기업.</li>
+            <li>공정개선 효과와 경영개선 성과가 동시에 나타남</li>
+        </ul>
+
+        <div class="factory_effect">
+            <table class="basic_table01">
+                <caption>스마트팩토리 도입효과</caption>
+                <colgroup>
+                    <col width="7.8%">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">구분</th>
+                        <th scope="col">고용증가율 (%)</th>
+                        <th scope="col">매출증가율 (%)</th>
+                        <th scope="col">산업재해 감소율 (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="3" class="bg_gray">전체 평균</td>
+                        <td>4.2</td>
+                        <td>7.7</td>
+                        <td>18.3</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4" class="bg_gray">소규모 기업</td>
+                        <td rowspan="2" class="bg_gray">종업원</td>
+                        <td class="bg_gray">10인 미만</td>
+                        <td>84.9</td>
+                        <td>3.4</td>
+                        <td>38.4</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_gray">50인 미만</td>
+                        <td>5.9</td>
+                        <td>10.2</td>
+                        <td>15.6</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="bg_gray">매출액</td>
+                        <td class="bg_gray">10억원 미만</td>
+                        <td>33.1</td>
+                        <td>202.3</td>
+                        <td>-21.4</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_gray">50억원 미만</td>
+                        <td>5.9</td>
+                        <td>10.2</td>
+                        <td>15.6</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <p class="detail_txt">※ 2019. 5월 중소벤처기업부는 ‘스마트팩토리 보급사업 성과분석’ 결과 (2014~2017년까지 스마트팩토리를 도입한 5,003개 기업 대상)</p>
+        </div>
+
+        <h2 class="tith2_1">스마트팩토리 솔루션 고려사항</h2>
+        <div class="factory_solution">
+            <div class="considerations blue">
+                <p class="title">ERP등 솔루션을 재고할 징후</p>
+                <div class="list">
+                    <p class="sub_title"><i></i><span >아래 하나라도 해당되면 고려해야</span></p>
+                    <ul>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                        <li><div><i class="ico_check"></i><span>사용한지 5년 지남</span></div></li>
+                    </ul>
+                </div>
+            </div>
+            <i class="ico_arrow_down"></i>
+            <div class="considerations green">
+                <p class="title">솔루션 선택 시 고려사항</p>
+                <div class="list">
+                    <ul>
+                        <li><div><i class="ico_check"></i><span>솔루션 완성도</span></div></li>
+                        <li><div><i class="ico_check"></i><span>맞춤형 수정</span></div></li>
+                        <li><div><i class="ico_check"></i><span>설계와 교육에 중점</span></div></li>
+                        <li><div><i class="ico_check"></i><span>적정 유지보수 비용체계</span></div></li>
+                    </ul>
+                </div>
+            </div>
+            <i class="ico_arrow_down"></i>
+            <div class="considerations">
+                <p class="title">기대 효과</p>
+                <div class="list">
+                <ul>
+                    <li><div><i class="ico_check"></i><span>업무생산성,<br>인건비절감</span></div></li>
+                    <li><div><i class="ico_check"></i><span>원가파악<br>위기경영 대처</span></div></li>
+                    <li><div><i class="ico_check"></i><span>적정 재고수준<br>최적화</span></div></li>
+                    <li><div><i class="ico_check"></i><span>종업원 전문성<br>증가</span></div></li>
+                    <li><div><i class="ico_check"></i><span>결국,<br>기업가치 제고</span></div></li>
+
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="tith2_1">유지보수 체계</h2>
+        <h3 class="tith3">서비스 Matrix</h3>
+        <div class="matrix_table">
+            <table class="basic_table01">
+                <caption>유지보수 체계</caption>
+                <thead>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">레벨1</th>
+                    <th scope="col">레벨2</th>
+                    <th scope="col">레벨3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th class="bg_white">비용</td>
+                    <td>소</td>
+                    <td>중</td>
+                    <td>대</td>
+                </tr>
+                <tr>
+                    <th class="bg_white">서비스 내용</th>
+                    <td>Break/Fix</td>
+                    <td>소규모 변화</td>
+                    <td>대규모 변화</td>
+                </tr>
+                <tr>
+                    <th class="bg_white">선택 단계</th>
+                    <td>안정화 이후</td>
+                    <td>안정화 단계</td>
+                    <td>Process변화</td>
+                </tr>
+                </tbody>
+            </table>
+            <ul class="list_li">
+                <li>가격정책은 사전에 정의된 테이블에 따라 부여</li>
+                <li>유지보수는 필요항목 또는 선택항목임</li>
+                <li>기업 상황에 따라 유지보수 레벨 선택</li>
+            </ul>
+        </div>
+
+
+        <h2 class="tith2_1">차별화 내용</h2>
+        <div class="differentiation">
+            <div class="considerations">
+                <p class="title">사전 컨설팅(무상)</p>
+                <div class="list">
+                <ul>
+                    <li><div><i class="ico_check"></i><span>기업 IT전반을<br>진단</span></div></li>
+                    <li><div><i class="ico_check"></i><span>개선방향을 제시하는<br>선제 대응 지원</span></div></li>
+                    <li><div><i class="ico_check"></i><span>현재 시스템을 기준으로<br>최적 구현 방향 제시</span></div></li>
+                    <li><div><i class="ico_check"></i><span>정부지원제도와 연계하여<br>맞춤형 프로젝트 선택</span></div></li>
+                </ul>
+                </div>
+            </div>
+            <div class="considerations">
+                <p class="title">프로젝트 관리지원 (기업 선택사항) = 프로젝트 성공률 높이기</p>
+                <div class="img_box">
+                    <img src="../images/smart_factory_02.png" alt="프로젝트 관리지원 이미지">
+                </div>
+                <div class="list">
+                <ul>
+                    <li><div><i class="ico_check"></i><span>기업 IT전반을<br>진단</span></div></li>
+                    <li><div><i class="ico_check"></i><span>개선방향을 제시하는<br>선제 대응 지원</span></div></li>
+                    <li><div><i class="ico_check"></i><span>현재 시스템을 기준으로<br>최적 구현 방향 제시</span></div></li>
+                    <li><div><i class="ico_check"></i><span>정부지원제도와 연계하여<br>맞춤형 프로젝트 선택</span></div></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="tith2_1">추천프로세스</h2>
+        <div class="recommended_process">
+            <img src="../images/smart_factory_03.png" alt="추천프로세스 이미지">
+        </div>
+
+        <div class="add_btn_box center">
+            <a href="" class="blue_box_btn icon01"><span>솔루션 상세자료</span></a>
+            <a href="" class="blue_box_btn"><span>성공사례</span></a>
+            <a href="" class="blue_box_btn icon02"><span>솔루션 도입신청</span></a>
+            <a href="" class="blue_box_btn icon03"><span>솔루션 세미나</span></a>
+        </div>
+        <p class="basic_text center">※ 연락처 : contact@inhaithub.com, <span class="text_blue">1866-3684</span></p>
+    </div><!-- //content -->
+
+</div><!-- //dBody -->
+
+
+<footer>
+    <div class="footer">
+        <div class="familly_site">
+            <select id="familySite">
+                <option value="" selected="selected">관련업체 사이트 바로가기</option>
+                <option value="https://www.naver.com/">링크</option>
+                <option value="https://www.naver.com/">링크</option>
+                <option value="https://www.naver.com/">링크</option>
+            </select>
+            <button type="button" class="btnGo">이동</button>
+        </div>
+        <div class="address">
+            <p>(22212) 인천광역시 미추홀구 인하로 100 인하드림센터1관 102호<br/>E-MAIL contact@inhaithub.com </p>
+            <span class="tel"></span>
+            <p>COPYRIGHT 2019 ⓒ INHAITHUB, ALL RIGHTS RESERVED. </p>
+        </div>
+    </div><!-- //footer -->
+</footer>
+
+
+<!-- 모바일 side menu -->
+<div id="main-sidebar" class="main-sidebar main-sidebar-left">
+    <div id="main-sidebar-wrapper" class="main-sidebar-wrapper"></div>
+</div>
+
+<script type="text/javascript">
+
+    // $(document).ready(function () {
+    //     $.ajaxSetup({
+    //         cache: false
+    //     });
+
+    //     $('#main-sidebar-wrapper').load('/mobileMenu.do');
+
+    //     $('#main-sidebar').simpleSidebar({
+    //         opener: '#toggle-sidebar',
+    //         wrapper: '#contain',
+    //         animation: {
+    //             easing: "easeOutQuint"
+    //         },
+    //         sidebar: {
+    //             align: 'left',
+    //             closingLinks: '.close-sb',
+    //         },
+    //         sbWrapper: {
+    //             display: false
+    //         }
+    //     });
+    // });
+</script>
+<!-- //모바일 side menu -->
+
+
+<script type="text/javascript">
+    //< !--
+    subJs();
+    mobileNaviCurrent(0);
+    //-->
+</script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>IT_solution_coding_list</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+	<style type="text/css">
+		#wrap {
+
+			min-width: 1280px;
+		}
+		#header {
+			background: #f6f6f6;
+			color: #000;
+			font-size: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			height: 60px;
+			line-height: 60px;
+		}
+		#container {
+			height: 100%;
+		}
+		#container > .contents {
+			margin: 2% 0;
+		}
+		#container > .contents table {
+			width: 90%;
+			border-collapse: collapse;
+			text-align: center;
+			margin: 0 auto;
+		}
+		#container > .contents table thead {
+			border-top: 2px solid #333;
+			border-bottom: 1px solid #ddd;
+		}
+		#container > .contents table thead tr th {
+			background: #f6f6f6;
+			height: 50px;
+			vertical-align: middle;
+			font-size: 1em;
+			font-weight: 700;
+			color: #333;
+		}
+		#container > .contents table tbody tr td {
+			height: 50px;
+			vertical-align: middle;
+			font-size: 1em;
+			border-bottom: 1px solid #ddd;
+			color: #333;
+		}
+		#container > .contents table tbody tr .nt03,
+		#container > .contents table tbody tr .nt04,
+		#container > .contents table tbody tr .nt05 {
+			text-align: left;
+			padding: 0 1em;
+		}
+		.process_circle span {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 35px;
+			font-size: .8em;
+			background: #9a64d4;
+			color: #fff;
+		}
+		.info_msg {
+			color: #fc6e2e;
+			font-size: .7em;
+			padding-left: 1em;
+		}
+		.ok {
+			background-color: #079c26 !important;
+			color: #fff !important;
+		}
+		.ok:before {
+			content: '완료'
+		}
+		.chg {
+			background-color: blue !important;
+			color: #fff !important;
+		}
+		#tabs ul:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		#tabs ul {
+			width: 90%;
+			margin: 0 auto;
+		}
+		#tabs ul li {
+			float: left;
+			margin-left: 10px;
+		}
+		#tabs ul li:first-child {
+			margin-left: 0;
+		}
+		.btn_set {
+			width: 120px;
+			height: 50px;
+			line-height: 50px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #ffb9ab;
+		}
+		.btn_set.on {
+			background-color: #273e8c;
+		}
+		.first_line {
+			border-top: 2px solid #333;
+		}
+		.top_btn {
+			opacity: 0;
+			transition: all 0.5s ease;
+			position: fixed;
+			right: 25px;
+			bottom: 10px;
+			height: 50px;
+			color: white;
+			border: none;
+			background: black;
+			cursor: pointer;
+		}
+		.top_btn.show {
+			opacity: 1;
+		}
+		.tab_content {
+			display: none;
+		}
+		.tab_content.on {
+			display: block;
+		}
+		.nt05 a {
+			display: inline-block;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+		}
+		p.add_text {
+			padding: 5px 0;
+			margin-left: -10px;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 20px;
+			color: #fc6e2e;
+		}
+		p.add_text:nth-child(2) {
+			color: #9758da;
+		}
+		p.add_text:nth-child(3) {
+			color: #079c26
+		}
+		.dim{
+			z-index: 10;
+			position: absolute;
+			top: 200px;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 55%;
+			height: 437px;
+			background-color: rgba(0, 0, 0, 0.41);
+		}
+		.dim:before{
+			content:'내부용사이트이므로 샘플 페이지만 링크 연결';
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+
+		}
+	</style>
+
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<div id="header">
+		<div class="header_in"><h1><span>IT_solution_coding_list</span></h1></div>
+	</div>
+
+	<div id="container">
+
+		<div class="contents">
+			<div id="tabs">
+				<ul>
+					<li class="btn_set on" data-tab="tab_1">CMS</li>
+				</ul>
+
+				<div class="tab_content on" id="tab_1">
+					<table class="coding_list_table">
+						<colgroup>
+							<col width="5%"/>
+							<col width="5%"/>
+							<col width="10%"/>
+							<col width="40%"/>
+							<col width="*"/>
+							<col width="5%"/>
+							<col width="5%"/>
+						</colgroup>
+						<thead>
+						<th class="first">NUM</th>
+						<th scope="col">화면 ID</th>
+						<th scope="col">카테고리</th>
+						<th scope="col">설명</th>
+						<th scope="col">링크<span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
+						<th scope="col">진행</th>
+						<th scope="col">수정</th>
+						</thead>
+					<tbody>
+					<tr class="first_line">
+						<td></td>
+						<td></td>
+						<td>정부지원제도</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_01_01.html" target="_blank">01_01_01.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>정부지원제도</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_01_02.html" target="_blank">01_01_02.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>정부지원제도</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_01_03.html" target="_blank">01_01_03.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>정부지원제도</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_02_00.html" target="_blank">01_02_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>문서중앙화(문서보안)</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_03_00.html" target="_blank">01_03_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>화재방지모니터링</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_04_00.html" target="_blank">01_04_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>이메일/전자결재(그룹웨어)</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_05_00.html" target="_blank">01_05_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>기업홍보지원 (홈페이지,B2B)</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_06_00.html" target="_blank">01_06_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>고객역할</td>
+						<td class="nt04"><p class="add_text"></p></td>
+						<td class="nt05"><a href="../IT_solution/01_10_00.html" target="_blank">01_10_00.html</a></td>
+						<td class="ok"></td>
+						<td class=""></td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<button type="button" class="top_btn">UP</button>
+
+</div>
+<script>
+
+	$(function () {
+		var tds = $(".coding_list_table tr td:first-child");
+		for (var i = 0; i < tds.length; i++) {
+			$(tds[i]).html(i + 1);
+		}    });
+	$(function () {
+		var tds = $(".admin_coding_list_table tr td:first-child");
+		for (var i = 0; i < tds.length; i++) {
+			$(tds[i]).html(i + 1);
+		}
+	});
+
+	function top_btn() {
+
+		$(window).scroll(function () {
+
+			if ($(this).scrollTop() > 100) {
+				$('.top_btn').addClass('show');
+			} else {
+				$('.top_btn').removeClass('show');
+			}
+//        console.log('work');
+		});
+
+		$('.top_btn').on('click', function () {
+			var $this = $(this);
+//             console.log('ddd');
+			$('html, body').scrollTop(0);
+
+		})
+
+	}
+
+	function tab() {
+
+
+		$('#tabs .btn_set').click('on', function () {
+			var tab_id = $(this).attr('data-tab');
+
+			$('#tabs .btn_set').removeClass('on');
+			$('.tab_content').removeClass('on');
+			$(this).addClass('on');
+			$("#" + tab_id).addClass('on');
+
+		})
+	}
+
+	top_btn();
+	tab();
+</script>
+</body>
+</html>
