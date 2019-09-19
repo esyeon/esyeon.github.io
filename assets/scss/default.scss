@@ -464,12 +464,12 @@ article h2 {
   }
   .btn-next{
     right: 5rem;
-    transform: translate(-50%,0);
+    transform: translate(0,-50%);
     background: #fff url("../image/btn_slider_next.png") no-repeat;
   }
   .btn-prev{
     left: 5rem;
-    transform: translate(-50%,0);
+    transform: translate(0,-50%);
     background: #fff url("../image/btn_slider_prev.png") no-repeat;
   }
   .greeting {
