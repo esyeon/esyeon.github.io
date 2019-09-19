@@ -189,6 +189,43 @@ header {
         }
       }
     }
+    .m_menu{
+      position: relative;
+      display: inline-block;
+      border-radius: 100%;
+      background-color:  transparent;
+      span{
+        display: block;
+        width: 2.1rem;
+        height: 0.2rem;
+        background-color: $main-color;
+        margin: -0.1rem auto 0;
+        vertical-align: top;
+        transition-duration: 0s;
+        transition-delay: 0.2s;
+        text-indent: 100%;
+        line-height: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        &:before, &:after{
+          display: block;
+          width: 2.1rem;
+          height: 0.2rem;
+          background-color: $main-color;
+          content: "";
+          position: absolute;
+          transition-property: margin, transform;
+          transition-duration: 0.2s;
+          transition-delay: 0.2s, 0s;
+        }
+        &:before{
+          margin-top: -0.7rem;
+        }
+        &:after{
+          margin-top: 0.7rem;
+        }
+      }
+    }
   }
 }
 
@@ -934,15 +971,17 @@ $portfolio-bg-color: #838383;
     }
 
     nav {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
       position: fixed;
       top: $header-height - 1;
       right: 0;
       height: 100%;
       width: 0;
       background-color: $white;
-      transition: all .2s ease-in-out;
-
+      transition-property: opacity, visibility, width;
+      transition-duration: 0.35s, 0.25s, 0.25s;
+      transition-delay: .1s;
       ul {
         li {
           padding: 0 1rem;
@@ -990,10 +1029,29 @@ $portfolio-bg-color: #838383;
             opacity: 0;
           }
         }
+        .m_menu{
+          span{
+            background-color: rgba(255, 255, 255, 0);
+            transition-delay: 0.2s;
+            &:before, &:after{
+              margin-top: 0;
+              transition-delay: 0s, 0.2s;
+            }
+            &:before{
+              transform: rotate(45deg);
+            }
+            &:after{
+              transform: rotate(-45deg);
+            }
+          }
+        }
       }
       nav {
         display: block;
         width: 15rem;
+        opacity: 1;
+        visibility: visible;
+        transition-duration: 0.15s, 0.25s , 0.25s;
 
       }
     }
