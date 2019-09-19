@@ -117,7 +117,7 @@ $(document).ready(function () {
         },500)
     })
 
-    $('nav > ul > li > a').on('click',function(){
+    $('nav > ul > li > a').on('click',function(e){
         var $this = $(this);
         var $li = $this.parent();
         var $liIdx = $li.index();
@@ -130,7 +130,7 @@ $(document).ready(function () {
         e.preventDefault()
     })
 
-    $('.btn_down').on('click',function(){
+    $('.btn_down').on('click',function(e){
         var $sectionFirstTop = $('.portfolio_wrap').offset().top - $headerHeight;
         $('html, body').stop().animate({
             'scrollTop' : $sectionFirstTop
@@ -143,7 +143,7 @@ $(document).ready(function () {
     })
 
 
-    $('.btn_mobile_menu').on('click',function(){
+    $('.btn_mobile_menu').on('click',function(e){
         var $this = $(this);
         e.preventDefault()
 
@@ -151,7 +151,7 @@ $(document).ready(function () {
         $header.toggleClass('mini');
     })
 
-    $('.dim_mobile').on('click',function(){
+    $('.dim_mobile').on('click',function(e){
         var $this = $(this);
         var $header = $this.parent();
         $header.removeClass('mini');
