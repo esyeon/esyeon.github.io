@@ -145,10 +145,10 @@ $(document).ready(function () {
 
     $('.btn_mobile_menu').on('click',function(){
         var $this = $(this);
-        var $header = $this.parent();
-
-        $header.toggleClass('mini');
         e.preventDefault()
+
+        var $header = $this.parent();
+        $header.toggleClass('mini');
     })
 
     $('.dim_mobile').on('click',function(){
