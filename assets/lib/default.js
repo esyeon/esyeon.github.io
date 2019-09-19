@@ -51,23 +51,37 @@ $(document).ready(function () {
         }
     });
 
-    function load(Parent, Count) {
-        var lists = Parent + " .list:not(.view)";
-        var listsLength = $(lists).length;
-        var totallists;
-        if (Count < listsLength) {
-            totallists = Count;
-        } else {
-            totallists = listsLength;
-            $('.block-more').hide()
+    // function load(Parent, Count) {
+    //     var lists = Parent + " .list:not(.view)";
+    //     var listsLength = $(lists).length;
+    //     var totallists;
+    //     if (Count < listsLength) {
+    //         totallists = Count;
+    //     } else {
+    //         totallists = listsLength;
+    //         $('.block-more').hide()
+    //         alert("마지막 프로젝트 리스트입니다.");
+    //     }
+    //     $(lists + ":lt(" + totallists + ")").addClass("view");
+    // }
+    //
+    // load('.portfolio_list', '4');
+    //
+    // $(".block-more a").on("click", function () {
+    //     load('.portfolio_list', '4');
+    // })
+
+    $('.portfolio_list .list').slice(0,4).addClass('view');
+
+    $('.block-more a').on('click',function(e){
+        e.preventDefault();
+        $(".list:hidden").slice(0,4).addClass('view');
+
+        if($(".list:hidden").length == 0){
+            alert("마지막 프로젝트 리스트입니다.");
+            $('.block-more').hide();
         }
-        $(lists + ":lt(" + totallists + ")").addClass("view");
-    }
 
-    load('.portfolio_list', '4');
-
-    $(".block-more a").on("click", function () {
-        load('.portfolio_list', '4');
     })
 
 
