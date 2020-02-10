@@ -87,20 +87,12 @@ $(document).ready(function () {
     })
 
 
-    var career = new Date("2016/10/16");
     var birthday = new Date("1994/06/29");
     var today = new Date();
-    var day = today.getDay()
-    var month = today.getMonth()
-    var years = today.getFullYear()
     var Age = today.getFullYear() - birthday.getFullYear() + 1;
-    var careerYear = years - career.getFullYear()
-    var careerMonth = month - career.getMonth()
 
     $('.age').text(Age + "세")
-    $('.career').text(careerYear + "년" + careerMonth + "개월" )
-
-
+  
 
 
     $(window).scroll(function(){
